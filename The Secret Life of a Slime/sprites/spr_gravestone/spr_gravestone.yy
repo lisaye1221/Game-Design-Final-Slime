@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gravestone","path":"sprites/spr_gravestone/spr_gravestone.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gravestone",
     "tags": [],
     "resourceType": "GMSequence",

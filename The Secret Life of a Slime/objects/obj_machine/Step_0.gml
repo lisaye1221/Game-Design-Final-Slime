@@ -2,9 +2,10 @@
 // You can write your code in this editor
 
 solid = interactable;
+var delta_second = delta_time /1000000;
 
 if (status == "busy"){
-	time_left -= 1/room_speed;
+	time_left -= delta_second;
 	
 	if (time_left <= 0){
 		audio_play_sound(sfx_machine_finish, 1, 0);
@@ -14,7 +15,7 @@ if (status == "busy"){
 }
 else if (status == "repairing"){
 	
-	time_left -= 1/room_speed;
+	time_left -= delta_second;
 	
 	if (time_left <= 0){
 		time_left = time_to_convert;

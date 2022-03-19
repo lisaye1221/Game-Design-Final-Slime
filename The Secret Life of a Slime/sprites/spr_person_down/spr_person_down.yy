@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_person_down","path":"sprites/spr_person_down/spr_person_down.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_person_down",
     "tags": [],
     "resourceType": "GMSequence",

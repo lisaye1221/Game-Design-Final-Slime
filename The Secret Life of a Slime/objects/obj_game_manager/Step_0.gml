@@ -2,11 +2,12 @@
 // You can write your code in this editor
 
 // records how many seconds passed by
-if(!global.dead){global.time += 1/room_speed;}
+var delta_second = delta_time/1000000;
+if(!global.dead){global.time += delta_time/1000000;}
 // 60 seconds = 1 day
 global.days = floor(global.time / 60);
 // lose 0.1 energy per second
-global.energy -= ((0.1/room_speed) * ENERGY_DEPLETION_MULTIPLIER);
+global.energy -= ((.1*delta_second) * ENERGY_DEPLETION_MULTIPLIER);
 
 if global.dead {
 	if (keyboard_check_pressed(ord("R"))) {
@@ -36,7 +37,7 @@ if(is_room_transition){
 
 if(room == town){
 	if (transformation_remaining >= 0) {
-		transformation_remaining -= (1 / room_speed);
+		transformation_remaining -= (delta_second);
 	}
 	else{
 		if (global.player_in_shop) {
@@ -49,7 +50,7 @@ if(room == town){
 }
 if(room == home){
 	if(transformation_cooldown > 0){
-		transformation_cooldown -= (1 / room_speed);	
+		transformation_cooldown -= (delta_second);	
 	}
 	if(transformation_cooldown < 0) {transformation_cooldown = 0;}
 }

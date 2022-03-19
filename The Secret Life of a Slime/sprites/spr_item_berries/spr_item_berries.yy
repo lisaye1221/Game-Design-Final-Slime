@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_item_berries","path":"sprites/spr_item_berries/spr_item_berries.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_item_berries",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_machine_broken","path":"sprites/spr_machine_broken/spr_machine_broken.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_machine_broken",
     "tags": [],
     "resourceType": "GMSequence",

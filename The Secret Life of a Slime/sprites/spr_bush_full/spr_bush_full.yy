@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bush_full","path":"sprites/spr_bush_full/spr_bush_full.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bush_full",
     "tags": [],
     "resourceType": "GMSequence",

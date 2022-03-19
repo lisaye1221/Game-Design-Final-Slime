@@ -6,7 +6,7 @@ if(!has_berries && !growing){
 	berry_time_remaining = irandom_range(MIN_GROWTH_TIME, MAX_GROWTH_TIME);
 }
 if(berry_time_remaining > 0 && growing) {
-	berry_time_remaining -= 1/room_speed;	
+	berry_time_remaining -= delta_time / 1000000;	
 }
 if(growing && berry_time_remaining <= 0){
 	has_berries = true;

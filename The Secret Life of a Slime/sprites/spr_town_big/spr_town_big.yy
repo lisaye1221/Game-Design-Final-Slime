@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_town_big","path":"sprites/spr_town_big/spr_town_big.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_town_big",
     "tags": [],
     "resourceType": "GMSequence",

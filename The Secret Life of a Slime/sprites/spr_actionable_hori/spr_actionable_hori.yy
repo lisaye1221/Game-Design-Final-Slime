@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_actionable_hori","path":"sprites/spr_actionable_hori/spr_actionable_hori.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_actionable_hori",
     "tags": [],
     "resourceType": "GMSequence",

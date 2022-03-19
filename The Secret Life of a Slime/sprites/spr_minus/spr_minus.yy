@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_minus","path":"sprites/spr_minus/spr_minus.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_minus",
     "tags": [],
     "resourceType": "GMSequence",

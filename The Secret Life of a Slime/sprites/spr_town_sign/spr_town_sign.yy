@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_town_sign","path":"sprites/spr_town_sign/spr_town_sign.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_town_sign",
     "tags": [],
     "resourceType": "GMSequence",

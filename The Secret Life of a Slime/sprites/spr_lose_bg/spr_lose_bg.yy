@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lose_bg","path":"sprites/spr_lose_bg/spr_lose_bg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lose_bg",
     "tags": [],
     "resourceType": "GMSequence",
