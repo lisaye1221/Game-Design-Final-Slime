@@ -5,16 +5,16 @@
 function tileCollidingHorizontal(_tilemap){
 	var meeting = false;	
 	var xCheck = bbox_left;
-	for (var yCheck = bbox_bottom-.2; yCheck>bbox_top; 
-		yCheck-= (sprite_height-.4)/4){
+	for (var yCheck = bbox_bottom+.01; yCheck>bbox_top; 
+		yCheck-= (bbox_bottom-bbox_top-.02)/4){
 		draw_text(xCheck,yCheck,"!");
 		if (tilemap_get_at_pixel(_tilemap, xCheck, yCheck)){
 			meeting = true;
 		}
 	}
 	var xCheck = bbox_right;
-	for (var yCheck = bbox_bottom-.2; yCheck>bbox_top; 
-		yCheck-= (bbox_bottom-bbox_top-.4)/4){
+	for (var yCheck = bbox_bottom+.01; yCheck>bbox_top; 
+		yCheck-= (bbox_bottom-bbox_top-.02)/4){
 		draw_text(xCheck,yCheck,"!");
 		if (tilemap_get_at_pixel(_tilemap, xCheck, yCheck)){
 			meeting = true;
@@ -64,11 +64,6 @@ function tileGravityHandle(_tilemap){
 
 function basicTileCollisionHandle(_tilemap){
 	var _colliding = false;
-	if (tileCollidingHorizontal(_tilemap)){
-		x = xprevious;
-		hspeed = 0;
-		_colliding = true;
-	}
 	if (tileCollidingTop(_tilemap)){
 		y = yprevious;
 		vspeed = 0;
@@ -77,6 +72,11 @@ function basicTileCollisionHandle(_tilemap){
 	if (tileCollidingBot(_tilemap)){
 		y = yprevious;
 		vspeed = 0;
+		_colliding = true;
+	}
+	if (tileCollidingHorizontal(_tilemap)){
+		x = xprevious;
+		hspeed = 0;
 		_colliding = true;
 	}
 	tileGravityHandle(_tilemap);
@@ -85,11 +85,7 @@ function basicTileCollisionHandle(_tilemap){
 
 function basicTileCollisionHandleNoGravity(_tilemap){
 	var _colliding = false;
-	if (tileCollidingHorizontal(_tilemap)){
-		x = xprevious;
-		hspeed = 0;
-		_colliding = true;
-	}
+	
 	if (tileCollidingTop(_tilemap)){
 		y = yprevious;
 		vspeed = 0;
@@ -98,6 +94,11 @@ function basicTileCollisionHandleNoGravity(_tilemap){
 	if (tileCollidingBot(_tilemap)){
 		y = yprevious;
 		vspeed = 0;
+		_colliding = true;
+	}
+	if (tileCollidingHorizontal(_tilemap)){
+		x = xprevious;
+		hspeed = 0;
 		_colliding = true;
 	}
 	return _colliding;
