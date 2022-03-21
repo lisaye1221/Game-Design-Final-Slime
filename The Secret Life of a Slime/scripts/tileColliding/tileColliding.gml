@@ -5,16 +5,16 @@
 function tileCollidingHorizontal(_tilemap){
 	var meeting = false;	
 	var xCheck = bbox_left;
-	for (var yCheck = bbox_bottom+.01; yCheck>bbox_top; 
-		yCheck-= (bbox_bottom-bbox_top-.02)/4){
+	for (var yCheck = bbox_bottom; yCheck>bbox_top; 
+		yCheck-= (bbox_bottom-bbox_top)/4){
 		draw_text(xCheck,yCheck,"!");
 		if (tilemap_get_at_pixel(_tilemap, xCheck, yCheck)){
 			meeting = true;
 		}
 	}
 	var xCheck = bbox_right;
-	for (var yCheck = bbox_bottom+.01; yCheck>bbox_top; 
-		yCheck-= (bbox_bottom-bbox_top-.02)/4){
+	for (var yCheck = bbox_bottom; yCheck>bbox_top; 
+		yCheck-= (bbox_bottom-bbox_top)/4){
 		draw_text(xCheck,yCheck,"!");
 		if (tilemap_get_at_pixel(_tilemap, xCheck, yCheck)){
 			meeting = true;
