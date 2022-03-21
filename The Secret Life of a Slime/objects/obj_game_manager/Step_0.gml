@@ -23,7 +23,7 @@ if(is_room_transition){
 			home_instances_to_run_in_bg[i].interactable = true;
 		}
 	}
-	else if(room == town){
+	else if(room != home){
 		transformation_remaining = TOWN_TIME_LIMIT;
 		transformation_cooldown = TRANSFORMATION_COOLDOWN_TIME;
 		instance_deactivate_object(obj_bush_solid);

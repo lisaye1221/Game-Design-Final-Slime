@@ -3,10 +3,9 @@
 
 if (position_meeting(obj_player.x,obj_player.y,id)){
 	triggered = true;
-	room_goto_next();
+	room_goto(roomToGo);
 	with (obj_player){
-		_tilemap = layer_tilemap_get_id("Tiles_Collision")
-		x = 30
-		y = 100
+		x = other.newX
+		y = other.newY
 	}
 }
