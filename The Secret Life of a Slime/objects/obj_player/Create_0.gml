@@ -21,3 +21,5 @@ global.energy = 100;
 global.energy_max=100;
 global.gold = 10;
 global.dead = false;
+
+DIR = [[1,0],[0,-1],[-1,0],[0,1]]

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if not global.dead {
+if not (global.dead or global.paused) {
 	depth = -y;
 	key_up = keyboard_check(vk_up);
 	key_right = keyboard_check(vk_right);
@@ -141,7 +141,9 @@ if not global.dead {
 			}
 		}
 	}
+	
 
+	
 	// berry bushes
 	berry_bush_id = instance_place(x, y, obj_bush);
 	if(berry_bush_id != noone && key_z && berry_bush_id.has_berries){
@@ -150,7 +152,16 @@ if not global.dead {
 		gain_one_item(global.item_list.berries);
 		audio_play_sound(sfx_collect_berries, 2, false);
 	}
-
+	
+	//interact with interactables
+	_interact_check_x = x + DIR[face][0]*10;
+	_interact_check_y = y + DIR[face][1]*10;
+	var _interactable = instance_place(_interact_check_x,_interact_check_y,obj_interactable);
+	if (_interactable!=noone){
+		if (keyboard_check_pressed(ord("Z"))){
+			_interactable.activated = true;
+		}
+	}
 
 	// using items
 	inv = obj_inventory_manager.inventory
