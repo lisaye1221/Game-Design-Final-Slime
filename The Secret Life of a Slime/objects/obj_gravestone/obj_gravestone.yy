@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "solid_decor",
-    "path": "folders/Objects/solid_decor.yy",
+    "name": "solid_decor_deprecated",
+    "path": "folders/Objects/solid_decor_deprecated.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_gravestone",

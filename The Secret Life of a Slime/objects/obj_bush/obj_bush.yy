@@ -3,7 +3,7 @@
     "name": "spr_bush_full",
     "path": "sprites/spr_bush_full/spr_bush_full.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,

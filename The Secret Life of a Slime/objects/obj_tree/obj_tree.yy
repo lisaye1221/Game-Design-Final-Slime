@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "solid_decor",
-    "path": "folders/Objects/solid_decor.yy",
+    "name": "deprecated",
+    "path": "folders/Objects/solid_decor_deprecated/deprecated.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tree",
