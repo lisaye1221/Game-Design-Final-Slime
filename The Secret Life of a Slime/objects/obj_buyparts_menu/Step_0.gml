@@ -43,11 +43,8 @@ if (accept_key){
 					break;
 				// exit
 				case 1:
-					this_prompt = instance_find(obj_prompt_buyparts, 0);
-					if (this_prompt != noone){
-						this_prompt.should_close_menu = true;
-					}
-					break;}
+					instance_deactivate_object(id)
+			}
 			break;
 		
 		// parts menu

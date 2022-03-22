@@ -50,8 +50,8 @@ if (accept_key){
 					break;
 				// exit
 				case 2:
-					obj_prompt_sell.should_close_menu = true;
-					break;}
+					instance_deactivate_object(id)
+			}
 			break;
 		
 		// wheat menu

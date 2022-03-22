@@ -55,13 +55,7 @@ if (accept_key){
 					break;
 				// exit
 				case 3:
-					if (instance_exists(obj_prompt_buyfood)){
-						obj_prompt_buyfood.should_close_menu = true;
-						break;
-					}
-					else{
-						instance_deactivate_object(id)
-					}
+					instance_deactivate_object(id)
 			}
 			break;
 		

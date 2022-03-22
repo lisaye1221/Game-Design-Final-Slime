@@ -35,7 +35,7 @@
     "path": "folders/Objects/templates.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_npc",
+  "name": "obj_npc_with_menu",
   "tags": [],
   "resourceType": "GMObject",
 }
