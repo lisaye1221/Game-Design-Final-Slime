@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description open menu on player interaction
 // You can write your code in this editor
 if (activated) {
 	show_debug_message("activated")

@@ -1,4 +1,4 @@
-/// @description no draw
+/// @description draw text when player enters
 // You can write your code in this editor
 
 if (triggered){

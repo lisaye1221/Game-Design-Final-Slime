@@ -27,13 +27,6 @@ if not (global.dead or global.paused) {
 	if(x_speed > 0) {face = RIGHT;}
 	if(x_speed < 0) {face = LEFT;}
 	sprite_index = sprite[face]
-	// set collision for solid
-	if(place_meeting(x+x_speed, y, obj_solid)){
-		x_speed = 0;
-	}
-	if(place_meeting(x, y+y_speed, obj_solid)){
-		y_speed = 0;
-	}
 	if(x+x_speed > room_width || x+x_speed < 0){
 		x_speed = 0;
 	}
