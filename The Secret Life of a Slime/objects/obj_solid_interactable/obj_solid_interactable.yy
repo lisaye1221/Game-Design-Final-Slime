@@ -32,7 +32,7 @@
     "path": "folders/Objects/templates.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_interactable",
+  "name": "obj_solid_interactable",
   "tags": [],
   "resourceType": "GMObject",
 }

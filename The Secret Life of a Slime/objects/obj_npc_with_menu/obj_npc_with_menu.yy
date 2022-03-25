@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_interactable",
-    "path": "objects/obj_interactable/obj_interactable.yy",
+    "name": "obj_solid_interactable",
+    "path": "objects/obj_solid_interactable/obj_solid_interactable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,8 +31,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "templates",
-    "path": "folders/Objects/templates.yy",
+    "name": "interactables",
+    "path": "folders/Objects/interactables.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_npc_with_menu",

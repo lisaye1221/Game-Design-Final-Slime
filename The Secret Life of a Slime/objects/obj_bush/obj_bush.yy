@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_solid_interactable",
+    "path": "objects/obj_solid_interactable/obj_solid_interactable.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -32,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "interactables",
+    "path": "folders/Objects/interactables.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bush",
