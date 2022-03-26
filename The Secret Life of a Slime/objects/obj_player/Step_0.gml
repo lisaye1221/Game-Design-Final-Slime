@@ -74,16 +74,7 @@ if not (global.dead or global.paused) {
 			}
 		}
 	}
-	if(place_meeting(x, y, obj_use_machine) && key_z){
-	
-	
-		// TODO: automatically takes all now, we could let player choose how much to convert
-		
-		
-		this_machine = instance_find(obj_machine, 0);
-		
-	}
-	
+
 	//interact with interactables
 	_interact_check_x = x + DIR[face][0]*10;
 	_interact_check_y = y + DIR[face][1]*10;
