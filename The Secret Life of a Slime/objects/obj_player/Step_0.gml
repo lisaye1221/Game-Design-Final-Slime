@@ -76,12 +76,12 @@ if not (global.dead or global.paused) {
 	}
 
 	//interact with interactables
-	_interact_check_x = x + DIR[face][0]*10;
-	_interact_check_y = y + DIR[face][1]*10;
-	var _interactable = instance_place(_interact_check_x,_interact_check_y,obj_solid_interactable);
-	if (_interactable!=noone){
+	var _interact_check_x = x + DIR[face][0]*10;
+	var _interact_check_y = y + DIR[face][1]*10;
+	interactable_object = instance_place(_interact_check_x,_interact_check_y,obj_solid_interactable);
+	if (interactable_object!=noone && interactable_object.interactable){
 		if (keyboard_check_pressed(ord("Z"))){
-			_interactable.alarm[0] = 1;
+			interactable_object.alarm[0] = 1;
 		}
 	}
 

@@ -23,3 +23,4 @@ global.gold = 10;
 global.dead = false;
 
 DIR = [[1,0],[0,-1],[-1,0],[0,1]]
+interactable_object = noone;

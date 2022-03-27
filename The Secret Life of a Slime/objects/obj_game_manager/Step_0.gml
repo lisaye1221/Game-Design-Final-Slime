@@ -21,6 +21,7 @@ if(is_room_transition){
 		for(var i = 0; i < length; i++){
 			home_instances_to_run_in_bg[i].visible = true;
 			home_instances_to_run_in_bg[i].interactable = true;
+			home_instances_to_run_in_bg[i].solid = true;
 		}
 	}
 	else if(room != home){
@@ -30,6 +31,7 @@ if(is_room_transition){
 		for(var i = 0; i < length; i++){
 			home_instances_to_run_in_bg[i].visible = false;	
 			home_instances_to_run_in_bg[i].interactable = false;
+			home_instances_to_run_in_bg[i].solid = false;
 		}
 	}
 	is_room_transition = false;
