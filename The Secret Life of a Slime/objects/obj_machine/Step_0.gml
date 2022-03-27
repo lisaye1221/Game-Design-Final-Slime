@@ -43,3 +43,22 @@ if (status == "broken" || status == "repairing") {
 else{
 	sprite_index = spr_machine;
 }
+
+switch(this_machine.status){
+	case "empty":
+		which_text = 0;
+		break;
+	case "busy":
+		which_text = 1;
+		break;
+	case "full":
+		which_text = 2;
+		break;
+	case "broken":
+		which_text = 3;
+		break;
+	case "repairing":
+		which_text = 4;
+		break;
+}
+prompt_text = prompt_text_lst[which_text]

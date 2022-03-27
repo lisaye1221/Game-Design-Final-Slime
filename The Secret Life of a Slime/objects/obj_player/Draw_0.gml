@@ -4,6 +4,6 @@ draw_self();
 if (interactable_object!=noone && interactable_object.interactable){
 	//find if anything interactable exists infront of player; if so, display it.
 	//might improve the way of display in the future
-	draw_text(x,y+50,"!!");
+	draw_text(x,y+50,interactable_object.prompt_text);
 }
 //	basicTileCollisionHandleNoGravity(layer_tilemap_get_id(global.tiles_collision_name))

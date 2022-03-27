@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "prompts",
-    "path": "folders/Objects/prompts.yy",
+    "name": "deprecated",
+    "path": "folders/Objects/prompts/deprecated.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_use_machine",
