@@ -18,3 +18,6 @@ JELLY_PRODUCED = 2;
 
 durability = 2;	// uses until it breaks
 ENERGY_COST_TO_REPAIR = 5;
+
+
+this_machine = id;

@@ -13,12 +13,3 @@ if(growing && berry_time_remaining <= 0){
 	growing = false;
 }
 sprite_index = has_berries ? spr_bush_full : spr_bush_empty;
-
-if (activated){
-	if(has_berries){
-		has_berries = false;
-		// add 1 unit of berries to inventory
-		gain_one_item(global.item_list.berries);
-		audio_play_sound(sfx_collect_berries, 2, false);
-	}
-}

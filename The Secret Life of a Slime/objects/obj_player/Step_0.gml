@@ -81,7 +81,7 @@ if not (global.dead or global.paused) {
 	var _interactable = instance_place(_interact_check_x,_interact_check_y,obj_solid_interactable);
 	if (_interactable!=noone){
 		if (keyboard_check_pressed(ord("Z"))){
-			_interactable.activated = true;
+			_interactable.alarm[0] = 1;
 		}
 	}
 
