@@ -33,6 +33,15 @@ if not (global.dead or global.paused) {
 	if(y+y_speed < 0 || y+y_speed >  525){
 		y_speed = 0;
 	}
+	// set collision for solid
+	var x_check = instance_place(x+x_speed, y, obj_solid);
+	if(x_check!=noone && x_check.solid){
+		x_speed = 0;
+	}
+	var y_check = instance_place(x, y+y_speed, obj_solid)
+	if(y_check!=noone && y_check.solid){
+		y_speed = 0;
+	}
 	// move the player
 	x += x_speed;
 	y += y_speed;
