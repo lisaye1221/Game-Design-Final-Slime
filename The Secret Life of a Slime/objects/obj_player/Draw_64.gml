@@ -9,7 +9,7 @@ if (interactable_object!=noone && interactable_object.interactable){
 		x_pos = BOUNDARY_SPACE;
 	}
 	else{
-		x_pos = x
+		x_pos = x;
 	}
 	var y_pos = y + 30 + BOUNDARY_SPACE > room_height ? room_height-30 : y+30;
 	draw_set_color(c_white)
