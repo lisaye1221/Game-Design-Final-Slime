@@ -4,4 +4,3 @@
 // Inherit the parent event
 event_inherited();
 interactable = true;
-prompt_text = "Interact?";

@@ -32,7 +32,9 @@
     {"varType":4,"value":"instance_create_layer(x,y,\"Instances\",obj_buyfood_menu);","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"menu","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":4,"value":"spr_npc","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite","tags":[],"resourceType":"GMObjectProperty",},
   ],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"prompt_text","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"objectId":{"name":"obj_solid_interactable","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"value":"Trade?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "npc",
     "path": "folders/Objects/interactables/npc.yy",

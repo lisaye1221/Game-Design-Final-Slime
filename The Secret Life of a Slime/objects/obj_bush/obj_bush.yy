@@ -34,7 +34,9 @@
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"prompt_text","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"objectId":{"name":"obj_solid_interactable","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"value":"Pick berry?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "interactables",
     "path": "folders/Objects/interactables.yy",
