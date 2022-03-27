@@ -3,5 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-
+depth = layer_get_depth(layer);
 sprite_index = sprite;
