@@ -85,16 +85,23 @@ function basicTileCollisionHandle(_tilemap){
 
 function basicTileCollisionHandleNoGravity(_tilemap){
 	var _colliding = false;
-	
-	if (tileCollidingTop(_tilemap)){
-		y = yprevious;
-		vspeed = 0;
-		_colliding = true;
-	}
-	if (tileCollidingBot(_tilemap)){
-		y = yprevious;
-		vspeed = 0;
-		_colliding = true;
+	if (tileCollidingTop(_tilemap) || tileCollidingBot(_tilemap)){
+		var _xnew = x;
+		if (tileCollidingHorizontal(_tilemap)){
+			x = xprevious;
+			hspeed = 0;
+			_colliding = true;
+			if (tileCollidingTop(_tilemap) || tileCollidingBot(_tilemap)){
+				y = yprevious;
+				vspeed = 0;
+				_colliding = true;
+				x = _xnew;
+			}
+		} else{
+			y = yprevious;
+			vspeed = 0;
+			_colliding = true;
+		}
 	}
 	if (tileCollidingHorizontal(_tilemap)){
 		x = xprevious;
