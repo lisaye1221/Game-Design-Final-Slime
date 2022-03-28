@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_person_down",
-    "path": "sprites/spr_person_down/spr_person_down.yy",
+    "name": "spr_npc",
+    "path": "sprites/spr_npc/spr_npc.yy",
   },
   "solid": true,
   "visible": true,
