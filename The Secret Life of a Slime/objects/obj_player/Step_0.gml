@@ -87,13 +87,20 @@ if not (global.dead or global.paused) {
 	//interact with interactables
 	var _interact_check_x = x + DIR[face][0]*10;
 	var _interact_check_y = y + DIR[face][1]*10;
+	last_interactable_object = interactable_object;
 	interactable_object = instance_place(_interact_check_x,_interact_check_y,obj_solid_interactable);
 	if (interactable_object!=noone && interactable_object.interactable){
-		if (keyboard_check_pressed(ord("Z"))){
-			interactable_object.alarm[0] = 1;
+		if (interactable_object!=last_interactable_object){
+			draw_prompt_flag = true;
 		}
 	}
-
+	else {
+		draw_prompt_flag = false;
+	}
+	if (keyboard_check_pressed(ord("Z")) && draw_prompt_flag){
+		interactable_object.alarm[0] = 1;
+		draw_prompt_flag = false;
+	}
 	// using items
 	inv = obj_inventory_manager.inventory
 	inv_count = array_length(inv);

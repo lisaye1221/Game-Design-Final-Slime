@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (interactable_object!=noone && interactable_object.interactable){
+if (draw_prompt_flag){
 	//find if anything interactable exists infront of player; if so, display its prompt text.
 	if(x > room_width - BOUNDARY_SPACE){
 		var x_pos = room_width - BOUNDARY_SPACE;

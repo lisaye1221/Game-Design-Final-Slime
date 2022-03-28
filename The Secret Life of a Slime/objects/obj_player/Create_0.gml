@@ -24,4 +24,6 @@ global.dead = false;
 
 DIR = [[1,0],[0,-1],[-1,0],[0,1]]
 interactable_object = noone;
+last_interactable_object = noone;
+draw_prompt_flag = false;
 BOUNDARY_SPACE = 50; 
