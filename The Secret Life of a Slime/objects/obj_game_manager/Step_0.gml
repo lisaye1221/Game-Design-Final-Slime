@@ -37,7 +37,7 @@ if(is_room_transition){
 	is_room_transition = false;
 }
 
-if(room == town){
+if(room != home){
 	if (transformation_remaining >= 0) {
 		transformation_remaining -= (delta_second);
 	}
