@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 solid = interactable;
-var delta_second = delta_time /1000000;
+var delta_second = global.paused?0: delta_time /1000000;
 
 if (status == "busy"){
 	time_left -= delta_second;

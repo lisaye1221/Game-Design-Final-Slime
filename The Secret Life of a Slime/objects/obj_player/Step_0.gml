@@ -45,10 +45,6 @@ if not (global.dead or global.paused) {
 	// move the player
 	x += x_speed;
 	y += y_speed;
-	// set animation to not moving 
-	if(x_speed == 0 && y_speed == 0){
-		image_index = 0;
-	}
 	
 	if (global.force_player_home) {
 		global.force_player_home = false;

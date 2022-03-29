@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 // records how many seconds passed by
-var delta_second = delta_time/1000000;
-if(!global.dead){global.time += delta_time/1000000;}
+var delta_second = global.paused?0: delta_time/1000000;
+if(!global.dead){global.time += delta_second;}
 // 60 seconds = 1 day
 global.days = floor(global.time / 60);
 // lose 0.1 energy per second
