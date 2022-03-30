@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/*if not global.dead {
+if not global.dead {
 	// draw inventory background
 
 	for(var i = 0; i < MAX_ITEM; i++){
@@ -37,4 +37,4 @@
 
 	}
 
-}*/
+}
