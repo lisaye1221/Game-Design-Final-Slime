@@ -12,5 +12,6 @@ if(berry_time_remaining > 0 && growing) {
 if(growing && berry_time_remaining <= 0){
 	has_berries = true;
 	growing = false;
+	sprite_index = spr_bush_full;
+	prompt_text = "Pick berry?";
 }
-sprite_index = has_berries ? spr_bush_full : spr_bush_empty;

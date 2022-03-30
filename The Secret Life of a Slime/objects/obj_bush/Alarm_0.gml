@@ -6,6 +6,8 @@ event_inherited();
 
 if(has_berries){
 	has_berries = false;
+	sprite_index = spr_bush_empty;
+	prompt_text = "The berry is still growing.";
 	// add 1 unit of berries to inventory
 	gain_one_item(global.item_list.berries);
 	audio_play_sound(sfx_collect_berries, 2, false);
