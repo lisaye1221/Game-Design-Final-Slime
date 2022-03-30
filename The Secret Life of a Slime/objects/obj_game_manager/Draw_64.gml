@@ -7,10 +7,12 @@ if not global.dead {
 	draw_set_halign(fa_left);
 	draw_set_color(c_white);
 	draw_text(15, 560, "Time: " + string(floor(global.time)));
+	draw_text(15, 580, "Day: " + string(floor(global.days)));
+	
 
 	// gold
 	draw_set_color(c_yellow);
-	draw_text(15, 580, "Gold: " + string(floor(global.gold)) + "G");
+	draw_text(15, 600, "Gold: " + string(floor(global.gold)) + "G");
 
 	if(room != home){
 		draw_set_color(c_red);

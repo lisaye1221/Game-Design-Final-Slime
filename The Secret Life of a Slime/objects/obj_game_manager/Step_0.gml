@@ -5,7 +5,13 @@
 var delta_second = global.paused?0: delta_time/1000000;
 if(!global.dead){global.time += delta_second;}
 // 60 seconds = 1 day
-global.days = floor(global.time / 60);
+if (global.time >= 60){
+	global.days++;
+	global.time = 0;
+}
+
+// 60 seconds = 1 day
+//global.days = floor(global.time / 60);
 // lose 0.1 energy per second
 global.energy -= ((.1*delta_second) * ENERGY_DEPLETION_MULTIPLIER);
 
