@@ -27,3 +27,5 @@ interactable_object = noone;
 last_interactable_object = noone;
 draw_prompt_flag = false;
 BOUNDARY_SPACE = 50; 
+
+cam = view_camera[0];
