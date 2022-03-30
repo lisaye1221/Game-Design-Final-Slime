@@ -36,7 +36,6 @@ if not (global.dead or global.paused) {
 	}
 	
 	// move camera left when player walks off screen
-	//cam = view_camera[0];
 	//view_width = camera_get_view_width(cam);
 	//view_x = camera_get_view_x(cam);
 	if (x < camera_get_view_x(cam)){

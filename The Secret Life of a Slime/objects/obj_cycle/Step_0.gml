@@ -4,13 +4,12 @@
 if (surface_exists(surf)) {
 	surface_set_target(surf);
 	draw_set_color(c_black)
-	draw_set_alpha(.8);
+	draw_set_alpha(alpha);
 	var _cam = view_camera[0];
 	left = camera_get_view_x(_cam);
 	top = camera_get_view_y(_cam);
 	var _w = camera_get_view_width(_cam);
-	var _h = camera_get_view_height(_cam);
-	draw_rectangle(0,0,_w,_h, 0);
+	draw_rectangle(0,0,_w,guiHeight, 0);
 	draw_set_color(c_white)
 	// trying to put spotlight on the player
 	if (currently == "night"){

@@ -5,7 +5,6 @@ color = c_black;
 
 alarm[0] = 60 * day;
 
-guiWidth = display_get_gui_width();
 //guiHeight = display_get_gui_height();
 guiHeight = 540;
 
