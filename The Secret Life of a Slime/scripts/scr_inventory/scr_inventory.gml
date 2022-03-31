@@ -4,6 +4,7 @@
 function new_item(item, _count) constructor {
 	name = item.name;
 	icon = item.icon;
+	menu_icon = item.menu_icon;
 	max_count = item.max_count;
 	count = _count;
 	

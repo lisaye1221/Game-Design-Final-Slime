@@ -4,7 +4,7 @@
 if not global.dead {
 	// draw inventory background
 
-	for(var i = 0; i < MAX_ITEM; i++){
+	for(var i = 0; i < HOTBAR_SLOTS; i++){
 		// calculate position
 		height = INV_BACKGROUND_HEIGHT;
 		space = INV_BACKGROUND_MARGIN;
@@ -19,6 +19,8 @@ if not global.dead {
 
 	// draw inventory
 	for(var i = 0; i < array_length(inventory); i++){
+		
+		if (i < HOTBAR_SLOTS-1) {
 	
 		height = INV_BACKGROUND_HEIGHT;
 		space = INV_BACKGROUND_MARGIN;
@@ -34,7 +36,8 @@ if not global.dead {
 		// count
 		draw_set_halign(fa_right);
 		draw_text(INV_RIGHT_X - space, y1+(height/2), "x" + string(inventory[i].count));
-
+		
+		}
 	}
 
 }

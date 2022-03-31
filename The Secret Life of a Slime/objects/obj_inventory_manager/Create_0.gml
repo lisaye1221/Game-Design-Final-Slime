@@ -9,6 +9,8 @@ depth = -9999;
 
 MAX_ITEM = 6;
 
+HOTBAR_SLOTS = 6;
+
 INV_LEFT_X = 680;
 INV_BACKGROUND_WIDTH = 200;
 INV_BACKGROUND_HEIGHT = 20;
@@ -18,13 +20,16 @@ INV_TOP_LEFT_Y = 550;
 ICON_SIZE = 16;
 
 // item constructor
-function create_item(_name, _icon, _max_count, _count) constructor {
+function create_item(_name, _icon, _menu_icon, _max_count, _count) constructor {
 	name = _name;
 	icon = _icon;
+	menu_icon = _menu_icon;
 	max_count = _max_count;
 	count = _count;
 	
 }
+
+global.menu_on = false;
 
 // create the items masterlist
 global.item_list = 
@@ -32,30 +37,35 @@ global.item_list =
 	slime_jelly : new create_item(
 		"Slime Jelly",
 		spr_item_jelly,
+		spr_item_jelly_menu,
 		SLIME_JELLY_MAX, 
 		0
 	),
 	berries : new create_item(
 		"Berries",
 		spr_item_berries,
+		spr_item_berries_menu,
 		FOOD_MAX, 
 		0
 	),
 	wheat : new create_item(
 		"Wheat",
 		spr_item_wheat,
+		spr_item_wheat_menu,
 		FOOD_MAX, 
 		0
 	),
 	fish: new create_item(
 		"Fish",
 		spr_item_fish,
+		spr_item_fish_menu,
 		5,
 		0
 	),
 	parts: new create_item(
 		"Parts",
 		spr_item_parts,
+		spr_item_parts_menu,
 		1,
 		0
 	),
