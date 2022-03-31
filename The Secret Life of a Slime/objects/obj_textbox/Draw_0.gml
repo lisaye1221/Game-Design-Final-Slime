@@ -1,8 +1,8 @@
 /// @description Insert description here
 
-
+old_ui_offset = 170;
 textbox_x = camera_get_view_x(view_camera[0]);
-textbox_y = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) - textbox_height);
+textbox_y = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) - textbox_height) - old_ui_offset;
 
 
 accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z"));
