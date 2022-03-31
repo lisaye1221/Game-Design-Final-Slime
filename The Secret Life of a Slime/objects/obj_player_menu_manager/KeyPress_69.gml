@@ -2,9 +2,9 @@
 
 if (global.menu_on) {
 	global.menu_on = false;
-	global.pause = false;
+	global.paused = false;
 }
 else {
 	global.menu_on = true;
-	global.pause = true;
+	global.paused = true;
 }
