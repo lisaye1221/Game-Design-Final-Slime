@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+draw_set_font(ft_inventory)
 if not global.dead {
 	// draw inventory background
 

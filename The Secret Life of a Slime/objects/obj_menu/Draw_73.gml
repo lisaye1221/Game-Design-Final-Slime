@@ -16,6 +16,7 @@ draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/spri
 
 // draw the options
 draw_set_color(c_white);
+draw_set_font(ft_menu)
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 
