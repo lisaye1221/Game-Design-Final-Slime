@@ -1,5 +1,6 @@
 /// @description create light surface
 // You can write your code in this editor
+
 if (!instance_exists(obj_npc_with_menu)){
 	//which indicates it is not a shop
 		//if we put npc_with_menu in other rooms in the future, 
