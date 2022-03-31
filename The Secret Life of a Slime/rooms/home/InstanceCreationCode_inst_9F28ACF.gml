@@ -1,0 +1,1 @@
+text_id = "village_sign"
