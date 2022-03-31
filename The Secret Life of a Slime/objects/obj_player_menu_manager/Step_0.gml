@@ -8,7 +8,7 @@ var _down = keyboard_check_pressed(vk_down);
 var _h_move = _right - _left;
 var _v_move = _down - _up;
 
-var _size = 17;
+var _size = obj_inventory_manager.MAX_ITEM;
 
 if (_h_move != 0) {
 	

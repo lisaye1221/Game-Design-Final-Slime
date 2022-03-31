@@ -16,7 +16,7 @@ if (global.menu_on) {
 	left += 20;
 	top += 20;
 
-	for (var i = 0; i < 17; i ++) {
+	for (var i = 0; i < obj_inventory_manager.MAX_ITEM; i ++) {
 		
 		var xx = left + (i mod rowLength) * 64;
 		var yy = top + (i div rowLength) * 64;
