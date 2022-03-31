@@ -5,6 +5,6 @@ interactable = true;
 has_berries = true;
 growing = false;
 
-MIN_GROWTH_TIME = 70;
-MAX_GROWTH_TIME = 150;
+MIN_GROWTH_TIME = 50;
+MAX_GROWTH_TIME = 80;
 berry_time_remaining = 0;
