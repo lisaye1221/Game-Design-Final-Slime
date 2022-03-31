@@ -21,6 +21,12 @@ text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_speed = 1;
 
+// options
+option[0] = "";
+option_link_id[0] = -1;
+option_pos = 0;
+option_num = 0;
+
 // flag for setting up things before drawing text
 setup = false
 

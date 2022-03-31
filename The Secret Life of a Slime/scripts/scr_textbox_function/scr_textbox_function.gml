@@ -7,10 +7,19 @@ function scr_add_text(_text){
 	 page_number++;
 }
 
+/// @param text_id
 function create_textbox(_text_id){
 
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
 		scr_game_text(_text_id);	
 	}
 
+}
+
+/// @param option_text
+/// @param link_id
+function scr_option(_option_text, _link_id){
+	option[option_num] = _option_text;
+	option_link_id[option_num] = _link_id;
+	option_num++;
 }
