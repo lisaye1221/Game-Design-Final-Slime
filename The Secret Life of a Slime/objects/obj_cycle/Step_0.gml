@@ -1,6 +1,13 @@
 /// @description create light surface
 // You can write your code in this editor
-
+if (global.paused){
+	if (alarm[1]>0){
+		alarm[1] += global.delta_second;
+	}
+	if (alarm[2]>0){
+		alarm[2] += global.delta_second;
+	}
+}
 if (!instance_exists(obj_npc_with_menu)){
 	//which indicates it is not a shop
 		//if we put npc_with_menu in other rooms in the future, 
