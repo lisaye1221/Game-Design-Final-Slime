@@ -22,14 +22,14 @@ if global.dead {
 
 if(is_room_transition){
 	length = array_length(home_instances_to_run_in_bg)
-	if(room == home){
+	if(in_home()){
 		for(var i = 0; i < length; i++){
 			home_instances_to_run_in_bg[i].visible = true;
 			home_instances_to_run_in_bg[i].interactable = true;
 			home_instances_to_run_in_bg[i].solid = true;
 		}
 	}
-	else if(room != home){
+	else if(in_town()){
 		transformation_remaining = TOWN_TIME_LIMIT;
 		transformation_cooldown = TRANSFORMATION_COOLDOWN_TIME;
 		instance_deactivate_object(obj_bush_solid);
@@ -42,7 +42,7 @@ if(is_room_transition){
 	is_room_transition = false;
 }
 
-if(room != home){
+if(in_town()){
 	if (transformation_remaining >= 0) {
 		transformation_remaining -= (global.delta_second);
 	}

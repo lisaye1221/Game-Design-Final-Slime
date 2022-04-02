@@ -427,6 +427,9 @@
   },
   "resourceVersion": "1.0",
   "name": "rm_shop2",
-  "tags": [],
+  "tags": [
+    "town",
+    "shop",
+  ],
   "resourceType": "GMRoom",
 }

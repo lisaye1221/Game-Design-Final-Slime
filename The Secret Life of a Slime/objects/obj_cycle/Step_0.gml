@@ -8,10 +8,10 @@ if (global.paused){
 		alarm[2] += global.delta_second;
 	}
 }
-if (!instance_exists(obj_npc_with_menu)){
-	//which indicates it is not a shop
-		//if we put npc_with_menu in other rooms in the future, 
-		//we would need to change this
+var _cam = view_camera[0];
+left = camera_get_view_x(_cam);
+top = camera_get_view_y(_cam);
+if (!in_shop()){
 	if (!surface_exists(surf)) {
 		surf = surface_create(room_width, room_height);
 		surface_set_target(surf);
@@ -21,9 +21,6 @@ if (!instance_exists(obj_npc_with_menu)){
 	surface_set_target(surf);
 	draw_set_color(c_black)
 	draw_set_alpha(alpha);
-	var _cam = view_camera[0];
-	left = camera_get_view_x(_cam);
-	top = camera_get_view_y(_cam);
 	var _w = camera_get_view_width(_cam);
 	draw_rectangle(0,0,_w,guiHeight, 0);
 	if (currently == "night"){
@@ -34,7 +31,7 @@ if (!instance_exists(obj_npc_with_menu)){
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);
 	surface_reset_target();
-	}
+}
 else{
 	surface_free(surf);
 }

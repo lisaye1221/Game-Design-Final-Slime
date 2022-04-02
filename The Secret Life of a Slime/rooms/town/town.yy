@@ -391,6 +391,8 @@
   },
   "resourceVersion": "1.0",
   "name": "town",
-  "tags": [],
+  "tags": [
+    "town",
+  ],
   "resourceType": "GMRoom",
 }
