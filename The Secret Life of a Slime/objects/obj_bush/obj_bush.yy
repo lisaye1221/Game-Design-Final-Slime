@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {
-    "name": "obj_solid_interactable",
-    "path": "objects/obj_solid_interactable/obj_solid_interactable.yy",
+    "name": "obj_solid_interactable_run_in_back_ground",
+    "path": "objects/obj_solid_interactable_run_in_back_ground/obj_solid_interactable_run_in_back_ground.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

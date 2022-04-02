@@ -25,12 +25,7 @@ crop[6] = instance_create_layer(160, 320, "crops", obj_crop);
 crop[7] = instance_create_layer(192, 320, "crops", obj_crop);
 
 home_instances_to_run_in_bg = array_create(0);
-// machine
-array_push(home_instances_to_run_in_bg, inst_AA6628E);
-for(var i = 0; i < instance_number(obj_bush); i++){
-	show_debug_message("pushing"+string(i))
-	array_push(home_instances_to_run_in_bg,instance_find(obj_bush,i));
-}
+
 for(var i = 0; i < array_length(crop); i++){
 	array_push(home_instances_to_run_in_bg, instance_find(obj_crop,i));
 }

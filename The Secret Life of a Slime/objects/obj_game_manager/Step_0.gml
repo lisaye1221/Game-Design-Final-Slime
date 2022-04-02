@@ -32,7 +32,6 @@ if(is_room_transition){
 	else if(in_town()){
 		transformation_remaining = TOWN_TIME_LIMIT;
 		transformation_cooldown = TRANSFORMATION_COOLDOWN_TIME;
-		instance_deactivate_object(obj_bush_solid);
 		for(var i = 0; i < length; i++){
 			home_instances_to_run_in_bg[i].visible = false;	
 			home_instances_to_run_in_bg[i].interactable = false;

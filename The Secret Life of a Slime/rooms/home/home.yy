@@ -181,6 +181,11 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-64.0,"y":384.0,"resourceVersion":"1.0","name":"inst_7F34232D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_cycle","path":"objects/obj_cycle/obj_cycle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_40BB300A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player_menu_manager","path":"objects/obj_player_menu_manager/obj_player_menu_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_1094063F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"roomToGo","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"rm_self_house","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"newX","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"newY","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":208.0,"resourceVersion":"1.0","name":"inst_421B7195","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"ts_dirt","path":"tilesets/ts_dirt/ts_dirt.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":57,"SerialiseHeight":44,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -251,6 +256,7 @@
     {"name":"inst_1094063F","path":"rooms/home/home.yy",},
     {"name":"inst_440C1E9","path":"rooms/home/home.yy",},
     {"name":"inst_9F28ACF","path":"rooms/home/home.yy",},
+    {"name":"inst_421B7195","path":"rooms/home/home.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -274,8 +280,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "homeRooms",
+    "path": "folders/Rooms/homeRooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "home",
