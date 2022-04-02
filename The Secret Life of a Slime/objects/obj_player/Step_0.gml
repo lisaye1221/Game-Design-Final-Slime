@@ -86,7 +86,7 @@ if not (global.dead or global.paused or global.menu_on) {
 			for (var i = 0; i < instance_number(obj_crop); i ++;)
 			{
 			    with (instance_find(obj_crop,i)){
-					crop_growth_remaining = crop_growth_time;
+					grow_time_remaining = MAX_GROWTH_TIME;
 					harvestable = false;
 				}
 			}

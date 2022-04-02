@@ -21,22 +21,9 @@ if global.dead {
 }
 
 if(is_room_transition){
-	length = array_length(home_instances_to_run_in_bg)
-	if(in_home()){
-		for(var i = 0; i < length; i++){
-			home_instances_to_run_in_bg[i].visible = true;
-			home_instances_to_run_in_bg[i].interactable = true;
-			home_instances_to_run_in_bg[i].solid = true;
-		}
-	}
-	else if(in_town()){
+	if(in_town()){
 		transformation_remaining = TOWN_TIME_LIMIT;
 		transformation_cooldown = TRANSFORMATION_COOLDOWN_TIME;
-		for(var i = 0; i < length; i++){
-			home_instances_to_run_in_bg[i].visible = false;	
-			home_instances_to_run_in_bg[i].interactable = false;
-			home_instances_to_run_in_bg[i].solid = false;
-		}
 	}
 	is_room_transition = false;
 }

@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {
-    "name": "obj_solid_interactable_run_in_back_ground",
-    "path": "objects/obj_solid_interactable_run_in_back_ground/obj_solid_interactable_run_in_back_ground.yy",
+    "name": "obj_harvestable",
+    "path": "objects/obj_harvestable/obj_harvestable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,15 +28,9 @@
     {"x":32.0,"y":32.0,},
     {"x":0.0,"y":32.0,},
   ],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"prompt_text","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"objectId":{"name":"obj_solid_interactable","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"value":"Pick berry?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "interactables",
     "path": "folders/Objects/interactables.yy",

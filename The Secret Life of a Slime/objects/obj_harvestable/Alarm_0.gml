@@ -4,11 +4,11 @@
 // Inherit the parent event
 event_inherited();
 
-if(has_berries){
-	has_berries = false;
-	sprite_index = spr_bush_empty;
-	prompt_text = "The berry is still growing.";
+if(harvestable){
+	harvestable = false;
+	sprite_index = sprite_empty;
+	prompt_text = "The "+harvest.name+" is still growing.";
 	// add 1 unit of berries to inventory
-	gain_one_item(global.item_list.berries);
+	gain_one_item(harvest);
 	audio_play_sound(sfx_collect_berries, 2, false);
 }

@@ -24,12 +24,6 @@ crop[5] = instance_create_layer(128, 320, "crops", obj_crop);
 crop[6] = instance_create_layer(160, 320, "crops", obj_crop);
 crop[7] = instance_create_layer(192, 320, "crops", obj_crop);
 
-home_instances_to_run_in_bg = array_create(0);
-
-for(var i = 0; i < array_length(crop); i++){
-	array_push(home_instances_to_run_in_bg, instance_find(obj_crop,i));
-}
-
 
 // ** Time Limit for Town ** //
 TOWN_TIME_LIMIT = 40; // seconds
