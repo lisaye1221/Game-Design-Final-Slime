@@ -1,16 +1,14 @@
 /// @description create light surface
 // You can write your code in this editor
 if (global.paused){
-	if (alarm[1]>0){
-		alarm[1] += global.delta_second;
+	if (alarm[1] >= 0){
+		alarm[1] += 1;
 	}
-	if (alarm[2]>0){
-		alarm[2] += global.delta_second;
+	if (alarm[2] >= 0){
+		alarm[2] += 1;
 	}
 }
-var _cam = view_camera[0];
-left = camera_get_view_x(_cam);
-top = camera_get_view_y(_cam);
+
 if (!in_shop()){
 	if (!surface_exists(surf)) {
 		surf = surface_create(room_width, room_height);
@@ -21,6 +19,9 @@ if (!in_shop()){
 	surface_set_target(surf);
 	draw_set_color(c_black)
 	draw_set_alpha(alpha);
+	var _cam = view_camera[0];
+	left = camera_get_view_x(_cam);
+	top = camera_get_view_y(_cam);
 	var _w = camera_get_view_width(_cam);
 	draw_rectangle(0,0,_w,guiHeight, 0);
 	if (currently == "night"){

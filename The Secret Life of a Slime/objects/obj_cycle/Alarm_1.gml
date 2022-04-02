@@ -4,7 +4,7 @@ if (alpha >= 0){
 	alarm[1] = 1;
 } else if (alpha < 0){
 	surface_free(surf)
-	alarm[0] = 60 * day;		// amount of time until changes to night
+	alarm[0] = room_speed * day;		// amount of time until changes to night
 	show_debug_message("day");
 	currently = "day";
 }
