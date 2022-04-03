@@ -46,8 +46,12 @@ if(accept_key){
 		}
 		// no more pages left
 		else{
-			instance_destroy();	
 			global.paused = false;
+			// link text for options
+			if(option_num > 0){
+				create_textbox(option_link_id[option_pos]);
+			}
+			instance_destroy();	
 		}
 	}
 	// if current page isn't filled yet
@@ -78,11 +82,15 @@ draw_sprite_ext(
 
 // ** Draw the Options ** //
 if (draw_char == text_length[page] && page == option_num - 1){
+	
+	// option selection
+	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	option_pos = clamp(option_pos, 0, option_num - 1);
 
 	// draw the options
 	var _op_space = 30;
 	var _op_bord = 8;
-	var _op_margin = 10;
+	var _op_margin = 15;
 	for(var op = 0; op < option_num; op++){
 		// the option box
 		var _op_width = string_width(option[op]) + _op_bord * 2;
@@ -96,6 +104,16 @@ if (draw_char == text_length[page] && page == option_num - 1){
 		0, 
 		c_white, 
 		1);
+		
+		// draw arrow
+		if(option_pos == op){
+			draw_sprite(
+			spr_option_arrow, 
+			0,  
+			_textbox_x,
+			_textbox_y - (_op_space * option_num) + (_op_space * op) + 4)	
+		}
+		
 		// the option text
 		draw_text(
 		_textbox_x + _op_bord + _op_margin,
