@@ -15,7 +15,7 @@ if not global.dead {
 	draw_set_color(c_yellow);
 	draw_text(15, 600, "Gold: " + string(floor(global.gold)) + "G");
 
-	if(room != home){
+	if(in_town()){
 		draw_set_color(c_red);
 		draw_text(15, 615, "Transformation time remaining: " + string(ceil(transformation_remaining)));
 		draw_healthbar(15, 625, 115, 645, transformation_remaining * (100 / TOWN_TIME_LIMIT), c_white, c_red, c_red, 0, true, true);
