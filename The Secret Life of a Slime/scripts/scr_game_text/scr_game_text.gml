@@ -4,6 +4,17 @@ function scr_game_text(_text_id){
 	
 switch(_text_id){
 	
+	// ---------- Text in house area (inside) ------ //
+	case "home_hanging_picture":
+		scr_add_text("A nice picture of a road on a beautiful day.");
+	break;
+	case "home_clock":
+		scr_add_text("It's a clock.");
+		scr_add_text("Too bad I can't read it.");
+	break;
+	
+	// ---------- Text in home area (outside) ------ //
+	
 	// Text that would show up if you interact with sign 
 	case "village_sign":
 		scr_add_text("There is a sign here.");

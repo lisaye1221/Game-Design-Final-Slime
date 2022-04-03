@@ -30,3 +30,4 @@ option_num = 0;
 // flag for setting up things before drawing text
 setup = false
 
+global.paused = true;

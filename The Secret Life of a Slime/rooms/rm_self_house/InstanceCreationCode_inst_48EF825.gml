@@ -1,0 +1,1 @@
+text_id = "home_hanging_picture";
