@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-
 function tileCollidingHorizontal(_tilemap){
 	var meeting = false;	
 	var xCheck = bbox_left;
@@ -87,21 +86,14 @@ function basicTileCollisionHandleNoGravity(_tilemap){
 	var _colliding = false;
 	if (tileCollidingTop(_tilemap) || tileCollidingBot(_tilemap)){
 		var _xnew = x;
-		if (tileCollidingHorizontal(_tilemap)){
-			x = xprevious;
-			hspeed = 0;
-			_colliding = true;
-			if (tileCollidingTop(_tilemap) || tileCollidingBot(_tilemap)){
-				y = yprevious;
-				vspeed = 0;
-				_colliding = true;
-				x = _xnew;
-			}
-		} else{
+		x = xprevious;
+		_colliding = true;
+		if (tileCollidingTop(_tilemap) || tileCollidingBot(_tilemap)){
 			y = yprevious;
 			vspeed = 0;
 			_colliding = true;
 		}
+		x = _xnew;
 	}
 	if (tileCollidingHorizontal(_tilemap)){
 		x = xprevious;
