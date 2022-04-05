@@ -3,6 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-if (!global.paused){
-	create_textbox(text_id);	
-}
+create_textbox(text_id);	
