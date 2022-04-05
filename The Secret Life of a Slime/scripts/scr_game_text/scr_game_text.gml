@@ -36,6 +36,9 @@ switch(_text_id){
 			scr_add_text("I am not Mario.");
 			break;
 	
+	case "bed":
+		scr_add_text("I love my bed.");
+		scr_add_text("But I can't sleep since I'm a slime :(");
 	
 	
 }
