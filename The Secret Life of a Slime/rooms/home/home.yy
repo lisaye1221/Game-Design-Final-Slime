@@ -277,7 +277,6 @@
   "name": "home",
   "tags": [
     "home",
-    "indoor",
   ],
   "resourceType": "GMRoom",
 }
