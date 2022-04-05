@@ -7,6 +7,10 @@ function in_shop(){
 function in_town(){
 	return asset_has_tags(room,"town",asset_room);
 }
+
+function in_door(){
+	return asset_has_tags(room,"indoor",asset_room);
+}
 	
 function in_home(){
 	return asset_has_tags(room,"home",asset_room);

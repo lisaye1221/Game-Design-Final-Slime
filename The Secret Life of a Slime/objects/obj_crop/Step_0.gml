@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 depth = -y;
-	show_debug_message(grow_time_remaining)
 if(!harvestable && !growing){
 	growing = true;
 	grow_time_remaining = irandom_range(MIN_GROWTH_TIME, MAX_GROWTH_TIME);
@@ -18,5 +17,5 @@ else{
 if(growing && grow_time_remaining <= 0){
 	harvestable = true;
 	growing = false;
-	prompt_text = "Pick "+harvest.name+"?";
+	//prompt_text = "Pick "+harvest.name+"?";
 }

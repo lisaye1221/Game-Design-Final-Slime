@@ -566,6 +566,7 @@
   "tags": [
     "town",
     "shop",
+    "indoor",
   ],
   "resourceType": "GMRoom",
 }

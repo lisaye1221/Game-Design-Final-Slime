@@ -16,6 +16,6 @@ if (draw_prompt_flag){
 	var x_pos = x;
 	var y_pos = y + 30 + BOUNDARY_SPACE > room_height ? room_height-30 : y+30;
 	draw_set_color(c_white)
-	show_debug_message(view_camera[0])
+	//show_debug_message(view_camera[0])
 	draw_text(x_pos-camera_get_view_x(view_camera[0]),y_pos-camera_get_view_y(view_camera[0]),interactable_object.prompt_text);
 }

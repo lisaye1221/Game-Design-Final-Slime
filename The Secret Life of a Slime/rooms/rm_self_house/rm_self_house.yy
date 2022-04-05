@@ -336,6 +336,9 @@
   },
   "resourceVersion": "1.0",
   "name": "rm_self_house",
-  "tags": [],
+  "tags": [
+    "indoor",
+    "home",
+  ],
   "resourceType": "GMRoom",
 }

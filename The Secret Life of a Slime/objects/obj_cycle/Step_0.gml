@@ -9,7 +9,7 @@ if (global.paused){
 	}
 }
 
-if (!in_shop()){
+if (!in_door()){
 	if (!surface_exists(surf)) {
 		surf = surface_create(room_width, room_height);
 		surface_set_target(surf);

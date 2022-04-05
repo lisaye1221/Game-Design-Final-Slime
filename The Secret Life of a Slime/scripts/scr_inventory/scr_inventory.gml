@@ -117,5 +117,5 @@ function add_new_item_stack(item, count){
 		newItem = new new_item(item, itemCount);
 		array_push(inv, newItem);
 	}
-	show_debug_message(inv);
+	//show_debug_message(inv);
 }
