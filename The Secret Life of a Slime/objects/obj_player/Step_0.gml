@@ -110,6 +110,7 @@ if not (global.dead or global.paused or global.menu_on) {
 		interactable_object.alarm[0] = 1;
 		draw_prompt_flag = false;
 	}
+	
 	// using items
 	inv = obj_inventory_manager.inventory
 	inv_count = array_length(inv);
