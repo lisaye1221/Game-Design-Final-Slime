@@ -4,8 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-if(harvestable){
-	harvestable = false;
+if(ready){
+	ready = false;
 	sprite_index = sprite_empty;
 	prompt_text = "The "+harvest.name+" is still growing.";
 	// add 1 unit of berries to inventory

@@ -4,7 +4,7 @@
 // show alt_text if crops aren't ready to harvest yet
 this_crop = instance_find(obj_crop, 0);
 if (this_crop != noone){
-	switch (this_crop.harvestable){
+	switch (this_crop.ready){
 		case true:
 			which_text = 0;
 			break;

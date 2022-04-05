@@ -73,7 +73,7 @@ if not (global.dead or global.paused or global.menu_on) {
 	}
 	if(place_meeting(x, y, obj_prompt_grow_crops) && key_z){
 		// checking to see if crops are done growing (if any one is done, all are)
-		if (instance_find(obj_crop,0).harvestable == true){
+		if (instance_find(obj_crop,0).ready){
 		
 			// TODO: should we make this take time (time delay here?)
 		
@@ -87,7 +87,7 @@ if not (global.dead or global.paused or global.menu_on) {
 			{
 			    with (instance_find(obj_crop,i)){
 					grow_time_remaining = MAX_GROWTH_TIME;
-					harvestable = false;
+					ready = false;
 				}
 			}
 		}

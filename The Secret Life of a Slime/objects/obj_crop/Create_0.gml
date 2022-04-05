@@ -3,5 +3,5 @@
 event_inherited()
 image_speed = 0;
 interval = MAX_GROWTH_TIME / (image_number - 1);
-harvestable = false;
+ready = false;
 prompt_text = "You can't directly harvest wheat!"

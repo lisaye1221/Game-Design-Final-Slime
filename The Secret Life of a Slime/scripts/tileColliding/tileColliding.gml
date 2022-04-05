@@ -23,8 +23,10 @@ function tileCollidingHorizontal(_tilemap){
 	return meeting;
 }
 function tileCollidingTop(_tilemap){
-	var meeting = false;	
-	var yCheck= bbox_top;
+	var meeting = false;
+	//i don't know why but add one to ycheck solves the issue that 
+		//when player move left/right bottom at the bottom of collison tile it somes stuck
+	var yCheck= bbox_top+1;
 	for (var j = 0; j<5; ++j){
 		var xCheck = bbox_left + j *  (bbox_right-bbox_left) / 4;
 		draw_text(xCheck,yCheck,"!");
