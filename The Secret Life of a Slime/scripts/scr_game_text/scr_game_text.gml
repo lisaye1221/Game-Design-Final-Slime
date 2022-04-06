@@ -55,6 +55,15 @@ switch(_text_id){
 		scr_add_text("The trading shop.");
 		scr_add_text("Looks like I can sell things here.");
 		break;
+		
+	// ---------- Text for NPCs ------ //
+		
+	case "Lavana-first-meet":
+		scr_add_text("Hello, nice to meet you.");
+		scr_add_text("My name is Lavana, I sell food around here.");
+		break;
+		
+		
 	
 }
 

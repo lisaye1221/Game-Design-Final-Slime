@@ -1,5 +1,5 @@
-/// @description open menu on player interaction
+ /// @description open menu on player interaction
 // You can write your code in this editor
-if (!instance_exists(menu)){
+if (!instance_exists(menu) && !instance_exists(obj_food_shopping_page)){
 	global.paused = false;
 }

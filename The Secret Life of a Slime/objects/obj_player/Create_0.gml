@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-move_spd = 2;
+// move_spd = 2;
+move_spd = 4;
 image_speed = 0.3;
 
 slime_sprite[RIGHT] = spr_slime_right;

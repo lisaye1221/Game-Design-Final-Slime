@@ -4,8 +4,8 @@
 width = 64;
 height = 104;
 
-op_border = 8;
-op_space = 16;
+op_border = 12;
+op_space = 24;
 
 pos = 0;
 

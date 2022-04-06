@@ -4,7 +4,7 @@
 depth = -9999;
 
 // the max amount before it counts as a seperate item
-#macro FOOD_MAX 24
+#macro CROPS_MAX 24
 #macro SLIME_JELLY_MAX 2
 
 MAX_ITEM = 6;
@@ -45,14 +45,14 @@ global.item_list =
 		"Berries",
 		spr_item_berries,
 		spr_item_berries_menu,
-		FOOD_MAX, 
+		8, 
 		0
 	),
 	wheat : new create_item(
 		"Wheat",
 		spr_item_wheat,
 		spr_item_wheat_menu,
-		FOOD_MAX, 
+		CROPS_MAX, 
 		0
 	),
 	fish: new create_item(
