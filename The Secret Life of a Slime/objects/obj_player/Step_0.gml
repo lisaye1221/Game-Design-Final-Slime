@@ -28,16 +28,14 @@ if not (global.dead or global.paused or global.menu_on) {
 	if(x_speed < 0) {face = LEFT;}
 	sprite_index = sprite[face]
 	//if(x+x_speed > room_width || x+x_speed < 0){
-	if(x+x_speed > room_width){
+	/*if(x+x_speed > room_width){
 		x_speed = 0;
 	}
 	if(y+y_speed < 0 || y+y_speed >  room_height){
 		y_speed = 0;
-	}
+	}*/
 	
 	// move camera left when player walks off screen
-	//view_width = camera_get_view_width(cam);
-	//view_x = camera_get_view_x(cam);
 	if (x < camera_get_view_x(cam)){
 		//view_x -= view_width;	// i think this is shifting by an entire screen width
 		show_debug_message("player pos: " + string(x) + ", cam pos: " + string(camera_get_view_x(cam)));
@@ -46,6 +44,16 @@ if not (global.dead or global.paused or global.menu_on) {
 	if(x > camera_get_view_x(cam) + camera_get_view_width(cam)) {
 		camera_set_view_pos(cam, camera_get_view_x(cam) + camera_get_view_width(cam)/2, camera_get_view_y(cam));
 	}
+	
+	// move camera down when player walks below screen
+	if (y < camera_get_view_y(cam)){
+		show_debug_message("player pos: " + string(y) + ", cam pos: " + string(camera_get_view_y(cam)));
+		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) - camera_get_view_height(cam)/2);
+	}
+	if (y > camera_get_view_y(cam) + camera_get_view_height(cam)){
+		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) + camera_get_view_height(cam)/2);
+	}
+
 	// set collision for solid
 	var x_check = instance_place(x+x_speed, y, obj_solid);
 	if(x_check!=noone && x_check.solid){
