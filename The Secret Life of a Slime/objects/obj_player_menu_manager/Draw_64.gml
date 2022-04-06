@@ -12,8 +12,14 @@ if (global.menu_on) {
 
 	left = camera_get_view_width(cam)/2 - width/2;
 	top = camera_get_view_height(cam)/2 - height/2; // turn 250 to 350 if get rid of bottom UI
-
+	
+	var _tab_height = 50;
+	var _tab_width = 100;
+	var _tab_left = left+20;
+	var _tab_top = top-_tab_height+20;
+	
 	draw_sprite_stretched(spr_player_menu, 0, left, top, width, height);
+	draw_sprite_stretched(spr_player_menu_tab, 0, _tab_left, _tab_top, _tab_width, _tab_height);
 
 	left += 20;
 	top += 20;
