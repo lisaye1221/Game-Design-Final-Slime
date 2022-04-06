@@ -3,7 +3,6 @@
 old_ui_offset = 170;
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) - textbox_height) - old_ui_offset;
-show_debug_message("width:" + string(camera_get_view_width(view_camera[0])))
 
 accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z"));
 

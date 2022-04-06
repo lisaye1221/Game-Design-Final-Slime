@@ -1,0 +1,1 @@
+text_id = "trading_shop_sign";

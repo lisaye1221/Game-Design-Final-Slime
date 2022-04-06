@@ -39,7 +39,22 @@ switch(_text_id){
 	case "bed":
 		scr_add_text("I love my bed.");
 		scr_add_text("But I can't sleep since I'm a slime :(");
+		break;
+		
+	// ---------- Text in village area (outside) ------ //
 	
+	case "food_shop_sign":
+		scr_add_text("The food shop.");
+		scr_add_text("Looks like they sell food.");
+		break;
+	case "general_shop_sign":
+		scr_add_text("The general shop.");
+		scr_add_text("Looks like a place that sells general things.");
+		break;
+	case "trading_shop_sign":
+		scr_add_text("The trading shop.");
+		scr_add_text("Looks like I can sell things here.");
+		break;
 	
 }
 
