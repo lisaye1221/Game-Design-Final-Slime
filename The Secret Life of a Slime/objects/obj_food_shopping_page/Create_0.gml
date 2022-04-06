@@ -27,6 +27,8 @@ curr_inventory = scr_restock_food_shop_inventory(inventory);
 //curr_inventory[0] = create_shop_item_for_sale(global.item_list.berries, 4, 3);
 //curr_inventory[1] = create_shop_item_for_sale(global.item_list.wheat, 8, 2);
 
+// ------- Menu 0 Dimensions -------- // 
+
 option_num = array_length(curr_inventory);
 NUM_ITEM_SHOWN_MAX = 4;
 arrow_y_space = 40;
@@ -36,6 +38,24 @@ option_y_space = 24;
 
 background_w = 250;
 background_h = (NUM_ITEM_SHOWN_MAX * option_y_space) + (arrow_y_space * 2);
+
+// ------- Menu 1 Dimensions -------- // 
+
+background_item_details_w = 200;
+background_item_details_h = 200;
+
+item_info_magin_y = 40;
+item_info_magin_x = 50;
+
+
 shop_bg_spr = spr_shop_bg;
 
+
+// ------- Menu variables -------- // 
+
 option_pos = 0;
+selected_item = {};
+
+// menu_level = 0 - on the list of items
+// menu_level = 1 - on the item details
+menu_level = 0;
