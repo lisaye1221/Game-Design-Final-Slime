@@ -7,4 +7,5 @@ if (global.menu_on) {
 else {
 	global.menu_on = true;
 	global.paused = true;
+	i_cursor = 0;
 }

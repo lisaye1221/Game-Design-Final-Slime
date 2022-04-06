@@ -5,3 +5,5 @@ rowLength = 6;
 global.menu_on = false;
 
 i_cursor = 0;
+
+tab_index = 0;
