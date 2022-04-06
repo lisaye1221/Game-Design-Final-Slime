@@ -31,7 +31,7 @@ if not (global.dead or global.paused or global.menu_on) {
 	if(x+x_speed > room_width){
 		x_speed = 0;
 	}
-	if(y+y_speed < 0 || y+y_speed >  525){
+	if(y+y_speed < 0 || y+y_speed >  room_height){
 		y_speed = 0;
 	}
 	

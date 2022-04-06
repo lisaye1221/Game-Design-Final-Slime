@@ -41,6 +41,11 @@ switch(_text_id){
 		scr_add_text("But I can't sleep since I'm a slime :(");
 		break;
 		
+	case "door_locked":
+		scr_add_text("Door is locked.");
+		scr_add_text("Maybe the owner is not in town now.");
+		break;
+		
 	// ---------- Text in village area (outside) ------ //
 	
 	case "food_shop_sign":

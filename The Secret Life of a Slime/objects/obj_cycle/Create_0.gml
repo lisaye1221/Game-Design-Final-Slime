@@ -5,8 +5,7 @@ color = c_black;
 
 alarm[0] = room_speed * day;
 
-//guiHeight = display_get_gui_height();
-guiHeight = 540;
+guiHeight = display_get_gui_height();
 
 currently = "day";
 
