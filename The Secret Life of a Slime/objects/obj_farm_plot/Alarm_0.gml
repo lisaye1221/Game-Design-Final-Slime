@@ -13,4 +13,3 @@ if (ready){
 	ready=false;
 }
 // the rest is done by the crop itself
-// should delete it afterwards
