@@ -5,11 +5,13 @@
 
 if (global.menu_on) {
 
-	width = 24*32;
-	height = 12*32;
+	width = 12*64+40;
+	height = 6*64+40;
+	
+	cam = view_get_camera(0);
 
-	left = x + 450 - width/2;
-	top = y + 250 - height/2; // turn 250 to 350 if get rid of bottom UI
+	left = camera_get_view_width(cam)/2 - width/2;
+	top = camera_get_view_height(cam)/2 - height/2; // turn 250 to 350 if get rid of bottom UI
 
 	draw_sprite_stretched(spr_player_menu, 0, left, top, width, height);
 
