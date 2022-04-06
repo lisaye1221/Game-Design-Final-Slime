@@ -4,7 +4,7 @@ event_inherited()
 
 interactable = true; // false when we are at town
 // statuses are: "empty", "growing", "ready"
-status = "empty";
+ready = true;
 
 prompt_text = "Plant seed?"
 
