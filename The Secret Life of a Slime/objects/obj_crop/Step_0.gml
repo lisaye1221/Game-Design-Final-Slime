@@ -17,5 +17,5 @@ else{
 if(growing && grow_time_remaining <= 0){
 	ready = true;
 	growing = false;
-	//prompt_text = "Pick "+harvest.name+"?";
+	prompt_text = "Pick "+harvest.name+"?";
 }

@@ -69,6 +69,13 @@ global.item_list =
 		1,
 		0
 	),
+	seeds: new create_item(
+		"Seeds",
+		spr_item_seeds,
+		spr_item_seeds,
+		10,
+		3
+	),
 }
 
 // create the inventory

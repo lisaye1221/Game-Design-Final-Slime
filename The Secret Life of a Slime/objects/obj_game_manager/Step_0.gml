@@ -47,7 +47,7 @@ if(room == home){
 	}
 	if(transformation_cooldown < 0) {transformation_cooldown = 0;}
 	
-	if firstTimeFarm {
+	/*if firstTimeFarm {
 		crop[0] = instance_create_layer(96, 288, "crops", obj_crop);
 		crop[1] = instance_create_layer(128, 288, "crops", obj_crop);
 		crop[2] = instance_create_layer(160, 288, "crops", obj_crop);
@@ -58,6 +58,6 @@ if(room == home){
 		crop[7] = instance_create_layer(192, 320, "crops", obj_crop);
 	
 		firstTimeFarm = false;
-	}
+	}*/
 
 }
