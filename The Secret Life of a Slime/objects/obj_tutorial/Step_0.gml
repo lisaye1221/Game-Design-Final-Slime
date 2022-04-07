@@ -14,6 +14,6 @@ else if (keyboard_check_pressed(vk_enter)) {
 
 
 
-if tut_keys_on and keyboard_check_pressed(ord("X")) {
-	tut_keys_on = false;
+if global.tut_keys_on and keyboard_check_pressed(ord("X")) {
+	global.tut_keys_on = false;
 }

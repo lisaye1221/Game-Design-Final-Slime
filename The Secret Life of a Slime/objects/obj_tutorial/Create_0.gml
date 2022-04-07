@@ -18,6 +18,5 @@ sentence_index = 0;
 
 sentence = sentences[sentence_index]
 
-tut_keys_on = true;
 
 alarm[0] = 0.02 * room_speed;

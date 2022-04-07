@@ -29,4 +29,7 @@ global.tiles_collision_name = "Tiles_Collision";
 global.player_in_shop = false;
 global.force_player_home = false;
 
+
+global.tut_keys_on = true;
+
 global.paused = false;

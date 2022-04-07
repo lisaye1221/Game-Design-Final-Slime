@@ -14,7 +14,7 @@ if global.tutorial_ended == false {
 */
 
 
-if tut_keys_on {
+if global.tut_keys_on {
 	draw_sprite(spr_tutorial_menu,0,145,50);
 	
 	draw_sprite(spr_tutorial_buttons_up,0,250,190);
