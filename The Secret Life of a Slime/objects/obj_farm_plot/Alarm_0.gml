@@ -8,7 +8,7 @@ event_inherited();
 count = irandom(9);
 
 // if you have seeds AND no plant here currently
-if (ready){
+if (get_item_count(global.item_list.seeds) > 0 && ready){
 	ready = false;
 	// plant (should depend on which seed)
 	if (count%2 == 0){
@@ -17,6 +17,7 @@ if (ready){
 		instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tomato_crop);
 	}
 	prompt_text = "";
+	lose_one_item(global.item_list.seeds);
 	ready=false;
 }
 // the rest is done by the crop itself
