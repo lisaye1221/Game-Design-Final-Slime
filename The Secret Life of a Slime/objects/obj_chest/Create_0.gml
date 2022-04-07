@@ -3,5 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-storage_open = false;
 
