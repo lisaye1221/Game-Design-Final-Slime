@@ -11,10 +11,10 @@ s1 = ["WAKE UP, my fellow slime",
 "or hell, as I like to call it. Try moving around."]
 
 s2 = ["Good job, bet that hardwood feels C-O-L-D",
-"Now, try interacting with that bed.","x"]
+"Now, try interacting with that bed."]
 
 s3 = ["The human world is full of mysterious things",
-"Head out of the house when you're done exploring"]
+"Head out of the house when you're done exploring"," "]
 
 s4 = ["This is your farm!", "Beautiful, isn't it?",
 "Uh-oh, looks like your energy has depleted",
@@ -39,6 +39,3 @@ sentences = ["a","b","c"]
 sentence_index = 0;
 
 sentence = s1[sentence_index]
-
-
-alarm[0] = 0.02 * room_speed;

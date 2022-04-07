@@ -5,20 +5,21 @@ if global.tut_keys_on and keyboard_check_pressed(ord("X")) {
 }
 
 if keyboard_check_pressed(ord("S")) {
-	alarm[1] = room_speed * 0.1;
+	global.tut_keys_on = false;
+	global.tutorial_ended = true;
 }
 
-if (b1 and sentence_index < array_length(s1) - 1 and keyboard_check_pressed(vk_enter)) {	
+if (b1 and sentence_index < array_length(s1) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s1[sentence_index]
 }
 
-if (b2 and sentence_index < array_length(s2) - 1 and keyboard_check_pressed(vk_enter)) {	
+if (b2 and sentence_index < array_length(s2) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s2[sentence_index]
 }
 
-if (b3 and sentence_index < array_length(s3) - 1 and keyboard_check_pressed(vk_enter)) {	
+if (b3 and sentence_index < array_length(s3) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s3[sentence_index]
 }
@@ -28,10 +29,14 @@ keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)) {
 	alarm[2] = 0.35 * room_speed;
 }
 
-if b2 and global.touchedBed {
+if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {
 	alarm[3] = 2.0 * room_speed;
 	global.touchedBed = false;
 	
+}
+
+if b3 and sentence_index == 2 {
+	global.tutorial_ended = true;
 }
 
 

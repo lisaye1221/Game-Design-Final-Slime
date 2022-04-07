@@ -11,6 +11,8 @@ global.time = 0;
 // higher = depletes faster
 ENERGY_DEPLETION_MULTIPLIER = 3.5;
 
+instance_deactivate_object(obj_roomMoveEvent);
+
 
 // ** Game States ** 
 is_room_transition = false;
@@ -26,6 +28,7 @@ transformation_cooldown = 0;
 firstTimeFarm = true
 
 global.tiles_collision_name = "Tiles_Collision";
+global.tiles_collision_name_2 = "Door_Collision";
 global.player_in_shop = false;
 global.force_player_home = false;
 

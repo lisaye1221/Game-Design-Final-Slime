@@ -44,7 +44,8 @@ if global.tut_keys_on {
 	draw_text(620,330,"Use E")
 	draw_text(670,350,"for inventory")
 
-	draw_text(530,420,"Press X to continue")
+	draw_text(590,400,"Press X to continue the tutorial")
+	draw_text(570,425,"Press S to skip the tutorial")
 
 }
 draw_set_font(ft_dialog)

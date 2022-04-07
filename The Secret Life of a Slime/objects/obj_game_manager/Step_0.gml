@@ -41,6 +41,14 @@ if(in_town()){
 		}
 	}
 }
+
+if global.tutorial_ended {
+	instance_activate_object(obj_roomMoveEvent);
+}
+	
+
+
+
 if(room == home){
 	if(transformation_cooldown > 0){
 		transformation_cooldown -= (global.delta_second);	
