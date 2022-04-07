@@ -9,6 +9,28 @@ s4 = ["This is your farm!", "Beautiful, isn't it?",
 "Uh-oh, looks like your energy has depleted",
 "Head over to the bushes and grab a berry"]
 
+s5 = ["Look at the corner, it's in your inventory ",
+"You can even press E to view its descriptions "]
+
+s6 = ["Press M to navigate through the tabs",
+"The quest tab will be VERY important later.. teehee"]
+
+//first quest is to grab all 3 berries
+
+s9 = ["You can click 3 to eat the berry",""]
+
+s10 = ["Notice, the berry don't heal much..", 
+"and the bushes take too long to produce them",
+"That's why you need to grow real food yourself"]
+
+s11 = ["Go to the farm area and time to get your hands slimy", 
+"Press 1 for tomato seeds", "Press 2 for wheat"]
+
+s12 = ["But... you can't eat it. So you gotta use that machine"]
+
+//you need 3 wheat to use machine
+
+
 xy = [
 "In the human world, you must eat to stay alive",
 "So keep that energy bar up!",
