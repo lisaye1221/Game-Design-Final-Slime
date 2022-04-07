@@ -37,7 +37,7 @@ switch(_text_id){
 			break;
 	
 	case "bed":
-		scr_add_text("I love my bed.");
+		scr_add_text("This surface is very soft (Press Z to continue).");
 		scr_add_text("But I can't sleep since I'm a slime :(");
 		break;
 		
