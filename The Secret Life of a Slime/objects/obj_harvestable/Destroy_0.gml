@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-// Inherit the parent event
-event_inherited();
-
-solid = false;
+if (farm_plot != noone){
+	instance_activate_object(farm_plot)
+}

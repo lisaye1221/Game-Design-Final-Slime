@@ -6,3 +6,4 @@ ready = true;
 growing = false;
 grow_time_remaining = 0;
 prompt_text = "Pick "+harvest.name+"?";
+farm_plot = noone;
