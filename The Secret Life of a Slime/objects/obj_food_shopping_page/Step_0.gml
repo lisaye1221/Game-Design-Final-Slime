@@ -1,13 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-accept_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"));
-exit_key = keyboard_check_pressed(ord("X"));
+disabled = instance_exists(obj_textbox);
 
-up_key = keyboard_check_pressed(vk_up);
-down_key = keyboard_check_pressed(vk_down);
-left_key = keyboard_check_pressed(vk_left);
-right_key = keyboard_check_pressed(vk_right);
+accept_key = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && !disabled;
+exit_key = keyboard_check_pressed(ord("X")) && !disabled;
+
+up_key = keyboard_check_pressed(vk_up) && !disabled;
+down_key = keyboard_check_pressed(vk_down) && !disabled;
+left_key = keyboard_check_pressed(vk_left) && !disabled;
+right_key = keyboard_check_pressed(vk_right) && !disabled;
 
 if(up_key){
 	if(menu_level == 0){
@@ -67,6 +69,9 @@ if(accept_key){
 			
 			// go back to prev menu
 			menu_level--;
+		}
+		else{
+			create_textbox("warn-no-money");	
 		}
 	}
 }

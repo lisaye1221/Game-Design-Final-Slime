@@ -46,7 +46,7 @@ if(accept_key){
 		}
 		// no more pages left
 		else{
-			global.paused = false;
+			global.paused = is_previously_paused;
 			// link text for options
 			if(option_num > 0){
 				create_textbox(option_link_id[option_pos]);

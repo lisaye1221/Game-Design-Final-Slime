@@ -69,7 +69,14 @@ switch(_text_id){
 		break;
 		
 		
+	// ---------- Text for Warnings/Hints ------ //
 	
+	case "warn-no-money":
+		scr_add_text("I don't have enough money for that.");
+		break;
+	case "warn-cannot-use-item":
+		scr_add_text("I can't use that item right now");
+		break;
 }
 
 }
