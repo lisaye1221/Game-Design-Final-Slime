@@ -13,6 +13,9 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_tutorial_farm","path":"objects/obj_tutorial_farm/obj_tutorial_farm.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":265.0,"y":72.0,"resourceVersion":"1.0","name":"inst_73D846D3","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":-10100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"tutorial","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"ts_town_big","path":"tilesets/ts_town_big/ts_town_big.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":57,"SerialiseHeight":44,"TileSerialiseData":[
 522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,522,523,524,525,2147483648,
 586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,586,587,588,589,2147483648,
@@ -279,6 +282,7 @@
     {"name":"inst_73904987","path":"rooms/home/home.yy",},
     {"name":"inst_2CF55ECA","path":"rooms/home/home.yy",},
     {"name":"inst_7E2348FC","path":"rooms/home/home.yy",},
+    {"name":"inst_73D846D3","path":"rooms/home/home.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
