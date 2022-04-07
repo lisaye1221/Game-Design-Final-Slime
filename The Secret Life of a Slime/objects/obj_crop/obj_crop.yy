@@ -3,7 +3,7 @@
     "name": "spr_crop",
     "path": "sprites/spr_crop/spr_crop.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,
