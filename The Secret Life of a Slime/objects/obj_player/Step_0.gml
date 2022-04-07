@@ -114,10 +114,16 @@ if not (global.dead or global.paused or global.menu_on) {
 	else {
 		draw_prompt_flag = false;
 	}
+	if (interactable_object == obj_farm_plot && draw_prompt_flag){
+		if (keyboard_check_pressed(ord("1"))){
+			show_debug_message("youo hit 1");
+		}
+	}
 	if (keyboard_check_pressed(ord("Z")) && draw_prompt_flag){
 		interactable_object.alarm[0] = 1;
 		draw_prompt_flag = false;
 	}
+	
 	
 	// using items
 	inv = obj_inventory_manager.inventory

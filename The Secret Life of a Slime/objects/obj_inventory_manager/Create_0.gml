@@ -75,13 +75,21 @@ global.item_list =
 		0,
 		"Parts description"
 	),
-	seeds: new create_item(
-		"Seeds",
+	wheat_seeds: new create_item(
+		"Wheat Seeds",
 		spr_item_seeds,
 		spr_item_seeds_menu,
 		10,
 		0,
-		"Seeds description"
+		"Wheat Seeds description"
+	),
+	tomato_seeds: new create_item(
+		"Tomato Seeds",
+		spr_item_tom_seeds,
+		spr_item_tom_seeds_menu,
+		10,
+		0,
+		"Tomato Seeds description"
 	),
 	tomatoes : new create_item(
 		"Tomato",
@@ -97,4 +105,5 @@ global.item_list =
 inventory = array_create(0);
 
 // starting out with 3 seeds
-gain_item(global.item_list.seeds, 3);
+gain_item(global.item_list.wheat_seeds, 3);
+gain_item(global.item_list.tomato_seeds, 3);
