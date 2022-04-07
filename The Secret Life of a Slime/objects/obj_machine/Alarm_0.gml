@@ -54,3 +54,9 @@ if (this_machine != noone){
 				
 		}
 	}
+	
+if (status == "repairing" || status == "busy"){
+	ready = false;
+}else{
+	ready = true;
+}

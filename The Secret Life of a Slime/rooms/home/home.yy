@@ -190,7 +190,6 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_town_sign","path":"objects/obj_town_sign/obj_town_sign.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":832.0,"y":288.0,"resourceVersion":"1.0","name":"inst_7DD3B042","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_prompt_town","path":"objects/obj_prompt_town/obj_prompt_town.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":352.0,"resourceVersion":"1.0","name":"inst_5F9384DB","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_exclamation","path":"objects/obj_exclamation/obj_exclamation.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.0588235781,"scaleY":0.0588235334,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":78.0,"resourceVersion":"1.0","name":"inst_47AABA52","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":96.0,"resourceVersion":"1.0","name":"inst_3FE4824E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":576.0,"resourceVersion":"1.0","name":"inst_2BF56555","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":448.0,"resourceVersion":"1.0","name":"inst_10A214B9","tags":[],"resourceType":"GMRInstance",},
@@ -258,7 +257,6 @@
     {"name":"inst_7DD3B042","path":"rooms/home/home.yy",},
     {"name":"inst_5F9384DB","path":"rooms/home/home.yy",},
     {"name":"inst_1E48DA21","path":"rooms/home/home.yy",},
-    {"name":"inst_47AABA52","path":"rooms/home/home.yy",},
     {"name":"inst_3FE4824E","path":"rooms/home/home.yy",},
     {"name":"inst_2BF56555","path":"rooms/home/home.yy",},
     {"name":"inst_10A214B9","path":"rooms/home/home.yy",},

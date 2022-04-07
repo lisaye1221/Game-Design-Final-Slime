@@ -19,6 +19,8 @@ this_machine = id;
 prompt_text_lst = ["use machine? (" + string(convert_from_count) +" "+convert_from.name+")",
 	"converting...", 
 	"collect the "+convert_to.name+"?",
-	"repair machine? (1 parts) ("+ string(ENERGY_COST_TO_REPAIR) +" energy)"]
+	"repair machine? (1 parts) ("+ string(ENERGY_COST_TO_REPAIR) +" energy)",
+	"repairing..."]
 which_text = 0;
 
+exclamation = instance_create_layer(x+sprite_width-sprite_xoffset,y-sprite_yoffset,"Instances",obj_exclamation)
