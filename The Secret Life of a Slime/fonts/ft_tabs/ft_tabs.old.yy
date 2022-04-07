@@ -133,7 +133,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ft_inventory",
+  "name": "ft_tabs",
   "tags": [],
   "resourceType": "GMFont",
 }
