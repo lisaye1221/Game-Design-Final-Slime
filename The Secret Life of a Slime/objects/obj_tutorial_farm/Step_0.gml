@@ -5,6 +5,7 @@ if keyboard_check_pressed(ord("S")) {
 if (b4 and sentence_index < array_length(s4) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s4[sentence_index]
+	show_debug_message("XYZ")
 }
 
 if (b5 and sentence_index < array_length(s5) - 1 and keyboard_check_pressed(ord("X"))) {	
@@ -19,10 +20,18 @@ if (b6 and sentence_index < array_length(s6) - 1 and keyboard_check_pressed(ord(
 
 
 
-if b4 and obj_player.place_meeting(obj_player.x,obj_player.y,obj_bush) {
-	b4 = false;
-	b5 = true;
+with (obj_player) {
+	if place_meeting(x,y,obj_bush) {
+		show_debug_message("iM HEREEEEEEEEEEE")
+		b4 = false;
+		b5 = true;
+		sentence_index = 0;
+		sentence = s5[sentence_index]
+	}
 }
+
+
+
 
 /*
 if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {
