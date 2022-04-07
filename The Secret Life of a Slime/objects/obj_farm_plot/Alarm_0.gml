@@ -4,20 +4,56 @@
 // Inherit the parent event
 event_inherited();
 
-// just random between whether its wheat or tomato rn
-count = irandom(9);
+// helper func
+// basically we only have code to use seeds here... if not a seed item doesnt get used
+function use_item(item){
+	switch(item.name){
+		case global.item_list.wheat_seeds.name:
+			instance_create_layer(relative_pos_x+15, relative_pos_y+8, "crops", obj_crop);
+			lose_one_item(item);
+			break;
+		case global.item_list.tomato_seeds.name:
+			instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tomato_crop);
+			lose_one_item(item);
+			break;
+		default:
+			return;
+	}
+}
 
 // if you have seeds AND no plant here currently
 if (ready){
 	ready = false;
-	// plant (should depend on which seed)
-	if (count%2 == 0){
-		instance_create_layer(relative_pos_x+15, relative_pos_y+8, "crops", obj_crop);
-	} else {
-		instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tomato_crop);
+	inv = obj_inventory_manager.inventory
+	//inv_count = array_length(inv);
+	
+	// plant (attempt to use item if seed)
+	switch (inv_slot){
+		case 0:
+			break;
+		case 1:
+			use_item(inv[0]);
+			break;
+		case 2:
+			use_item(inv[1]);
+			break;
+		case 3:
+			use_item(inv[2]);
+			break;
+		case 4:
+			use_item(inv[3]);
+			break;
+		case 5:
+			use_item(inv[4]);
+			break;
+		case 6:
+			use_item(inv[5]);
+			break;			
 	}
 	prompt_text = "";
-	//lose_one_item(global.item_list.seeds);
 	ready=false;
+	// make it return whether successful
 }
 // the rest is done by the crop itself
+
+

@@ -42,7 +42,7 @@ if (_v_move != 0) {
 var _t_left = keyboard_check_pressed(ord("N"));
 var _t_right = keyboard_check_pressed(ord("M"));
 
-show_debug_message(_t_right);
+//show_debug_message(_t_right);
 
 var _t_move = _t_right - _t_left;
 var _t_size = array_length(tabs);

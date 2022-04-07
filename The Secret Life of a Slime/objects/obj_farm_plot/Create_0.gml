@@ -11,3 +11,5 @@ prompt_text = "Plant seed?"
 relative_pos_x = x;
 relative_pos_y = y;
 
+uses_inventory = true;
+inv_slot = 0;

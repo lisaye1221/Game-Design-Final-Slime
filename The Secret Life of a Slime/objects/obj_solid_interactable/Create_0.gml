@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 interactable = true;
-//uses_inventory = false;
+uses_inventory = false;

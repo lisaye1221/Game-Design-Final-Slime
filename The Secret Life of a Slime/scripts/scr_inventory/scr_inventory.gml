@@ -94,7 +94,7 @@ function lose_item(item, count){
 	}
 	if(remainingCount <= 0){
 		// use up the stacks
-		show_debug_message(to_delete);
+		//show_debug_message(to_delete);
 		for(var i = 0; i < array_length(to_delete); i++){
 			array_delete(inv, to_delete[i], 1);
 		}

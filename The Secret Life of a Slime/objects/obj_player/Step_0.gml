@@ -114,12 +114,43 @@ if not (global.dead or global.paused or global.menu_on) {
 	else {
 		draw_prompt_flag = false;
 	}
-	if (interactable_object == obj_farm_plot && draw_prompt_flag){
-		if (keyboard_check_pressed(ord("1"))){
-			show_debug_message("youo hit 1");
+
+	// only for planting seeds ******
+	if (draw_prompt_flag && interactable_object.uses_inventory){
+		
+		inv = obj_inventory_manager.inventory
+		inv_count = array_length(inv);
+	
+		if (key_1 && inv_count >= 1){
+			interactable_object.inv_slot = 1;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_2 && inv_count >= 2){
+			interactable_object.inv_slot = 2;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_3 && inv_count >= 3){
+			interactable_object.inv_slot = 3;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_4 && inv_count >= 4){
+			interactable_object.inv_slot = 4;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_5 && inv_count >= 5){
+			interactable_object.inv_slot = 5;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_6 && inv_count >= 6){
+			interactable_object.inv_slot = 6;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
 		}
 	}
-	if (keyboard_check_pressed(ord("Z")) && draw_prompt_flag){
+	//********
+	
+	// use regular interactables
+	else if (keyboard_check_pressed(ord("Z")) && draw_prompt_flag){
 		interactable_object.alarm[0] = 1;
 		draw_prompt_flag = false;
 	}
