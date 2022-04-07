@@ -5,7 +5,6 @@ if keyboard_check_pressed(ord("S")) {
 if (b4 and sentence_index < array_length(s4) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s4[sentence_index]
-	show_debug_message("XYZ")
 }
 
 if (b5 and sentence_index < array_length(s5) - 1 and keyboard_check_pressed(ord("X"))) {	
@@ -18,15 +17,71 @@ if (b6 and sentence_index < array_length(s6) - 1 and keyboard_check_pressed(ord(
 	sentence = s6[sentence_index]
 }
 
+if (b9 and sentence_index < array_length(s9) - 1 and keyboard_check_pressed(ord("X"))) {	
+	sentence_index +=1
+	sentence = s9[sentence_index]
+}
+
+if (b10 and sentence_index < array_length(s10) - 1 and keyboard_check_pressed(ord("X"))) {	
+	sentence_index +=1
+	sentence = s10[sentence_index]
+}
+
+if (b11 and sentence_index < array_length(s11) - 1 and keyboard_check_pressed(ord("X"))) {	
+	sentence_index +=1
+	sentence = s11[sentence_index]
+}
 
 
-if (obj_player.interactable_object!= noone &&obj_player.interactable_object.object_index == obj_bush){
-		show_debug_message("iM HEREEEEEEEEEEE")
+if b4 and sentence_index == array_length(s4) - 1 and (obj_player.interactable_object!= noone && obj_player.interactable_object.object_index == obj_bush) and keyboard_check_pressed(ord("Z")){
 		b4 = false;
 		b5 = true;
 		sentence_index = 0;
 		sentence = s5[sentence_index]
 }
+
+if b5 and keyboard_check_pressed(ord("E")) {
+		b5 = false;
+		b6 = true;
+		sentence_index = 0;
+		sentence = s6[sentence_index]
+}
+
+if b6 and sentence_index == array_length(s6) - 1  and keyboard_check_pressed(ord("E")) {
+		b6 = false;
+		b9 = true;
+		sentence_index = 0;
+		sentence = s9[sentence_index]
+}
+
+if b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("3")) {
+		b9 = false;
+		b10 = true;
+		sentence_index = 0;
+		sentence = s10[sentence_index]
+}
+
+
+if b10 and (obj_player.interactable_object!= noone && obj_player.interactable_object.object_index == obj_farm_plot) {
+		b10 = false;
+		b11 = true;
+		sentence_index = 0;
+		sentence = s11[sentence_index]
+}
+
+if b11 and sentence_index == array_length(s11) - 1  and keyboard_check_pressed(ord("X")) {
+		b11 = false;
+		b12 = true;
+		sentence_index = 0;
+		sentence = s10[sentence_index]
+}
+
+if b12 {
+	global.tutorial_ended_farm = true;
+}
+
+
+
 
 
 

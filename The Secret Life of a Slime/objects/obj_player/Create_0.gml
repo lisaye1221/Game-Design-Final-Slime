@@ -23,6 +23,7 @@ global.energy_max=100;
 global.gold = 10;
 global.dead = false;
 global.tutorial_ended = false;
+global.tutorial_ended_farm = false;
 global.touchedBed = false;
 global.tutorialBedDone = false;
 

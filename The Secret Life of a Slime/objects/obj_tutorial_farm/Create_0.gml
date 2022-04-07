@@ -1,32 +1,40 @@
-global.tutorial_ended_farm = false;
-
 b4 = true;
 b5 = false;
 b6 = false;
-b7 = false;
-b8 = false;
+b9 = false;
+b10 = false;
+b11 = false;
+b12 = false;
 
 s4 = ["This is your farm!", "Beautiful, isn't it?",
 "Uh-oh, looks like your energy has depleted",
 "Head over to the bushes and grab a berry"]
 
-s5 = ["Look at the corner, it's in your inventory ",
-"You can even press E to view its descriptions "]
+s5 = ["TA-DA! Look at the corner, it's in your inventory now",
+"You can even press E to view your items"]
 
-s6 = ["Press M to navigate through the tabs",
-"The quest tab will be VERY important later.. teehee"]
+s6 = ["These are all your items, you can only hold 6 items at once",
+"You can use the arrow keys to take a closer look",
+"Press M and N to navigate through the tabs",
+"The journal tab will be VERY important later.. teehee",
+"Now press E again to close your inventory"]
 
 //first quest is to grab all 3 berries
 
 s9 = ["In the human world, you must eat to stay alive",
-"You can click 3 to eat the berry","Great job. Keep that energy bar up!"]
+"You can press 3 to eat the berry"]
 
-s10 = ["Notice, the berry don't heal much..", 
-"and the bushes take too long to produce them",
-"That's why you need to grow real food yourself"]
+s10 = [
+"Great job. Keep that energy bar up!", "You use 1-6 to use items in your inventory",
+"Notice, the berry don't heal much..", 
+"and the bushes take LOOONG to produce them",
+"That's why you need to get your hands slimey",
+"and grow real food yourself",
+"Head over to the farm area",]
 
-s11 = ["Go to the farm area and time to get your hands slimy", 
-"Press 1 for tomato seeds", "Press 2 for wheat"]
+s11 = ["It's time to grow your own food",
+"Press 1 for wheat seeds", "Press 2 for tomato",""]
+
 
 s12 = ["But... you can't eat it. So you gotta use that machine"]
 
