@@ -9,6 +9,8 @@ if (layer_exists(global.tiles_collision_name)){
 	basicTileCollisionHandleNoGravity(layer_tilemap_get_id(global.tiles_collision_name))
 }
 
+/*
 if (!global.tutorial_ended and layer_exists(global.tiles_collision_name_2)){
 	basicTileCollisionHandleNoGravity(layer_tilemap_get_id(global.tiles_collision_name_2))
 }
+*/

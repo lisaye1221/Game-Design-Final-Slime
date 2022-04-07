@@ -42,9 +42,7 @@ if(in_town()){
 	}
 }
 
-if global.tutorial_ended {
-	instance_activate_object(obj_roomMoveEvent);
-}
+
 	
 
 
