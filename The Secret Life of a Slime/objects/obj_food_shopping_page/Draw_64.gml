@@ -166,9 +166,56 @@ if(menu_level > 0) {
 	);
 	
 	// draw the selection interface
+	// left arrow
+	draw_sprite_ext(
+	spr_menu_arrow,
+	0,
+	details_menu_x + selection_margin_x,
+	details_menu_y + item_info_magin_y + selection_margin_y + sprite_get_width(spr_menu_arrow)/2,
+	1,
+	1,
+	90,
+	c_white,
+	1
+	);
 	
+	// num of items selected
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_set_color(c_yellow);
+	draw_text_transformed(
+	details_menu_x + background_item_details_w / 2, 
+		details_menu_y + item_info_magin_y + selection_margin_y,
+		string(selected_amount),
+		1.5,
+		1.5,
+		0
+	);
+	
+	// right arrow
+	draw_sprite_ext(
+	spr_menu_arrow,
+	0,
+	details_menu_x + background_item_details_w - selection_margin_x,
+	details_menu_y + item_info_magin_y + selection_margin_y - sprite_get_width(spr_menu_arrow)/2,
+	1,
+	1,
+	270,
+	c_white,
+	1
+	);
+	
+	// draw the total cost
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	draw_set_color(c_white);
+	draw_text(
+		details_menu_x + 20,
+		details_menu_y + item_info_magin_y + selection_margin_y + cost_display_margin_y,
+		"Total:" + string(total_cost) + "G");
 	
 	// draw the buttons
+	draw_set_color(c_black);
 	var _button_h = 15;
 	var _button_w = 40;
 	var _button_text_padding = 5;

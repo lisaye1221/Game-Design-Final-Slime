@@ -6,6 +6,8 @@ exit_key = keyboard_check_pressed(ord("X"));
 
 up_key = keyboard_check_pressed(vk_up);
 down_key = keyboard_check_pressed(vk_down);
+left_key = keyboard_check_pressed(vk_left);
+right_key = keyboard_check_pressed(vk_right);
 
 if(up_key){
 	if(menu_level == 0){
@@ -22,11 +24,29 @@ if(down_key){
 	}	
 }
 
+if(left_key){
+	if(menu_level == 1){
+		selected_amount--;
+		selected_amount = clamp(selected_amount, 1, selected_item.stock)
+		total_cost = selected_amount * selected_item.unit_price;
+	}
+}
+
+if(right_key){
+	if(menu_level == 1){
+		selected_amount++;
+		selected_amount = clamp(selected_amount, 1, selected_item.stock)
+		total_cost = selected_amount * selected_item.unit_price;
+	}
+}
+
 if(accept_key){
 	if(menu_level == 0){
 		menu_level++;	
 		// bring up the item detail menu
 		selected_item = curr_inventory[option_pos];
+		selected_amount = 1;
+		total_cost = selected_item.unit_price;
 	}
 	else{
 		// buy the item

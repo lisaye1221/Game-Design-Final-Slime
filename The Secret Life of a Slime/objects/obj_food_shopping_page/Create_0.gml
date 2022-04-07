@@ -47,6 +47,10 @@ background_item_details_h = 200;
 item_info_magin_y = 40;
 item_info_magin_x = 50;
 
+selection_margin_y = 60;
+selection_margin_x = 40;
+
+cost_display_margin_y = 40;
 
 shop_bg_spr = spr_shop_bg;
 
@@ -62,6 +66,8 @@ end_pos = option_num > NUM_ITEM_SHOWN_MAX ? NUM_ITEM_SHOWN_MAX - 1 : option_num 
 
 // records which item was selected
 selected_item = {}
+selected_amount = 0;
+total_cost = 0;
 
 // menu_level = 0 - on the list of items
 // menu_level = 1 - on the item details
