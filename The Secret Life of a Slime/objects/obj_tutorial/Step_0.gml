@@ -24,13 +24,14 @@ if (b3 and sentence_index < array_length(s3) - 1 and keyboard_check_pressed(ord(
 	sentence = s3[sentence_index]
 }
 
-if sentence_index == 2 and b1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or 
+
+if sentence_index == 3 and b1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or 
 keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)) {
 	alarm[2] = 0.35 * room_speed;
 }
 
 if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {
-	alarm[3] = 2.0 * room_speed;
+	alarm[3] = 3.0 * room_speed;
 	global.touchedBed = false;
 	
 }
@@ -40,9 +41,4 @@ if b3 and sentence_index == 2 {
 }
 
 
-/*
-else if (keyboard_check_pressed(vk_enter)) {
-	alarm[1] = room_speed * 0.1
-}
-*/
 

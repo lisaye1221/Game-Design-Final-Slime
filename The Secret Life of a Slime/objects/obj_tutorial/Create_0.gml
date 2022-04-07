@@ -6,7 +6,7 @@ b2 = false;
 b3 = false;
 b4 = false;
 
-s1 = ["WAKE UP, my fellow slime",
+s1 = [" ","WAKE UP, my fellow slime (press X to continue)",
 "You have been banished to the human world.",
 "or hell, as I like to call it. Try moving around."]
 

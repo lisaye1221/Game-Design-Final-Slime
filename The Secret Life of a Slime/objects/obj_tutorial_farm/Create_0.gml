@@ -1,3 +1,4 @@
+global.tutorial_ended_farm = false;
 
 b4 = true;
 b5 = false;
@@ -17,7 +18,8 @@ s6 = ["Press M to navigate through the tabs",
 
 //first quest is to grab all 3 berries
 
-s9 = ["You can click 3 to eat the berry",""]
+s9 = ["In the human world, you must eat to stay alive",
+"You can click 3 to eat the berry","Great job. Keep that energy bar up!"]
 
 s10 = ["Notice, the berry don't heal much..", 
 "and the bushes take too long to produce them",
@@ -49,4 +51,4 @@ sentences = ["I must leave now, they're sending me back","b","c"]
 
 sentence_index = 0;
 
-sentence = sentences[sentence_index]
+sentence = s4[sentence_index]
