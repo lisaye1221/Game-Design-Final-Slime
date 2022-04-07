@@ -23,6 +23,8 @@ global.energy_max=100;
 global.gold = 10;
 global.dead = false;
 global.tutorial_ended = false;
+global.touchedBed = false;
+global.tutorialBedDone = false;
 
 DIR = [[1,0],[0,-1],[-1,0],[0,1]]
 interactable_object = noone;

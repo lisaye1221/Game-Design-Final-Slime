@@ -100,6 +100,11 @@ if not (global.dead or global.paused or global.menu_on) {
 			}
 		}
 	}
+	
+	if !global.tutorialBedDone and place_meeting(x, y, obj_tutorial_check) {
+		global.touchedBed = true;
+		global.tutorialBedDone = true;
+	}
 
 	//interact with interactables
 	var _interact_check_x = x + DIR[face][0]*10;
