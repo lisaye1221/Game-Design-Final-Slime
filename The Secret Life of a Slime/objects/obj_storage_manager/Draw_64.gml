@@ -8,19 +8,30 @@
 
 if (obj_chest.storage_open) {
 
-	width = 12*64+40;
+	width = 6*64+40;
 	height = 6*64+40;
 	
 	cam = view_get_camera(0);
 
-	left = camera_get_view_width(cam)/2 - width/2;
+	left = camera_get_view_width(cam)/2 - width - 10;
 	top = camera_get_view_height(cam)/2 - height/2; // turn 250 to 350 if get rid of bottom UI
 	
 	draw_set_halign(fa_left);
 	draw_set_font(ft_tabs);
 	draw_set_color(c_black);
 	
+	var _tab_height = string_height("Inventory")+50;
+	var _tab_top = top-_tab_height+20;
+	var _inv_tab_width = string_width("Inventory")+50;
+	var _inv_tab_left = left+(width/2)-(_inv_tab_width/2);
+	
+	var _inv_tab_txt_x = _inv_tab_left+25;
+	var _tab_txt_y = _tab_top+(_tab_height/2);
+	
 	draw_sprite_stretched(spr_player_menu, 0, left, top, width, height);
+	
+	draw_sprite_stretched_ext(spr_player_menu_tab, 0, _inv_tab_left, _tab_top, _inv_tab_width, _tab_height, c_white, 1);
+	draw_text(_inv_tab_txt_x, _tab_txt_y, "Inventory");
 
 	left += 20;
 	top += 20;
@@ -46,12 +57,22 @@ if (obj_chest.storage_open) {
 	}
 		
 	// draw the storage inv 
-	var _str_left = left+width/2;
-	var _str_top = top;
-	var _str_width = (width-40)/2-20;
-	var _str_height = height-40;
+	var _str_left = camera_get_view_width(cam)/2 + 10;
+	var _str_top = camera_get_view_height(cam)/2 - height/2;
+	var _str_width = width;
+	var _str_height = height;
+	
+	var _str_tab_width = string_width("Storage")+50;
+	var _str_tab_left = _str_left+(_str_width/2)-(_str_tab_width/2);
+	
+	var _str_tab_txt_x = _str_tab_left+25;
 	
 	draw_sprite_stretched(spr_player_menu, 0, _str_left, _str_top, _str_width, _str_height);
+	draw_sprite_stretched_ext(spr_player_menu_tab, 0, _str_tab_left, _tab_top, _str_tab_width, _tab_height, c_white, 1);
+	draw_text(_str_tab_txt_x, _tab_txt_y, "Storage");
+	
+	_str_left += 20;
+	_str_top += 20;
 	
 	// draw the storage boxes with items
 	for (var i = 0; i < obj_storage_manager.MAX_ITEM; i ++) {
@@ -67,7 +88,6 @@ if (obj_chest.storage_open) {
 		if (i == (i_cursor - obj_inventory_manager.MAX_ITEM)) {
 			draw_sprite(spr_inv_cursor, 0, xx, yy);
 		}
-		
 		
 	}
 		

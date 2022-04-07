@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Inherit the parent event
-event_inherited();
-storage_open = false;
-
+obj_chest.storage_open = false;
+global.paused = false;
