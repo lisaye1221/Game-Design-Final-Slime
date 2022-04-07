@@ -80,11 +80,11 @@ global.item_list =
 		spr_item_seeds,
 		spr_item_seeds_menu,
 		10,
-		3,
+		0,
 		"Seeds description"
 	),
 	tomatoes : new create_item(
-		"Tomatoes",
+		"Tomato",
 		spr_item_tomato,
 		spr_item_tomato_menu,
 		CROPS_MAX,
@@ -95,3 +95,6 @@ global.item_list =
 
 // create the inventory
 inventory = array_create(0);
+
+// starting out with 3 seeds
+gain_item(global.item_list.seeds, 3);
