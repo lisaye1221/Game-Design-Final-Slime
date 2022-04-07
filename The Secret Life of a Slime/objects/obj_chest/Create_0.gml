@@ -3,5 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-created_room = room;
-
+uses_inventory = true;
+storage_open = false;

@@ -3,5 +3,13 @@
 
 // Inherit the parent event
 event_inherited();
-created_room = room;
+
+if (storage_open) {
+	storage_open = false;
+}
+else {
+	storage_open = true;
+}
+
+
 
