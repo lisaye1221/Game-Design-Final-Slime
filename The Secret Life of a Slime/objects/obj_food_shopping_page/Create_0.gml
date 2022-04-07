@@ -20,14 +20,12 @@ inventory =
 	wheat : new create_shop_item(global.item_list.wheat, 8, 8),
 	fish: new create_shop_item(global.item_list.fish, 15, 2),
 	tomatoes: new create_shop_item(global.item_list.tomatoes, 10, 8),
-	tomatoes: new create_shop_item(global.item_list.tomatoes, 10, 8), // for testing scrolling
+	tomato: new create_shop_item(global.item_list.tomatoes, 10, 8), // for testing scrolling
 }
 
 // a list of items for sale now
 
 curr_inventory = scr_restock_food_shop_inventory(inventory);
-//curr_inventory[0] = create_shop_item_for_sale(global.item_list.berries, 4, 3);
-//curr_inventory[1] = create_shop_item_for_sale(global.item_list.wheat, 8, 2);
 
 // ------- Menu 0 Dimensions -------- // 
 

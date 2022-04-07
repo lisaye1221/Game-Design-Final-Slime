@@ -7,7 +7,6 @@ menu_y = 90;
 textbox_spr_w = sprite_get_width(shop_bg_spr);
 textbox_spr_h = sprite_get_height(shop_bg_spr);
 
-
 // draw the background box
 draw_sprite_ext(
 	shop_bg_spr, 
