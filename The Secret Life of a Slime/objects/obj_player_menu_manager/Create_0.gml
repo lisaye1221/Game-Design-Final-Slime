@@ -4,6 +4,8 @@
 rowLength = 6;
 global.menu_on = false;
 
+tabs = ["Inventory", "Player", "Relationships", "Journal"]
+
 i_cursor = 0;
 
 tab_index = 0;

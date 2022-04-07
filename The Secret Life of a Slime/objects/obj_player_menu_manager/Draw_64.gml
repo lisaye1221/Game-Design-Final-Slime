@@ -13,13 +13,44 @@ if (global.menu_on) {
 	left = camera_get_view_width(cam)/2 - width/2;
 	top = camera_get_view_height(cam)/2 - height/2; // turn 250 to 350 if get rid of bottom UI
 	
-	var _tab_height = 50;
-	var _tab_width = 100;
-	var _tab_left = left+20;
+	draw_set_halign(fa_left);
+	draw_set_font(ft_tabs);
+	draw_set_color(c_black);
+	
+	var _tab_height = string_height(tabs[0])+50;
 	var _tab_top = top-_tab_height+20;
+	var _tab_width = 0;
+	var _tab_left = left+25;
+	
+	var _tab_txt_x = _tab_left+25;
+	var _tab_txt_y = _tab_top+(_tab_height/2);
+	
+	var _front_tab_left;
+	var _front_tab_width;
+	var _front_tab_txt_x;
+	
+	for (var i = 0; i < array_length(tabs); i++) {
+		
+		_tab_width = string_width(tabs[i])+50;
+		
+		if (i == tab_index) {
+			_front_tab_left = _tab_left;
+			_front_tab_width = _tab_width;
+			_front_tab_txt_x = _tab_txt_x;
+		}
+		else {
+			draw_sprite_stretched_ext(spr_player_menu_tab, 0, _tab_left, _tab_top, _tab_width, _tab_height, c_gray, 1);
+			draw_text(_tab_txt_x, _tab_txt_y, tabs[i]);
+		}
+		
+		_tab_left += _tab_width+20;
+		_tab_txt_x = _tab_left+25;
+		
+	}
 	
 	draw_sprite_stretched(spr_player_menu, 0, left, top, width, height);
-	draw_sprite_stretched(spr_player_menu_tab, 0, _tab_left, _tab_top, _tab_width, _tab_height);
+	draw_sprite_stretched(spr_player_menu_tab, 0, _front_tab_left, _tab_top, _front_tab_width, _tab_height);
+	draw_text(_front_tab_txt_x, _tab_txt_y, tabs[tab_index]);
 
 	left += 20;
 	top += 20;

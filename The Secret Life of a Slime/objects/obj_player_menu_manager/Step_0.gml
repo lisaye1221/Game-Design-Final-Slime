@@ -37,3 +37,23 @@ if (_v_move != 0) {
 	else if (i_cursor >= _size) i_cursor = _col;
 }
 
+// moving tab index
+
+var _t_left = keyboard_check_pressed(ord("N"));
+var _t_right = keyboard_check_pressed(ord("M"));
+
+show_debug_message(_t_right);
+
+var _t_move = _t_right - _t_left;
+var _t_size = array_length(tabs);
+
+if (_t_move != 0) {
+	// move cursor index
+	tab_index += _t_move;
+	if (tab_index < 0) tab_index = _t_size-1;
+	else if (tab_index >= _t_size) tab_index = 0;
+	
+	
+}
+	
+
