@@ -78,10 +78,18 @@ global.item_list =
 	seeds: new create_item(
 		"Seeds",
 		spr_item_seeds,
-		spr_item_seeds,
+		spr_item_seeds_menu,
 		10,
 		3,
 		"Seeds description"
+	),
+	tomatoes : new create_item(
+		"Tomatoes",
+		spr_item_tomato,
+		spr_item_tomato_menu,
+		CROPS_MAX,
+		0,
+		"Tomatoes description"
 	),
 }
 
