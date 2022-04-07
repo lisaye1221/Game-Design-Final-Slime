@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "items",
-    "path": "folders/Sprites/items.yy",
+    "path": "folders/Sprites/npc/items.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_berries",

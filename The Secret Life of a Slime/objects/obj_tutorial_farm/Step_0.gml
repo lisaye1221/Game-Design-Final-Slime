@@ -20,14 +20,12 @@ if (b6 and sentence_index < array_length(s6) - 1 and keyboard_check_pressed(ord(
 
 
 
-with (obj_player) {
-	if place_meeting(x,y,obj_bush) {
+if (obj_player.interactable_object!= noone &&obj_player.interactable_object.object_index == obj_bush){
 		show_debug_message("iM HEREEEEEEEEEEE")
 		b4 = false;
 		b5 = true;
 		sentence_index = 0;
 		sentence = s5[sentence_index]
-	}
 }
 
 

@@ -9,7 +9,7 @@ if(ready){
 	audio_play_sound(sfx_collect_berries, 2, false);
 	
 	// reset the plot to be usable again
-	my_plot = instance_place(x,y,obj_farm_plot);
+	my_plot = instance_place(x+1,y+1,obj_farm_plot);
 	if (my_plot != noone){
 		my_plot.ready = true;
 		my_plot.prompt_text = "Plant seed?"

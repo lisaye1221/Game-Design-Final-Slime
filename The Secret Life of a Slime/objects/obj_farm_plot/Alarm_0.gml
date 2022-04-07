@@ -9,7 +9,7 @@ event_inherited();
 function use_item(item){
 	switch(item.name){
 		case global.item_list.wheat_seeds.name:
-			instance_create_layer(relative_pos_x+15, relative_pos_y+8, "crops", obj_crop);
+			instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_crop);
 			lose_one_item(item);
 			break;
 		case global.item_list.tomato_seeds.name:

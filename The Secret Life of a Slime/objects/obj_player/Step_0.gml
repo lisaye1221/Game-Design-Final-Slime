@@ -198,7 +198,6 @@ if not (global.dead or global.paused or global.menu_on) {
 				increase_energy(6);
 				lose_one_item(item);
 			default:
-				create_textbox("warn-cannot-use-item");
 				return;
 		}
 	}
