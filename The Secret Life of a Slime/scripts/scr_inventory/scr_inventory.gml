@@ -7,6 +7,7 @@ function new_item(item, _count) constructor {
 	menu_icon = item.menu_icon;
 	max_count = item.max_count;
 	count = _count;
+	desc = item.desc;
 	
 }
 // inventory manipulation

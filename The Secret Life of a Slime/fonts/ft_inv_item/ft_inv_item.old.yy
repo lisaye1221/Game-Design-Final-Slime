@@ -1247,7 +1247,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ft_tabs",
+  "name": "ft_inv_item",
   "tags": [],
   "resourceType": "GMFont",
 }

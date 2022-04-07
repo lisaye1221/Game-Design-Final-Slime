@@ -103,17 +103,15 @@ if (global.menu_on) {
 			
 			draw_sprite_ext(selected.menu_icon, 0, _sprite_dis_left, _sprite_dis_top, _sprite_scale, _sprite_scale, 0, c_white, 1);
 			
+			var _name_height = string_height(selected.name);
 			var _name_left = _desc_left+(_desc_width/2);
-			var _name_top = _desc_top+(_desc_height/2)+20;
+			var _name_top = _desc_top+(_desc_height/2)+20+_name_height/2;
 			
 			draw_set_halign(fa_center);
 			
-			// might want bigger font
 			draw_text(_name_left, _name_top, selected.name);
 			
-			// smaller font here
-			// need to add desc val to all items
-			//draw_text(_name_left+20, _name_top+20, selected.desc);
+			draw_text(_name_left, _name_top+20+_name_height, selected.desc);
 			
 		}
 		

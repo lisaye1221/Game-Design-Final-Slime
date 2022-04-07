@@ -20,12 +20,13 @@ INV_TOP_LEFT_Y = 550;
 ICON_SIZE = 16;
 
 // item constructor
-function create_item(_name, _icon, _menu_icon, _max_count, _count) constructor {
+function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc) constructor {
 	name = _name;
 	icon = _icon;
 	menu_icon = _menu_icon;
 	max_count = _max_count;
 	count = _count;
+	desc = _desc;
 	
 }
 
@@ -39,42 +40,48 @@ global.item_list =
 		spr_item_jelly,
 		spr_item_jelly_menu,
 		SLIME_JELLY_MAX, 
-		0
+		0,
+		"Slime Jelly description"
 	),
 	berries : new create_item(
 		"Berries",
 		spr_item_berries,
 		spr_item_berries_menu,
 		8, 
-		0
+		0,
+		"Berries description"
 	),
 	wheat : new create_item(
 		"Wheat",
 		spr_item_wheat,
 		spr_item_wheat_menu,
 		CROPS_MAX, 
-		0
+		0,
+		"Wheat description"
 	),
 	fish: new create_item(
 		"Fish",
 		spr_item_fish,
 		spr_item_fish_menu,
 		5,
-		0
+		0,
+		"Fish description"
 	),
 	parts: new create_item(
 		"Parts",
 		spr_item_parts,
 		spr_item_parts_menu,
 		1,
-		0
+		0,
+		"Parts description"
 	),
 	seeds: new create_item(
 		"Seeds",
 		spr_item_seeds,
 		spr_item_seeds,
 		10,
-		3
+		3,
+		"Seeds description"
 	),
 }
 
