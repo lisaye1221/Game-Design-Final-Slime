@@ -12,3 +12,8 @@ else if (keyboard_check_pressed(vk_enter)) {
 	alarm[1] = room_speed * 0.1
 }
 
+
+
+if tut_keys_on and keyboard_check_pressed(ord("X")) {
+	tut_keys_on = false;
+}

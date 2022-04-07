@@ -13,13 +13,22 @@ if global.tutorial_ended == false {
 }
 */
 
-//draw_sprite(spr_tutorial_menu,0,145,50);
+
+if tut_keys_on {
+	draw_sprite(spr_tutorial_menu,0,145,50);
 	
-	//draw_sprite(spr_tutorial_down,0,200,50);
+	draw_sprite(spr_tutorial_buttons_up,0,250,190);
+	draw_sprite(spr_tutorial_buttons_down,0,250,270);
+	draw_sprite(spr_tutorial_buttons_left,0,200,230);
+	draw_sprite(spr_tutorial_buttons_right,0,300,230);
+	
+	draw_sprite(spr_tutorial_plain,0,430,257);
+	draw_sprite(spr_tutorial_plain,0,580,257);
+	
 	draw_set_alpha(0.9)
 
 	draw_set_font(ft_tutorial_header)
-	draw_text(530,90,"TUTORIAL")
+	draw_text(540,90,"TUTORIAL")
 	draw_set_font(ft_status)
 	draw_text(458,275,"Z")
 	draw_text(608,275,"E")
@@ -35,8 +44,8 @@ if global.tutorial_ended == false {
 	draw_text(620,330,"Use E")
 	draw_text(670,350,"for inventory")
 
-	draw_text(530,420,"Press Z to continue")
+	draw_text(530,420,"Press X to continue")
 
-
+}
 draw_set_font(ft_dialog)
 
