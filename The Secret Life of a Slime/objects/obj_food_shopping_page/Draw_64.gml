@@ -52,9 +52,12 @@ draw_text(menu_x + background_w - option_x_margin,menu_y + _top_margin, "Unit");
 
 // draw each option
 draw_set_color(c_white);
-for(var i = 0; i < option_num; i++){
-	var _icon = curr_inventory[i].item.icon;
-	var _stock = curr_inventory[i].stock;
+for(var i = 0; i < NUM_ITEM_SHOWN_MAX; i++){
+	
+	var _item = curr_inventory[start_pos+i];
+	var _icon = _item.item.icon;
+	var _stock = _item.stock;
+	
 	// draw the icon
 	draw_sprite(
 	_icon, 
@@ -62,12 +65,28 @@ for(var i = 0; i < option_num; i++){
 	menu_x + option_x_margin, 
 	menu_y + arrow_y_space + (i * option_y_space));
 	
+	
+	// draw the highlight if selected
+	if(start_pos+i == option_pos){
+		draw_set_alpha(0.3);
+		draw_set_color(c_yellow);
+		draw_roundrect(
+		menu_x + option_x_margin + sprite_get_width(_icon) + option_x_margin, 
+		menu_y + arrow_y_space + (i * option_y_space),
+		menu_x + background_w - option_x_margin,
+		menu_y + arrow_y_space + (i * (option_y_space) + (option_y_space)),
+		false
+		)
+		draw_set_alpha(1.0);
+	}
+	
 	// draw the item name
 	draw_set_halign(fa_left);
+	draw_set_color(c_white);
 	draw_text(
 	menu_x + option_x_margin + sprite_get_width(_icon) + option_x_margin,
 	menu_y + arrow_y_space + (i * option_y_space),
-	curr_inventory[i].item.name + "(" + string(_stock)+")",
+	_item.item.name + "(" + string(_stock)+")",
 	)
 	
 	// draw the item price 
@@ -75,8 +94,9 @@ for(var i = 0; i < option_num; i++){
 	draw_text(
 	menu_x + background_w - option_x_margin,
 	menu_y + arrow_y_space + (i * option_y_space),
-	string(curr_inventory[i].unit_price) +"G",
+	string(_item.unit_price) +"G",
 	)
+	
 	
 }
 
@@ -142,7 +162,7 @@ if(menu_level > 0) {
 	draw_set_halign(fa_left);
 	draw_text(
 	details_menu_x + item_info_magin_x + 35,
-	details_menu_y + item_info_magin_y + 3,
+	details_menu_y + item_info_magin_y,
 	_selected_item_name
 	);
 	
@@ -160,7 +180,7 @@ if(menu_level > 0) {
 		"[Z]Buy");
 		
 	draw_text(
-	details_menu_x + 10 + _button_w + 35,
+	details_menu_x + 10 + _button_w + 50,
 	details_menu_y + background_item_details_h - _button_h - _button_text_padding - _button_margin,
 	"[X]Cancel");
 	

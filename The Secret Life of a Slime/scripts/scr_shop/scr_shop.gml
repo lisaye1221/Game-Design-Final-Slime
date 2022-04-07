@@ -18,7 +18,7 @@ function scr_restock_food_shop_inventory(_inventory_list){
 		var shop_item = variable_struct_get(_inventory_list, item_name);
 		//show_debug_message(shop_item);
 		
-		shop_inventory[i] = new create_shop_item_for_sale(shop_item.item, shop_item.unit_price, irandom_range(1, shop_item.max_stock));
+		shop_inventory[i] = new create_shop_item_for_sale(shop_item.item, shop_item.unit_price, irandom_range(1, shop_item.max_stock));			
 	}
 	
 	return shop_inventory;

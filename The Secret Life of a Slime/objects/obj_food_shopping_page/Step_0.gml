@@ -4,6 +4,24 @@
 accept_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"));
 exit_key = keyboard_check_pressed(ord("X"));
 
+up_key = keyboard_check_pressed(vk_up);
+down_key = keyboard_check_pressed(vk_down);
+
+if(up_key){
+	if(menu_level == 0){
+		option_pos--;	
+		option_pos = clamp(option_pos, 0, option_num - 1);
+	}
+	
+}
+
+if(down_key){
+	if(menu_level == 0){
+		option_pos++;	
+		option_pos = clamp(option_pos, 0, option_num - 1);
+	}	
+}
+
 if(accept_key){
 	if(menu_level == 0){
 		menu_level++;	
@@ -25,4 +43,13 @@ if(exit_key){
 		// go back to previous menu
 		menu_level--;
 	}
+}
+
+if(option_pos > end_pos) {
+	end_pos = option_pos;
+	start_pos = end_pos - (NUM_ITEM_SHOWN_MAX-1);
+}
+if(option_pos < start_pos){
+	start_pos = option_pos;	
+	end_pos = start_pos + (NUM_ITEM_SHOWN_MAX-1);
 }
