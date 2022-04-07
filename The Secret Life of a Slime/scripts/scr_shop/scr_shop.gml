@@ -12,8 +12,6 @@ function scr_restock_food_shop_inventory(_inventory_list){
 	var items = variable_struct_get_names(_inventory_list);
 	shop_inventory = array_create(0);
 	
-	show_debug_message("inv_num: " + string(array_length(items)))
-	
 	for(var i = 0; i < array_length(items); i++){
 		var item_name = items[i];
 		var shop_item = variable_struct_get(_inventory_list, item_name);

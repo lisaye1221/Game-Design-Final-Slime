@@ -49,7 +49,25 @@ if(accept_key){
 		total_cost = selected_item.unit_price;
 	}
 	else{
-		// buy the item
+		// check if we aren't broke
+		if(total_cost <= global.gold){
+			// -- buy the item
+			
+			// subtract money
+			global.gold -= total_cost;
+			// gain item
+			gain_item(selected_item.item, selected_amount);
+			// subtract stock
+			selected_item.stock -= selected_amount;
+			
+			if(selected_item.stock <= 0){
+				array_delete(curr_inventory, option_pos, 1);
+				option_num = array_length(curr_inventory);
+			}
+			
+			// go back to prev menu
+			menu_level--;
+		}
 	}
 }
 

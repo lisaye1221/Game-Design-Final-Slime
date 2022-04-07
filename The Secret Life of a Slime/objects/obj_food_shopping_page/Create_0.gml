@@ -17,10 +17,9 @@ function create_shop_item(_item, _unit_price, _max_stock) constructor {
 inventory = 
 {
 	berries : new create_shop_item(global.item_list.berries, 4, 5),
-	wheat : new create_shop_item(global.item_list.wheat, 8, 8),
+	wheat : new create_shop_item(global.item_list.wheat, 8, 6),
 	fish: new create_shop_item(global.item_list.fish, 15, 2),
-	tomatoes: new create_shop_item(global.item_list.tomatoes, 10, 8),
-	tomato: new create_shop_item(global.item_list.tomatoes, 10, 8), // for testing scrolling
+	tomatoes: new create_shop_item(global.item_list.tomatoes, 10, 6),
 }
 
 // a list of items for sale now

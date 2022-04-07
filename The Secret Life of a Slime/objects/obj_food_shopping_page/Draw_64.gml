@@ -51,7 +51,8 @@ draw_text(menu_x + background_w - option_x_margin,menu_y + _top_margin, "Unit");
 
 // draw each option
 draw_set_color(c_white);
-for(var i = 0; i < NUM_ITEM_SHOWN_MAX; i++){
+var _things_to_draw = option_num < NUM_ITEM_SHOWN_MAX ? option_num : NUM_ITEM_SHOWN_MAX;
+for(var i = 0; i < _things_to_draw; i++){
 	
 	var _item = curr_inventory[start_pos+i];
 	var _icon = _item.item.icon;
