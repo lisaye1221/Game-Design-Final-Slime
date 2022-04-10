@@ -4,12 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
-if (storage_open) {
-	storage_open = false;
+if (obj_storage_manager.storage_open) {
+	obj_storage_manager.storage_open = false;
 	global.paused = false;
 }
 else {
-	storage_open = true;
+	obj_storage_manager.storage_open = true;
 	global.paused = true;
 }
 

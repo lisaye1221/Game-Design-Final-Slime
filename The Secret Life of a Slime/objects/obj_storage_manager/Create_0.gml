@@ -3,7 +3,11 @@
 
 depth = -9999;
 
+persistent = true;
+
 MAX_ITEM = 30;
+
+storage_open = false;
 
 // create the storage inventory
 inventory = array_create(0);

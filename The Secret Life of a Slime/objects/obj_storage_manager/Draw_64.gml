@@ -6,7 +6,7 @@
 //width = 12+rowLength*36;
 //height = 12+(((obj_inventory_manager.MAX_ITEM-1) div rowLength)+1)*36;
 
-if (obj_chest.storage_open) {
+if (storage_open) {
 
 	width = 6*64+40;
 	height = 6*64+40;
