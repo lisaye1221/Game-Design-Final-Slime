@@ -83,7 +83,7 @@ if b11 and sentence_index == array_length(s11) - 1  and keyboard_check_pressed(o
 }
 
 
-if b6 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)) {
+if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)) {
 	b6 = false;
 	b7 = true;
 	sentence_index = 0;
