@@ -14,7 +14,7 @@ switch(_text_id){
 	break;
 	
 	case "home_tutorial":
-		scr_add_text("Quick recap of controls and gameplay...")
+		scr_add_text("Quick recap of controls and gameplay... (press Z to continue)")
 		scr_add_text("Use arrow keys to move. Use Z to interact with objects and people.");
 		scr_add_text("Use E to access your status and your inventory. Use M and N to navigate through the tabs.");
 		scr_add_text("You can only hold 6 items at once. Extra storage is provided in the chest of your home.")
