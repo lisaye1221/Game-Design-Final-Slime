@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 15,
   "bbox_top": 0,
-  "bbox_bottom": 0,
+  "bbox_bottom": 14,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 16,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"21a90229-e443-4711-b97b-7ad644ff65f0","path":"sprites/Sprite79/Sprite79.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"21a90229-e443-4711-b97b-7ad644ff65f0","path":"sprites/Sprite79/Sprite79.yy",},"LayerId":{"name":"f19875b9-6a48-45b9-b459-30b771fa00ed","path":"sprites/Sprite79/Sprite79.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite79","path":"sprites/Sprite79/Sprite79.yy",},"resourceVersion":"1.0","name":"21a90229-e443-4711-b97b-7ad644ff65f0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d5da32c9-c205-4f2e-a6d4-234dc7099152","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d5da32c9-c205-4f2e-a6d4-234dc7099152","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},"LayerId":{"name":"a52c7d12-f857-41f8-bb2f-b32cbe297cd9","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_item_tulip","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},"resourceVersion":"1.0","name":"d5da32c9-c205-4f2e-a6d4-234dc7099152","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite79","path":"sprites/Sprite79/Sprite79.yy",},
+    "spriteId": {"name":"spr_item_tulip","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5368a9b5-cda9-49d1-a1c6-3fae44c76a33","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"21a90229-e443-4711-b97b-7ad644ff65f0","path":"sprites/Sprite79/Sprite79.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3c9844c0-7d1a-4064-9e3f-918a8cbfeabd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d5da32c9-c205-4f2e-a6d4-234dc7099152","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite79","path":"sprites/Sprite79/Sprite79.yy",},
+    "parent": {"name":"spr_item_tulip","path":"sprites/spr_item_tulip/spr_item_tulip.yy",},
     "resourceVersion": "1.4",
-    "name": "Sprite79",
+    "name": "spr_item_tulip",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f19875b9-6a48-45b9-b459-30b771fa00ed","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a52c7d12-f857-41f8-bb2f-b32cbe297cd9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "The Secret Life of a Slime",
-    "path": "The Secret Life of a Slime.yyp",
+    "name": "items",
+    "path": "folders/Sprites/npc/items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sprite79",
+  "name": "spr_item_tulip",
   "tags": [],
   "resourceType": "GMSprite",
 }
