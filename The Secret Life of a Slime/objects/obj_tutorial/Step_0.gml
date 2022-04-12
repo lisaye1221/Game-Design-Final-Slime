@@ -4,10 +4,16 @@ if global.tut_keys_on and keyboard_check_pressed(ord("X")) {
 	b1 = true;
 }
 
+if global.tutorial_ended {
+	instance_deactivate_object(inst_lock)
+}
+
 if keyboard_check_pressed(ord("S")) {
 	global.tut_keys_on = false;
 	global.tutorial_ended = true;
 	global.tutorial_ended_farm = true;
+	var lockLayer = layer_get_id("tutorial_check")
+	instance_deactivate_layer(lockLayer)
 }
 
 if (b1 and sentence_index < array_length(s1) - 1 and keyboard_check_pressed(ord("X"))) {	

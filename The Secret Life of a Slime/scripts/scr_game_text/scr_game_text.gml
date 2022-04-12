@@ -27,6 +27,10 @@ switch(_text_id){
 		scr_add_text("That is all you need to know, good luck!")		
 	break;
 	
+	case "home_door_lock":
+		scr_add_text("Door is locked until tutorial is finished.");
+	break;
+	
 	// ---------- Text in home area (outside) ------ //
 	
 	// Text that would show up if you interact with sign 

@@ -61,6 +61,13 @@ function tileGravityHandle(_tilemap){
 	else{
 		gravity = gravityEffect;
 	}
+	
+	if (tileOnland(layer_tilemap_get_id("Door_Collision"))){
+		gravity = 0;
+	}
+	else{
+		gravity = gravityEffect;
+	}
 }
 
 function basicTileCollisionHandle(_tilemap){
