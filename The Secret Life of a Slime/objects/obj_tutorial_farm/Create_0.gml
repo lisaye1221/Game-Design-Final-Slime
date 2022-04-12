@@ -1,6 +1,8 @@
 b4 = true;
 b5 = false;
 b6 = false;
+b7 = false;
+b8 = false;
 b9 = false;
 b10 = false;
 b11 = false;
@@ -14,9 +16,11 @@ s5 = ["TA-DA! Look at the corner, it's in your inventory now",
 "You can even press E to view your items"]
 
 s6 = ["These are all your items, you can only hold 6 items at once",
-"You can use the arrow keys to take a closer look",
-"Press M and N to navigate through the tabs",
-"Now press E again to close your inventory"]
+"You can use the arrow keys to take a closer look"]
+
+s7 =  ["Press M and N to navigate through the tabs"]
+
+s8 = ["Now press E again to close your inventory"]
 
 //first quest is to grab all 3 berries
 
@@ -29,8 +33,7 @@ s10 = [
 "That's why you need to get your hands slimey and grow real food yourself",
 "Head over to the farm area",]
 
-s11 = ["It's time to grow your own food",
-"Press 1 for wheat seeds. Press 2 for tomato",""]
+s11 = ["It's time to grow your own food. Press 1 for wheat seeds. Press 2 for tomato",""]
 
 
 s12 = ["But... you can't eat it. So you gotta use that machine"]

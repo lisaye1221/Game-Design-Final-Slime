@@ -13,7 +13,7 @@ s1 = [" ","WAKE UP, my fellow slime (press X to continue)",
 s2 = ["Good job, bet that hardwood feels C-O-L-D",
 "Now, try interacting with that bed."]
 
-s3 = ["The human world is full of mysterious things",
+s3 = ["The human world is full of mysterious things (x)",
 "Head out of the house when you're done exploring"," "]
 
 s4 = ["This is your farm!", "Beautiful, isn't it?",

@@ -2,6 +2,7 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 }
 
+
 if (b4 and sentence_index < array_length(s4) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s4[sentence_index]
@@ -47,12 +48,16 @@ if b5 and keyboard_check_pressed(ord("E")) {
 		sentence = s6[sentence_index]
 }
 
-if b6 and sentence_index == array_length(s6) - 1  and keyboard_check_pressed(ord("E")) {
-		b6 = false;
+if b8 and keyboard_check_pressed(ord("E")) {
+		b8 = false;
 		b9 = true;
 		sentence_index = 0;
 		sentence = s9[sentence_index]
+		
+		show_debug_message("xoxoox")
 }
+
+
 
 if b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("3")) {
 		b9 = false;
@@ -69,11 +74,29 @@ if b10 and (obj_player.interactable_object!= noone && obj_player.interactable_ob
 		sentence = s11[sentence_index]
 }
 
+
 if b11 and sentence_index == array_length(s11) - 1  and keyboard_check_pressed(ord("X")) {
 		b11 = false;
 		b12 = true;
 		sentence_index = 0;
 		sentence = s10[sentence_index]
+}
+
+
+if b6 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)) {
+	b6 = false;
+	b7 = true;
+	sentence_index = 0;
+	sentence = s7[sentence_index]
+}
+
+
+if b7 and (keyboard_check_pressed(ord("M")) or keyboard_check_pressed(ord("N"))) {
+	b7 = false;
+	b8 = true;
+	sentence_index = 0;
+	sentence = s8[sentence_index]
+
 }
 
 if b12 {
@@ -94,9 +117,7 @@ if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {
 }
 
 
-if b3 and sentence_index == 2 {
-	global.tutorial_ended = true;
-}
+
 
 
 
