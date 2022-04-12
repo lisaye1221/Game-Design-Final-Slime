@@ -99,6 +99,182 @@ global.item_list =
 		0,
 		"Tomatoes description"
 	),
+	carrots : new create_item(
+		"Carrot",
+		spr_item_carrot,
+		spr_item_carrot_menu,
+		CROPS_MAX,
+		0,
+		"Carrots description"
+	),
+	carrot_seeds : new create_item(
+		"Carrot Seeds",
+		spr_item_carrot_seeds,
+		spr_item_carrot_seeds_menu,
+		10,
+		0,
+		"Carrot Seeds description"
+	),
+	cauliflower : new create_item(
+		"Cauliflower",
+		spr_item_cauli,
+		spr_item_cauli_menu,
+		CROPS_MAX,
+		0,
+		"Cauliflower description"
+	),
+	cauliflower_seeds : new create_item(
+		"Cauliflower Seeds",
+		spr_item_cauli_seeds,
+		spr_item_cauli_seeds_menu,
+		10,
+		0,
+		"Cauliflower Seeds description"
+	),
+	cucumber : new create_item(
+		"Cucumber",
+		spr_item_cucumber,
+		spr_item_cucumber_menu,
+		CROPS_MAX,
+		0,
+		"Cucumber description"
+	),
+	cucumber_seeds : new create_item(
+		"Cucumber Seeds",
+		spr_item_cucumber_seeds,
+		spr_item_cucumber_seeds_menu,
+		10,
+		0,
+		"Cucumber Seeds description"
+	),
+	eggplant : new create_item(
+		"Eggplant",
+		spr_item_eggplant,
+		spr_item_eggplant_menu,
+		CROPS_MAX,
+		0,
+		"Eggplant description"
+	),
+	eggplant_seeds : new create_item(
+		"Eggplant Seeds",
+		spr_item_eggplant_seeds,
+		spr_item_eggplant_seeds_menu,
+		10,
+		0,
+		"Eggplant Seeds description"
+	),
+	lettuce : new create_item(
+		"Lettuce",
+		spr_item_lettuce,
+		spr_item_lettuce_menu,
+		CROPS_MAX,
+		0,
+		"Lettuce description"
+	),
+	lettuce_seeds : new create_item(
+		"Lettuce Seeds",
+		spr_item_lettuce_seeds,
+		spr_item_lettuce_seeds_menu,
+		10,
+		0,
+		"Lettuce Seeds description"
+	),
+	pumpkin : new create_item(
+		"Pumpkin",
+		spr_item_pumpkin,
+		spr_item_pumpkin_menu,
+		CROPS_MAX,
+		0,
+		"Pumpkin description"
+	),
+	pumpkin_seeds : new create_item(
+		"Pumpkin Seeds",
+		spr_item_pumpkin_seeds,
+		spr_item_pumpkin_seeds_menu,
+		10,
+		0,
+		"Pumpkin Seeds description"
+	),
+	radish : new create_item(
+		"Radish",
+		spr_item_raddish,
+		spr_item_raddish_menu,
+		CROPS_MAX,
+		0,
+		"Radish description"
+	),
+	radish_seeds : new create_item(
+		"Radish Seeds",
+		spr_item_raddish_seeds,
+		spr_item_raddish_seeds_menu,
+		10,
+		0,
+		"Radish Seeds description"
+	),
+	rose : new create_item(
+		"Rose",
+		spr_item_rose,
+		spr_item_rose_menu,
+		CROPS_MAX,
+		0,
+		"Rose description"
+	),
+	rose_seeds : new create_item(
+		"Rose Seeds",
+		spr_item_rose_seeds,
+		spr_item_rose_seeds_menu,
+		10,
+		0,
+		"Rose Seeds description"
+	),
+	star : new create_item(
+		"Star Fruit",
+		spr_item_star,
+		spr_item_star_menu,
+		CROPS_MAX,
+		0,
+		"Star Fruit description"
+	),
+	star_seeds : new create_item(
+		"Star Fruit Seeds",
+		spr_item_star_seeds,
+		spr_item_star_seeds_menu,
+		10,
+		0,
+		"Star Fruit Seeds description"
+	),
+	tulip : new create_item(
+		"Tulip",
+		spr_item_tulip,
+		spr_item_tulip_menu,
+		CROPS_MAX,
+		0,
+		"Tulip description"
+	),
+	tulip_seeds : new create_item(
+		"Tulip Seeds",
+		spr_item_tulip_seeds,
+		spr_item_tulip_seeds_menu,
+		10,
+		0,
+		"Tulip Seeds description"
+	),
+	turnip : new create_item(
+		"Turnip",
+		spr_item_turnip,
+		spr_item_turnip_menu,
+		CROPS_MAX,
+		0,
+		"Turnip description"
+	),
+	turnip_seeds : new create_item(
+		"Turnip Seeds",
+		spr_item_turnip_seeds,
+		spr_item_turnip_seeds_menu,
+		10,
+		0,
+		"Turnip Seeds description"
+	),
 }
 
 // create the inventory
