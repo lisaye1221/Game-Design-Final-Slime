@@ -38,8 +38,8 @@
     {"propertyId":{"name":"harvest","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"global.item_list.tomatoes","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "interactables",
-    "path": "folders/Objects/interactables.yy",
+    "name": "crops",
+    "path": "folders/Objects/interactables/crops.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tomato_crop",
