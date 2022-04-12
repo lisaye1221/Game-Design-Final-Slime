@@ -9,7 +9,13 @@ if !global.tutorial_ended_farm {
 	draw_set_color(c_white)
 	draw_set_alpha(0.7)
 	draw_set_font(ft_tutorial)
-	draw_text(680,230,string(string_copy(sentence,0,100)))
+	
+	if string_length(sentence) > 15 {
+		draw_text(780,230,string(string_copy(sentence,0,100)))
+	}
+	else {
+		draw_text(680,230,string(string_copy(sentence,0,100)))
+	}
 
 }
 

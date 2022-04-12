@@ -13,6 +13,20 @@ switch(_text_id){
 		scr_add_text("Too bad I can't read it.");
 	break;
 	
+	case "home_tutorial":
+		scr_add_text("Quick recap of controls and gameplay...")
+		scr_add_text("Use arrow keys to move. Use Z to interact with objects and people.");
+		scr_add_text("Use E to access your status and your inventory. Use M and N to navigate through the tabs.");
+		scr_add_text("You can only hold 6 items at once. Extra storage is provided in the chest of your home.")
+		scr_add_text("Use the 1-6 keys to use items in your inventory. This includes eating or planting.")
+		scr_add_text("The game ends when you die. Keep your energy up by eating food. You can eat berries from bushes or grow your own food.");
+		scr_add_text("Seeds are required to grow crops. When grown, they must be converted into the machines for consumption.");
+		scr_add_text("Machines can break upon usage and can be repaired with machine parts, which can be bought in town.");
+		scr_add_text("There are many stores in town. Everything can be bought or sold. The market refreshes the variety of items daily.");
+		scr_add_text("When accessing town, you are transformed into a human for 40 seconds and will be forced back home afterwards.");
+		scr_add_text("That is all you need to know, good luck!")		
+	break;
+	
 	// ---------- Text in home area (outside) ------ //
 	
 	// Text that would show up if you interact with sign 

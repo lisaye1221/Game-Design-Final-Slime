@@ -6,7 +6,7 @@ b10 = false;
 b11 = false;
 b12 = false;
 
-s4 = ["This is your farm!", "Beautiful, isn't it?",
+s4 = ["This is your farm! Beautiful, isn't it?",
 "Uh-oh, looks like your energy has depleted",
 "Head over to the bushes and grab a berry"]
 
@@ -16,24 +16,21 @@ s5 = ["TA-DA! Look at the corner, it's in your inventory now",
 s6 = ["These are all your items, you can only hold 6 items at once",
 "You can use the arrow keys to take a closer look",
 "Press M and N to navigate through the tabs",
-"The journal tab will be VERY important later.. teehee",
 "Now press E again to close your inventory"]
 
 //first quest is to grab all 3 berries
 
 s9 = ["In the human world, you must eat to stay alive",
-"You can press 3 to eat the berry"]
+"You use 1-6 to use items in your inventory. Press 3 to eat that berry!"]
 
 s10 = [
-"Great job. Keep that energy bar up!", "You use 1-6 to use items in your inventory",
-"Notice, the berry don't heal much..", 
-"and the bushes take LOOONG to produce them",
-"That's why you need to get your hands slimey",
-"and grow real food yourself",
+"Great job. Keep that energy bar up!",
+"Notice, the berry don't heal much..and the bushes take LOOONG to produce them",
+"That's why you need to get your hands slimey and grow real food yourself",
 "Head over to the farm area",]
 
 s11 = ["It's time to grow your own food",
-"Press 1 for wheat seeds", "Press 2 for tomato",""]
+"Press 1 for wheat seeds. Press 2 for tomato",""]
 
 
 s12 = ["But... you can't eat it. So you gotta use that machine"]
