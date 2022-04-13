@@ -216,7 +216,7 @@ if not (global.dead or global.paused or global.menu_on) {
 		gain_one_item(global.item_list.cauliflower_seeds);		// gain cauliflower seeds
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("U"))){
 		gain_one_item(global.item_list.cucumber_seeds);		// gain cucumber seeds
-	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("E"))){
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("G"))){
 		gain_one_item(global.item_list.eggplant_seeds);		// gain eggplant seeds
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("L"))){
 		gain_one_item(global.item_list.lettuce_seeds);		// gain lettuce seeds
