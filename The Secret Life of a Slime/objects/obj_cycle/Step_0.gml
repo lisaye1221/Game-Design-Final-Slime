@@ -4,10 +4,12 @@ if (global.paused){
 	if (alarm[1] >= 0){
 		alarm[1] += 1;
 	}
-	if (alarm[2] >= 0){
-		alarm[2] += 1;
+	if (alarm[0] >= 0){
+		alarm[0] += 1;
 	}
 }
+show_debug_message("night"+string(alarm[1]))
+show_debug_message(alarm[2])
 var _cam = view_camera[0];
 left = camera_get_view_x(_cam);
 top = camera_get_view_y(_cam);
@@ -20,9 +22,8 @@ if (!surface_exists(surf)) {
 	surface_reset_target();
 }
 surface_set_target(surf);
-if (in_door()){
-	draw_clear_alpha(c_black,0)
-}else{
+draw_clear_alpha(c_black,0)
+if (!in_door()){
 	draw_set_color(c_black)
 	draw_set_alpha(alpha);
 	var _w = camera_get_view_width(_cam);

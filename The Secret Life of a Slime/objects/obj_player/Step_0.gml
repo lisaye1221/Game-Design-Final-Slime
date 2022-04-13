@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if not (global.dead or global.paused or global.menu_on) {
+if not (global.dead or global.paused) {
 	depth = -y;
 	key_up = keyboard_check(vk_up);
 	key_right = keyboard_check(vk_right);
