@@ -206,6 +206,36 @@ if not (global.dead or global.paused or global.menu_on) {
 		newAmount = amount + global.energy;
 		global.energy = newAmount > global.energy_max ? global.energy_max : newAmount;
 	}
+	
+	// hacky way of gaining more seeds
+	if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("W"))){
+		gain_one_item(global.item_list.wheat_seeds);		// gain wheat seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("C"))){
+		gain_one_item(global.item_list.carrot_seeds);		// gain carrot seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("F"))){
+		gain_one_item(global.item_list.cauliflower_seeds);		// gain cauliflower seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("U"))){
+		gain_one_item(global.item_list.cucumber_seeds);		// gain cucumber seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("E"))){
+		gain_one_item(global.item_list.eggplant_seeds);		// gain eggplant seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("L"))){
+		gain_one_item(global.item_list.lettuce_seeds);		// gain lettuce seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("P"))){
+		gain_one_item(global.item_list.pumpkin_seeds);		// gain pumpkin seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("D"))){
+		gain_one_item(global.item_list.radish_seeds);		// gain radish seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("R"))){
+		gain_one_item(global.item_list.rose_seeds);		// gain rose seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("S"))){
+		gain_one_item(global.item_list.star_seeds);		// gain star seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("M"))){
+		gain_one_item(global.item_list.tomato_seeds);		// gain tomato seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("T"))){
+		gain_one_item(global.item_list.tulip_seeds);		// gain tulip seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("N"))){
+		gain_one_item(global.item_list.turnip_seeds);		// gain turnip seeds
+	}
+		
 
 	// death
 	if (global.energy <= 0) {
