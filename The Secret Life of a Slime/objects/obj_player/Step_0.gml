@@ -120,7 +120,8 @@ if not (global.dead or global.paused or global.menu_on) {
 		draw_prompt_flag = false;
 	}
 
-	// only for planting seeds ******
+	// for interactables which use inventory slots instead of generic z key
+	// (farm plots and machines)
 	if (draw_prompt_flag && interactable_object.uses_inventory){
 		
 		inv = obj_inventory_manager.inventory

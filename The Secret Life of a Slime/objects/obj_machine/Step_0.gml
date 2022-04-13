@@ -43,18 +43,23 @@ else{
 
 switch(this_machine.status){
 	case "empty":
+		uses_inventory = true;
 		which_text = 0;
 		break;
 	case "busy":
+		uses_inventory = false;
 		which_text = 1;
 		break;
 	case "full":
+		uses_inventory = false;	
 		which_text = 2;
 		break;
 	case "broken":
+		uses_inventory = false;
 		which_text = 3;
 		break;
 	case "repairing":
+		uses_inventory = false;
 		which_text = 4;
 		break;
 }

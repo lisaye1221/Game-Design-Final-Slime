@@ -24,3 +24,5 @@ prompt_text_lst = ["use machine? (" + string(convert_from_count) +" "+convert_fr
 which_text = 0;
 
 exclamation = instance_create_layer(x+sprite_width-sprite_xoffset,y-sprite_yoffset,"Instances",obj_exclamation)
+uses_inventory = true;
+inv_slot = 0;

@@ -20,13 +20,14 @@ INV_TOP_LEFT_Y = 550;
 ICON_SIZE = 16;
 
 // item constructor
-function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc) constructor {
+function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc, _conversion_rate=0) constructor {
 	name = _name;
 	icon = _icon;
 	menu_icon = _menu_icon;
 	max_count = _max_count;
 	count = _count;
 	desc = _desc;
+	conversion_rate = _conversion_rate;
 	
 }
 
@@ -57,7 +58,8 @@ global.item_list =
 		spr_item_wheat_menu,
 		CROPS_MAX, 
 		0,
-		"Wheat description"
+		"3 Wheat = 1 Slime Jelly",
+		3
 	),
 	fish: new create_item(
 		"Fish",
@@ -97,7 +99,8 @@ global.item_list =
 		spr_item_tomato_menu,
 		CROPS_MAX,
 		0,
-		"Tomatoes description"
+		"3 Tomatoes = 1 Slime Jelly",
+		3
 	),
 	carrots : new create_item(
 		"Carrot",
@@ -105,7 +108,8 @@ global.item_list =
 		spr_item_carrot_menu,
 		CROPS_MAX,
 		0,
-		"Carrots description"
+		"3 Carrots = 1 Slime Jelly",
+		3
 	),
 	carrot_seeds : new create_item(
 		"Carrot Seeds",
@@ -121,7 +125,8 @@ global.item_list =
 		spr_item_cauli_menu,
 		CROPS_MAX,
 		0,
-		"Cauliflower description"
+		"2 Cauliflower = 1 Slime Jelly",
+		2
 	),
 	cauliflower_seeds : new create_item(
 		"Cauliflower Seeds",
@@ -137,7 +142,8 @@ global.item_list =
 		spr_item_cucumber_menu,
 		CROPS_MAX,
 		0,
-		"Cucumber description"
+		"4 Cucumber = 1 Slime Jelly",
+		4
 	),
 	cucumber_seeds : new create_item(
 		"Cucumber Seeds",
@@ -153,7 +159,8 @@ global.item_list =
 		spr_item_eggplant_menu,
 		CROPS_MAX,
 		0,
-		"Eggplant description"
+		"2 Eggplant = 1 Slime Jelly",
+		2
 	),
 	eggplant_seeds : new create_item(
 		"Eggplant Seeds",
@@ -169,7 +176,8 @@ global.item_list =
 		spr_item_lettuce_menu,
 		CROPS_MAX,
 		0,
-		"Lettuce description"
+		"4 Lettuce = 1 Slime Jelly",
+		4
 	),
 	lettuce_seeds : new create_item(
 		"Lettuce Seeds",
@@ -185,7 +193,8 @@ global.item_list =
 		spr_item_pumpkin_menu,
 		CROPS_MAX,
 		0,
-		"Pumpkin description"
+		"2 Pumpkin = 1 Slime Jelly",
+		2
 	),
 	pumpkin_seeds : new create_item(
 		"Pumpkin Seeds",
@@ -201,7 +210,8 @@ global.item_list =
 		spr_item_raddish_menu,
 		CROPS_MAX,
 		0,
-		"Radish description"
+		"3 Radish = 1 Slime Jelly",
+		3
 	),
 	radish_seeds : new create_item(
 		"Radish Seeds",
@@ -217,7 +227,8 @@ global.item_list =
 		spr_item_rose_menu,
 		CROPS_MAX,
 		0,
-		"Rose description"
+		"1 Rose = 1 Slime Jelly",
+		1
 	),
 	rose_seeds : new create_item(
 		"Rose Seeds",
@@ -265,7 +276,8 @@ global.item_list =
 		spr_item_turnip_menu,
 		CROPS_MAX,
 		0,
-		"Turnip description"
+		"2 Turnip = 1 Slime Jelly",
+		2
 	),
 	turnip_seeds : new create_item(
 		"Turnip Seeds",
