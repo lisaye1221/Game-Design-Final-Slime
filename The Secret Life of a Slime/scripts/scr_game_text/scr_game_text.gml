@@ -33,7 +33,7 @@ switch(_text_id){
 	break;
 	
 	case "home_door_lock":
-		scr_add_text("Door is locked until tutorial is finished.");
+		scr_add_text("Door is locked until tutorial is finished. (Press Z to continue).");
 	break;
 	
 	
@@ -62,7 +62,7 @@ switch(_text_id){
 			break;
 			
 	case "farm_tutorial_lock":
-		scr_add_text("Cannot enter until after tutorial is finished.");
+		scr_add_text("Cannot enter until after tutorial is finished. (Press Z to continue). ");
 		break;
 		
 	
