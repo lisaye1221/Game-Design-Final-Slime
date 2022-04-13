@@ -303,13 +303,13 @@ if (global.menu_on) {
 				
 		}
 			
-		var _arrow_height = (_j_menu_height-40)/6;
-		var _arrow_scale = _arrow_height/sprite_get_height(spr_arrow);
-		var _arrow_width = sprite_get_width(spr_arrow)*_arrow_scale;
+		var _arrow_height = (_j_menu_height-40)/9;
+		var _arrow_scale = _arrow_height/sprite_get_height(spr_menu_arrow);
+		var _arrow_width = sprite_get_width(spr_menu_arrow)*_arrow_scale;
 			
-		var _arrow_x = _j_menu_x + 20;
+		var _arrow_x = _j_menu_x + 40;
 		var _top_arrow_y = _j_menu_y + 20;
-		var _bot_arrow_y = _j_menu_y + (_j_menu_height-40) - 20 - _arrow_height;
+		var _bot_arrow_y = _j_menu_y + (_j_menu_height-40);
 			
 		var _j_txt_height = string_height("Achievement");
 		var _txt_spacing = (_j_menu_height-40-((_j_txt_height*2)*3))/4;
@@ -324,10 +324,10 @@ if (global.menu_on) {
 			
 		// draw bottom arrow if not at ind max
 		if ((journal_index == 0) && (ach_index != farm_ach_max)) {
-			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x, _bot_arrow_y, _arrow_scale, _arrow_scale, 180, c_white, 1);
+			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x+_arrow_width, _bot_arrow_y, _arrow_scale, _arrow_scale, 180, c_white, 1);
 		}
 		else if ((journal_index == 1) && (ach_index != town_ach_max)) {
-			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x, _bot_arrow_y, _arrow_scale, _arrow_scale, 180, c_white, 1);
+			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x+_arrow_width, _bot_arrow_y, _arrow_scale, _arrow_scale, 180, c_white, 1);
 		}
 			
 		// draw three achievements
