@@ -190,14 +190,23 @@ if not (global.dead or global.paused or global.menu_on) {
 			case global.item_list.berries.name:
 				increase_energy(3);
 				lose_one_item(item);
-			break;
+				break;
 			case global.item_list.slime_jelly.name:
 				increase_energy(10);
 				lose_one_item(item);
-			break;
+				break;
 			case global.item_list.fish.name:
 				increase_energy(6);
 				lose_one_item(item);
+				break;
+			case global.item_list.stars.name:
+				increase_energy(10);
+				lose_one_item(item);
+				break;
+			case global.item_list.tulips.name:
+				increase_energy(6);
+				lose_one_item(item);
+				break;
 			default:
 				return;
 		}
