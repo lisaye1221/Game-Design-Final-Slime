@@ -3,4 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-//solid = false
+ready = true;
+prompt_text = "Pick "+harvest.name+"?";

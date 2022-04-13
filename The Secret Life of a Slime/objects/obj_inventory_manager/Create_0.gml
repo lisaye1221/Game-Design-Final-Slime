@@ -131,7 +131,7 @@ global.item_list =
 		0,
 		"Cauliflower Seeds description"
 	),
-	cucumber : new create_item(
+	cucumbers : new create_item(
 		"Cucumber",
 		spr_item_cucumber,
 		spr_item_cucumber_menu,
@@ -147,7 +147,7 @@ global.item_list =
 		0,
 		"Cucumber Seeds description"
 	),
-	eggplant : new create_item(
+	eggplants : new create_item(
 		"Eggplant",
 		spr_item_eggplant,
 		spr_item_eggplant_menu,
@@ -179,7 +179,7 @@ global.item_list =
 		0,
 		"Lettuce Seeds description"
 	),
-	pumpkin : new create_item(
+	pumpkins : new create_item(
 		"Pumpkin",
 		spr_item_pumpkin,
 		spr_item_pumpkin_menu,
@@ -195,7 +195,7 @@ global.item_list =
 		0,
 		"Pumpkin Seeds description"
 	),
-	radish : new create_item(
+	radishes : new create_item(
 		"Radish",
 		spr_item_raddish,
 		spr_item_raddish_menu,
@@ -211,7 +211,7 @@ global.item_list =
 		0,
 		"Radish Seeds description"
 	),
-	rose : new create_item(
+	roses : new create_item(
 		"Rose",
 		spr_item_rose,
 		spr_item_rose_menu,
@@ -227,7 +227,7 @@ global.item_list =
 		0,
 		"Rose Seeds description"
 	),
-	star : new create_item(
+	stars : new create_item(
 		"Star Fruit",
 		spr_item_star,
 		spr_item_star_menu,
@@ -243,7 +243,7 @@ global.item_list =
 		0,
 		"Star Fruit Seeds description"
 	),
-	tulip : new create_item(
+	tulips : new create_item(
 		"Tulip",
 		spr_item_tulip,
 		spr_item_tulip_menu,
@@ -259,7 +259,7 @@ global.item_list =
 		0,
 		"Tulip Seeds description"
 	),
-	turnip : new create_item(
+	turnips : new create_item(
 		"Turnip",
 		spr_item_turnip,
 		spr_item_turnip_menu,

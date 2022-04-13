@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tomato_crop",
-    "path": "sprites/spr_tomato_crop/spr_tomato_crop.yy",
+    "name": "spr_rose_crop",
+    "path": "sprites/spr_rose_crop/spr_rose_crop.yy",
   },
   "solid": true,
   "visible": true,
@@ -30,16 +30,16 @@
   "overriddenProperties": [
     {"propertyId":{"name":"MIN_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"36","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"MAX_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"36","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"sprite_empty","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"spr_tomato_crop","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"sprite_full","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"spr_tomato_crop","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"harvest","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"global.item_list.tomatoes","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"harvest","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"global.item_list.roses","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"sprite_empty","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"spr_rose_crop","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"sprite_full","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"spr_rose_crop","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "crops",
     "path": "folders/Objects/interactables/crops.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_tomato_crop",
+  "name": "obj_rose_crop",
   "tags": [],
   "resourceType": "GMObject",
 }
