@@ -48,5 +48,4 @@ if global.tut_keys_on {
 	draw_text(570,425,"Press S to skip the tutorial")
 
 }
-draw_set_font(ft_dialog)
 

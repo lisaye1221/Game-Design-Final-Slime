@@ -28,6 +28,8 @@ draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 draw_set_color(c_white);
 
+draw_set_font(ft_dialog)
+
 // ** Typing the Text ** //
 if(draw_char < text_length[page]){
 	draw_char += text_speed;
