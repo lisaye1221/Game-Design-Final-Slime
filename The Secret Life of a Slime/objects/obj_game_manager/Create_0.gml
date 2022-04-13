@@ -25,6 +25,7 @@ transformation_cooldown = 0;
 
 global.tiles_collision_name = "Tiles_Collision";
 global.door_collision_name = "Door_Collision";
+global.farm_collision_name = "Farmlock_Collision";
 global.player_in_shop = false;
 global.force_player_home = false;
 

@@ -26,6 +26,7 @@ global.tutorial_ended = false;
 global.tutorial_ended_farm = false;
 global.touchedBed = false;
 global.tutorialBedDone = false;
+global.unlock_homedoor = false;
 
 DIR = [[1,0],[0,-1],[-1,0],[0,1]]
 interactable_object = noone;

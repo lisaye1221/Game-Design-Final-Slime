@@ -2,6 +2,12 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 }
 
+if global.tutorial_ended_farm {
+	instance_deactivate_object(inst_farmlock)
+	instance_deactivate_object(inst_homelock)
+}
+
+
 
 if (b4 and sentence_index < array_length(s4) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1

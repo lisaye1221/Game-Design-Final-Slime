@@ -27,9 +27,16 @@ switch(_text_id){
 		scr_add_text("That is all you need to know, good luck!")		
 	break;
 	
+	case "bed":
+		scr_add_text("This surface is very soft (Press Z to continue).");
+		scr_add_text("But I can't sleep since I'm a slime :(");
+	break;
+	
 	case "home_door_lock":
 		scr_add_text("Door is locked until tutorial is finished.");
 	break;
+	
+	
 	
 	// ---------- Text in home area (outside) ------ //
 	
@@ -53,16 +60,13 @@ switch(_text_id){
 			scr_add_text("A wise choice.");
 			scr_add_text("I am not Mario.");
 			break;
-	
-	case "bed":
-		scr_add_text("This surface is very soft (Press Z to continue).");
-		scr_add_text("But I can't sleep since I'm a slime :(");
+			
+	case "farm_tutorial_lock":
+		scr_add_text("Cannot enter until after tutorial is finished.");
 		break;
 		
-	case "door_locked":
-		scr_add_text("Door is locked.");
-		scr_add_text("Maybe the owner is not in town now.");
-		break;
+	
+		
 		
 	// ---------- Text in village area (outside) ------ //
 	
@@ -77,6 +81,11 @@ switch(_text_id){
 	case "trading_shop_sign":
 		scr_add_text("The trading shop.");
 		scr_add_text("Looks like I can sell things here.");
+		break;
+		
+	case "door_locked":
+		scr_add_text("Door is locked.");
+		scr_add_text("Maybe the owner is not in town now.");
 		break;
 		
 	// ---------- Text for NPCs ------ //
