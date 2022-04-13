@@ -11,7 +11,7 @@ persistent = true;
 // relationship: int with player's relationship stat out of 100
 // has_met: bool where false means player has not met and true means player has met
 function create_relationship(_name, _icon, _relationship, _has_met) constructor {
-	name = _name;
+	npc_name = _name;
 	icon = _icon;
 	relationship = _relationship;
 	has_met = _has_met;

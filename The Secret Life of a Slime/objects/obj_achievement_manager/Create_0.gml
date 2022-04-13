@@ -12,7 +12,7 @@ persistent = true;
 // goal: int achievement goal
 // completed: bool false means player has completed and true means player has completed
 function create_achievement(_name, _detail, _progress, _goal, _completed) constructor {
-	name = _name;
+	ach_name = _name;
 	detail = _detail;
 	progress = _progress;
 	goal = _goal;
