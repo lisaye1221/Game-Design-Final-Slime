@@ -13,3 +13,4 @@ relative_pos_y = y;
 
 uses_inventory = true;
 inv_slot = 0;
+

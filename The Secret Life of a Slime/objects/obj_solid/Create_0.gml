@@ -3,3 +3,4 @@
 
 depth = -y;
 solid = true;
+interactable = true;

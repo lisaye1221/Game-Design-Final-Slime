@@ -55,11 +55,11 @@ if not (global.dead or global.paused or global.menu_on) {
 	}
 
 	// set collision for solid
-	var x_check = instance_place(x+x_speed, y, obj_solid);
+	var x_check = find_first_interactable(obj_solid,x+x_speed, y);
 	if(x_check!=noone && x_check.solid){
 		x_speed = 0;
 	}
-	var y_check = instance_place(x, y+y_speed, obj_solid)
+	var y_check = find_first_interactable(obj_solid,x, y+y_speed)
 	if(y_check!=noone && y_check.solid){
 		y_speed = 0;
 	}
@@ -110,8 +110,8 @@ if not (global.dead or global.paused or global.menu_on) {
 	var _interact_check_x = x + DIR[face][0]*10;
 	var _interact_check_y = y + DIR[face][1]*10;
 	last_interactable_object = interactable_object;
-	interactable_object = instance_place(_interact_check_x,_interact_check_y,obj_solid_interactable);
-	if (interactable_object!=noone && interactable_object.interactable){
+	interactable_object = find_first_interactable(obj_solid_interactable,_interact_check_x,_interact_check_y)
+	if (interactable_object!=noone){
 		if (interactable_object!=last_interactable_object){
 			draw_prompt_flag = true;
 		}

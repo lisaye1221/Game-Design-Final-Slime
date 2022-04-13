@@ -10,3 +10,4 @@ interactable = true;
 growing = false;
 grow_time_remaining = 0;
 farm_plot = noone;
+solid = true;

@@ -12,14 +12,20 @@ function use_item(item){
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_crop)){
 				farm_plot = other.id;	
 			}
-			instance_deactivate_object(id);
+			should_be_interactable = false;
+			interactable = false;
+			visible = false;
+			solid = false;
 			lose_one_item(item);
 			break;
 		case global.item_list.tomato_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tomato_crop)){
 				farm_plot = other.id;	
 			}
-			instance_deactivate_object(id);
+			should_be_interactable = false;
+			interactable = false;
+			visible = false;
+			solid = false;
 			lose_one_item(item);
 			break;
 		default:

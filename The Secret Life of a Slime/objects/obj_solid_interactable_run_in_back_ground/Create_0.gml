@@ -5,3 +5,4 @@
 event_inherited();
 created_room = room;
 persistent = true;
+should_be_interactable = true;

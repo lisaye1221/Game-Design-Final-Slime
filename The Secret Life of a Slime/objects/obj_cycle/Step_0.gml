@@ -27,7 +27,7 @@ if (!in_door()){
 	var _w = camera_get_view_width(_cam);
 	draw_rectangle(0,0,_w,guiHeight, 0);
 	if (currently == "night"){
-		show_debug_message("at night")
+		//show_debug_message("at night")
 		gpu_set_blendmode(bm_subtract);
 		draw_set_color(c_white);
 		with (obj_player) draw_circle(x + random_range(-1, 1)-other.left, y + random_range(-1, 1)-other.top, 50 + random_range(-1, 1), false);
