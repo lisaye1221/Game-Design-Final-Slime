@@ -9,4 +9,6 @@ else if (!global.paused){
 	global.paused = true;
 	i_cursor = 0;
 	tab_index = 0;
+	ach_index = 1;
+	journal_index = 0;
 }

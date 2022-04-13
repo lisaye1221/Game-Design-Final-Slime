@@ -14,6 +14,7 @@ if (global.menu_on) {
 	top = camera_get_view_height(cam)/2 - height/2; // turn 250 to 350 if get rid of bottom UI
 	
 	draw_set_halign(fa_left);
+	draw_set_valign(fa_center);
 	draw_set_font(ft_tabs);
 	draw_set_color(c_black);
 	
@@ -251,7 +252,119 @@ if (global.menu_on) {
 			_per_y = _bar_y + _text_height/2;
 		}
 		
+	}
 		
+	else if (tab_index == 3) {
+			
+		var _farm_width = string_width("Farm") + 50;
+		var _town_width = string_width("Town") + 50;
+		var _j_tab_top = top;
+		var _farm_left = left + 25;
+		var _town_left = left + (width-40) - _town_width - 25;
+			
+		var _farm_txt_x = _farm_left+25;
+		var _town_txt_x = _town_left+25;
+		var _j_txt_y = _j_tab_top+(_tab_height/2);
+			
+		var _j_menu_x = left;
+		var _j_menu_y = top+_tab_height-20;
+		var _j_menu_width = width-40;
+		var _j_menu_height = height-40-_tab_height+20;
+			
+		//draw the journal screen
+		if (journal_index == 0) {
+			// farm tab open
+				
+			// draw town tab behind
+			draw_sprite_stretched_ext(spr_player_menu_tab, 0, _town_left, _j_tab_top, _town_width, _tab_height, c_gray, 1);
+			draw_text(_town_txt_x, _j_txt_y, "Town");
+				
+			// draw player menu
+			draw_sprite_stretched(spr_player_menu, 0, _j_menu_x, _j_menu_y, _j_menu_width, _j_menu_height);
+				
+			// draw farm tab in front
+			draw_sprite_stretched(spr_player_menu_tab, 0, _farm_left, _j_tab_top, _farm_width, _tab_height);
+			draw_text(_farm_txt_x, _j_txt_y, "Farm");
+				
+		}
+		else {
+			// town tab open
+				
+			// draw farm tab behind
+			draw_sprite_stretched_ext(spr_player_menu_tab, 0, _farm_left, _j_tab_top, _farm_width, _tab_height, c_gray, 1);
+			draw_text(_farm_txt_x, _j_txt_y, "Farm");
+				
+			// draw player menu
+			draw_sprite_stretched(spr_player_menu, 0, _j_menu_x, _j_menu_y, _j_menu_width, _j_menu_height);
+				
+			// draw town tab in front
+			draw_sprite_stretched(spr_player_menu_tab, 0, _town_left, _j_tab_top, _town_width, _tab_height);
+			draw_text(_town_txt_x, _j_txt_y, "Town");
+				
+		}
+			
+		var _arrow_height = (_j_menu_height-40)/6;
+		var _arrow_scale = _arrow_height/sprite_get_height(spr_arrow);
+		var _arrow_width = sprite_get_width(spr_arrow)*_arrow_scale;
+			
+		var _arrow_x = _j_menu_x + 20;
+		var _top_arrow_y = _j_menu_y + 20;
+		var _bot_arrow_y = _j_menu_y + (_j_menu_height-40) - 20 - _arrow_height;
+			
+		var _j_txt_height = string_height("Achievement");
+		var _txt_spacing = (_j_menu_height-40-((_j_txt_height*2)*3))/4;
+			
+		var _ach_x = _arrow_x + _arrow_width + 20;
+			
+			
+		// draw top arrow if not at ach min
+		if (ach_index != ach_min) {
+			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x, _top_arrow_y, _arrow_scale, _arrow_scale, 0, c_white, 1);
+		}
+			
+		// draw bottom arrow if not at ind max
+		if ((journal_index == 0) && (ach_index != farm_ach_max)) {
+			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x, _bot_arrow_y, _arrow_scale, _arrow_scale, 180, c_white, 1);
+		}
+		else if ((journal_index == 1) && (ach_index != town_ach_max)) {
+			draw_sprite_ext(spr_menu_arrow, 0, _arrow_x, _bot_arrow_y, _arrow_scale, _arrow_scale, 180, c_white, 1);
+		}
+			
+		// draw three achievements
+		var _ach_y = _j_menu_y + _txt_spacing + 20;
+		var _curr_ach;
+		var _box_height_width = _j_txt_height*2;
+		var _box_x = _j_menu_x + (_j_menu_width-40) - _box_height_width - 20;
+		var _cross_scale = _box_height_width/sprite_get_height(spr_plus);
+			
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+			
+		for (var i = ach_index-1; i <= ach_index + 1; i++) {
+				
+			if (journal_index == 0) _curr_ach = obj_achievement_manager.farm_achievements[i];
+			else _curr_ach = obj_achievement_manager.town_achievements[i]; 
+				
+			// draw ach name
+			draw_set_color(c_teal);
+			draw_text(_ach_x, _ach_y, _curr_ach.ach_name);
+				
+			// draw ach detail
+			if (_curr_ach.completed) draw_set_color(c_grey);
+			else draw_set_color(c_black);
+			draw_text(_ach_x, _ach_y+_j_txt_height, _curr_ach.detail);
+				
+			// draw ach progress
+			draw_text(_ach_x+string_width(_curr_ach.detail)+10, _ach_y+_j_txt_height, "("+string(_curr_ach.progress)+"/"+string(_curr_ach.goal)+")");
+				
+			// draw ach box
+			draw_sprite_stretched(spr_desc_menu, 0, _box_x, _ach_y, _box_height_width, _box_height_width);
+			if (_curr_ach.completed) draw_sprite_ext(spr_plus, 0, _box_x+(_box_height_width/2), _ach_y+(_box_height_width/2), _cross_scale, _cross_scale, 45, c_white, 1);
+				
+			_ach_y += (_j_txt_height*2) + _txt_spacing;
+				
+		}
+			
 		
 	}
 
