@@ -8,4 +8,5 @@ else if (!global.paused){
 	global.menu_on = true;
 	global.paused = true;
 	i_cursor = 0;
+	tab_index = 0;
 }
