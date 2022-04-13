@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -9999;
+
+persistent = true;
+
 // relationship constructor
 // name: string with NPC's name
 // icon: sprite with NPC's portrait
@@ -17,33 +21,33 @@ function create_relationship(_name, _icon, _relationship, _has_met) constructor 
 
 // create the relationship tracker
 relationships = 
-{
-	lavana : new create_relationship(
+[
+	new create_relationship(
 	"Lavana",
 	spr_npc,
 	0,
 	false
 	),
 	
-	machine_man : new create_relationship(
+	new create_relationship(
 	"Machine Man",
 	spr_machineman,
 	0,
 	false
 	),
 	
-	farmer : new create_relationship(
+	new create_relationship(
 	"Farmer",
 	spr_farmer_right,
 	0,
 	false
 	),
 	
-	last : new create_relationship(
-	"Last",
+	new create_relationship(
+	"Template",
 	spr_npc,
 	0,
 	false
 	)
-}
+]
 

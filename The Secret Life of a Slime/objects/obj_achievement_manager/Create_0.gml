@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -9999;
+
+persistent = true;
+
 // achievement constructor
 // name: string achievement's name
 // detail: string description of the achievement
@@ -19,8 +23,8 @@ function create_achievement(_name, _detail, _progress, _goal, _completed) constr
 
 // create the achievement tracker
 achievements = 
-{
-	dont_starve : new create_achievement(
+[
+	new create_achievement(
 	"Don't Starve",
 	"Eat your first slime jelly",
 	0,
@@ -28,7 +32,7 @@ achievements =
 	false
 	),
 	
-	farming_beginner : new create_achievement(
+	new create_achievement(
 	"Farming Beginner",
 	"Harvest 30 crops",
 	0,
@@ -36,7 +40,7 @@ achievements =
 	false
 	),
 	
-	cooking_slime : new create_achievement(
+	new create_achievement(
 	"Cooking Slime",
 	"Use machine 30 times to make food",
 	0,
@@ -44,4 +48,12 @@ achievements =
 	false
 	),
 	
-}
+	new create_achievement(
+	"Template",
+	"Template Detail",
+	0,
+	30,
+	false
+	)
+	
+]
