@@ -25,15 +25,15 @@ relationships =
 	new create_relationship(
 	"Lavana",
 	spr_npc,
-	0,
-	false
+	10,
+	true
 	),
 	
 	new create_relationship(
 	"Machine Man",
 	spr_machineman,
-	0,
-	false
+	90,
+	true
 	),
 	
 	new create_relationship(
