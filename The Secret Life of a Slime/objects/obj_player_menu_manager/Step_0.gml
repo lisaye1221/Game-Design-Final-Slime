@@ -10,31 +10,58 @@ var _v_move = _down - _up;
 
 var _size = obj_inventory_manager.MAX_ITEM;
 
-if (_h_move != 0) {
+if (tab_index == 0) {
+	if (_h_move != 0) {
 	
-	// move cursor index
-	i_cursor += _h_move;
+		// move cursor index
+		i_cursor += _h_move;
 	
-	// clamp vals
-	if (i_cursor < 0) i_cursor = _size-1;
-	else if (i_cursor >= _size) i_cursor = 0;
+		// clamp vals
+		if (i_cursor < 0) i_cursor = _size-1;
+		else if (i_cursor >= _size) i_cursor = 0;
 	
+	}
+
+	if (_v_move != 0) {
+	
+		var _col = i_cursor mod rowLength;
+		var _lastrow_length = _size mod rowLength;
+		if (_lastrow_length == 0) _lastrow_length = 6;
+	
+		// move cursor index up/down a row
+		i_cursor += _v_move*rowLength;
+	
+		if (i_cursor < 0) {
+			if(_col < _lastrow_length) i_cursor = _size - _lastrow_length + _col;
+			else i_cursor = _size - 1;
+		}
+		else if (i_cursor >= _size) i_cursor = _col;
+	}
 }
 
-if (_v_move != 0) {
+else if (tab_index == 3) {
+	if (_v_move != 0) {
 	
-	var _col = i_cursor mod rowLength;
-	var _lastrow_length = _size mod rowLength;
-	if (_lastrow_length == 0) _lastrow_length = 6;
+		// move ach cursor index
+		ach_index += _v_move;
 	
-	// move cursor index up/down a row
-	i_cursor += _v_move*rowLength;
+		// clamp vals
+		if (ach_index < ach_min) ach_index = ach_min;
+		else if ((journal_index == 0)&&(ach_index > farm_ach_max)) ach_index = farm_ach_max;
+		else if ((journal_index == 1)&&(ach_index > town_ach_max)) ach_index = town_ach_max;
 	
-	if (i_cursor < 0) {
-		if(_col < _lastrow_length) i_cursor = _size - _lastrow_length + _col;
-		else i_cursor = _size - 1;
 	}
-	else if (i_cursor >= _size) i_cursor = _col;
+
+	if (_h_move != 0) {
+		
+		// reset ach_index
+		ach_index = ach_min;
+	
+		// switch between journal tabs
+		if (journal_index == 0) journal_index = 1;
+		else journal_index = 0;
+		
+	}
 }
 
 // moving tab index
@@ -53,6 +80,10 @@ if (_t_move != 0) {
 	if (tab_index < 0) tab_index = _t_size-1;
 	else if (tab_index >= _t_size) tab_index = 0;
 	
+	if (tab_index == 3) {
+		ach_index = 1;
+		journal_index = 0;
+	}
 	
 }
 	

@@ -16,7 +16,7 @@ full_signal = true;		// keep track of exclamation signal status
 this_machine = id;
 
 //prompt text
-prompt_text_lst = ["use machine? (" + string(convert_from_count) +" "+convert_from.name+")",
+prompt_text_lst = ["use machine?",
 	"converting...", 
 	"collect the "+convert_to.name+"?",
 	"repair machine? (1 parts) ("+ string(ENERGY_COST_TO_REPAIR) +" energy)",
@@ -24,3 +24,5 @@ prompt_text_lst = ["use machine? (" + string(convert_from_count) +" "+convert_fr
 which_text = 0;
 
 exclamation = instance_create_layer(x+sprite_width-sprite_xoffset,y-sprite_yoffset,"Instances",obj_exclamation)
+uses_inventory = true;
+inv_slot = 0;

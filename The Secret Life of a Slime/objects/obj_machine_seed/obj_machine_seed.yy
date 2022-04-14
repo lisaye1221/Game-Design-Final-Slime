@@ -3,10 +3,10 @@
     "name": "spr_machine",
     "path": "sprites/spr_machine/spr_machine.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "obj_machine",
     "path": "objects/obj_machine/obj_machine.yy",

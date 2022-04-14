@@ -19,23 +19,24 @@ function create_achievement(_name, _detail, _progress, _goal, _completed) constr
 	completed = _completed;
 }
 
-#macro ACHIEVEMENT_AMOUNT 4
+#macro FARM_ACHIEVEMENT_AMOUNT 4
+#macro TOWN_ACHIEVEMENT_AMOUNT 5
 
-// create the achievement tracker
-achievements = 
+// create the farm achievement tracker
+farm_achievements = 
 [
 	new create_achievement(
 	"Don't Starve",
 	"Eat your first slime jelly",
-	0,
 	1,
-	false
+	1,
+	true
 	),
 	
 	new create_achievement(
 	"Farming Beginner",
 	"Harvest 30 crops",
-	0,
+	20,
 	30,
 	false
 	),
@@ -43,6 +44,51 @@ achievements =
 	new create_achievement(
 	"Cooking Slime",
 	"Use machine 30 times to make food",
+	10,
+	30,
+	false
+	),
+	
+	new create_achievement(
+	"Template",
+	"Template Detail",
+	0,
+	30,
+	false
+	)
+	
+]
+
+// create the town achievement tracker
+town_achievements = 
+[
+	new create_achievement(
+	"Template",
+	"Template Detail",
+	0,
+	30,
+	false
+	),
+	
+	new create_achievement(
+	"Template",
+	"Template Detail",
+	0,
+	30,
+	false
+	),
+	
+	new create_achievement(
+	"Template",
+	"Template Detail",
+	0,
+	30,
+	false
+	),
+	
+	new create_achievement(
+	"Template",
+	"Template Detail",
 	0,
 	30,
 	false

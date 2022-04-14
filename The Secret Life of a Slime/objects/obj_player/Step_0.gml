@@ -120,7 +120,8 @@ if not (global.dead or global.paused) {
 		draw_prompt_flag = false;
 	}
 
-	// only for planting seeds ******
+	// for interactables which use inventory slots instead of generic z key
+	// (farm plots and machines)
 	if (draw_prompt_flag && interactable_object.uses_inventory){
 		
 		inv = obj_inventory_manager.inventory
@@ -189,14 +190,23 @@ if not (global.dead or global.paused) {
 			case global.item_list.berries.name:
 				increase_energy(3);
 				lose_one_item(item);
-			break;
+				break;
 			case global.item_list.slime_jelly.name:
 				increase_energy(10);
 				lose_one_item(item);
-			break;
+				break;
 			case global.item_list.fish.name:
 				increase_energy(6);
 				lose_one_item(item);
+				break;
+			case global.item_list.stars.name:
+				increase_energy(10);
+				lose_one_item(item);
+				break;
+			case global.item_list.tulips.name:
+				increase_energy(6);
+				lose_one_item(item);
+				break;
 			default:
 				return;
 		}
