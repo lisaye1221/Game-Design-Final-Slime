@@ -5,7 +5,6 @@ if !global.tutorial_ended_farm {
 	draw_set_alpha(0.50)
 	draw_rectangle(0, 210 , 900, 250, false)
 
-
 	draw_set_color(c_white)
 	draw_set_alpha(0.7)
 	draw_set_font(ft_tutorial)
