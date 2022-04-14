@@ -59,8 +59,7 @@ if b8 and keyboard_check_pressed(ord("E")) {
 		b9 = true;
 		sentence_index = 0;
 		sentence = s9[sentence_index]
-		
-		show_debug_message("xoxoox")
+	
 }
 
 
@@ -91,17 +90,13 @@ if b11 and sentence_index == array_length(s11) - 1  and keyboard_check_pressed(o
 
 if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)) {
 	b6 = false;
-	b7 = true;
-	sentence_index = 0;
-	sentence = s7[sentence_index]
+	alarm[0] = 2.0 * room_speed
 }
 
 
 if b7 and (keyboard_check_pressed(ord("M")) or keyboard_check_pressed(ord("N"))) {
 	b7 = false;
-	b8 = true;
-	sentence_index = 0;
-	sentence = s8[sentence_index]
+	alarm[1] = 2.0 * room_speed
 
 }
 
