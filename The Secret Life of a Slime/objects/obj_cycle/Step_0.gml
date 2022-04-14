@@ -1,6 +1,6 @@
 /// @description create light surface
 // You can write your code in this editor
-if (global.paused){
+if (global.paused or global.tutorial_active){
 	if (alarm[1] >= 0){
 		alarm[1] += 1;
 	}

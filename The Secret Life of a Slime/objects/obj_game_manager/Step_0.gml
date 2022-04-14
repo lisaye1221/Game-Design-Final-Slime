@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // records how many seconds passed by
-if(!global.dead){global.time += global.delta_second;}
+if(!global.dead and !global.tutorial_active){global.time += global.delta_second;}
 // 60 seconds = 1 day
 if (global.time >= 60){
 	global.days++;
@@ -12,7 +12,14 @@ if (global.time >= 60){
 // 60 seconds = 1 day
 //global.days = floor(global.time / 60);
 // lose 0.1 energy per second
-global.energy -= ((.1*global.delta_second) * ENERGY_DEPLETION_MULTIPLIER);
+
+if !global.tutorial_active {
+	global.energy -= ((.1*global.delta_second) * ENERGY_DEPLETION_MULTIPLIER);
+}
+
+if global.tutorial_active and global.tutorial_ended and global.tutorial_ended_farm {
+	global.tutorial_active = false;
+}
 
 if global.dead {
 	if (keyboard_check_pressed(ord("R"))) {
