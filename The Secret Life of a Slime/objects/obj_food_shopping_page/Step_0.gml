@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 disabled = instance_exists(obj_textbox);
-global.paused = true;
 
 accept_key = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && !disabled;
 exit_key = keyboard_check_pressed(ord("X")) && !disabled;
@@ -82,7 +81,6 @@ if(exit_key){
 	if(menu_level == 0){
 		// leave
 		instance_deactivate_object(id);
-		global.paused = false;
 	}
 	else{
 		// go back to previous menu
