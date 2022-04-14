@@ -244,6 +244,8 @@ if not (global.dead or global.paused) {
 		gain_one_item(global.item_list.tulip_seeds);		// gain tulip seeds
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("N"))){
 		gain_one_item(global.item_list.turnip_seeds);		// gain turnip seeds
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("H"))){
+		gain_one_item(global.item_list.parts);		// gain turnip seeds
 	}
 		
 

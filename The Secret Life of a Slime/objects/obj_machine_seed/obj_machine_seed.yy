@@ -23,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"convert_from","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"global.item_list.wheat","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},

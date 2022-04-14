@@ -49,6 +49,7 @@ switch(this_machine.status){
 	case "busy":
 		uses_inventory = false;
 		which_text = 1;
+		inv_slot = 0;
 		break;
 	case "full":
 		uses_inventory = false;	
