@@ -16,6 +16,8 @@ b17 = false;
 energyLost = false;
 berryOne = false;
 
+y_val_pos = 70;
+
 s4 = ["This is your farm! Beautiful, isn't it? (x)",
 "Uh-oh, looks like your energy has depleted (x)",
 "Head over to the bushes and grab a berry"]
