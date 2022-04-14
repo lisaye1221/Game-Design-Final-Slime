@@ -79,6 +79,7 @@ if not (global.dead or global.paused) {
 	if(place_meeting(x,y, obj_prompt_home) && key_z){
 		go_home(self);
 	}
+	/*
 	if(place_meeting(x, y, obj_prompt_grow_crops) && key_z){
 		// checking to see if crops are done growing (if any one is done, all are)
 		if (instance_find(obj_crop,0).ready){
@@ -99,7 +100,7 @@ if not (global.dead or global.paused) {
 				}
 			}
 		}
-	}
+	}*/
 	
 	if !global.tutorialBedDone and place_meeting(x, y, obj_tutorial_check) {
 		global.touchedBed = true;
