@@ -18,6 +18,10 @@ if (draw_prompt_flag){
 		var y_pos = y + 30 + BOUNDARY_SPACE > room_height ? room_height-30 : y+30;
 		draw_set_color(c_white)
 		draw_set_font(ft_prompt)
-		draw_text(x_pos-camera_get_view_x(view_camera[0]),y_pos-camera_get_view_y(view_camera[0]),interactable_object.ready?interactable_object.prompt_text+"[Z]":interactable_object.prompt_text);
+		if (interactable_object.uses_inventory){
+			draw_text(x_pos-camera_get_view_x(view_camera[0]),y_pos-camera_get_view_y(view_camera[0]),interactable_object.ready?interactable_object.prompt_text+"[#]":interactable_object.prompt_text);
+		} else {
+			draw_text(x_pos-camera_get_view_x(view_camera[0]),y_pos-camera_get_view_y(view_camera[0]),interactable_object.ready?interactable_object.prompt_text+"[Z]":interactable_object.prompt_text);
+		}
 	}
 }
