@@ -38,6 +38,7 @@ if not global.dead {
 	}
 	
 	draw_set_valign(fa_center);
+	draw_set_halign(fa_left);
 	
 	// energy
 	// draw player's energy bar;
@@ -70,6 +71,54 @@ if not global.dead {
 		
 	}
 	
+	draw_set_color(c_white);
+	draw_set_font(ft_hotbar);
+	draw_set_halign(fa_center);
+	//show_debug_message("max width:");
+	//show_debug_message(max(string_width("1"), string_width("2"), string_width("3"), string_width("4"), string_width("5"), string_width("6")));
+	//show_debug_message("max height:");
+	//show_debug_message(max(string_height("1"), string_height("2"), string_height("3"), string_height("4"), string_height("5"), string_height("6")));
 	
+	// draw hotbar
+	var _hotbar_width = sprite_get_width(spr_hotbar);
+	var _hotbar_height = sprite_get_height(spr_hotbar);
+	var _hotbar_box_width = _hotbar_width/6;
+	
+	var _hotbar_x = screen_width/2 - (_hotbar_width/2);
+	var _hotbar_y = screen_height - _hotbar_height;
+	
+	draw_sprite(spr_hotbar_blank, 0, _hotbar_x, _hotbar_y);
+	
+	for (var i = 0; i<6; i++) {
+		// draw number
+		draw_text(_hotbar_x + (_hotbar_box_width*i) + 9, _hotbar_y + 10, string(i));
+	}
+	
+	// draw hotbar inventory
+	for(var i = 0; i < array_length(obj_inventory_manager.inventory); i++){
+		
+		
+		if (i < obj_inventory_manager.HOTBAR_SLOTS) {
+	
+		// icon
+		draw_sprite(obj_inventory_manager.inventory[i].menu_icon, 0, _hotbar_x + (_hotbar_box_width*i), _hotbar_y);
+		
+		// draw count
+		draw_text(_hotbar_x + (_hotbar_box_width*(i+1)) - 9, _hotbar_y + _hotbar_box_width - 10, obj_inventory_manager.inventory[i].count);
+		
+		//// icon
+		//draw_sprite(inventory[i].icon, 0, INV_LEFT_X + space, y1+margin);
+		//// item name
+		//draw_set_valign(fa_center);
+		//draw_set_halign(fa_left);
+		//draw_text(INV_LEFT_X + ICON_SIZE + (space * 2), y1+(height/2), inventory[i].name);
+		//// count
+		//draw_set_halign(fa_right);
+		//draw_text(INV_RIGHT_X - space, y1+(height/2), "x" + string(inventory[i].count));
+		
+		}
+	}
+	
+	draw_set_halign(fa_left);
 
 }

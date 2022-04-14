@@ -59,8 +59,6 @@ if (global.menu_on) {
 	// draw the inventory screen
 	if (tab_index == 0) {
 		
-		
-		
 		// draw the inventory boxes with items
 		for (var i = 0; i < obj_inventory_manager.MAX_ITEM; i ++) {
 		
@@ -115,7 +113,12 @@ if (global.menu_on) {
 			
 			draw_set_font(ft_details);
 			
-			draw_text_ext(_name_left, _name_top+20+_name_height, selected.desc, 3, _desc_width-40);
+			var _quan_string = "Quantity: " + string(selected.count);
+			var _quan_height = string_height(_quan_string);
+			
+			draw_text(_name_left, _name_top+10+_name_height, _quan_string);
+			
+			draw_text_ext(_name_left, _name_top+10+_name_height+_quan_height+20, selected.desc, 3, _desc_width-40);
 			
 		}
 		
