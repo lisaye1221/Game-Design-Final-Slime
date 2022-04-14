@@ -11,9 +11,6 @@ accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z")
 if(!setup){
 	setup = true;
 	
-	// loop through the pages
-	page_number = array_length(text); 
-	
 	// find how many char are on each page
 	for(var p = 0; p < page_number; p++){
 		text_length[p] = string_length(text[p]);
@@ -83,7 +80,7 @@ draw_sprite_ext(
 );
 
 // ** Draw the Options ** //
-if (draw_char == text_length[page] && page == option_num - 1){
+if (draw_char == text_length[page] && page == page_number - 1){
 	
 	// option selection
 	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
