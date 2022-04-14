@@ -56,9 +56,10 @@ if (global.menu_on) {
 	left += 20;
 	top += 20;
 	
+	// draw the inventory screen
 	if (tab_index == 0) {
 		
-		// draw the inventory screen
+		
 		
 		// draw the inventory boxes with items
 		for (var i = 0; i < obj_inventory_manager.MAX_ITEM; i ++) {
@@ -94,6 +95,8 @@ if (global.menu_on) {
 		
 		draw_sprite_stretched(spr_desc_menu, 0, _sprite_dis_left, _sprite_dis_top, _sprite_dis_width, _sprite_dis_height);
 		
+		draw_set_font(ft_name);
+		
 		if (i_cursor < array_length(obj_inventory_manager.inventory)) {
 			
 			selected = obj_inventory_manager.inventory[i_cursor];
@@ -102,24 +105,25 @@ if (global.menu_on) {
 			
 			draw_sprite_ext(selected.menu_icon, 0, _sprite_dis_left, _sprite_dis_top, _sprite_scale, _sprite_scale, 0, c_white, 1);
 			
-			var _name_height = string_height(selected.name);
+			var _name_height = string_height_ext(selected.name, 3, _desc_width-40);
 			var _name_left = _desc_left+(_desc_width/2);
 			var _name_top = _desc_top+(_desc_height/2)+20+_name_height/2;
 			
 			draw_set_halign(fa_center);
 			
-			draw_text(_name_left, _name_top, selected.name);
+			draw_text_ext(_name_left, _name_top, selected.name, 3, _desc_width-40);
 			
-			draw_text(_name_left, _name_top+20+_name_height, selected.desc);
+			draw_set_font(ft_details);
+			
+			draw_text_ext(_name_left, _name_top+20+_name_height, selected.desc, 3, _desc_width-40);
 			
 		}
 		
 		
 	}
 	
+	// draw the player screen
 	else if (tab_index == 1) {
-		
-		// draw the player screen
 		
 		// draw the player description box
 		var _desc_left = left;
@@ -148,6 +152,8 @@ if (global.menu_on) {
 			
 		draw_sprite_ext(_curr_sprite, 0, _sprite_x, _sprite_y, _sprite_scale_h, _sprite_scale_v, 0, c_white, 1);
 		
+		draw_set_font(ft_name);
+		
 		var _name_height = string_height("Sapphy Slime");
 		var _name_left = _desc_left+(_desc_width/2);
 		var _name_top = _desc_top+(_desc_height/2)+20+_name_height/2;
@@ -155,10 +161,13 @@ if (global.menu_on) {
 		draw_set_halign(fa_center);
 			
 		draw_text(_name_left, _name_top, "Sapphy Slime");
+		
+		draw_set_font(ft_details);
 			
 		draw_text(_name_left, _name_top+20+_name_height, "That's Me!");
 		
 		// draw player stats
+		draw_set_font(ft_tabs);
 		var _stat_height = string_height("Day:");
 		var _stat_x = left+width/2;
 		
@@ -191,12 +200,15 @@ if (global.menu_on) {
 		draw_text(_energy_text_x, _energy_text_y, "Energy: " + string(ceil(global.energy)));
 	}
 	
+	// draw the relationships screen
 	else if (tab_index == 2) {
 		
-		// draw the relationships screen
+		
 		var _portrait_spacing = 20;
 		var _portrait_height = (height-40-(_portrait_spacing*5))/4;
 		var _portrait_width = _portrait_height;
+		
+		draw_set_font(ft_name);
 		
 		var _text_height = string_height("Name");
 		var _bar_height = _portrait_height - _text_height - 10 - 5;
@@ -230,19 +242,21 @@ if (global.menu_on) {
 				var _sprite_y = _portrait_y + _portrait_height/2;
 			
 				draw_sprite_ext(_curr.icon, 0, _sprite_x, _sprite_y, _sprite_scale_x, _sprite_scale_y, 0, c_white, 1);
-			
+				
+				draw_set_font(ft_name);
 				draw_set_color(c_black);
 				draw_text(_name_x, _name_y, _curr.npc_name);
 			
 				draw_healthbar(_bar_x, _bar_y, _bar_x+_bar_width, _bar_y+_bar_height, _curr.relationship, c_grey, c_maroon, c_red, 0, false, false);
 				draw_sprite_stretched(spr_bar_cover, 0, _bar_x-5, _bar_y-5, _bar_width+10, _bar_height+10);
-			
+				
 				draw_set_color(c_maroon);
 				draw_text(_per_x, _per_y, string(_curr.relationship) + "%");
 				
 			}
 			else {
 				draw_set_color(c_black);
+				draw_set_font(ft_name);
 				draw_text(_name_x, _name_y, "???");
 			}
 			
@@ -253,9 +267,11 @@ if (global.menu_on) {
 		}
 		
 	}
-		
+	
+	// draw the journal/achievements screen
 	else if (tab_index == 3) {
-			
+		
+		draw_set_font(ft_name);
 		var _farm_width = string_width("Farm") + 50;
 		var _town_width = string_width("Town") + 50;
 		var _j_tab_top = top;
@@ -310,7 +326,8 @@ if (global.menu_on) {
 		var _arrow_x = _j_menu_x + 40;
 		var _top_arrow_y = _j_menu_y + 20;
 		var _bot_arrow_y = _j_menu_y + (_j_menu_height-40);
-			
+		
+		draw_set_font(ft_name);
 		var _j_txt_height = string_height("Achievement");
 		var _txt_spacing = (_j_menu_height-40-((_j_txt_height*2)*3))/4;
 			
@@ -346,10 +363,13 @@ if (global.menu_on) {
 			else _curr_ach = obj_achievement_manager.town_achievements[i]; 
 				
 			// draw ach name
-			draw_set_color(c_teal);
+			draw_set_font(ft_name);
+			if (_curr_ach.completed) draw_set_color(c_grey);
+			else draw_set_color(c_navy);
 			draw_text(_ach_x, _ach_y, _curr_ach.ach_name);
 				
 			// draw ach detail
+			draw_set_font(ft_details);
 			if (_curr_ach.completed) draw_set_color(c_grey);
 			else draw_set_color(c_black);
 			draw_text(_ach_x, _ach_y+_j_txt_height, _curr_ach.detail);
