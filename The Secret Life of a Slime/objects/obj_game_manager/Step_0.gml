@@ -46,7 +46,6 @@ if(in_town()){
 		else {
 			forced_home(obj_player);
 		}
-		obj_player.face = LEFT;
 		should_warn_went_over_time_limit = true;
 	}
 }
