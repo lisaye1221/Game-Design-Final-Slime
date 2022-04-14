@@ -108,6 +108,12 @@ switch(_text_id){
 		scr_add_text("My name is Lavana, I sell food around here.");
 		break;
 		
+	case "Claude-first-meet":
+		scr_add_text("Hey, how's it going?");
+		scr_add_text("A new face! Nice to meet ya.");
+		scr_add_text("I'm Claude, I sell a bunch of stuff you'll probably need.");
+		break;
+		
 		
 	// ---------- Text for Warnings/Hints ------ //
 	
