@@ -92,7 +92,7 @@ switch(_text_id){
 		scr_add_text("Looks like a place that sells general things.");
 		break;
 	case "trading_shop_sign":
-		scr_add_text("The trading shop.");
+		scr_add_text("The marketplace.");
 		scr_add_text("Looks like I can sell things here.");
 		break;
 		
