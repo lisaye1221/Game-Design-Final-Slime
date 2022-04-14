@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-event_inherited();
+//event_inherited();
 
 // helper func
 // basically we only have code to use crops here... if not a crop item doesnt get used
@@ -14,7 +14,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.wheat, convert_from_count);
+				//lose_item(global.item_list.wheat, convert_from_count);
+				lose_one_item(global.item_list.wheat);
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.wheat_seeds;
@@ -27,7 +28,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.tomatoes, convert_from_count);
+				//lose_item(global.item_list.tomatoes, convert_from_count);
+				lose_one_item(global.item_list.tomatoes);
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.tomato_seeds;		
@@ -40,7 +42,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.carrots, convert_from_count);
+				//lose_item(global.item_list.carrots, convert_from_count);
+				lose_one_item(global.item_list.carrots);
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.carrot_seeds;				
@@ -53,7 +56,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.cauliflower, convert_from_count);
+				//lose_item(global.item_list.cauliflower, convert_from_count);
+				lose_one_item(global.item_list.cauliflower);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.cauliflower_seeds;				
@@ -66,7 +70,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.cucumbers, convert_from_count);
+				//lose_item(global.item_list.cucumbers, convert_from_count);
+				lose_one_item(global.item_list.cucumbers);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.cucumber_seeds;				
@@ -79,7 +84,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.eggplants, convert_from_count);
+				//lose_item(global.item_list.eggplants, convert_from_count);
+				lose_one_item(global.item_list.eggplants);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.eggplant_seeds;				
@@ -92,7 +98,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.lettuce, convert_from_count);
+				//lose_item(global.item_list.lettuce, convert_from_count);
+				lose_one_item(global.item_list.lettuce);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.lettuce_seeds;				
@@ -105,7 +112,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.pumpkins, convert_from_count);
+				//lose_item(global.item_list.pumpkins, convert_from_count);
+				lose_one_item(global.item_list.pumpkins);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.pumpkin_seeds;				
@@ -118,7 +126,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.radishes, convert_from_count);
+				//lose_item(global.item_list.radishes, convert_from_count);
+				lose_one_item(global.item_list.radishes);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.radish_seeds;				
@@ -131,10 +140,11 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.roses, convert_from_count);
+				//lose_item(global.item_list.roses, convert_from_count);
+				lose_one_item(global.item_list.roses);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
-				convert_to = global.item_list.roses;				
+				convert_to = global.item_list.rose_seeds;				
 				// change text
 			} 
 			break;	
@@ -164,7 +174,8 @@ function use_item(item){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
-				lose_item(global.item_list.turnips, convert_from_count);
+				//lose_item(global.item_list.turnips, convert_from_count);
+				lose_one_item(global.item_list.turnips);				
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				convert_to = global.item_list.turnip_seeds;				
@@ -207,6 +218,7 @@ if (this_machine != noone){
 					if (inv_count >= 6) use_item(inv[5]);
 					break;			
 			}
+			inv_slot = 0;
 		}
 		
 		
