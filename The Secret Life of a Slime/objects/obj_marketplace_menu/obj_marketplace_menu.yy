@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "depreciated",
-    "path": "folders/Objects/menus/depreciated.yy",
+    "name": "menus",
+    "path": "folders/Objects/menus.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_sell_menu",
+  "name": "obj_marketplace_menu",
   "tags": [],
   "resourceType": "GMObject",
 }

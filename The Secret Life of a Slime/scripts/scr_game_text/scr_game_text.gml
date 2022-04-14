@@ -113,6 +113,12 @@ switch(_text_id){
 		scr_add_text("A new face! Nice to meet ya.");
 		scr_add_text("I'm Claude, I sell a bunch of stuff you'll probably need.");
 		break;
+	case "Nelu-first-meet":
+		scr_add_text("Hi hi hi!");
+		scr_add_text("The name is Nelu.");
+		scr_add_text("This your first time? I can tell. Plus, I know everybody around here.");
+		scr_add_text("Welcome to my marketplace, I'll buy certain items off of you.")
+		break;
 		
 		
 	// ---------- Text for Warnings/Hints ------ //
@@ -129,6 +135,9 @@ switch(_text_id){
 		break;
 	case "warn-inventory-full":
 		scr_add_text("My bag is full.");
+		break;
+	case "warn-no-item-to-sell":
+		scr_add_text("I am out of things to sell.");
 		break;
 }
 
