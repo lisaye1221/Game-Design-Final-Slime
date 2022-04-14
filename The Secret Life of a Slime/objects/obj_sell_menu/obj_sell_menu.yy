@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menus",
-    "path": "folders/Objects/menus.yy",
+    "name": "depreciated",
+    "path": "folders/Objects/menus/depreciated.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_sell_menu",
