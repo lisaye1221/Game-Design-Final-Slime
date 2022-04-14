@@ -1,5 +1,6 @@
 
 
+draw_set_halign(fa_right)
 if !b0 and global.tutorial_ended == false {
 	draw_set_color(c_black)
 	draw_set_alpha(0.50)
@@ -8,7 +9,9 @@ if !b0 and global.tutorial_ended == false {
 	draw_set_color(c_white)
 	draw_set_alpha(0.7)
 	draw_set_font(ft_tutorial)
+	draw_set_valign(fa_bottom)
 	draw_text(680,240,string(string_copy(sentence,0,100)))
+	
 }
 
 
@@ -22,6 +25,8 @@ if global.tut_keys_on {
 	
 	draw_sprite(spr_tutorial_plain,0,430,237);
 	draw_sprite(spr_tutorial_plain,0,580,237);
+	
+	draw_set_halign(fa_right)
 	
 	draw_set_alpha(0.9)
 
