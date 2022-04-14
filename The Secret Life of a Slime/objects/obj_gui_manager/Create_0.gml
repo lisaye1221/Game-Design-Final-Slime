@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -9997;
+
 draw_set_font(ft_status);
 
 persistent = true;

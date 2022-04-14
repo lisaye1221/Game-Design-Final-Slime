@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -9998;
+
 rowLength = 6;
 global.menu_on = false;
 

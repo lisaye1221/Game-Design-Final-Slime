@@ -91,7 +91,7 @@ if not global.dead {
 	
 	for (var i = 0; i<6; i++) {
 		// draw number
-		draw_text(_hotbar_x + (_hotbar_box_width*i) + 9, _hotbar_y + 10, string(i));
+		draw_text(_hotbar_x + (_hotbar_box_width*i) + 9, _hotbar_y + 10, string(i+1));
 	}
 	
 	// draw hotbar inventory
