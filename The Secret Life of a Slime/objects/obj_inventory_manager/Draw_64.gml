@@ -21,7 +21,7 @@ if not global.dead {
 	// draw inventory
 	for(var i = 0; i < array_length(inventory); i++){
 		
-		if (i < HOTBAR_SLOTS-1) {
+		if (i < HOTBAR_SLOTS) {
 	
 		height = INV_BACKGROUND_HEIGHT;
 		space = INV_BACKGROUND_MARGIN;
