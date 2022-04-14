@@ -88,10 +88,7 @@ if b5 and keyboard_check_pressed(ord("E")) {
 
 if b8 and keyboard_check_pressed(ord("E")) {
 		b8 = false;
-		b9 = true;
-		sentence_index = 0;
-		sentence = s9[sentence_index]
-	
+		alarm[2] = 1.0 * room_speed;
 }
 
 
@@ -120,7 +117,7 @@ if b11 and sentence_index == array_length(s11) - 1  and (get_item_count(global.i
 }
 
 //change to 4 and make tutorial speed crops FAST
-if b12 and sentence_index == array_length(s12) - 1  and (get_item_count(global.item_list.wheat) == 3) {
+if b12 and sentence_index == array_length(s12) - 1  and (get_item_count(global.item_list.wheat) == 4) {
 		b12 = false;
 		b13 = true;
 		sentence_index = 0;
@@ -128,7 +125,7 @@ if b12 and sentence_index == array_length(s12) - 1  and (get_item_count(global.i
 }
 
 //change to 1  //make s16 red? 
-if b13 and sentence_index == array_length(s13) - 1  and (get_item_count(global.item_list.wheat) == 0) {
+if b13 and sentence_index == array_length(s13) - 1  and (get_item_count(global.item_list.wheat) == 1) {
 		b13 = false;
 		b14 = true;
 		sentence_index = 0;

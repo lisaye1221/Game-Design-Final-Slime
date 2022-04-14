@@ -22,8 +22,8 @@ s4 = ["This is your farm! Beautiful, isn't it?",
 s5 = ["TA-DA! Look at the corner, it's in your inventory now",
 "You can even press E to view your items"]
 
-s6 = ["These are all your items, you can only hold 6 items at once",
-"You can store more items in the chest of your home",
+s6 = ["These are all your items, you can only hold 6 items at once (x)",
+"You can store more items in the chest of your home (x) ",
 "Press the arrow keys to take a closer look of these items"]
 
 s7 =  ["Press M and N to navigate through the tabs"]
@@ -36,7 +36,7 @@ s9 = ["In the human world, you must eat to stay alive",
 "You use 1-6 to use items in your inventory. Press 2 to eat that berry!"]
 
 s10 = [
-"Great job. Keep that energy bar up!",
+"Great job. Keep that energy bar up! It is paused for the moment.",
 "Notice, the berry don't heal much..and the bushes take LOOONG to produce them",
 "That's why you need to get your hands slimey and grow real food yourself",
 "Head over to the farm area",]
@@ -62,8 +62,9 @@ s16 =
 "The village shops offers a variety of items and refreshes its item stock daily",
 "You can also sell your goods and buy machine parts to repair your machines upon wear",
 "Listen.. no one should ever find out about your identity.", 
-"Your human form only lasts for 40 seconds, so make haste",
-"Good luck out there, my friend",
+"You'll transform into a human, but it'll only lasts for 40 seconds",
+"and you'll only able to enter town again after 45 seconds",
+"Good luck out there, my friend, time is ticking now",
 "I must leave now, they're sending me back",""]
 
 s17 = [""]

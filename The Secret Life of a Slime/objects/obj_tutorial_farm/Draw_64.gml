@@ -18,8 +18,14 @@ if !global.tutorial_ended_farm {
 	else if string_length(sentence) > 75 {
 		draw_text(830,230,string(string_copy(sentence,0,100)))
 	}
+	else if string_length(sentence) > 85 {
+		draw_text(850,230,string(string_copy(sentence,0,100)))
+	}
 	else if string_length(sentence) > 50 {
 		draw_text(800,230,string(string_copy(sentence,0,100)))
+	}
+	else if string_length(sentence) < 20 {
+		draw_text(600,230,string(string_copy(sentence,0,100)))
 	}
 	else {
 		draw_text(680,230,string(string_copy(sentence,0,100)))
