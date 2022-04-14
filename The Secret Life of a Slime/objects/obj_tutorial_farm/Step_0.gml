@@ -2,6 +2,8 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 }
 
+show_debug_message(string_length(sentence))
+
 if global.tutorial_ended_farm {
 	instance_deactivate_object(inst_farmlock)
 	instance_deactivate_object(inst_homelock)
@@ -86,14 +88,40 @@ if b5 and keyboard_check_pressed(ord("E")) {
 		sentence = s6[sentence_index]
 }
 
+
+if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)) {
+	b6 = false;
+	alarm[0] = 2.0 * room_speed
+}
+
+
+if b7 and (keyboard_check_pressed(ord("M")) or keyboard_check_pressed(ord("N"))) {
+	b7 = false;
+	alarm[1] = 3.0 * room_speed
+
+}
+
 if b8 and keyboard_check_pressed(ord("E")) {
 		b8 = false;
 		alarm[2] = 1.0 * room_speed;
 }
 
 
+if b8 and (get_item_count(global.item_list.wheat_seeds) == 0) {
+	berryOne = true
+	s9[1] = "You use 1-6 to use items in your inventory. Press 1 to eat that berry!"
+}
 
-if b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("3")) {
+//what is berry is in 1? 
+
+if berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("1")) {
+		b9 = false;
+		b10 = true;
+		sentence_index = 0;
+		sentence = s10[sentence_index]
+}
+
+if !berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("2")) {
 		b9 = false;
 		b10 = true;
 		sentence_index = 0;
@@ -158,19 +186,7 @@ if b16 and sentence_index == array_length(s16) - 1 {
 
 
 
-if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)) {
-	b6 = false;
-	alarm[0] = 2.0 * room_speed
-}
-
-
-if b7 and (keyboard_check_pressed(ord("M")) or keyboard_check_pressed(ord("N"))) {
-	b7 = false;
-	alarm[1] = 3.0 * room_speed
-
-}
-
-if b17 {
+if b17 or (b16 and sentence_index == sentence_index == array_length(s16) - 1)  {
 	global.tutorial_ended_farm = true;
 }
 

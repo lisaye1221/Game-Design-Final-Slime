@@ -10,7 +10,7 @@ if(!ready && !growing){
 		grow_time_remaining = irandom_range(MIN_GROWTH_TIME, MAX_GROWTH_TIME);
 	}
 	else {
-		grow_time_remaining = 3;
+		grow_time_remaining = 5;
 	}
 }
 

@@ -12,21 +12,22 @@ if !global.tutorial_ended_farm {
 	
 	
 
-	if string_length(sentence) < 60 and string_length(sentence) > 50  {
+	if string_length(sentence) < 60 and string_length(sentence) >= 50  {
 		draw_text(740,230,string(string_copy(sentence,0,100)))
 	}
-	else if string_length(sentence) > 75 {
+	else if string_length(sentence) > 80 {
+		draw_text(880,230,string(string_copy(sentence,0,100)))
+	}
+	else if string_length(sentence) >= 70 {
 		draw_text(830,230,string(string_copy(sentence,0,100)))
 	}
-	else if string_length(sentence) > 85 {
-		draw_text(850,230,string(string_copy(sentence,0,100)))
+	else if string_length(sentence) >= 60 {
+		draw_text(780,230,string(string_copy(sentence,0,100)))
 	}
-	else if string_length(sentence) > 50 {
-		draw_text(800,230,string(string_copy(sentence,0,100)))
+	else if string_length(sentence) > 20 and string_length(sentence) < 30 {
+		draw_text(610,230,string(string_copy(sentence,0,100)))
 	}
-	else if string_length(sentence) < 20 {
-		draw_text(600,230,string(string_copy(sentence,0,100)))
-	}
+
 	else {
 		draw_text(680,230,string(string_copy(sentence,0,100)))
 	}

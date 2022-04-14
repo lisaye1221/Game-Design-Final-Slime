@@ -33,7 +33,7 @@ if (b3 and sentence_index < array_length(s3) - 1 and keyboard_check_pressed(ord(
 
 if sentence_index == 3 and b1 and (keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or 
 keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)) {
-	alarm[2] = 0.35 * room_speed;
+	alarm[2] = 0.6 * room_speed;
 }
 
 if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {

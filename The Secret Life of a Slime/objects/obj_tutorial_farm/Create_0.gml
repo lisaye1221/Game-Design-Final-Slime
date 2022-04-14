@@ -14,12 +14,13 @@ b16 = false;
 b17 = false;
 
 energyLost = false;
+berryOne = false;
 
-s4 = ["This is your farm! Beautiful, isn't it?",
-"Uh-oh, looks like your energy has depleted",
+s4 = ["This is your farm! Beautiful, isn't it? (x)",
+"Uh-oh, looks like your energy has depleted (x)",
 "Head over to the bushes and grab a berry"]
 
-s5 = ["TA-DA! Look at the corner, it's in your inventory now",
+s5 = ["TA-DA! Look at the corner, it's in your inventory now (x)",
 "You can even press E to view your items"]
 
 s6 = ["These are all your items, you can only hold 6 items at once (x)",
@@ -32,40 +33,40 @@ s8 = ["Now press E again to close your inventory"]
 
 //first quest is to grab all 3 berries
 
-s9 = ["In the human world, you must eat to stay alive",
+s9 = ["In the human world, you must eat to stay alive (x)",
 "You use 1-6 to use items in your inventory. Press 2 to eat that berry!"]
 
 s10 = [
-"Great job. Keep that energy bar up! It is paused for the moment.",
+"Great job. Keep that energy bar up! (Time is paused at the moment).",
 "Notice, the berry don't heal much..and the bushes take LOOONG to produce them",
-"That's why you need to get your hands slimey and grow real food yourself",
+"That's why you need to get your hands slimey and grow real food yourself (x)",
 "Head over to the farm area",]
 
 s11 = ["Press 1 to grow some wheat. Let's use up all of our seeds"]
 
-s12 = ["Crops take time to grow. I'll make them instantly grow for ya this time", 
+s12 = ["Crops take time to grow. I'll make them instantly grow for ya this time (x)", 
 "Let's harvest all these crops"]
 
-s13 = ["Wheat cannot be consumed, so we must use the machine to make it edible",
+s13 = ["Wheat cannot be consumed, so we must use the machine to make it edible (x)",
 "Go to the top machine and convert the wheat into slime jelly"]
 
-s14 = ["We wait..."]
+s14 = ["We wait... collect the jelly when it's done"]
 
-s15 = ["Now, we have slime jelly! We can choose to eat or sell.",
+s15 = ["Now, we have slime jelly! We can choose to eat or sell. (x)",
 "It takes 3 wheat to convert into 1 slime jelly. Differs for each crop",
-"We have an extra wheat. Let's turn that into seeds to grow more crops.",
+"We have an extra wheat. Let's turn that into seeds to grow more crops. (x)",
 "Let's head over to the bottom machine and produce some seeds"]
 
 
 s16 = 
-["Seeds can also be bought in the village shop",
+["Seeds can also be bought in the village shop (x)",
 "The village shops offers a variety of items and refreshes its item stock daily",
 "You can also sell your goods and buy machine parts to repair your machines upon wear",
 "Listen.. no one should ever find out about your identity.", 
-"You'll transform into a human, but it'll only lasts for 40 seconds",
+"You'll transform into a human when you're in town, but it'll only lasts for 40 seconds",
 "and you'll only able to enter town again after 45 seconds",
-"Good luck out there, my friend, time is ticking now",
-"I must leave now, they're sending me back",""]
+"Good luck out there, my friend...(x)",
+"I must leave now, they're sending me back. Time is ticking now (x).",""]
 
 s17 = [""]
 
