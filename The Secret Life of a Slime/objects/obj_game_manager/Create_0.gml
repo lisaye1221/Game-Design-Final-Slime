@@ -22,12 +22,14 @@ EXCEED_TIME_ENERGY_COST = 15;
 TRANSFORMATION_COOLDOWN_TIME = 45;
 transformation_remaining = 0;
 transformation_cooldown = 0;
+should_warn_went_over_time_limit = false;
 
 global.tiles_collision_name = "Tiles_Collision";
 global.door_collision_name = "Door_Collision";
 global.farm_collision_name = "Farmlock_Collision";
 global.player_in_shop = false;
 global.force_player_home = false;
+
 
 
 global.tut_keys_on = true;

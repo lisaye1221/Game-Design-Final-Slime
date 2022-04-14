@@ -208,6 +208,7 @@ if not (global.dead or global.paused) {
 				lose_one_item(item);
 				break;
 			default:
+				create_textbox("warn-cannot-use-item");
 				return;
 		}
 	}

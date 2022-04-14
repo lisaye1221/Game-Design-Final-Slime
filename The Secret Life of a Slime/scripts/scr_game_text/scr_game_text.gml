@@ -65,7 +65,9 @@ switch(_text_id){
 		break;
 		case "mushroom-yes":
 			scr_add_text("....");
-			scr_add_text("On a second thought, maybe I shouldn't");
+			scr_add_text("You died.");
+			scr_add_text("....Just kidding!");
+			scr_add_text("I'm better off not eating that.");
 			break;
 		case "mushroom-no":
 			scr_add_text("A wise choice.");
@@ -114,6 +116,13 @@ switch(_text_id){
 		break;
 	case "warn-cannot-use-item":
 		scr_add_text("I can't use that item right now.");
+		break;
+	case "warn-transformation-time-out":
+		scr_add_text("I lost some energy while rushing home.");
+		scr_add_text("I should be aware of the transformation time next time in town...");
+		break;
+	case "warn-inventory-full":
+		scr_add_text("My bag is full.");
 		break;
 }
 

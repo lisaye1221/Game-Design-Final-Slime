@@ -11,6 +11,8 @@ accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z")
 if(!setup){
 	setup = true;
 	
+	page_number = array_length(text);
+	
 	// find how many char are on each page
 	for(var p = 0; p < page_number; p++){
 		text_length[p] = string_length(text[p]);

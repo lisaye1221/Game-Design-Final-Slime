@@ -39,13 +39,15 @@ if(in_town()){
 	if (transformation_remaining >= 0) {
 		transformation_remaining -= (global.delta_second);
 	}
-	else{
+	else{ // exceeded transformation time
 		if (global.player_in_shop) {
 			global.force_player_home = true;
 		}
 		else {
 			forced_home(obj_player);
 		}
+		obj_player.face = LEFT;
+		should_warn_went_over_time_limit = true;
 	}
 }
 
@@ -58,7 +60,13 @@ if(room == home){
 	if(transformation_cooldown > 0){
 		transformation_cooldown -= (global.delta_second);	
 	}
+	
 	if(transformation_cooldown < 0) {transformation_cooldown = 0;}
+	
+	if(should_warn_went_over_time_limit){
+		create_textbox("warn-transformation-time-out");	
+		should_warn_went_over_time_limit = false;
+	}
 	
 	/*if firstTimeFarm {
 		crop[0] = instance_create_layer(96, 288, "crops", obj_crop);
