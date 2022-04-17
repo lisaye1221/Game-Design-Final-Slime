@@ -38,6 +38,7 @@ global.should_shop_restock = false;
 
 
 
+
 global.tut_keys_on = true;
 global.tutorial_active = true;
 global.paused = false;

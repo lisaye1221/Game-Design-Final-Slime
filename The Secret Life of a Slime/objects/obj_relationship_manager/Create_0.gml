@@ -23,6 +23,10 @@ function create_relationship(_name, _icon, _relationship, _has_met) constructor 
 #macro NELU 2
 #macro LOLA 3
 
+// use to keep track of player talked to an npc already
+// players can only gain relationship points by talking once per trip to village
+global.talked_this_trip_already = array_create(RELATIONSHIP_AMOUNT, false);
+
 // ex of getting relationship of Claude
 // obj.relationship_manager.relationships[CLAUDE].relationship
 // or use the function get_relationship(CLAUDE)

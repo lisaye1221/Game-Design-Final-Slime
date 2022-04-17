@@ -1,5 +1,13 @@
 // Script assets have changed for v2.3.0 see
 
+
+function gain_relationship_through_talking(_name){
+	if(!global.talked_this_trip_already[_name]){
+		increase_relationship(_name, 1);
+		global.talked_this_trip_already[_name] = true;
+	}
+}
+
 // tier 0: 0-10
 // tier 1: 11-40 [unlock gift gifting]
 // tier 2: 41-70

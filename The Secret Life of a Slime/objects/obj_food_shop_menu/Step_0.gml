@@ -37,7 +37,8 @@ if (accept_key){
 						create_textbox("Lavana-first-meet");
 					}
 					else{
-						create_textbox("Lavana-0-1");	
+						create_textbox("Lavana-0-1");
+						gain_relationship_through_talking(LAVANA);
 					}
 					instance_deactivate_object(id);
 					break;

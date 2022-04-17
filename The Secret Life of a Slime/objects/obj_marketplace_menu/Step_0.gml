@@ -42,6 +42,7 @@ if (accept_key){
 					}
 					else{
 						create_textbox("Nelu-0-1");
+						gain_relationship_through_talking(NELU);
 					}
 					
 					instance_deactivate_object(id);

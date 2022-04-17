@@ -37,7 +37,8 @@ if (accept_key){
 						create_textbox("Claude-first-meet");
 					}
 					else{
-						create_textbox("Claude-0-1");	
+						create_textbox("Claude-0-1");
+						gain_relationship_through_talking(CLAUDE);
 					}
 					instance_deactivate_object(id);
 					break;
