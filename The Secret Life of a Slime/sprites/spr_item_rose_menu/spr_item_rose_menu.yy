@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "items",
-    "path": "folders/Sprites/npc/items.yy",
+    "path": "folders/Sprites/items.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_rose_menu",

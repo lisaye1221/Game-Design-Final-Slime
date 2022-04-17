@@ -8,8 +8,8 @@ if (global.paused or global.tutorial_active){
 		alarm[0] += 1;
 	}
 }
-show_debug_message("night"+string(alarm[1]))
-show_debug_message(alarm[2])
+//show_debug_message("night"+string(alarm[1]))
+//show_debug_message(alarm[2])
 var _cam = view_camera[0];
 left = camera_get_view_x(_cam);
 top = camera_get_view_y(_cam);

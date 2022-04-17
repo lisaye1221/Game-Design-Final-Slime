@@ -8,6 +8,7 @@ inventory =
 	wheat : new create_shop_item(global.item_list.wheat, 8, 6),
 	fish: new create_shop_item(global.item_list.fish, 15, 2),
 	tomatoes: new create_shop_item(global.item_list.tomatoes, 10, 6),
+	egg: new create_shop_item(global.item_list.egg, 10, 2),
 }
 
 event_inherited();

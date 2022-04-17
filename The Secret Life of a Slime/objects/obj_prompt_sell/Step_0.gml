@@ -8,7 +8,7 @@ if(place_meeting(x, y, obj_player) && keyboard_check_pressed(ord("Z"))){
 	instance_activate_object(obj_sell_menu);
 	instance_activate_object(obj_inventory_manager);
 	instance_activate_object(obj_game_manager);
-	show_debug_message("true")
+	// show_debug_message("true")
 }
 
 if (should_close_menu){

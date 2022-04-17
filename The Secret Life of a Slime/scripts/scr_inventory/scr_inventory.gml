@@ -8,7 +8,8 @@ function new_item(item, _count) constructor {
 	max_count = item.max_count;
 	count = _count;
 	desc = item.desc;
-	
+	conversion_rate = item.conversion_rate;
+	sell_price = item.sell_price;
 }
 // inventory manipulation
 function get_item_count(item){

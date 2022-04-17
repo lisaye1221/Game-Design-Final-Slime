@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "items",
-    "path": "folders/Sprites/npc/items.yy",
+    "name": "food",
+    "path": "folders/Sprites/food.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_jelly",

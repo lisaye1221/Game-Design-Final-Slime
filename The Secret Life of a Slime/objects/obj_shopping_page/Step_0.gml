@@ -70,7 +70,15 @@ if(accept_key){
 			
 			if(selected_item.stock <= 0){
 				array_delete(curr_inventory, option_pos, 1);
+				// move cursors up 
+				option_pos--;
+				end_pos--;
 				option_num = array_length(curr_inventory);
+				// if end_pos is last index and start_pos is not at the very beginning
+				if(end_pos == option_num - 1&& start_pos > 0){
+					// adjust start pos (scroll up)
+					start_pos = end_pos - (NUM_ITEM_SHOWN_MAX-1);
+				}
 			}
 			
 			// go back to prev menu
@@ -102,3 +110,6 @@ if(option_pos < start_pos){
 	start_pos = option_pos;	
 	end_pos = start_pos + (NUM_ITEM_SHOWN_MAX-1);
 }
+
+show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos));
+

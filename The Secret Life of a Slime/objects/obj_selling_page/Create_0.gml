@@ -1,4 +1,4 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 instance_deactivate_object(id);
 
@@ -8,8 +8,7 @@ function create_selling_inventory() {
 	inv = obj_inventory_manager.inventory;
 	
 	for(var i = 0; i < array_length(inv); i++){
-		array_push(result, new create_shop_item_for_sale(inv[i], 3, inv[i].count));
-		show_debug_message(inv[i])
+		array_push(result, new create_shop_item_for_sale(inv[i], inv[i].sell_price, inv[i].count));
 	}
 	
 	
