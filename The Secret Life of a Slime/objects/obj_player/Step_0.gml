@@ -195,6 +195,7 @@ if not (global.dead or global.paused) {
 			case global.item_list.slime_jelly.name:
 				increase_energy(10);
 				lose_one_item(item);
+				achi_gain_progress("DONT_STARVE", 1);
 				break;
 			case global.item_list.fish.name:
 				increase_energy(6);
