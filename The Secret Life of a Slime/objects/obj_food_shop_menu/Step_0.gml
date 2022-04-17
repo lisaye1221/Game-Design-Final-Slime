@@ -33,7 +33,12 @@ if (accept_key){
 				// talk
 				case 1:
 					// bring up dialogue
-					create_textbox("Lavana-first-meet");
+					if(!has_met_npc(LAVANA)){
+						create_textbox("Lavana-first-meet");
+					}
+					else{
+						create_textbox("Lavana-0-1");	
+					}
 					instance_deactivate_object(id);
 					break;
 				// exit

@@ -1,5 +1,8 @@
 // This file will store all of the game's dialogue text
 
+// apart from that, this is also where you can specify some actions you 
+// want to happen after a dialogue is done (increasing friendship, etc.)
+
 function scr_game_text(_text_id){
 	
 switch(_text_id){
@@ -106,19 +109,39 @@ switch(_text_id){
 	case "Lavana-first-meet":
 		scr_add_text("Hello, nice to meet you.");
 		scr_add_text("My name is Lavana, I sell food around here.");
+		first_talk_completed(LAVANA);
 		break;
 		
 	case "Claude-first-meet":
 		scr_add_text("Hey, how's it going?");
 		scr_add_text("A new face! Nice to meet ya.");
-		scr_add_text("I'm Claude, I sell a bunch of stuff you'll probably need.");
+		scr_add_text("I'm Claude, I sell a bunch of stuff ya probably need.");
+		first_talk_completed(CLAUDE);
 		break;
 	case "Nelu-first-meet":
 		scr_add_text("Hi hi hi!");
 		scr_add_text("The name is Nelu.");
 		scr_add_text("This your first time? I can tell. Plus, I know everybody around here.");
-		scr_add_text("Welcome to my marketplace, I'll buy certain items off of you.")
+		scr_add_text("Welcome to my marketplace, I'll buy certain items off of you.");
+		first_talk_completed(NELU);
 		break;
+		
+	// naming convention "(name)-(relationship tier)-(id)"
+	// dialogue marked with relationship tier 1 will only appear when 
+	// relationship level is tier 1
+	case "Lavana-0-1":
+		scr_add_text("Hi, good to see you!");
+		scr_add_text("We have some nice produce in stock today. Check them out!");
+		break;
+	case "Claude-0-1":
+		scr_add_text("Hey again!");
+		scr_add_text("Isn't it a great day today?");
+		break;
+	case "Nelu-0-1":
+		scr_add_text("Hiiiiiiii.");
+		scr_add_text("Do you got more things for me today?");
+		break;
+		
 		
 		
 	// ---------- Text for Warnings/Hints ------ //

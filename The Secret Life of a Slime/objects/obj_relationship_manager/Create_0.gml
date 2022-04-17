@@ -18,6 +18,14 @@ function create_relationship(_name, _icon, _relationship, _has_met) constructor 
 }
 
 #macro RELATIONSHIP_AMOUNT 4
+#macro LAVANA 0
+#macro CLAUDE 1
+#macro NELU 2
+#macro LOLA 3
+
+// ex of getting relationship of Claude
+// obj.relationship_manager.relationships[CLAUDE].relationship
+// or use the function get_relationship(CLAUDE)
 
 // create the relationship tracker
 relationships = 
@@ -25,26 +33,26 @@ relationships =
 	new create_relationship(
 	"Lavana",
 	spr_npc,
-	10,
-	true
+	0,
+	false
 	),
 	
 	new create_relationship(
-	"Machine Man",
+	"Claude",
 	spr_machineman,
-	90,
-	true
+	0,
+	false
 	),
 	
 	new create_relationship(
-	"Farmer",
+	"Nelu",
 	spr_farmer_right,
 	0,
 	false
 	),
 	
 	new create_relationship(
-	"Template",
+	"Lola",
 	spr_npc,
 	0,
 	false

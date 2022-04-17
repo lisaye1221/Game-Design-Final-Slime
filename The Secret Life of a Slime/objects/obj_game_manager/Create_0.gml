@@ -18,7 +18,7 @@ is_room_transition = false;
 
 // ** Time Limit for Town ** //
 // how much time you got in town
-TOWN_TIME_LIMIT = 40; // seconds
+TOWN_TIME_LIMIT = 25; // seconds
 // how much energy you lose if you're forced back
 EXCEED_TIME_ENERGY_COST = 15;
 // how much time to wait until you can go back to town
