@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// a list of possible items this shop can sell
 inventory = 
 {
 	berries : new create_shop_item(global.item_list.berries, 4, 5),

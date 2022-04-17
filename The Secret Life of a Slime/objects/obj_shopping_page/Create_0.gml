@@ -3,20 +3,7 @@
 
 instance_deactivate_object(id);
 
-// a list of possible items this shop can sell
-
-	/*
-inventory = 
-{
-	berries : new create_shop_item(global.item_list.berries, 4, 5),
-
-	berries : new create_shop_item(global.item_list.berries, 4, 5),
-	wheat : new create_shop_item(global.item_list.wheat, 8, 6),
-	fish: new create_shop_item(global.item_list.fish, 15, 2),
-	tomatoes: new create_shop_item(global.item_list.tomatoes, 10, 6),
-
-}
-	*/
+// inventory = {} this code should be in children
 
 // a list of items for sale now
 

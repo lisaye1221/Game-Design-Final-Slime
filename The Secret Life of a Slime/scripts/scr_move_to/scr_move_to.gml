@@ -10,6 +10,7 @@ function go_to_town(player){
 		player.face = RIGHT;
 		player.x = TOWN_X;
 		player.y = TOWN_Y;
+		global.should_shop_restock = true;
 	}
 }
 

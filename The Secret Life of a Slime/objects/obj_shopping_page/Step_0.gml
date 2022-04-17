@@ -3,6 +3,12 @@
 
 disabled = instance_exists(obj_textbox);
 
+// restocks every time player goes to town
+if(global.should_shop_restock){
+	curr_inventory = scr_restock_food_shop_inventory(inventory);
+	global.should_shop_restock = false;
+}
+
 accept_key = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && !disabled;
 exit_key = keyboard_check_pressed(ord("X")) && !disabled;
 
