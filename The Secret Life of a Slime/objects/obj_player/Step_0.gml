@@ -38,7 +38,7 @@ if not (global.dead or global.paused) {
 	// move camera left when player walks off screen
 	if (x < camera_get_view_x(cam)){
 		//view_x -= view_width;	// i think this is shifting by an entire screen width
-		show_debug_message("player pos: " + string(x) + ", cam pos: " + string(camera_get_view_x(cam)));
+		//show_debug_message("player pos: " + string(x) + ", cam pos: " + string(camera_get_view_x(cam)));
 		camera_set_view_pos(cam, camera_get_view_x(cam) - camera_get_view_width(cam)/2, camera_get_view_y(cam));
 	}
 	if(x > camera_get_view_x(cam) + camera_get_view_width(cam)) {
@@ -47,7 +47,7 @@ if not (global.dead or global.paused) {
 	
 	// move camera down when player walks below screen
 	if (y < camera_get_view_y(cam)){
-		show_debug_message("player pos: " + string(y) + ", cam pos: " + string(camera_get_view_y(cam)));
+		//show_debug_message("player pos: " + string(y) + ", cam pos: " + string(camera_get_view_y(cam)));
 		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) - camera_get_view_height(cam)/2);
 	}
 	if (y > camera_get_view_y(cam) + camera_get_view_height(cam)){

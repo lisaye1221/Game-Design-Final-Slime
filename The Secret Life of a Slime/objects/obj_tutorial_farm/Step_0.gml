@@ -2,7 +2,7 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 }
 
-show_debug_message(string_length(sentence))
+//show_debug_message(string_length(sentence))
 
 if global.tutorial_ended_farm {
 	instance_deactivate_object(inst_farmlock)

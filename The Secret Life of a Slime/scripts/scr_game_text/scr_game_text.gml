@@ -4,6 +4,7 @@
 // want to happen after a dialogue is done (increasing friendship, etc.)
 
 function scr_game_text(_text_id){
+	return_value = 0;
 	
 switch(_text_id){
 	
@@ -174,12 +175,17 @@ switch(_text_id){
 		break;
 		case "wheat-yes":
 			// call conversion function
-			return 1;
+			scr_add_text("You got it dude.");
+			return_value = 1;
 			break;
 		case "wheat-no":
 			// exit
-			return 0;
+			scr_add_text("Bye then.");
+			return_value = 0;
 			break;
 }
+
+show_debug_message("Return from game_text: " + string(return_value));
+return return_value;
 
 }

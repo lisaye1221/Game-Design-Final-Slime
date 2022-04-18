@@ -9,9 +9,12 @@ function scr_add_text(_text){
 
 /// @param text_id
 function create_textbox(_text_id){
+	return_value = 0;
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
-		return scr_game_text(_text_id);	
+		return_value = scr_game_text(_text_id);	
 	}
+	show_debug_message("Return from textbox_function: " + string(return_value));
+	return return_value;
 
 }
 

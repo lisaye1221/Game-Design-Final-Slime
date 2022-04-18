@@ -111,5 +111,5 @@ if(option_pos < start_pos){
 	end_pos = start_pos + (NUM_ITEM_SHOWN_MAX-1);
 }
 
-show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos));
+//show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos));
 
