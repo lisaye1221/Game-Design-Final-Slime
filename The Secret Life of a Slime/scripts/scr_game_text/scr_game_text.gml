@@ -162,6 +162,24 @@ switch(_text_id){
 	case "warn-no-item-to-sell":
 		scr_add_text("I am out of things to sell.");
 		break;
+		
+	
+	// ---------- Text for Slime Jelly conversion machine ------ //
+	case "convert-wheat-to-jelly":
+		scr_add_text("4 Wheat = 1 Slime Jelly");
+		scr_add_text("You own " + string(get_item_count(global.item_list.wheat)) + " wheat.");
+		scr_add_text("Continue?");
+			scr_option("Yes", "wheat-yes");
+			scr_option("No", "wheat-no");
+		break;
+		case "wheat-yes":
+			// call conversion function
+			return 1;
+			break;
+		case "wheat-no":
+			// exit
+			return 0;
+			break;
 }
 
 }

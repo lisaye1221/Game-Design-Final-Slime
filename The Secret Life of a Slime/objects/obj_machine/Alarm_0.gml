@@ -178,7 +178,7 @@ if (this_machine != noone){
 				case 0:
 					break;
 				case 1:
-					if (inv_count >= 1) use_item(inv[0]);
+					if (inv_count >= 1 && create_textbox("convert-wheat-to-jelly")) use_item(inv[0]);
 					break;
 				case 2:
 					if (inv_count >= 2) use_item(inv[1]);
