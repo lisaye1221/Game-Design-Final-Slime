@@ -18,6 +18,15 @@ function create_textbox(_text_id){
 
 }
 
+/// @param text_id, item
+/// @param item
+/// @param this_machine
+function create_confirmation_box(_text_id, _item, _this_machine){
+	with(instance_create_depth(0, 0, -9999, obj_textbox)){
+		scr_confirmation_text(_text_id, _item, _this_machine);	
+	}
+}
+
 /// @param option_text
 /// @param link_id
 function scr_option(_option_text, _link_id){

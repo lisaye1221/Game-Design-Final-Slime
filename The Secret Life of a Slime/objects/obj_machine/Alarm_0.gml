@@ -10,7 +10,9 @@ function use_item(item){
 	switch(item.name){
 		case global.item_list.wheat.name:
 			// inputting wheat if they have enough in inventory
-			if (get_item_count(global.item_list.wheat) >= global.item_list.wheat.conversion_rate){
+			create_confirmation_box("convert-wheat-to-jelly", global.item_list.wheat, this_machine);
+			//scr_use_item_slime_conv(global.item_list.wheat, this_machine);
+			/*if (get_item_count(global.item_list.wheat) >= global.item_list.wheat.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.wheat.conversion_rate;
@@ -18,7 +20,7 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.tomatoes.name:
 			// inputting tomatoes if they have enough in inventory
@@ -178,7 +180,8 @@ if (this_machine != noone){
 				case 0:
 					break;
 				case 1:
-					if (inv_count >= 1 && create_textbox("convert-wheat-to-jelly")) use_item(inv[0]);
+					//if (inv_count >= 1 && create_textbox("convert-wheat-to-jelly")) use_item(inv[0]);
+					if (inv_count >= 1) use_item(inv[0]);
 					break;
 				case 2:
 					if (inv_count >= 2) use_item(inv[1]);
