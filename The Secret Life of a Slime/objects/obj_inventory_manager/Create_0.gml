@@ -348,6 +348,24 @@ global.item_list =
 		0,
 		5,
 	),
+	spaghetti : new create_item(
+		"Spaghetti",
+		spr_spaghetti,
+		spr_spaghetti_menu,
+		1,
+		0,
+		"A plate of Spaghetti.",
+		0,
+		10,
+	),
+	ramen : new create_item(
+		"Ramen",
+		spr_ramen,
+		spr_ramen_menu,
+		1,
+		0,
+		"A bowl of Ramen.",
+	)
 }
 
 // create the inventory

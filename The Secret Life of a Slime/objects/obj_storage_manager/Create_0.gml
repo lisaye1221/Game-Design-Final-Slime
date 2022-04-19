@@ -14,3 +14,5 @@ inventory = array_create(0);
 
 rowLength = 6;
 i_cursor = 0;
+
+
