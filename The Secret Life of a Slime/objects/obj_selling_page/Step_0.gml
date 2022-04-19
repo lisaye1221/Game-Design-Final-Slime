@@ -79,6 +79,10 @@ if(exit_key){
 	if(menu_level == 0){
 		// leave
 		instance_deactivate_object(id);
+		// reset position variable
+		option_pos = 0;
+		start_pos = 0;
+		end_pos = option_num > NUM_ITEM_SHOWN_MAX ? NUM_ITEM_SHOWN_MAX - 1 : option_num - 1 ;
 	}
 	else{
 		// go back to previous menu

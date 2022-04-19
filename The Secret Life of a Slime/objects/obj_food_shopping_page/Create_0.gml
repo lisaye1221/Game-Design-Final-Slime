@@ -12,3 +12,5 @@ inventory =
 }
 
 event_inherited();
+
+show_debug_message("create event called");

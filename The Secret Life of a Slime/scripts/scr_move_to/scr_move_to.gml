@@ -10,13 +10,11 @@ function go_to_town(player){
 		player.face = RIGHT;
 		player.x = TOWN_X;
 		player.y = TOWN_Y;
-		
 		// reset some town flags
 		global.should_shop_restock = true;
 		for(var i = 0; i<array_length(global.talked_this_trip_already);i++){
 			global.talked_this_trip_already[i] = false;	
 		}
-		
 	}
 }
 

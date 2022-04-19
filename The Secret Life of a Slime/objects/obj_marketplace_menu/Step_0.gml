@@ -46,6 +46,7 @@ if (accept_key){
 					instance_deactivate_object(id);
 					break;
 			}
+			pos = 0;
 			break;
 	}
 	// reset pos

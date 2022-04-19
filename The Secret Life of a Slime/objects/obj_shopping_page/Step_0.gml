@@ -6,6 +6,7 @@ disabled = instance_exists(obj_textbox);
 // restocks every time player goes to town
 if(global.should_shop_restock){
 	curr_inventory = scr_restock_food_shop_inventory(inventory);
+	option_num = array_length(curr_inventory);
 	global.should_shop_restock = false;
 }
 
@@ -93,6 +94,10 @@ if(accept_key){
 
 if(exit_key){
 	if(menu_level == 0){
+		// reset position variable
+		option_pos = 0;
+		start_pos = 0;
+		end_pos = option_num > NUM_ITEM_SHOWN_MAX ? NUM_ITEM_SHOWN_MAX - 1 : option_num - 1 ;
 		// leave
 		instance_deactivate_object(id);
 	}
