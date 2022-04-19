@@ -94,7 +94,7 @@ for(var i = 0; i < _things_to_draw; i++){
 	draw_text(
 	menu_x + background_w - option_x_margin,
 	menu_y + arrow_y_space + (i * option_y_space),
-	string(_item.unit_price) +"G",
+	string(_item.unit_price*discount) +"G",
 	)
 	
 	

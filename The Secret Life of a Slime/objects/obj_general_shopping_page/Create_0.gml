@@ -11,4 +11,5 @@ inventory =
 	rose_seeds: new create_shop_item(global.item_list.rose_seeds, 10, 4),
 }
 
+
 event_inherited();

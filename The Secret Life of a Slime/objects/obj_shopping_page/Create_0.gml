@@ -54,3 +54,5 @@ total_cost = 0;
 // menu_level = 0 - on the list of items
 // menu_level = 1 - on the item details
 menu_level = 0;
+
+discount = 1;

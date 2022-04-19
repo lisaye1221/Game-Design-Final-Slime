@@ -55,7 +55,7 @@ if(accept_key){
 		// bring up the item detail menu
 		selected_item = curr_inventory[option_pos];
 		selected_amount = 1;
-		total_cost = selected_item.unit_price;
+		total_cost = selected_item.unit_price*selected_amount*discount;
 	}
 	else{
 		// check if we aren't broke

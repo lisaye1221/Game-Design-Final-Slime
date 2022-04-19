@@ -65,21 +65,9 @@ function gain_relationship_through_talking(_name){
 #macro TIER_1_THRESHOLD 11
 #macro TIER_2_THRESHOLD 41
 #macro TIER_3_THRESHOLD 71
+
 function get_relationship_tier(_name){
-	
-	var relationship = get_relationship(_name);
-	
-	if(relationship > TIER_3_THRESHOLD){
-		return 3;	
-	}
-	if(relationship > TIER_2_THRESHOLD){
-		return 2;
-	}
-	if(relationship > TIER_1_THRESHOLD){
-		return 1;
-	}
-	return 0;
-	
+	return obj_relationship_manager.relationship[_name].tier;
 }
 
 
@@ -87,9 +75,73 @@ function get_relationship_tier(_name){
 /// param name_in_caps
 /// param val
 function increase_relationship(_name, _val){
-	obj_relationship_manager.relationships[_name].relationship += _val;
+	var _target_relationship = obj_relationship_manager.relationships[_name]
+	_target_relationship.relationship += _val;
+	while (_target_relationship.tier>obj_relationship_manager.relationship_thresholds[tier]){
+		++_target_relationship.tier;
+		relationship_tier_up_rewards(_target_relationship);
+	}
 }
 
+
+function relationship_tier_up_rewards(_relationship){
+	switch (_relationship.npc_name){
+		case LAVANA:
+			switch (_relationship.tier){
+				case 1:
+					active_persistent_interactable(obj_machine_seed);
+				break;
+				case 2:
+					obj_food_shopping_page.discount = .9;
+				break;
+				case 3:
+					//TODO:unlock high level food
+				break;
+			}
+		break;
+		case CLAUDE:
+			switch (_relationship.tier){
+				case 1:
+					variable_struct_set(obj_general_shopping_page.inventory,"cauliflower_seed",create_shop_item(cauliflower_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"cucumber_seed",create_shop_item(cucumber_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"eggplant_seed",create_shop_item(eggplant_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"lettuce_seed",create_shop_item(lettuce_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"pumpkin_seed",create_shop_item(pumpkin_seeds,5,5));
+				break;
+				case 2:
+					obj_general_shopping_page.discount = .9;
+				break;
+				case 3:
+					variable_struct_set(obj_general_shopping_page.inventory,"radish_seed",create_shop_item(radish_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"star_seed",create_shop_item(star_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"tulip_seed",create_shop_item(tulip_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"turnip_seed",create_shop_item(turnip_seeds,5,5));
+				break;
+			}
+		break;
+		case NELU:
+			switch (_relationship.tier){
+				case 1:
+					
+				break;
+				case 2:
+				break;
+				case 3:
+				break;
+			}
+		break;
+		case LOLA:
+			switch (_relationship.tier){
+				case 1:
+				break;
+				case 2:
+				break;
+				case 3:
+				break;
+			}
+		break;
+	}
+}
 function first_talk_completed(_name){
 	obj_relationship_manager.relationships[_name].has_met = true;	
 }

@@ -14,3 +14,21 @@ function find_first_interactable(_type,_interact_check_x,_interact_check_y){
 	}
 	return _interactable_object
 }
+
+function active_persistent_interactable(_id){
+	with (id){
+		should_be_interactable = true;
+		interactable = true;
+		visible = true;
+		solid = true;
+	}
+}
+
+function deactive_persistent_interactable(_id){
+	with (id){
+		should_be_interactable = false;
+		interactable = false;
+		visible = false;
+		solid = false;
+	}
+}
