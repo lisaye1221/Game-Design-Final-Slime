@@ -99,6 +99,8 @@ if (storage_open) {
 		}
 		else {
 			var _temp_cursor = i_cursor - _inv_size;
+			show_debug_message(_temp_cursor);
+			show_debug_message(i_cursor);
 		
 			// attempt to move from storage to inventory
 			if (_temp_cursor < array_length(obj_storage_manager.inventory)) {

@@ -115,7 +115,7 @@ function str_add_new_item_stack(item, count){
 			itemCount = item.max_count;	
 		}
 		remainingCount -= itemCount;
-		newItem = new str_new_item(item, itemCount);
+		newItem = new new_item(item, itemCount);
 		array_push(inv, newItem);
 	}
 	//show_debug_message(inv);

@@ -61,7 +61,7 @@ if (menu_open) {
 	if (tab_index == 0) {
 		
 		// draw the inventory boxes with items
-		for (var i = 0; i < 15; i ++) {
+		for (var i = 0; i < num_recipes; i ++) {
 		
 			var xx = left + (i mod rowLength) * 64;
 			var yy = top + (i div rowLength) * 64;
