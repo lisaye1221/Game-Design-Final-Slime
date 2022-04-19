@@ -105,7 +105,7 @@ switch(_text_id){
 		scr_add_text("Maybe the owner is not in town now.");
 		break;
 		
-	// ---------- Text for NPCs ------ //
+	// ---------------------- Text for NPCs ---------------------- //
 		
 	case "Lavana-first-meet":
 		scr_add_text("Hello, nice to meet you.");
@@ -126,6 +126,24 @@ switch(_text_id){
 		scr_add_text("Welcome to my marketplace, I'll buy certain items off of you.");
 		first_talk_completed(NELU);
 		break;
+	case "Lola-first-meet":
+		scr_add_text("....");
+		scr_add_text("Who are you?");
+		scr_add_text("Why are you in my house?");
+			scr_option("Sorry.", "Lola-first-meet-1");
+			scr_option("What's your name?", "Lola-first-meet-2");
+		break;
+		case "Lola-first-meet-1":
+			scr_add_text("...");
+			scr_add_text("You should leave.");
+			break
+		case "Lola-first-meet-2":
+			scr_add_text("Lola.");
+			scr_add_text("....");
+			scr_add_text("You're kinda weird.");
+			scr_add_text("You should leave if you don't have any business with me.");
+			first_talk_completed(LOLA);
+			break
 		
 	// naming convention "(name)-(relationship tier)-(id)"
 	// dialogue marked with relationship tier 1 will only appear when 
@@ -134,18 +152,183 @@ switch(_text_id){
 		scr_add_text("Hi, good to see you!");
 		scr_add_text("We have some nice produce in stock today. Check them out!");
 		break;
+	case "Lavana-0-2":
+		scr_add_text("Hi, how are you today?");
+		scr_add_text("Come look at today's fresh produce!");
+		break;
+	case "Lavana-0-3":
+		scr_add_text("Hi, great to see you!");
+		scr_add_text("We have some nice produce in stock today. Check them out!");
+		break;
+	case "Lavana-1-1":
+		scr_add_text("Hi, good to see you!");
+		scr_add_text("Are you eating well?");
+		break;
+	case "Lavana-1-2":
+		scr_add_text("1-2"); // placeholder for dialogue
+		break;
+	case "Lavana-1-3":
+		scr_add_text("1-3");
+		break;
+	case "Lavana-1-4":
+		scr_add_text("1-4");
+		break;
+	case "Lavana-2-1":
+		scr_add_text("2-1");
+		break;
+	case "Lavana-2-2":
+		scr_add_text("2-2");
+		break;
+	case "Lavana-2-3":
+		scr_add_text("2-3");
+		break;
+	case "Lavana-2-4":
+		scr_add_text("2-4");
+		break;
+	case "Lavana-3-1":
+		scr_add_text("3-1");
+		break;
+	case "Lavana-3-2":
+		scr_add_text("3-2");
+		break;
+	case "Lavana-3-3":
+		scr_add_text("3-3");
+		break;
+	case "Lavana-3-4":
+		scr_add_text("3-4");
+		break;
+	case "Lavana-3-5":
+		scr_add_text("3-5");
+		break;
+		
+		
 	case "Claude-0-1":
 		scr_add_text("Hey again!");
 		scr_add_text("Isn't it a great day today?");
 		break;
+	case "Claude-1-1":
+		scr_add_text("1-1");
+		break;
+	case "Claude-1-2":
+		scr_add_text("1-2"); // placeholder for dialogue
+		break;
+	case "Claude-1-3":
+		scr_add_text("1-3");
+		break;
+	case "Claude-1-4":
+		scr_add_text("1-4");
+		break;
+	case "Claude-2-1":
+		scr_add_text("2-1");
+		break;
+	case "Claude-2-2":
+		scr_add_text("2-2");
+		break;
+	case "Claude-2-3":
+		scr_add_text("2-3");
+		break;
+	case "Claude-2-4":
+		scr_add_text("2-4");
+		break;
+	case "Claude-3-1":
+		scr_add_text("3-1");
+		break;
+	case "Claude-3-2":
+		scr_add_text("3-2");
+		break;
+	case "Claude-3-3":
+		scr_add_text("3-3");
+		break;
+	case "Claude-3-4":
+		scr_add_text("3-4");
+		break;
+	case "Claude-3-5":
+		scr_add_text("3-5");
+		break;
+		
 	case "Nelu-0-1":
 		scr_add_text("Hiiiiiiii.");
 		scr_add_text("Do you got more things for me today?");
 		break;
+	case "Nelu-1-1":
+		scr_add_text("1-1");
+		break;
+	case "Nelu-1-2":
+		scr_add_text("1-2"); // placeholder for dialogue
+		break;
+	case "Nelu-1-3":
+		scr_add_text("1-3");
+		break;
+	case "Nelu-1-4":
+		scr_add_text("1-4");
+		break;
+	case "Nelu-2-1":
+		scr_add_text("2-1");
+		break;
+	case "Nelu-2-2":
+		scr_add_text("2-2");
+		break;
+	case "Nelu-2-3":
+		scr_add_text("2-3");
+		break;
+	case "Nelu-2-4":
+		scr_add_text("2-4");
+		break;
+	case "Nelu-3-1":
+		scr_add_text("3-1");
+		break;
+	case "Nelu-3-2":
+		scr_add_text("3-2");
+		break;
+	case "Nelu-3-3":
+		scr_add_text("3-3");
+		break;
+	case "Nelu-3-4":
+		scr_add_text("3-4");
+		break;
+	case "Nelu-3-5":
+		scr_add_text("3-5");
+		break;
+		
+	case "Lola-0-1":
+		scr_add_text("Oh it's you again.");
+		scr_add_text("What do you want?");
+		scr_add_text("Just saying hi? ");
+		scr_add_text("You sure got a lot of time.");
+		break;
+	case "Lola-1-1":
+		scr_add_text("1-1");
+		break;
+	case "Lola-1-2":
+		scr_add_text("1-2"); 
+		break;
+	case "Lola-1-3":
+		scr_add_text("1-3");
+		break;
+	case "Lola-2-1":
+		scr_add_text("2-1");
+		break;
+	case "Lola-2-2":
+		scr_add_text("2-2");
+		break;
+	case "Lola-2-3":
+		scr_add_text("2-3");
+		break;
+	case "Lola-3-1":
+		scr_add_text("3-1");
+		break;
+	case "Lola-3-2":
+		scr_add_text("3-2");
+		break;
+	case "Lola-3-3":
+		scr_add_text("3-3");
+		break;
+	case "Lola-3-4":
+		scr_add_text("3-4");
+		break;
 		
 		
-		
-	// ---------- Text for Warnings/Hints ------ //
+	// -------------------- Text for Warnings/Hints --------------------- //
 	
 	case "warn-no-money":
 		scr_add_text("I don't have enough money for that.");
