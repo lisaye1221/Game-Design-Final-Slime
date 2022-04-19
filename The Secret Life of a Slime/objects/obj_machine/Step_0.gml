@@ -6,7 +6,9 @@ solid = interactable;
 if (status == "busy"){
 	time_left -= global.delta_second;
 	if (time_left <= 0){
-		audio_play_sound(sfx_machine_finish, 1, 0);
+		if(in_home()){
+			audio_play_sound(sfx_machine_finish, 1, 0);
+		}
 		time_left = time_to_convert;
 		status = "full";
 	}
