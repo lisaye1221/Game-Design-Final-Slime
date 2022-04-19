@@ -38,7 +38,7 @@
     "path": "folders/Objects/interactables.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_nelu_door_lock",
+  "name": "obj_lola_door_lock",
   "tags": [],
   "resourceType": "GMObject",
 }

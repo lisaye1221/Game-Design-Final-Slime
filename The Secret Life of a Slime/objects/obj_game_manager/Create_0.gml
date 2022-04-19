@@ -43,7 +43,7 @@ global.tut_keys_on = true;
 global.tutorial_active = true;
 global.paused = false;
 
-global.nelu_door_unlock_day = 10;
+global.lola_door_unlock_day = 10;
 global.extra_plot_unlock_day = 15;
 global.advanced_machine_unlock_day = 20;
 
