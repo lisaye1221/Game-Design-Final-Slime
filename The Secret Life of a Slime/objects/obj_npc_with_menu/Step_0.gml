@@ -6,6 +6,7 @@ if (!instance_exists(menu) &&
 	!instance_exists(obj_textbox) &&
 	!instance_exists(obj_selling_page)
 	){
-	
-	global.paused = false;
+	if (!global.menu_on){
+		global.paused = false;
+	}
 }

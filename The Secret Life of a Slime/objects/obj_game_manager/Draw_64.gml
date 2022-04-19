@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if debug_mode
+{
+    draw_text(32, 32, "FPS = " + string(fps_real));
+}
 draw_set_font(ft_status)
 if not global.dead {
 	// moved this code to obj_gui_manager
