@@ -170,9 +170,6 @@ switch(_text_id){
 	case "Lavana-1-3":
 		scr_add_text("1-3");
 		break;
-	case "Lavana-1-4":
-		scr_add_text("1-4");
-		break;
 	case "Lavana-2-1":
 		scr_add_text("2-1");
 		break;
@@ -206,17 +203,22 @@ switch(_text_id){
 		scr_add_text("Hey again!");
 		scr_add_text("Isn't it a great day today?");
 		break;
+	case "Claude-0-2":
+		scr_add_text("Hello again!");
+		scr_add_text("Beautiful day to get some work done!");
+		break;
+	case "Claude-0-3":
+		scr_add_text("Oh hey it's you!");
+		scr_add_text("How are you doing today?");
+		break;
 	case "Claude-1-1":
 		scr_add_text("1-1");
 		break;
 	case "Claude-1-2":
-		scr_add_text("1-2"); // placeholder for dialogue
+		scr_add_text("1-2");
 		break;
 	case "Claude-1-3":
 		scr_add_text("1-3");
-		break;
-	case "Claude-1-4":
-		scr_add_text("1-4");
 		break;
 	case "Claude-2-1":
 		scr_add_text("2-1");
@@ -250,17 +252,22 @@ switch(_text_id){
 		scr_add_text("Hiiiiiiii.");
 		scr_add_text("Do you got more things for me today?");
 		break;
+	case "Nelu-0-2":
+		scr_add_text("Hi Hi Hi.");
+		scr_add_text("How are you? I'm doing great!");
+		break;
+	case "Nelu-0-3":
+		scr_add_text("Helloooooo!");
+		scr_add_text("Got anything you need me to take from your hands today?");
+		break;
 	case "Nelu-1-1":
 		scr_add_text("1-1");
 		break;
 	case "Nelu-1-2":
-		scr_add_text("1-2"); // placeholder for dialogue
+		scr_add_text("1-2"); 
 		break;
 	case "Nelu-1-3":
 		scr_add_text("1-3");
-		break;
-	case "Nelu-1-4":
-		scr_add_text("1-4");
 		break;
 	case "Nelu-2-1":
 		scr_add_text("2-1");
@@ -296,6 +303,17 @@ switch(_text_id){
 		scr_add_text("Just saying hi? ");
 		scr_add_text("You sure got a lot of time.");
 		break;
+	case "Lola-0-2":
+		scr_add_text("You again?");
+		scr_add_text("You're here to say hi?");
+		scr_add_text("I wish I have time like you.");
+		break;
+	case "Lola-0-3":
+		scr_add_text("...");
+		scr_add_text("What do you want?");
+		scr_add_text("Saying hi? Hi.");
+		scr_add_text("Now leave.");
+		break;
 	case "Lola-1-1":
 		scr_add_text("1-1");
 		break;
@@ -314,6 +332,9 @@ switch(_text_id){
 	case "Lola-2-3":
 		scr_add_text("2-3");
 		break;
+	case "Lola-2-4":
+		scr_add_text("2-4");
+		break;
 	case "Lola-3-1":
 		scr_add_text("3-1");
 		break;
@@ -325,6 +346,9 @@ switch(_text_id){
 		break;
 	case "Lola-3-4":
 		scr_add_text("3-4");
+		break;
+	case "Lola-3-5":
+		scr_add_text("3-5");
 		break;
 		
 		

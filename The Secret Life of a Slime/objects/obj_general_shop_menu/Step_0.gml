@@ -33,13 +33,7 @@ if (accept_key){
 				// talk
 				case 1:
 					// bring up dialogue
-					if(!has_met_npc(CLAUDE)){
-						create_textbox("Claude-first-meet");
-					}
-					else{
-						create_textbox("Claude-0-1");
-						gain_relationship_through_talking(CLAUDE);
-					}
+					talk_to(CLAUDE);
 					instance_deactivate_object(id);
 					break;
 				// exit

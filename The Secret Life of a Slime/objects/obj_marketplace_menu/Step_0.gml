@@ -37,13 +37,7 @@ if (accept_key){
 				// talk
 				case 1:
 					// bring up dialogue
-					if(!has_met_npc(NELU)){
-						create_textbox("Nelu-first-meet");
-					}
-					else{
-						create_textbox("Nelu-0-1");
-						gain_relationship_through_talking(NELU);
-					}
+					talk_to(NELU);
 					
 					instance_deactivate_object(id);
 					break;
