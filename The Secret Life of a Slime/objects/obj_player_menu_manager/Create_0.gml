@@ -18,3 +18,4 @@ journal_index = 0;
 ach_min = 1;
 farm_ach_max = array_length(obj_achievement_manager.farm_achievements) - 2;
 town_ach_max = array_length(obj_achievement_manager.town_achievements) - 2;
+
