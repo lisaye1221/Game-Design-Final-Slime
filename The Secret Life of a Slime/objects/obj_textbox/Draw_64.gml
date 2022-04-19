@@ -49,8 +49,6 @@ if(accept_key){
 			global.paused = is_previously_paused;
 			// link text for options
 			if(option_num > 0){
-				//if (confirmation_box) create_confirmation_box(option_link_id[option_pos], )
-				//else create_textbox(option_link_id[option_pos]);
 				create_textbox(option_link_id[option_pos]);
 			}
 			instance_destroy();	
