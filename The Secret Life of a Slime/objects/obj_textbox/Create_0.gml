@@ -26,6 +26,8 @@ option[0] = "";
 option_link_id[0] = -1;
 option_pos = 0;
 option_num = 0;
+// NOT USED
+confirmation_box = false;
 
 // flag for setting up things before drawing text
 setup = false

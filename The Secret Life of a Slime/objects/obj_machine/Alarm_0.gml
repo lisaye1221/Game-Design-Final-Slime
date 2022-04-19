@@ -10,8 +10,8 @@ function use_item(item){
 	switch(item.name){
 		case global.item_list.wheat.name:
 			// inputting wheat if they have enough in inventory
-			create_confirmation_box("convert-wheat-to-jelly", global.item_list.wheat, this_machine);
-			//scr_use_item_slime_conv(global.item_list.wheat, this_machine);
+			// MY ATTEMPT TO MAKE IT A DIFF FUNCTION: create_confirmation_box("convert-wheat-to-jelly", global.item_list.wheat, this_machine);
+			scr_use_item_slime_conv(global.item_list.wheat, this_machine);
 			/*if (get_item_count(global.item_list.wheat) >= global.item_list.wheat.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);

@@ -166,6 +166,8 @@ switch(_text_id){
 		
 	
 	// ---------- Text for Slime Jelly conversion machine ------ //
+	
+	// NOT USED
 	case "convert-wheat-to-jelly":
 		scr_add_text("4 Wheat = 1 Slime Jelly");
 		scr_add_text("You own " + string(get_item_count(global.item_list.wheat)) + " wheat.");
@@ -185,6 +187,7 @@ switch(_text_id){
 			break;
 }
 
+// NOT USED
 show_debug_message("Return from game_text: " + string(return_value));
 return return_value;
 

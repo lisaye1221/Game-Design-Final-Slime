@@ -13,6 +13,8 @@ function create_textbox(_text_id){
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
 		return_value = scr_game_text(_text_id);	
 	}
+	
+	// NOT USED
 	show_debug_message("Return from textbox_function: " + string(return_value));
 	return return_value;
 
@@ -21,6 +23,7 @@ function create_textbox(_text_id){
 /// @param text_id, item
 /// @param item
 /// @param this_machine
+// NOT USED
 function create_confirmation_box(_text_id, _item, _this_machine){
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
 		scr_confirmation_text(_text_id, _item, _this_machine);	
@@ -33,4 +36,15 @@ function scr_option(_option_text, _link_id){
 	option[option_num] = _option_text;
 	option_link_id[option_num] = _link_id;
 	option_num++;
+	confirmation_box = false;
+}
+
+/// @param option_text
+/// @param link_id
+// NOT USED
+function scr_confirmation_option(_option_text, _link_id){
+	option[option_num] = _option_text;
+	option_link_id[option_num] = _link_id;
+	option_num++;
+	confirmation_box = true;
 }
