@@ -4,15 +4,15 @@
 // records how many seconds passed by
 if(!global.dead and !global.tutorial_active){global.time += global.delta_second;}
 // 60 seconds = 1 day
-if (global.time >= 60){
+if (global.time >= 3){
 	global.days++;
 	show_debug_message("new day: "+string(global.days))
 	for (var _curr = ds_map_find_first(objects_with_daily_events);
 		_curr!=undefined;
 		_curr = ds_map_find_next(objects_with_daily_events, _curr);){
-		with (_curr){
-			event_user(0)
-		}
+			with (_curr){
+				event_user(0)
+			}
 	}
 	global.time = 0;
 }

@@ -1,11 +1,8 @@
-/// @description Insert description here
+/// @description unlock at certain day
 // You can write your code in this editor
-
-// Inherit the parent event
-event_inherited();
-
-if (global.gold >= 50 && unlock_method=="gold"){
-	global.gold -= 50;
+show_debug_message("daily check for farm plot triggered")
+if (global.days >= unlock_requirement){
+	ds_map_delete(obj_game_manager.objects_with_daily_events,id)
 	var _farm_plot_distance_x = (sprite_width-obj_farm_plot.sprite_width)/(x_plot_num-1);
 	var _farm_plot_distance_y = (sprite_height-obj_farm_plot.sprite_height)/(y_plot_num-1);
 	for (var _i = 0; _i < y_plot_num;++_i){

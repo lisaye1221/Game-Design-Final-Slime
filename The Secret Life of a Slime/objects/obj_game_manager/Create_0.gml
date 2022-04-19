@@ -48,4 +48,3 @@ global.extra_plot_unlock_day = 15;
 global.advanced_machine_unlock_day = 20;
 
 objects_with_daily_events = ds_map_create();
-objects_with_daily_events_clean_up_queue = ds_queue_create();

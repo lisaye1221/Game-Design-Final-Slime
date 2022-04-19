@@ -26,10 +26,14 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":1,"value":"4","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"x_plot_num","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"y_plot_num","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":2,"value":"gold","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"unlock_method","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"50","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"unlock_requirement","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [
     {"propertyId":{"name":"prompt_text","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"objectId":{"name":"obj_solid_interactable","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"value":"\"50 Gold to unlock\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
