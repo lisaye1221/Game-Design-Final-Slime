@@ -67,7 +67,7 @@ function gain_relationship_through_talking(_name){
 #macro TIER_3_THRESHOLD 71
 
 function get_relationship_tier(_name){
-	return obj_relationship_manager.relationship[_name].tier;
+	return obj_relationship_manager.relationships[_name].tier;
 }
 
 
