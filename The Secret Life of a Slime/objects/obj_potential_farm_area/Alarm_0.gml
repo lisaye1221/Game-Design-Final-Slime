@@ -6,6 +6,8 @@ event_inherited();
 
 if (global.gold >= 50 && unlock_method=="gold"){
 	global.gold -= 50;
+	achi_spent_gold(50);
+	achi_gain_progress("NOT_FREE_REAL_ESTATE", 1);
 	var _farm_plot_distance_x = (sprite_width-obj_farm_plot.sprite_width)/(x_plot_num-1);
 	var _farm_plot_distance_y = (sprite_height-obj_farm_plot.sprite_height)/(y_plot_num-1);
 	for (var _i = 0; _i < y_plot_num;++_i){
