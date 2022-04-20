@@ -37,10 +37,10 @@ if (status == "full" && !full_signal && interactable){
 
 // fixing
 if (status == "broken" || status == "repairing") {
-	sprite_index = spr_machine_broken;
+	sprite_index = sprite_broken;
 }
 else{
-	sprite_index = spr_machine;
+	sprite_index = sprite_ready;
 }
 
 switch(this_machine.status){

@@ -92,7 +92,7 @@ function relationship_tier_up_rewards(_relationship){
 		case "Lavana":
 			switch (_relationship.tier){
 				case 1:
-					active_persistent_interactable(obj_machine_seed);
+					obj_machine_seed.should_be_interactable = true;
 					obj_food_shop_menu.option = obj_food_shop_menu.menu_with_gift;
 				break;
 				case 2:

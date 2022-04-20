@@ -32,7 +32,10 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"sprite_ready","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"spr_oven","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"sprite_broken","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"spr_oven","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "interactables",
     "path": "folders/Objects/interactables.yy",
