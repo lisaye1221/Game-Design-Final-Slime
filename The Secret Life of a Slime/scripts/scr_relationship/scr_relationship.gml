@@ -115,12 +115,12 @@ function relationship_tier_up_rewards(_relationship){
 				break;
 				case 2:
 					obj_general_shopping_page.discount = .9;
-				break;
-				case 3:
 					variable_struct_set(obj_general_shopping_page.inventory,"radish_seed",create_shop_item(global.item_list.radish_seeds,5,5));
 					variable_struct_set(obj_general_shopping_page.inventory,"star_seed",create_shop_item(global.item_list.star_seeds,5,5));
 					variable_struct_set(obj_general_shopping_page.inventory,"tulip_seed",create_shop_item(global.item_list.tulip_seeds,5,5));
 					variable_struct_set(obj_general_shopping_page.inventory,"turnip_seed",create_shop_item(global.item_list.turnip_seeds,5,5));
+				break;
+				case 3:
 				break;
 			}
 		break;
@@ -128,18 +128,23 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_marketplace_menu.option = obj_marketplace_menu.menu_with_gift;
+					//TODO: expand item slot
 				break;
 				case 2:
+					active_persistent_interactable(obj_oven);
 				break;
 				case 3:
+					//TODO:expand item slot
 				break;
 			}
 		break;
 		case "Lola":
 			switch (_relationship.tier){
 				case 1:
+					obj_game_manager.TOWN_TIME_LIMIT *= 1.5;
 				break;
 				case 2:
+					player.move_spd *= 1.5;
 				break;
 				case 3:
 				break;
