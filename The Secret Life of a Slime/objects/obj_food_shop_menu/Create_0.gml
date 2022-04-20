@@ -3,7 +3,7 @@
 
 event_inherited();
 // main menu
-menu[0,0] = "Sell";
+menu[0,0] = "Buy";
 menu[0,1] = "Talk";
 menu[0,2] = "Exit";
 
