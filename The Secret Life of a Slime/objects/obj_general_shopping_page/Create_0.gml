@@ -10,6 +10,6 @@ inventory =
 	carrot_seeds: new create_shop_item(global.item_list.carrot_seeds, 6, 4),
 	rose_seeds: new create_shop_item(global.item_list.rose_seeds, 10, 4),
 }
-
+show_debug_message("general shopping page created")
 
 event_inherited();
