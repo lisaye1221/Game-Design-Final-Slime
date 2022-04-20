@@ -37,6 +37,51 @@ if (menu_open) {
 		}
 		else if (i_cursor >= _size) i_cursor = _col;
 	}
+	
+	
+	var _select = keyboard_check_pressed(vk_enter);
+
+	if (_select > 0) {
+		
+		// start cooking item
+		
+		// lose # of each ingredient
+		_ingredients_list = recipes2[i_cursor].ingredients;
+		_amounts_list = recipes2[i_cursor].amounts;
+		for (i=0; i < array_length(_ingredients_list); i++){
+			lose_item(_ingredients_list[i], _amounts_list[i]);
+		}
+		
+		// turn on oven
+		obj_oven.convert_to = recipes2[i_cursor].item;
+		obj_oven.alarm[1] = 1;
+		
+		
+		
+		/*// attempt to move from inventory to storage
+		if (i_cursor < array_length(obj_inventory_manager.inventory)) {
+			var _moved_item = obj_inventory_manager.inventory[i_cursor];
+			
+			if(str_will_item_fit(_moved_item, _moved_item.count)) {
+				move_from_inventory(_moved_item, _moved_item.count);
+			}
+		}
+		
+
+		var _temp_cursor = i_cursor - _inv_size;
+		show_debug_message(_temp_cursor);
+		show_debug_message(i_cursor);
+		
+		// attempt to move from storage to inventory
+		if (_temp_cursor < array_length(obj_storage_manager.inventory)) {
+			var _moved_item = obj_storage_manager.inventory[_temp_cursor];
+			
+			if(will_item_fit(_moved_item, _moved_item.count)) {
+				move_from_storage(_moved_item, _moved_item.count);
+			}*/
+			
+		}
+		
 }
 
 

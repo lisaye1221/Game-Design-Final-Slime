@@ -114,12 +114,29 @@ if (menu_open) {
 			
 			draw_set_font(ft_details);
 			
-			var _quan_string = "Quantity: " + string(selected.item.count);
-			var _quan_height = string_height(_quan_string);
+			// The recipe itself
+			var _recipe_string_1 = "Requires: ";
+			var _rs1_height = string_height(_recipe_string_1);
+			var _recipe_string_2 = "";
+			var _recipe_string_3 = "";
 			
-			draw_text(_name_left, _name_top+10+_name_height, _quan_string);
+			// first two ingredients
+			for(i=0; i < array_length(selected.ingredients); i++){
+				if (i < 2){
+					_recipe_string_2 += string(selected.amounts[i]) + " " + selected.ingredients[i].name + ", ";
+				} else {
+					_recipe_string_3 += string(selected.amounts[i]) + " " + selected.ingredients[i].name + ", ";
+				}
+			}
 			
-			draw_text_ext(_name_left, _name_top+10+_name_height+_quan_height+20, selected.item.desc, 3, _desc_width-40);
+			//var _quan_string = "Quantity: " + string(selected.item.count);
+			//var _quan_height = string_height(_quan_string);
+			
+			draw_text(_name_left, _name_top+10+_name_height+10, _recipe_string_1);
+			
+			draw_text_ext(_name_left, _name_top+10+_name_height+_rs1_height+20, _recipe_string_2, 3, _desc_width-40);
+			draw_text_ext(_name_left, _name_top+10+_name_height+_rs1_height+40, _recipe_string_3, 3, _desc_width-40);
+			
 			
 		}
 		

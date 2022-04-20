@@ -11,7 +11,7 @@ MAX_ITEM = 30;
 
 menu_open = false;
 
-// just so it will draw something
+// just so it will draw something; should delete
 tabs = ["Inventory", "Player", "Relationships", "Journal"]
 tab_index = 0;
 

@@ -4,4 +4,4 @@ show_debug_message("daily check for oven triggered")
 if (global.days>=global.advanced_machine_unlock_day){
 	active_persistent_interactable(id)
 	ds_map_delete(obj_game_manager.objects_with_daily_events,id)
-}
+//}
