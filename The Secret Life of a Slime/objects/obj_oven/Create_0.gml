@@ -28,7 +28,4 @@ exclamation = instance_create_layer(x+sprite_width-sprite_xoffset,y-sprite_yoffs
 inv_slot = 0;
 
 ds_map_add(obj_game_manager.objects_with_daily_events,id,0);
-should_be_interactable = false;
-interactable = false;
-solid = false;
-visible = false;
+deactive_persistent_interactable(id)

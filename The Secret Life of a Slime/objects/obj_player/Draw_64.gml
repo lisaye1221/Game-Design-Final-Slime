@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if (draw_prompt_flag){
 	//find if anything interactable exists infront of player; if so, display its prompt text.
-	if (interactable_object!=noone){
+	if (interactable_object!=noone&&instance_exists(interactable_object)){
 		draw_set_halign(fa_middle);
 		/*if(x > room_width - BOUNDARY_SPACE){
 			var x_pos = room_width - BOUNDARY_SPACE;

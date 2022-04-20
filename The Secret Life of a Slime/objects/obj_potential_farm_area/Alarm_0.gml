@@ -15,8 +15,5 @@ if (global.gold >= 50 && unlock_method=="gold"){
 			instance_create_layer(_farm_plot_x,_farm_plot_y,"crops",obj_farm_plot);
 		}
 	}
-	should_be_interactable = false;
-	visible = false;
-	solid = false;
-	interactable = false;
+	deactive_persistent_interactable(id)
 }
