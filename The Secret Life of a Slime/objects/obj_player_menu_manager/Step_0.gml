@@ -10,6 +10,8 @@ var _v_move = _down - _up;
 
 var _size = obj_inventory_manager.MAX_ITEM;
 
+if (global.menu_on){
+
 if (tab_index == 0) {
 	if (_h_move != 0) {
 	
@@ -86,5 +88,6 @@ if (_t_move != 0) {
 	}
 	
 }
-	
+
+}
 
