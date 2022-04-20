@@ -148,7 +148,7 @@ achievement_list =
 		"Slime of the People",
 		"Maxing all relationships",
 		0,
-		4,
+		RELATIONSHIP_AMOUNT,
 		false
 	),
 }
