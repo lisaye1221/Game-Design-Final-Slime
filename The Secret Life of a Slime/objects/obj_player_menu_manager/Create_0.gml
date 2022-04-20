@@ -5,6 +5,7 @@ depth = -9998;
 
 rowLength = 6;
 global.menu_on = false;
+is_previously_paused = false;
 
 tabs = ["Inventory", "Player", "Relationships", "Journal"]
 

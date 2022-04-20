@@ -2,13 +2,16 @@
 
 if (global.menu_on) {
 	global.menu_on = false;
-	global.paused = false;
+	global.paused = is_previously_paused;
 }
 else{
-	global.menu_on = true;
-	global.paused = true;
-	i_cursor = 0;
-	tab_index = 0;
-	ach_index = 1;
-	journal_index = 0;
+	if(!instance_exists(obj_textbox)){
+		global.menu_on = true;
+		is_previously_paused = global.paused;
+		global.paused = true;
+		i_cursor = 0;
+		tab_index = 0;
+		ach_index = 1;
+		journal_index = 0;
+	}
 }
