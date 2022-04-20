@@ -10,6 +10,17 @@ var _v_move = _down - _up;
 
 var _size = num_recipes
 
+
+/// @param item is a recipe item; item.ingredients[i] is crop
+function can_cook_this(item){
+	for (i=0; i < array_length(item.ingredients); i++){
+		if (get_item_count(item.ingredients[i]) < item.amounts[i]){
+			return false;
+		}
+	}
+	return true;
+}
+
 if (menu_open) {
 	if (_h_move != 0) {
 	
@@ -44,17 +55,22 @@ if (menu_open) {
 	if (_select > 0) {
 		
 		// start cooking item
+		if (can_cook_this(recipes2[i_cursor])){
+			// lose # of each ingredient
+			_ingredients_list = recipes2[i_cursor].ingredients;
+			_amounts_list = recipes2[i_cursor].amounts;
+			for (i=0; i < array_length(_ingredients_list); i++){
+				lose_item(_ingredients_list[i], _amounts_list[i]);
+			}
 		
-		// lose # of each ingredient
-		_ingredients_list = recipes2[i_cursor].ingredients;
-		_amounts_list = recipes2[i_cursor].amounts;
-		for (i=0; i < array_length(_ingredients_list); i++){
-			lose_item(_ingredients_list[i], _amounts_list[i]);
+			// turn on oven
+			obj_oven.convert_to = recipes2[i_cursor].item;
+			obj_oven.alarm[1] = 1;
+			
+			// turn off menu
+			menu_open = false;
+			global.paused = false;
 		}
-		
-		// turn on oven
-		obj_oven.convert_to = recipes2[i_cursor].item;
-		obj_oven.alarm[1] = 1;
 		
 		
 		
