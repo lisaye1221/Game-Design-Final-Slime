@@ -68,6 +68,8 @@ if(accept_key){
 			gain_item(selected_item.item, selected_amount);
 			// subtract stock
 			selected_item.stock -= selected_amount;
+			// track achievements
+			achi_spent_gold(total_cost);
 			
 			if(selected_item.stock <= 0){
 				array_delete(curr_inventory, option_pos, 1);
