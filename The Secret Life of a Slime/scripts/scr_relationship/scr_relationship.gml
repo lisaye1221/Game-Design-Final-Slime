@@ -47,7 +47,9 @@ function talk_to(_npc){
 		// ex: Lavana-first-meet
 		_text_id = _npc_name + "-first-meet";
 	}
-	show_debug_message("text_id : " + _text_id);
+	else{
+		gain_relationship_through_talking(_npc);
+	}
 	create_textbox(_text_id);
 }
 
@@ -77,7 +79,7 @@ function get_relationship_tier(_name){
 function increase_relationship(_name, _val){
 	var _target_relationship = obj_relationship_manager.relationships[_name]
 	_target_relationship.relationship += _val;
-	while (_target_relationship.tier>obj_relationship_manager.relationship_thresholds[tier]){
+	while (_target_relationship.relationship >= obj_relationship_manager.relationship_thresholds[_target_relationship.tier]){
 		++_target_relationship.tier;
 		relationship_tier_up_rewards(_target_relationship);
 	}
@@ -86,10 +88,11 @@ function increase_relationship(_name, _val){
 
 function relationship_tier_up_rewards(_relationship){
 	switch (_relationship.npc_name){
-		case LAVANA:
+		case "Lavana":
 			switch (_relationship.tier){
 				case 1:
 					active_persistent_interactable(obj_machine_seed);
+					obj_food_shop_menu.option = obj_food_shop_menu.menu_with_gift;
 				break;
 				case 2:
 					obj_food_shopping_page.discount = .9;
@@ -99,9 +102,10 @@ function relationship_tier_up_rewards(_relationship){
 				break;
 			}
 		break;
-		case CLAUDE:
+		case "Claude":
 			switch (_relationship.tier){
 				case 1:
+					obj_general_shop_menu.option = obj_general_shop_menu.menu_with_gift;
 					variable_struct_set(obj_general_shopping_page.inventory,"cauliflower_seed",create_shop_item(cauliflower_seeds,5,5));
 					variable_struct_set(obj_general_shopping_page.inventory,"cucumber_seed",create_shop_item(cucumber_seeds,5,5));
 					variable_struct_set(obj_general_shopping_page.inventory,"eggplant_seed",create_shop_item(eggplant_seeds,5,5));
@@ -119,10 +123,10 @@ function relationship_tier_up_rewards(_relationship){
 				break;
 			}
 		break;
-		case NELU:
+		case "Nelu":
 			switch (_relationship.tier){
 				case 1:
-					
+					obj_marketplace_menu.option = obj_marketplace_menu.menu_with_gift;
 				break;
 				case 2:
 				break;
@@ -130,7 +134,7 @@ function relationship_tier_up_rewards(_relationship){
 				break;
 			}
 		break;
-		case LOLA:
+		case "Lola":
 			switch (_relationship.tier){
 				case 1:
 				break;

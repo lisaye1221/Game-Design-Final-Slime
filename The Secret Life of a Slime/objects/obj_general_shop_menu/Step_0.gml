@@ -36,8 +36,16 @@ if (accept_key){
 					talk_to(CLAUDE);
 					instance_deactivate_object(id);
 					break;
-				// exit
+				// exit | gift
 				case 2:
+					if(option == menu_with_gift){
+						// bring up gift shit
+						create_textbox("Claude-gift-1");
+					}
+					instance_deactivate_object(id);
+					break;
+				// exit
+				case 3:
 					instance_deactivate_object(id);
 					break;
 			}

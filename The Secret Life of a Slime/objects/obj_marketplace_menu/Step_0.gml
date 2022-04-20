@@ -41,8 +41,16 @@ if (accept_key){
 					
 					instance_deactivate_object(id);
 					break;
-				// exit
+				// exit | gift
 				case 2:
+					if(option == menu_with_gift){
+						// bring up gift shit
+						create_textbox("Nelu-gift-1");
+					}
+					instance_deactivate_object(id);
+					break;
+				// exit
+				case 3:
 					instance_deactivate_object(id);
 					break;
 			}

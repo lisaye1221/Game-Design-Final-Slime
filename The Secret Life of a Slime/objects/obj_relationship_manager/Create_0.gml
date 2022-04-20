@@ -39,21 +39,21 @@ relationships =
 	new create_relationship(
 	"Lavana",
 	spr_npc,
-	0,
+	10,
 	false
 	),
 	
 	new create_relationship(
 	"Claude",
 	spr_machineman,
-	0,
+	10,
 	false
 	),
 	
 	new create_relationship(
 	"Nelu",
 	spr_farmer_right,
-	0,
+	10,
 	false
 	),
 	

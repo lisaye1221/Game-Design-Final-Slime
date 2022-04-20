@@ -105,7 +105,7 @@ switch(_text_id){
 		scr_add_text("Maybe the owner is not in town now.");
 		break;
 		
-	// ---------------------- Text for NPCs ---------------------- //
+	// --------------------- Text for NPCs for Talking ---------------------- //
 		
 	case "Lavana-first-meet":
 		scr_add_text("Hello, nice to meet you.");
@@ -351,6 +351,19 @@ switch(_text_id){
 		scr_add_text("3-5");
 		break;
 		
+	// --------------------- Text for NPCs for Gifting ---------------------- //
+	case "Lavana-gift-1":
+		scr_add_text("Maybe I can gift Lavana something?");
+		break;
+	case "Claude-gift-1":
+		scr_add_text("Maybe I can gift Claude something?");
+		break;
+	case "Nelu-gift-1":
+		scr_add_text("Maybe I can gift Nelu something?");
+		break;
+	case "Lola-gift-1":
+		scr_add_text("Maybe I can gift Lola something?");
+		break;
 		
 	// -------------------- Text for Warnings/Hints --------------------- //
 	
