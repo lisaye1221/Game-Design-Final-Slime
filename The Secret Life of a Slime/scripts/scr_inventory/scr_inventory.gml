@@ -39,7 +39,6 @@ function will_item_fit(item, count){
 	return floor(count / item.max_count) < (obj_inventory_manager.MAX_ITEM - array_length(inv))
 }
 
-
 function gain_one_item(item){
 	gain_item(item, 1);	
 }
