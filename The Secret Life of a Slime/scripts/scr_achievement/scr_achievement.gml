@@ -18,6 +18,14 @@ function achi_harvest_crop(_amount_harvest, _item_harvest){
 	
 }
 
+// for recording relationship progress achievements
+function achi_max_relation(_relationship) {
+	achi_track_progress("FIRST_BEST_FRIEND", _relationship);
+	achi_track_progress("OUTGOING_SLIME", _relationship);
+	achi_track_progress("POPULAR_SLIME", _relationship);
+	achi_track_progress("SLIME_OF_THE_PEOPLE", _relationship);
+}
+
 // for achievements that need to use the array to track progress
 function achi_track_progress(_achi_name, _item) {
 	var _achievement = obj_achievement_manager.achievement_list[$ _achi_name];

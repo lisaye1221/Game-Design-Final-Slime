@@ -82,6 +82,7 @@ if not global.dead {
 	draw_set_color(c_white);
 	draw_set_font(ft_hotbar);
 	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
 	//show_debug_message("max width:");
 	//show_debug_message(max(string_width("1"), string_width("2"), string_width("3"), string_width("4"), string_width("5"), string_width("6")));
 	//show_debug_message("max height:");

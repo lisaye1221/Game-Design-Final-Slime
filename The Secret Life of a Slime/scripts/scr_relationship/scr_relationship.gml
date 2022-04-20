@@ -83,6 +83,10 @@ function increase_relationship(_name, _val){
 		++_target_relationship.tier;
 		relationship_tier_up_rewards(_target_relationship);
 	}
+	// achievement tracking
+	if (get_relationship_tier(_name) >= 3) {
+		achi_max_relation(_target_relationship);
+	}
 }
 
 
