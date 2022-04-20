@@ -128,13 +128,13 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_marketplace_menu.option = obj_marketplace_menu.menu_with_gift;
-					//TODO: expand item slot
+					obj_inventory_manager.MAX_ITEM += 2;
 				break;
 				case 2:
 					active_persistent_interactable(obj_oven);
 				break;
 				case 3:
-					//TODO:expand item slot
+					obj_inventory_manager.MAX_ITEM +=2 ;
 				break;
 			}
 		break;
@@ -147,6 +147,7 @@ function relationship_tier_up_rewards(_relationship){
 					player.move_spd *= 1.5;
 				break;
 				case 3:
+					//TBD
 				break;
 			}
 		break;

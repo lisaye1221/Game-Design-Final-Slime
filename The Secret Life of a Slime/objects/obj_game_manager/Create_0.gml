@@ -48,3 +48,5 @@ global.extra_plot_unlock_day = 15;
 global.advanced_machine_unlock_day = 20;
 
 objects_with_daily_events = ds_map_create();
+objects_with_night_events = ds_map_create();
+night_events_triggered = false;

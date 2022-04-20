@@ -5,18 +5,30 @@
 if(!global.dead and !global.tutorial_active){global.time += global.delta_second;}
 // 60 seconds = 1 day
 if (global.time >= 3){
+	night_events_triggered = false;
 	global.days++;
 	show_debug_message("new day: "+string(global.days))
 	for (var _curr = ds_map_find_first(objects_with_daily_events);
 		_curr!=undefined;
 		_curr = ds_map_find_next(objects_with_daily_events, _curr);){
 			with (_curr){
-				event_user(0)
+				event_user(ds_map_find_value(other.objects_with_daily_events,_curr))
 			}
 	}
 	global.time = 0;
 }
-
+//rn 2 second = to night
+if (!night_events_triggered && global.time >= 2){
+	night_events_triggered = true;
+	show_debug_message("triggering night events")
+	for (var _curr = ds_map_find_first(objects_with_night_events);
+		_curr!=undefined;
+		_curr = ds_map_find_next(objects_with_night_events, _curr);){
+			with (_curr){
+				event_user(ds_map_find_value(other.objects_with_night_events,_curr))
+			}
+	}
+}
 // 60 seconds = 1 day
 //global.days = floor(global.time / 60);
 // lose 0.1 energy per second
