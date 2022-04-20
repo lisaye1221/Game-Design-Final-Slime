@@ -1,17 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_set_font(ft_name);
 if not global.dead {
 	// time of day
+	draw_set_font(ft_name);
 	var _time_box_width = max(string_width(parts_of_day[0]),
 							  string_width(parts_of_day[1]),
 							  string_width(parts_of_day[2]),
-							  string_width(parts_of_day[3])) + 40;
+							  string_width(parts_of_day[3]),
+							  string_width("Day: 000")) + 40;
 	var _time_box_height = max(string_height(parts_of_day[0]),
 							   string_height(parts_of_day[1]),
 							   string_height(parts_of_day[2]),
-							   string_height(parts_of_day[3])) + 50;
+							   string_height(parts_of_day[3])) + string_height("Day: 000") + 50;
 	var _time_box_x = screen_width - _time_box_width + 20;
 	var _time_box_y = -20;
 	
@@ -23,6 +24,10 @@ if not global.dead {
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_center);
 	draw_set_color(c_maroon);
+	
+	draw_text(_time_txt_x, _time_txt_y, "Day: " + string(floor(global.days)));
+	
+	_time_txt_y += string_height("Day: 000");
 	
 	if ((global.time >= 0) && (global.time < 15)) {
 		draw_text(_time_txt_x, _time_txt_y, parts_of_day[0]);
@@ -37,13 +42,14 @@ if not global.dead {
 		draw_text(_time_txt_x, _time_txt_y, parts_of_day[3]);
 	}
 	
-	draw_set_valign(fa_center);
+	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
+	draw_set_font(ft_gui);
 	
 	// energy
 	// draw player's energy bar;
-	var _bar_width = screen_width/15 - 10;
-	var _bar_height = screen_height*2/5 - 10;
+	var _bar_width = screen_width/24 - 10;
+	var _bar_height = screen_height*1/5 - 10;
 		
 	var _bar_left = 15;
 	var _bar_top = 15;
@@ -53,11 +59,13 @@ if not global.dead {
 	draw_healthbar(_bar_left, _bar_top, _bar_right, _bar_bottom, global.energy, c_grey, c_aqua, c_aqua, 3, false, false);
 	draw_sprite_stretched(spr_bar_cover, 0, _bar_left-5, _bar_top-5, _bar_width+10, _bar_height+10);
 		
-	//var _energy_text_x = _bar_left - string_width("Energy: 100") - 10;
-	//var _energy_text_y = _bar_bottom - string_height("Energy: 100")/2 + 10;
+	var _energy_text_x = _bar_left + _bar_width + 10;
+	var _energy_text_y = _bar_top;
+	
+	draw_sprite_stretched(spr_player_menu_sm, 0, _energy_text_x, _energy_text_y, string_width("Energy: 100")+20, string_height("Energy: 100")+20);
 		
-	//draw_set_color(c_aqua);
-	//draw_text(_energy_text_x, _energy_text_y, "Energy: " + string(ceil(global.energy)));
+	draw_set_color(c_maroon);
+	draw_text(_energy_text_x+10, _energy_text_y+10, "Energy: " + string(ceil(global.energy)));
 	
 	// town energy
 	if(in_town()){
@@ -119,6 +127,7 @@ if not global.dead {
 		}
 	}
 	
+	draw_set_valign(fa_middle);
 	draw_set_halign(fa_left);
 
 }
