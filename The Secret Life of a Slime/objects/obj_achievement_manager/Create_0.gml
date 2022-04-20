@@ -87,7 +87,7 @@ achievement_list =
 		),
 		
 	NOT_FREE_REAL_ESTATE: new create_achievement(
-		"It’s Not Free Real Estate",
+		"It's Not Free Real Estate",
 		"Unlock 1 extra plot of land",
 		0,
 		1,
