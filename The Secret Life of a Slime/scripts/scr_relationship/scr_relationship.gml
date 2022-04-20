@@ -87,6 +87,7 @@ function increase_relationship(_name, _val){
 
 
 function relationship_tier_up_rewards(_relationship){
+	show_debug_message("tier up event for "+_relationship.npc_name+" triggered")
 	switch (_relationship.npc_name){
 		case "Lavana":
 			switch (_relationship.tier){
@@ -106,20 +107,20 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_general_shop_menu.option = obj_general_shop_menu.menu_with_gift;
-					variable_struct_set(obj_general_shopping_page.inventory,"cauliflower_seed",create_shop_item(cauliflower_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"cucumber_seed",create_shop_item(cucumber_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"eggplant_seed",create_shop_item(eggplant_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"lettuce_seed",create_shop_item(lettuce_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"pumpkin_seed",create_shop_item(pumpkin_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"cauliflower_seed",new create_shop_item(global.item_list.cauliflower_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"cucumber_seed",create_shop_item(global.item_list.cucumber_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"eggplant_seed",create_shop_item(global.item_list.eggplant_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"lettuce_seed",create_shop_item(global.item_list.lettuce_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"pumpkin_seed",create_shop_item(global.item_list.pumpkin_seeds,5,5));
 				break;
 				case 2:
 					obj_general_shopping_page.discount = .9;
 				break;
 				case 3:
-					variable_struct_set(obj_general_shopping_page.inventory,"radish_seed",create_shop_item(radish_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"star_seed",create_shop_item(star_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"tulip_seed",create_shop_item(tulip_seeds,5,5));
-					variable_struct_set(obj_general_shopping_page.inventory,"turnip_seed",create_shop_item(turnip_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"radish_seed",create_shop_item(global.item_list.radish_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"star_seed",create_shop_item(global.item_list.star_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"tulip_seed",create_shop_item(global.item_list.tulip_seeds,5,5));
+					variable_struct_set(obj_general_shopping_page.inventory,"turnip_seed",create_shop_item(global.item_list.turnip_seeds,5,5));
 				break;
 			}
 		break;
