@@ -13,7 +13,6 @@ surface_set_target(_surf)
 draw_clear_alpha(c_white,1);
 light_sprite = sprite_create_from_surface(_surf,0,0,127,127,false,false,64,64)
 //create transparency sprite
-show_debug_message("creating sprite")
 draw_clear_alpha(c_black,1);
 draw_circle_color(64,64,64,c_white,c_black,false)
 show_debug_message("creating transparency sprite")

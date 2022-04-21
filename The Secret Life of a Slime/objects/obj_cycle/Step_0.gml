@@ -24,7 +24,6 @@ if (!surface_exists(surf)) {
 surface_set_target(surf);
 draw_clear_alpha(c_black,alpha)
 if (!in_door()){
-	
 	/*
 	draw_set_color(c_orange);
 	draw_set_alpha(alpha_yellow);
@@ -32,16 +31,25 @@ if (!in_door()){
 	*/
 	
 	if (currently == "night"){
-		//show_debug_message("at night")
-		gpu_set_blendmode(bm_subtract);
-		//draw_set_alpha(alpha);
-		var _radius = 64;
 		with (obj_player) {
+			draw_set_alpha(1)
+			gpu_set_blendmode(bm_subtract);
 			var _x = x + random_range(-1, 1)-other.left
 			var _y = y + random_range(-1, 1)-other.top
 			//draw_circle(_x,_y,_radius, false)
 			draw_sprite(other.light_sprite,0,_x,_y);
 		}
+		//show_debug_message("at night")
+	if (global.time<40 && global.time>30){
+		gpu_set_blendmode(bm_add)
+		draw_set_alpha(.1*(5-abs(global.time-35)))
+		draw_set_color(c_orange)
+		draw_rectangle(0,0,display_get_width(),display_get_height(),false)
+		//draw_set_alpha(alpha);
+	}
+		
+
+		
 	}
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);
