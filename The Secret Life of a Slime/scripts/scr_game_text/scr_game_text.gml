@@ -354,7 +354,9 @@ switch(_text_id){
 	// --------------------- Text for NPCs for Gifting ---------------------- //
 	case "Lavana-gift-1":
 		scr_add_text("Maybe I can gift Lavana something?");
-			scr_option("Yes", "Lavana-gift-yes");
+		var gift = get_gift(LAVANA);
+		scr_add_text("If I remember, Lavana wants a " + gift.name +".");
+			scr_option("Gift", "Lavana-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Lavana-gift-yes":
@@ -370,7 +372,9 @@ switch(_text_id){
 				break;
 	case "Claude-gift-1":
 		scr_add_text("Maybe I can gift Claude something?");
-			scr_option("Yes", "Claude-gift-yes");
+		var gift = get_gift(CLAUDE);
+		scr_add_text("If I remember, Claude wants a " + gift.name +".");
+			scr_option("Gift", "Claude-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Claude-gift-yes":
@@ -386,7 +390,9 @@ switch(_text_id){
 				break;
 	case "Nelu-gift-1":
 		scr_add_text("Maybe I can gift Nelu something?");
-			scr_option("Yes", "Nelu-gift-yes");
+		var gift = get_gift(NELU);
+		scr_add_text("If I remember, Nelu wants a " + gift.name +".");
+			scr_option("Gift", "Nelu-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Nelu-gift-yes":
@@ -402,7 +408,9 @@ switch(_text_id){
 				break;
 	case "Lola-gift-1":
 		scr_add_text("Maybe I can gift Lola something?");
-			scr_option("Yes", "Lola-gift-yes");
+		var gift = get_gift(LOLA);
+		scr_add_text("If I remember, Lola wants a " + gift.name +".");
+			scr_option("Gift", "Lola-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Lola-gift-yes":
