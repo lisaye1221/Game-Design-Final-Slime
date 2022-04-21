@@ -354,15 +354,86 @@ switch(_text_id){
 	// --------------------- Text for NPCs for Gifting ---------------------- //
 	case "Lavana-gift-1":
 		scr_add_text("Maybe I can gift Lavana something?");
+			scr_option("Yes", "Lavana-gift-yes");
+			scr_option("Maybe next time...", "gift-no");
 		break;
+			case "Lavana-gift-yes":
+				var gift = get_gift(LAVANA);
+				if(has_item(gift)){
+					lose_one_item(gift);
+					gain_relationship_through_gift(LAVANA);
+					scr_game_text("Lavana-gift-success");
+				}
+				else{
+					scr_game_text("warn-no-item");	
+				}
+				break;
 	case "Claude-gift-1":
 		scr_add_text("Maybe I can gift Claude something?");
+			scr_option("Yes", "Claude-gift-yes");
+			scr_option("Maybe next time...", "gift-no");
 		break;
+			case "Claude-gift-yes":
+				var gift = get_gift(CLAUDE);
+				if(has_item(gift)){
+					lose_one_item(gift);
+					gain_relationship_through_gift(CLAUDE);
+					scr_game_text("Claude-gift-success");
+				}
+				else{
+					scr_game_text("warn-no-item");	
+				}
+				break;
 	case "Nelu-gift-1":
 		scr_add_text("Maybe I can gift Nelu something?");
+			scr_option("Yes", "Nelu-gift-yes");
+			scr_option("Maybe next time...", "gift-no");
 		break;
+			case "Nelu-gift-yes":
+				var gift = get_gift(NELU);
+				if(has_item(gift)){
+					lose_one_item(gift);
+					gain_relationship_through_gift(NELU);
+					scr_game_text("Nelu-gift-success");
+				}
+				else{
+					scr_game_text("warn-no-item");	
+				}
+				break;
 	case "Lola-gift-1":
 		scr_add_text("Maybe I can gift Lola something?");
+			scr_option("Yes", "Lola-gift-yes");
+			scr_option("Maybe next time...", "gift-no");
+		break;
+			case "Lola-gift-yes":
+				var gift = get_gift(LOLA);
+				if(has_item(gift)){
+					lose_one_item(gift);
+					gain_relationship_through_gift(LOLA);
+					scr_game_text("Lola-gift-success");
+				}
+				else{
+					scr_game_text("warn-no-item");	
+				}
+				break;
+				
+	case "Lavana-gift-success":
+		scr_add_text("Oh is that for me?");
+		scr_add_text("I was just thinking I wanted some of those.");
+		scr_add_text("Thank you! You're too sweet.");
+		break;
+	case "Claude-gift-success":
+		scr_add_text("A gift for me?");
+		scr_add_text("Thanks! I appreciate it a lot.");
+		break;
+	case "Nelu-gift-success":
+		scr_add_text("WOWWWW. For meeeeeeeeee?");
+		scr_add_text("Thank you so much!!!!!");
+		scr_add_text("You're the best!");
+		break;
+	case "Lola-gift-success":
+		scr_add_text("...");
+		scr_add_text("Seems like Lola liked the gift.");
 		break;
 		
 	// -------------------- Text for Warnings/Hints --------------------- //
@@ -382,6 +453,11 @@ switch(_text_id){
 		break;
 	case "warn-no-item-to-sell":
 		scr_add_text("I am out of things to sell.");
+		break;
+	case "warn-no-item":
+		scr_add_text("I don't have that item.");
+		break;
+	case "gift-no":
 		break;
 		
 	

@@ -64,3 +64,35 @@ relationships =
 	false
 	)
 ]
+
+// a list of gifts each npc wants at each tier
+// ex: Lavana tier 1 gift = 
+// obj_relationship_manager.gifts[LAVANA][get_relationship_tier[LAVANA]]
+gifts = 
+[
+	// Lavana
+	[
+	global.item_list.wheat, // for testing
+	//global.item_list.spaghetti, // tier 1
+	global.item_list.pancake, // tier 2
+	global.item_list.pancake, // tier 3 placeholder
+	],
+	// Claude
+	[
+	global.item_list.cookies, // tier 1
+	global.item_list.curry, // tier 2
+	global.item_list.curry, // tier 3
+	],
+	// Nelu
+	[
+	global.item_list.spaghetti, // tier 1
+	global.item_list.pumpkin_pie, // tier 2
+	global.item_list.pumpkin_pie, // tier 3
+	],
+	// Lola
+	[
+	global.item_list.pancake, // tier 1
+	global.item_list.gummy_bear, // tier 2
+	global.item_list.gummy_bear, // tier 3
+	],
+]
