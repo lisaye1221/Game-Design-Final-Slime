@@ -1,5 +1,6 @@
 if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
+	global.tutorial_stage_on_inv = false;
 }
 
 
@@ -83,6 +84,7 @@ if b4 and sentence_index == array_length(s4) - 1 and (obj_player.interactable_ob
 if b5 and keyboard_check_pressed(ord("E")) {
 		b5 = false;
 		b6 = true;
+		global.tutorial_stage_on_inv = true;
 		sentence_index = 0;
 		sentence = s6[sentence_index]
 }
@@ -96,6 +98,7 @@ if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_
 
 if b7 and (keyboard_check_pressed(ord("M")) or keyboard_check_pressed(ord("N"))) {
 	b7 = false;
+	global.tutorial_stage_on_inv = false;
 	alarm[1] = 3.0 * room_speed
 
 }
@@ -128,7 +131,7 @@ if !berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_che
 }
 
 
-if b10 and (obj_player.interactable_object!= noone && (obj_player.interactable_object.object_index == obj_farm_plot or obj_player.interactable_object.object_index == obj_harvestable)) {
+if b10 and (obj_player.interactable_object!= noone && (obj_player.interactable_object.object_index == obj_farm_plot or obj_player.interactable_object.object_index == obj_crop)) {
 		b10 = false;
 		b11 = true;
 		sentence_index = 0;

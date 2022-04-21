@@ -20,10 +20,11 @@ face = DOWN;
 
 global.energy = 100;
 global.energy_max=100;
-global.gold = 10;
+global.gold = 20;
 global.dead = false;
 global.tutorial_ended = false;
 global.tutorial_ended_farm = false;
+global.tutorial_stage_on_inv = false;
 global.touchedBed = false;
 global.tutorialBedDone = false;
 global.unlock_homedoor = false;

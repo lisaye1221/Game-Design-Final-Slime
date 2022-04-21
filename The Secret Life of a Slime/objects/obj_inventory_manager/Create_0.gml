@@ -447,4 +447,4 @@ global.item_list =
 inventory = array_create(0);
 
 // starting out with 4 seeds of one crop
-gain_item(global.item_list.wheat_seeds, 4);
+gain_item(global.item_list.wheat_seeds, 3);

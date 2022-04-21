@@ -1,8 +1,11 @@
 /// Hitting 'E' Flags that the inventory should open
 
 if (global.menu_on) {
-	global.menu_on = false;
-	global.paused = is_previously_paused;
+	
+	if !global.tutorial_stage_on_inv {
+		global.menu_on = false;
+		global.paused = is_previously_paused;
+	}
 }
 else{
 	if(!instance_exists(obj_textbox)){
