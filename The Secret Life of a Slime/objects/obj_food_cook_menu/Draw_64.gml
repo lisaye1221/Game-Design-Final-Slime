@@ -69,6 +69,10 @@ if (menu_open) {
 		
 			if (i < array_length(recipes2)) {
 				draw_sprite(recipes2[i].item.menu_icon, 0, xx, yy);
+				
+				if (!can_cook_this(recipes2[i])){
+					draw_sprite(spr_greyed_out, 0, xx, yy);
+				}
 			}
 		
 			if (i == i_cursor) {
