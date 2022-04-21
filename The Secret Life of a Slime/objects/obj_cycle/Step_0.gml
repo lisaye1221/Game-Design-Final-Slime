@@ -35,11 +35,13 @@ if (!in_door()){
 		//show_debug_message("at night")
 		gpu_set_blendmode(bm_subtract);
 		//draw_set_alpha(alpha);
-		with (obj_player) draw_circle_color(
-			x + random_range(-1, 1)-other.left, 
-			y + random_range(-1, 1)-other.top, 
-			50 + random_range(-1, 1),
-			c_white, c_black,0);
+		var _radius = 64;
+		with (obj_player) {
+			var _x = x + random_range(-1, 1)-other.left
+			var _y = y + random_range(-1, 1)-other.top
+			//draw_circle(_x,_y,_radius, false)
+			draw_sprite(other.light_sprite,0,_x,_y);
+		}
 	}
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);
