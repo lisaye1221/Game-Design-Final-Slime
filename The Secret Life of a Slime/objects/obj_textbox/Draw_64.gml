@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 old_ui_offset = 80;
-textbox_x = camera_get_view_x(view_camera[0]);
+textbox_x = 0;
 textbox_y = (700 - textbox_height) - old_ui_offset;
 accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z"));
 

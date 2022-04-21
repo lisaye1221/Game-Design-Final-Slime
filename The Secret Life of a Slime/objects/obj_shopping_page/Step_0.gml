@@ -95,6 +95,7 @@ if(accept_key){
 
 
 if(exit_key){
+	show_debug_message("X PRESSED");
 	if(menu_level == 0){
 		// reset position variable
 		option_pos = 0;

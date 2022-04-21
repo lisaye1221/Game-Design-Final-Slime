@@ -60,7 +60,7 @@ relationships =
 	new create_relationship(
 	"Lola",
 	spr_npc,
-	0,
+	10,
 	false
 	)
 ]
