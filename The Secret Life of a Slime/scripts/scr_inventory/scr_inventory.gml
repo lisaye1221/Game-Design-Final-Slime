@@ -11,6 +11,11 @@ function new_item(item, _count) constructor {
 	conversion_rate = item.conversion_rate;
 	sell_price = item.sell_price;
 }
+
+function has_item(item){
+	return get_item_count(item) > 0;	
+}
+
 // inventory manipulation
 function get_item_count(item){
 	inv = obj_inventory_manager.inventory;

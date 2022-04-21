@@ -1,5 +1,11 @@
 // Script assets have changed for v2.3.0 see
 
+function get_gift(_npc){
+	var _tier = get_relationship_tier(_npc);
+	if(_tier == 0) {return;}
+	return	obj_relationship_manager.gifts[_npc][_tier - 1]; // minus 1 for index offset
+}
+
 #macro TIER_0_DIALOGUE_AMOUNT 3
 #macro TIER_1_DIALOGUE_AMOUNT 3
 #macro TIER_2_DIALOGUE_AMOUNT 4
@@ -51,6 +57,11 @@ function talk_to(_npc){
 		gain_relationship_through_talking(_npc);
 	}
 	create_textbox(_text_id);
+}
+
+#macro GIFT_POINTS 5
+function gain_relationship_through_gift(_name){
+	increase_relationship(_name, GIFT_POINTS);	
 }
 
 function gain_relationship_through_talking(_name){
