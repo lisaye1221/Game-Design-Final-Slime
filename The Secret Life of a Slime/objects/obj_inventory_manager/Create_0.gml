@@ -57,7 +57,8 @@ global.item_list =
 		0,
 		"Blue berries, delicious and sweet.",
 		0,
-		2
+		5
+		
 	),
 	fish: new create_item(
 		"Fish",
@@ -77,7 +78,7 @@ global.item_list =
 		0,
 		"Parts for the machine.",
 		0,
-		5,
+		2,
 	),
 	// ---- crops and seeds ------ //
 	wheat : new create_item(
@@ -88,7 +89,7 @@ global.item_list =
 		0,
 		"3 Wheat = 1 Slime Jelly",
 		3,
-		6,
+		4,
 	),
 	wheat_seeds: new create_item(
 		"Wheat Seeds",
@@ -106,9 +107,9 @@ global.item_list =
 		spr_item_tomato_menu,
 		CROPS_MAX,
 		0,
-		"3 Tomatoes = 1 Slime Jelly",
+		"2 Tomatoes = 1 Slime Jelly",
 		3,
-		6
+		8
 	),
 	tomato_seeds: new create_item(
 		"Tomato Seeds",
@@ -126,9 +127,9 @@ global.item_list =
 		spr_item_carrot_menu,
 		CROPS_MAX,
 		0,
-		"3 Carrots = 1 Slime Jelly",
+		"2 Carrots = 1 Slime Jelly",
 		3,
-		7
+		15
 	),
 	carrot_seeds : new create_item(
 		"Carrot Seeds",
@@ -166,9 +167,9 @@ global.item_list =
 		spr_item_cucumber_menu,
 		CROPS_MAX,
 		0,
-		"4 Cucumber = 1 Slime Jelly",
+		"2 Cucumber = 1 Slime Jelly",
 		4,
-		6
+		10
 	),
 	cucumber_seeds : new create_item(
 		"Cucumber Seeds",
@@ -178,7 +179,7 @@ global.item_list =
 		0,
 		"Cucumber Seeds description",
 		0,
-		3
+		8
 	),
 	eggplants : new create_item(
 		"Eggplant",
@@ -208,7 +209,7 @@ global.item_list =
 		0,
 		"4 Lettuce = 1 Slime Jelly",
 		4,
-		7
+		5
 	),
 	lettuce_seeds : new create_item(
 		"Lettuce Seeds",
@@ -228,7 +229,7 @@ global.item_list =
 		0,
 		"2 Pumpkin = 1 Slime Jelly",
 		2,
-		10
+		20
 	),
 	pumpkin_seeds : new create_item(
 		"Pumpkin Seeds",
@@ -238,7 +239,7 @@ global.item_list =
 		0,
 		"Pumpkin Seeds description",
 		0,
-		3
+		5
 	),
 	radishes : new create_item(
 		"Radish",
@@ -246,9 +247,9 @@ global.item_list =
 		spr_item_raddish_menu,
 		CROPS_MAX,
 		0,
-		"3 Radish = 1 Slime Jelly",
+		"2 Radish = 1 Slime Jelly",
 		3,
-		6
+		15
 	),
 	radish_seeds : new create_item(
 		"Radish Seeds",
@@ -258,7 +259,7 @@ global.item_list =
 		0,
 		"Radish Seeds description",
 		0,
-		3
+		8
 	),
 	roses : new create_item(
 		"Rose",
@@ -268,7 +269,7 @@ global.item_list =
 		0,
 		"1 Rose = 1 Slime Jelly",
 		1,
-		15
+		25
 	),
 	rose_seeds : new create_item(
 		"Rose Seeds",
@@ -278,7 +279,7 @@ global.item_list =
 		0,
 		"Rose Seeds description",
 		0,
-		4
+		7
 	),
 	stars : new create_item(
 		"Star Fruit",
@@ -288,7 +289,7 @@ global.item_list =
 		0,
 		"Star Fruit description",
 		0,
-		20
+		30
 	),
 	star_seeds : new create_item(
 		"Star Fruit Seeds",
@@ -298,7 +299,7 @@ global.item_list =
 		0,
 		"Star Fruit Seeds description",
 		0,
-		5
+		10
 	),
 	tulips : new create_item(
 		"Tulip",
@@ -359,7 +360,7 @@ global.item_list =
 		0,
 		"A plate of Spaghetti.",
 		0,
-		10,
+		40,
 	),
 	ramen : new create_item(
 		"Ramen",
@@ -369,7 +370,7 @@ global.item_list =
 		0,
 		"A bowl of Ramen.",
 		0,
-		10,
+		85,
 	),
 	curry : new create_item(
 		"Curry",
@@ -379,7 +380,7 @@ global.item_list =
 		0,
 		"A plate of Curry.",
 		0,
-		10,
+		130,
 	),
 	sandwich : new create_item(
 		"Sandwich",
@@ -389,7 +390,7 @@ global.item_list =
 		0,
 		"A Sandwich.",
 		0,
-		10,
+		60,
 	),
 	pumpkin_pie : new create_item(
 		"Pumpkin Pie",
@@ -399,7 +400,7 @@ global.item_list =
 		0,
 		"A slice of Pumpkin Pie.",
 		0,
-		10,
+		100,
 	),
 	gummy_bear : new create_item(
 		"Gummy Bear",
@@ -409,7 +410,7 @@ global.item_list =
 		0,
 		"A Gummy Bear.",
 		0,
-		10,
+		250,
 	),
 	cookies : new create_item(
 		"Cookies",
@@ -419,7 +420,7 @@ global.item_list =
 		0,
 		"A warm plate of Cookies.",
 		0,
-		10,
+		35,
 	),
 	pancake : new create_item(
 		"Pancake",
@@ -439,7 +440,7 @@ global.item_list =
 		0,
 		"A warm loaf of bread.",
 		0,
-		10,
+		15,
 	),
 }
 
