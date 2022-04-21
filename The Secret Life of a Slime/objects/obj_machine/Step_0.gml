@@ -27,10 +27,8 @@ else if (status == "repairing"){
 
 // activating full signal
 if (status == "full" && !full_signal && interactable){
-	exclamation.visible = true;
 	full_signal = true;
 } else if (status != "full" && full_signal){
-	exclamation.visible = false;
 	full_signal = false;
 }
 

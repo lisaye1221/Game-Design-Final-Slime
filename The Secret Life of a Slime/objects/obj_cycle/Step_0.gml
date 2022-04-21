@@ -22,12 +22,8 @@ if (!surface_exists(surf)) {
 	surface_reset_target();
 }
 surface_set_target(surf);
-draw_clear_alpha(c_black,0)
+draw_clear_alpha(c_black,alpha)
 if (!in_door()){
-	draw_set_color(c_black)
-	draw_set_alpha(alpha);
-	var _w = camera_get_view_width(_cam);
-	draw_rectangle(0,0,_w,guiHeight, 0);
 	
 	/*
 	draw_set_color(c_orange);
