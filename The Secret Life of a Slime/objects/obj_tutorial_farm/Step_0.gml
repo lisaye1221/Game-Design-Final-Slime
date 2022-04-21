@@ -2,7 +2,6 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 }
 
-//show_debug_message(string_length(sentence))
 
 if global.tutorial_ended_farm {
 	instance_deactivate_object(inst_farmlock)
@@ -66,12 +65,12 @@ if (b15 and sentence_index < array_length(s15) - 1 and keyboard_check_pressed(or
 	sentence_index +=1
 	sentence = s15[sentence_index]
 }
-
+/*
 if (b16 and sentence_index < array_length(s16) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s16[sentence_index]
 }
-
+*/
 
 
 if b4 and sentence_index == array_length(s4) - 1 and (obj_player.interactable_object!= noone && obj_player.interactable_object.object_index == obj_bush) and keyboard_check_pressed(ord("Z")){
@@ -129,7 +128,7 @@ if !berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_che
 }
 
 
-if b10 and (obj_player.interactable_object!= noone && obj_player.interactable_object.object_index == obj_farm_plot) {
+if b10 and (obj_player.interactable_object!= noone && (obj_player.interactable_object.object_index == obj_farm_plot or obj_player.interactable_object.object_index == obj_harvestable)) {
 		b10 = false;
 		b11 = true;
 		sentence_index = 0;
@@ -168,31 +167,17 @@ if b14 and sentence_index == array_length(s14) - 1  and (get_item_count(global.i
 		sentence = s15[sentence_index]
 }
 
-if b15 and sentence_index == array_length(s15) - 1  and (get_item_count(global.item_list.wheat) == 0) {
+if b15 and sentence_index == array_length(s15) - 1 {
 		b15 = false;
 		b16 = true;
 		sentence_index = 0;
 		sentence = s16[sentence_index]
 }
 
-if b16 and sentence_index == array_length(s16) - 1 {
-		b16 = false;
-		b17 = true;
-		sentence_index = 0;
-		sentence = s17[sentence_index]
-}
 
-
-
-
-
-if b17 or (b16 and sentence_index == sentence_index == array_length(s16) - 1)  {
+if b16 or (b15 and sentence_index == array_length(s15) - 1)  {
 	global.tutorial_ended_farm = true;
 }
-
-
-
-
 
 
 

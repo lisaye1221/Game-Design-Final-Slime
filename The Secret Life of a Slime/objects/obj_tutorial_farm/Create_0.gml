@@ -22,7 +22,7 @@ s4 = ["This is your farm! Beautiful, isn't it? (x)",
 "Uh-oh, looks like your energy has depleted (x)",
 "Head over to the bushes and grab a berry"]
 
-s5 = ["TA-DA! Look at the corner, it's in your inventory now (x)",
+s5 = ["TA-DA! Look at the bottom, it's in your inventory now (x)",
 "You can even press E to view your items"]
 
 s6 = ["These are all your items, you can only hold 6 items at once (x)",
@@ -49,29 +49,28 @@ s11 = ["Press 1 to grow some wheat. Let's use up all of our seeds"]
 s12 = ["Crops take time to grow. I'll make them instantly grow for ya this time (x)", 
 "Let's harvest all these crops"]
 
-s13 = ["Wheat cannot be consumed, so we must use the machine to make it edible (x)",
-"Go to the top machine and convert the wheat into slime jelly"]
+s13 = ["We slimes cannot consume non-blue items (x)",
+"so we must use the machine to make it edible (x)",
+"Go to the top machine and convert the wheat into blue slime jelly"]
 
 s14 = ["We wait... collect the jelly when it's done"]
 
 s15 = ["Now, we have slime jelly! We can choose to eat or sell. (x)",
-"It takes 3 wheat to convert into 1 slime jelly. Differs for each crop",
-"We have an extra wheat. Let's turn that into seeds to grow more crops. (x)",
-"Let's head over to the bottom machine and produce some seeds"]
-
-
-s16 = 
-["Seeds can also be bought in the village shop (x)",
-"The village shops offers a variety of items and refreshes its item stock daily",
+"More seeds can be bought in the village among many other things, refreshed daily",
 "You can also sell your goods and buy machine parts to repair your machines upon wear",
 "Listen.. no one should ever find out about your identity.", 
-"You'll transform into a human when you're in town, but it'll only lasts for 40 seconds",
-"and you'll only able to enter town again after 45 seconds",
+"You'll transform into a human when you're in town for 40 seconds",
+"and you'll only able to enter town again after the cooldown ends",
 "Good luck out there, my friend...(x)",
 "I must leave now, they're sending me back. Time is ticking now (x).",""]
 
-s17 = [""]
+s16 = [""]
 
+/*
+extra = [
+"We have an extra wheat. Let's turn that into seeds to grow more crops. (x)",
+"Let's head over to the bottom machine and produce some seeds"]
+*/
 
 
 
