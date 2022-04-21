@@ -66,8 +66,12 @@ if(accept_key){
 		if(selected_item.stock <= 0){
 			array_delete(curr_inventory, option_pos, 1);
 			// move cursors up 
-			option_pos--;
-			end_pos--;
+			if(option_pos > 0){
+				option_pos--;
+			}
+			if(end_pos > 0){
+				end_pos--;
+			}
 			option_num = array_length(curr_inventory);
 			if(end_pos == option_num - 1&& start_pos > 0){
 				// adjust start pos (scroll up)
