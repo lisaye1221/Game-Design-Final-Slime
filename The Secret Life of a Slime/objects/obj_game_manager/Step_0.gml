@@ -4,9 +4,10 @@
 // records how many seconds passed by
 if(!global.dead and !global.tutorial_active){global.time += global.delta_second;}
 // 60 seconds = 1 day
-if (global.time >= 3){
+if (global.time >= 60){
 	night_events_triggered = false;
 	global.days++;
+	//daily event trigger
 	show_debug_message("new day: "+string(global.days))
 	for (var _curr = ds_map_find_first(objects_with_daily_events);
 		_curr!=undefined;
@@ -17,8 +18,8 @@ if (global.time >= 3){
 	}
 	global.time = 0;
 }
-//rn 2 second = to night
-if (!night_events_triggered && global.time >= 2){
+//night event trigger
+if (!night_events_triggered && global.time >= 40){
 	night_events_triggered = true;
 	show_debug_message("triggering night events")
 	for (var _curr = ds_map_find_first(objects_with_night_events);

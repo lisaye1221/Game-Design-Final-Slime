@@ -16,19 +16,15 @@ function find_first_interactable(_type,_interact_check_x,_interact_check_y){
 }
 
 function active_persistent_interactable(_id){
-	with (id){
-		should_be_interactable = true;
-		interactable = true;
-		visible = true;
-		solid = true;
-	}
+	_id.should_be_interactable = true;
+	_id.interactable = true;
+	_id.visible = true;
+	_id.solid = true;
 }
 
 function deactive_persistent_interactable(_id){
-	with (id){
-		should_be_interactable = false;
-		interactable = false;
-		visible = false;
-		solid = false;
-	}
+	_id.should_be_interactable = false;
+	_id.interactable = false;
+	_id.visible = false;
+	_id.solid = false;
 }

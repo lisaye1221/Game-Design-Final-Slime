@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 
-global.days += 1;
+global.time = 60;
