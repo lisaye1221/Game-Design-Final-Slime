@@ -1,4 +1,5 @@
 alpha = 0;
+alpha_yellow = 0;
 day = 30;	// amount of time that it stays at day
 night = 10;		// amound of time that it stays at night
 color = c_black;

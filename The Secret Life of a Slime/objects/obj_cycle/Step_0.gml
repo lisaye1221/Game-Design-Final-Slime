@@ -28,11 +28,22 @@ if (!in_door()){
 	draw_set_alpha(alpha);
 	var _w = camera_get_view_width(_cam);
 	draw_rectangle(0,0,_w,guiHeight, 0);
+	
+	/*
+	draw_set_color(c_orange);
+	draw_set_alpha(alpha_yellow);
+	draw_rectangle(0,0,_w,guiHeight, 0);
+	*/
+	
 	if (currently == "night"){
 		//show_debug_message("at night")
 		gpu_set_blendmode(bm_subtract);
-		draw_set_color(c_white);
-		with (obj_player) draw_circle(x + random_range(-1, 1)-other.left, y + random_range(-1, 1)-other.top, 50 + random_range(-1, 1), false);
+		//draw_set_alpha(alpha);
+		with (obj_player) draw_circle_color(
+			x + random_range(-1, 1)-other.left, 
+			y + random_range(-1, 1)-other.top, 
+			50 + random_range(-1, 1),
+			c_white, c_black,0);
 	}
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);

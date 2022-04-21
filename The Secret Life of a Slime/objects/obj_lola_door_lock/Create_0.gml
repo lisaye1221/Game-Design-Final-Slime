@@ -4,8 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
+//register daily event
 ds_map_add(obj_game_manager.objects_with_daily_events,id,0)
-show_debug_message("adding to map"+string(id))
+//register events per night
 ds_map_add(obj_game_manager.objects_with_night_events,id,1)
 if (global.days>global.lola_door_unlock_day&&global.time>=40){
 	solid = false;
