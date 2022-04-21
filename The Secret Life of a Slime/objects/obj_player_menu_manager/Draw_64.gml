@@ -158,13 +158,16 @@ if (global.menu_on) {
 		
 		draw_set_font(ft_name);
 		
-		var _name_height = string_height("Sapphy Slime");
+		var _player_name = obj_player.name;
+		
+		var _name_line_height = string_height(_player_name);
+		var _name_height = string_height_ext(_player_name, _name_line_height+3, _desc_width-40);
 		var _name_left = _desc_left+(_desc_width/2);
 		var _name_top = _desc_top+(_desc_height/2)+20+_name_height/2;
 			
 		draw_set_halign(fa_center);
 			
-		draw_text(_name_left, _name_top, "Sapphy Slime");
+		draw_text_ext(_name_left, _name_top, _player_name, _name_line_height+3, _desc_width-40);
 		
 		draw_set_font(ft_details);
 			
