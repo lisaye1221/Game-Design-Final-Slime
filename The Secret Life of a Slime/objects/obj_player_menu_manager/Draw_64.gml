@@ -103,13 +103,14 @@ if (global.menu_on) {
 			
 			draw_sprite_ext(selected.menu_icon, 0, _sprite_dis_left, _sprite_dis_top, _sprite_scale, _sprite_scale, 0, c_white, 1);
 			
-			var _name_height = string_height_ext(selected.name, 3, _desc_width-40);
+			var _name_line_height = string_height(selected.name);
+			var _name_height = string_height_ext(selected.name, _name_line_height+3, _desc_width-40);
 			var _name_left = _desc_left+(_desc_width/2);
 			var _name_top = _desc_top+(_desc_height/2)+20+_name_height/2;
 			
 			draw_set_halign(fa_center);
 			
-			draw_text_ext(_name_left, _name_top, selected.name, 3, _desc_width-40);
+			draw_text_ext(_name_left, _name_top, selected.name, _name_line_height+3, _desc_width-40);
 			
 			draw_set_font(ft_details);
 			
@@ -118,7 +119,7 @@ if (global.menu_on) {
 			
 			draw_text(_name_left, _name_top+10+_name_height, _quan_string);
 			
-			draw_text_ext(_name_left, _name_top+10+_name_height+_quan_height+20, selected.desc, 3, _desc_width-40);
+			draw_text_ext(_name_left, _name_top+10+_name_height+_quan_height+20, selected.desc, 3 + _quan_height, _desc_width-40);
 			
 		}
 		
