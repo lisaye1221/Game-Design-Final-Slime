@@ -469,6 +469,24 @@ switch(_text_id){
 		break;
 		
 	
+	//Decorative Item texts
+	case "fruitBox":
+		scr_add_text("A lot of fruit and vegetables.")
+		scr_add_text("Lavana sells those.")
+		break;
+	case "bookShelf":
+		scr_add_text("Reading is good.")
+		scr_add_text("But those are human books but I can't read human language :(.")
+		break;
+	case "potionShelf":
+		scr_add_text("Many Potions are available in this shop.")
+		scr_add_text("But they are for human.")
+		break;
+	case "flower":
+		scr_add_text("Beatiful flowers make me happy ~(^_^)~")
+		break;
+	
+	
 	// ---------- Text for Slime Jelly conversion machine ------ //
 	
 	// NOT USED

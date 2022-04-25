@@ -389,6 +389,12 @@
             {"propertyId":{"name":"prompt_text","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"objectId":{"name":"obj_solid_interactable","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"value":"Speak?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"menu","path":"objects/obj_npc_with_menu/obj_npc_with_menu.yy",},"objectId":{"name":"obj_npc_with_menu","path":"objects/obj_npc_with_menu/obj_npc_with_menu.yy",},"value":"instance_create_layer(x,y,\"Instances\",obj_food_shop_menu);","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_npc_with_menu","path":"objects/obj_npc_with_menu/obj_npc_with_menu.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":230.0,"resourceVersion":"1.0","name":"inst_6F2CA667","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"text_id","path":"objects/obj_talk_block/obj_talk_block.yy",},"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"value":"\"fruitBox\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":14.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":144.0,"resourceVersion":"1.0","name":"inst_37F952A7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"text_id","path":"objects/obj_talk_block/obj_talk_block.yy",},"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"value":"\"bookShelf\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":280.0,"y":400.0,"resourceVersion":"1.0","name":"inst_706000B0","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"ts_market","path":"tilesets/ts_market/ts_market.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":57,"SerialiseHeight":44,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -536,6 +542,8 @@
   "instanceCreationOrder": [
     {"name":"inst_6F2CA667","path":"rooms/rm_shop1/rm_shop1.yy",},
     {"name":"inst_7C7EAD03","path":"rooms/rm_shop1/rm_shop1.yy",},
+    {"name":"inst_37F952A7","path":"rooms/rm_shop1/rm_shop1.yy",},
+    {"name":"inst_706000B0","path":"rooms/rm_shop1/rm_shop1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

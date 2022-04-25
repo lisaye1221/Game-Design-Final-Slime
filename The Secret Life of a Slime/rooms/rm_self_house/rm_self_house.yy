@@ -228,6 +228,9 @@
             {"propertyId":{"name":"prompt_text","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"objectId":{"name":"obj_solid_interactable","path":"objects/obj_solid_interactable/obj_solid_interactable.yy",},"value":"\"Leave?\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"text_id","path":"objects/obj_talk_block/obj_talk_block.yy",},"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"value":"\"home_door_lock\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":434.0,"y":497.0,"resourceVersion":"1.0","name":"inst_lock","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"text_id","path":"objects/obj_talk_block/obj_talk_block.yy",},"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"value":"\"bookShelf\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_talk_block","path":"objects/obj_talk_block/obj_talk_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":6.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":272.0,"resourceVersion":"1.0","name":"inst_6726493C","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"dialogue","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -504,6 +507,7 @@
     {"name":"inst_32AB6FF0","path":"rooms/rm_self_house/rm_self_house.yy",},
     {"name":"inst_4D20E8EA","path":"rooms/rm_self_house/rm_self_house.yy",},
     {"name":"inst_4F738C7B","path":"rooms/rm_self_house/rm_self_house.yy",},
+    {"name":"inst_6726493C","path":"rooms/rm_self_house/rm_self_house.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
