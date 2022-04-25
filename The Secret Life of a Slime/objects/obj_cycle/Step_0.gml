@@ -1,15 +1,21 @@
 /// @description create light surface
 // You can write your code in this editor
-if (global.time < 30){
+if (global.time < SUNSET_TIME){
+	//day
 	alpha = 0;
 }
-else if (global.time < 40){
+else if (global.time < DARK_TIME){
+	//sunset
 	alpha = (global.time - 30) * .07;
+	alpha_color = .1*(5-abs(global.time-35));
 }
-else if (global.time > 50){
+else if (global.time > SUNRISE_TIME){
+	//sunrise
 	alpha = (60 - global.time) * .07;
 }
 else{
+	//night
+	alpha_color = 0;
 	alpha = .7;
 }
 
@@ -37,7 +43,7 @@ else{
 	draw_rectangle(0,0,_w,guiHeight, 0);
 	*/
 	draw_clear_alpha(c_black,alpha)
-	if (global.time>30){
+	if (alpha>.4){
 		with (obj_player) {
 			draw_set_alpha(1)
 			gpu_set_blendmode(bm_subtract);
@@ -47,10 +53,10 @@ else{
 			draw_sprite(other.light_sprite,0,_x,_y);
 		}
 	}
-	//show_debug_message("at night")
+	//draw dusk effect
 	if (global.time<40 && global.time>30){
 		gpu_set_blendmode(bm_add)
-		draw_set_alpha(.1*(5-abs(global.time-35)))
+		draw_set_alpha(alpha_color)
 		draw_set_color(c_orange)
 		draw_rectangle(0,0,display_get_width(),display_get_height(),false)
 		//draw_set_alpha(alpha);

@@ -1,10 +1,11 @@
 alpha = 0;
-alpha_yellow = 0;
-day = 30;	// amount of time that it stays at day
-night = 10;		// amound of time that it stays at night
-color = c_black;
+alpha_color = 0;
 
-alarm[0] = room_speed * day;
+color = c_black;
+SUNSET_TIME = 30;
+DARK_TIME = 40;
+SUNRISE_TIME = 50;
+
 
 //create light sprite
 //create base sprite
