@@ -515,7 +515,7 @@ switch(_text_id){
 	case "seed-machine-unlock":
 		scr_add_text("Lavana sent me the seed machine.");
 		scr_add_text("It can convert crops into seeds.");
-		scr_add_text("Use it like using your food machine ^_^.")
+		scr_add_text("Use it like using the food machine ^_^.")
 		break;
 	case "oven-unlock":
 		scr_add_text("Finally my oven delivery arrived!");
