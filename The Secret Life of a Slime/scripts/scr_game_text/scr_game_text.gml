@@ -507,6 +507,16 @@ switch(_text_id){
 			scr_add_text("Bye then.");
 			return_value = 0;
 			break;
+			
+	// --------- Event texts --------- //
+	case "night":
+		scr_add_text("Night falls...");
+		break;
+	case "seed-machine-unlock":
+		scr_add_text("Lavana sent me the seed machine.");
+		scr_add_text("It can convert crops into seeds.");
+		scr_add_text("Use it like using your food machine ^_^.")
+		break;
 }
 
 // NOT USED

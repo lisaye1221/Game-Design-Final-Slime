@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
+highlight = false;
 
 // helper func
 // basically we only have code to use crops here... if not a crop item doesnt get used

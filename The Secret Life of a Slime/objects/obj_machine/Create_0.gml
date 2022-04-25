@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 event_inherited()
+activation_text_triggered = true;
 
 interactable = true; // false when we are at town
 // statuses are: "empty", "busy", "full", "broken", "repairing"
