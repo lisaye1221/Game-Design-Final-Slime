@@ -12,9 +12,9 @@ prompt_text_lst = ["cook food?",
 	"repairing..."]
 which_text = 0;
 
-exclamation = instance_create_layer(x+sprite_width-sprite_xoffset,y-sprite_yoffset,"Instances",obj_exclamation)
 uses_inventory = false;
 inv_slot = 0;
 
 ds_map_add(obj_game_manager.objects_with_daily_events,id,0);
 deactive_persistent_interactable(id)
+activation_text_triggered = false;

@@ -517,6 +517,10 @@ switch(_text_id){
 		scr_add_text("It can convert crops into seeds.");
 		scr_add_text("Use it like using your food machine ^_^.")
 		break;
+	case "oven-unlock":
+		scr_add_text("Finally my oven delivery arrived!");
+		scr_add_text("Now I can cook advanced food in the oven ^_^.")
+		break;
 }
 
 // NOT USED

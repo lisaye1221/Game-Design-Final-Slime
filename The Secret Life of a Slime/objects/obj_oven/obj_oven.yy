@@ -35,6 +35,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"sprite_ready","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"spr_oven","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sprite_broken","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"spr_oven","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"activation_text","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"\"oven-unlock\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "interactables",
