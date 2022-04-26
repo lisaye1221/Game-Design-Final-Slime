@@ -163,18 +163,25 @@ switch(_text_id){
 	case "Lavana-1-1":
 		scr_add_text("Hi, good to see you!");
 		scr_add_text("Are you eating well?");
+		scr_add_text("It's important to get your nutrients!");
 		break;
 	case "Lavana-1-2":
-		scr_add_text("1-2"); // placeholder for dialogue
+		scr_add_text("Hi! How are you doing today?");
+		scr_add_text("The tomatos are super fresh today, you should try them!");
 		break;
 	case "Lavana-1-3":
 		scr_add_text("1-3");
 		break;
 	case "Lavana-2-1":
-		scr_add_text("2-1");
+		scr_add_text("Oh hey! It's you again!");
+		scr_add_text("Always good to see you.");
+		scr_add_text("You've been in town for quite a bit now right?");
+		scr_add_text("Haha you fit right in! Unlike the girl living down there, I don't think I've ever see her during the day.");
 		break;
 	case "Lavana-2-2":
-		scr_add_text("2-2");
+		scr_add_text("Hi! Good to see you, how are you today?");
+		scr_add_text("It's a nice day today isn't it? Hope your farm is doing well!");
+		scr_add_text("Don't overwork yourself. If you're feeling lazy, you can always come to me for some fresh produce.");
 		break;
 	case "Lavana-2-3":
 		scr_add_text("2-3");
@@ -261,7 +268,8 @@ switch(_text_id){
 		scr_add_text("Got anything you need me to take from your hands today?");
 		break;
 	case "Nelu-1-1":
-		scr_add_text("1-1");
+		scr_add_text("Oooo it's you!");
+		scr_add_text("Wasssssuuupppppppppppppppp");
 		break;
 	case "Nelu-1-2":
 		scr_add_text("1-2"); 
@@ -270,7 +278,8 @@ switch(_text_id){
 		scr_add_text("1-3");
 		break;
 	case "Nelu-2-1":
-		scr_add_text("2-1");
+		scr_add_text("My friend! Hello hello!");
+		scr_add_text("My friend! Hello hello!");
 		break;
 	case "Nelu-2-2":
 		scr_add_text("2-2");
@@ -315,25 +324,25 @@ switch(_text_id){
 		scr_add_text("Now leave.");
 		break;
 	case "Lola-1-1":
-		scr_add_text("1-1");
+		scr_add_text("Oh, it's you.");
 		break;
 	case "Lola-1-2":
-		scr_add_text("1-2"); 
+		scr_add_text("You love coming here don't you?"); 
 		break;
 	case "Lola-1-3":
-		scr_add_text("1-3");
+		scr_add_text("Thought you would be coming.");
 		break;
 	case "Lola-2-1":
-		scr_add_text("2-1");
+		scr_add_text("Oh, it's you. Hello.");
 		break;
 	case "Lola-2-2":
-		scr_add_text("2-2");
+		scr_add_text("Oh hey, slow day today?");
 		break;
 	case "Lola-2-3":
-		scr_add_text("2-3");
+		scr_add_text("Oh hey, how are you doing?");
 		break;
 	case "Lola-2-4":
-		scr_add_text("2-4");
+		scr_add_text("Oh hey, here to see me again?");
 		break;
 	case "Lola-3-1":
 		scr_add_text("3-1");
@@ -440,7 +449,7 @@ switch(_text_id){
 		scr_add_text("You're the best!");
 		break;
 	case "Lola-gift-success":
-		scr_add_text("...");
+		scr_add_text("....");
 		scr_add_text("Seems like Lola liked the gift.");
 		break;
 		
@@ -478,7 +487,7 @@ switch(_text_id){
 		scr_add_text("Lavana sells those.")
 		break;
 	case "bookShelf":
-		scr_add_text("Reading is good.")
+		scr_add_text("Reading is good. So they say.")
 		scr_add_text("But those are human books but I can't read human language :(.")
 		break;
 	case "potionShelf":
@@ -517,12 +526,12 @@ switch(_text_id){
 		break;
 	case "seed-machine-unlock":
 		scr_add_text("Lavana sent me the seed machine.");
-		scr_add_text("It can convert crops into seeds.");
-		scr_add_text("Use it like using the food machine ^_^.")
+		scr_add_text("She said it can convert crops into seeds.");
+		scr_add_text("Seems like I can use it like how I use the other machine ^_^.")
 		break;
 	case "oven-unlock":
 		scr_add_text("Finally my oven delivery arrived!");
-		scr_add_text("Now I can cook advanced food in the oven ^_^.")
+		scr_add_text("Now I can cook some scrumptious food in the oven ^_^.")
 		break;
 }
 

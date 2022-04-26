@@ -6,8 +6,6 @@ disabled = instance_exists(obj_textbox);
 // restocks every time player goes to town
 if(global.should_shop_restock){
 	curr_inventory = scr_restock_food_shop_inventory(inventory);
-	show_debug_message("shop restockeddddddddd");
-	show_debug_message(curr_inventory);
 	option_num = array_length(curr_inventory);
 	start_pos = 0;
 	// which item to draw as last option in list
