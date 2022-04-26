@@ -12,6 +12,7 @@ if (obj_storage_manager.storage_open) {
 else {
 	obj_storage_manager.storage_open = true;
 	global.paused = true;
+	audio_play_sound(sfx_str_open, 0, false);
 }
 
 

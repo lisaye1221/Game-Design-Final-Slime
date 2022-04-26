@@ -39,6 +39,10 @@ if (tab_index == 0) {
 		}
 		else if (i_cursor >= _size) i_cursor = _col;
 	}
+	
+	if ((_h_move != 0) || (_v_move != 0)) {
+		audio_play_sound(sfx_move_cursor, 0, false);
+	}
 }
 
 else if (tab_index == 3) {
@@ -64,6 +68,10 @@ else if (tab_index == 3) {
 		else journal_index = 0;
 		
 	}
+	
+	if ((_h_move != 0) || (_v_move != 0)) {
+		audio_play_sound(sfx_move_cursor, 0, false);
+	}
 }
 
 // moving tab index
@@ -86,6 +94,8 @@ if (_t_move != 0) {
 		ach_index = 1;
 		journal_index = 0;
 	}
+	
+	audio_play_sound(sfx_change_tab, 0, false);
 	
 }
 

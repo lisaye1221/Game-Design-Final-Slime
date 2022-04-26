@@ -122,11 +122,13 @@ function str_add_new_item_stack(item, count){
 }
 
 function move_from_inventory(item, count) {
+	audio_play_sound(sfx_transfer_item, 0, false);
 	lose_item(item, count);
 	str_gain_item(item, count);
 }
 
 function move_from_storage(item, count) {
+	audio_play_sound(sfx_transfer_item, 0, false);
 	str_lose_item(item, count);
 	gain_item(item, count);
 }

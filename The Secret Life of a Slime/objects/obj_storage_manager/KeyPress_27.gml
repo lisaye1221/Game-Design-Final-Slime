@@ -6,4 +6,3 @@ if (storage_open) {
 	global.paused = false;
 	audio_play_sound(sfx_str_close, 0, false);
 }
-

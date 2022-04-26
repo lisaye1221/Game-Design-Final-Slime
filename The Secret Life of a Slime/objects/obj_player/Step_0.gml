@@ -107,26 +107,32 @@ if not (global.dead or global.paused) {
 		inv_count = array_length(inv);
 	
 		if (key_1 && inv_count >= 1){
+			audio_play_sound(sfx_use_item, 0, false);
 			interactable_object.inv_slot = 1;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
 		} else if (key_2 && inv_count >= 2){
+			audio_play_sound(sfx_use_item, 0, false);
 			interactable_object.inv_slot = 2;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
 		} else if (key_3 && inv_count >= 3){
+			audio_play_sound(sfx_use_item, 0, false);
 			interactable_object.inv_slot = 3;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
 		} else if (key_4 && inv_count >= 4){
+			audio_play_sound(sfx_use_item, 0, false);
 			interactable_object.inv_slot = 4;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
 		} else if (key_5 && inv_count >= 5){
+			audio_play_sound(sfx_use_item, 0, false);
 			interactable_object.inv_slot = 5;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
 		} else if (key_6 && inv_count >= 6){
+			audio_play_sound(sfx_use_item, 0, false);
 			interactable_object.inv_slot = 6;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
@@ -165,6 +171,7 @@ if not (global.dead or global.paused) {
 
 
 	function use_item(item){
+		audio_play_sound(sfx_eat_item, 0, false);
 		switch(item.name){
 			case global.item_list.berries.name:
 				increase_energy(3);

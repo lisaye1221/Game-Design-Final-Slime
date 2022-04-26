@@ -5,6 +5,7 @@ if (global.menu_on) {
 	if !global.tutorial_stage_on_inv {
 		global.menu_on = false;
 		global.paused = is_previously_paused;
+		audio_play_sound(sfx_open_close_inventory, 0, false);
 	}
 }
 else{
@@ -16,5 +17,6 @@ else{
 		tab_index = 0;
 		ach_index = 1;
 		journal_index = 0;
+		audio_play_sound(sfx_open_close_inventory, 0, false);
 	}
 }
