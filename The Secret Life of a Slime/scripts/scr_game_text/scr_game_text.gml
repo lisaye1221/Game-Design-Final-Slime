@@ -462,6 +462,9 @@ switch(_text_id){
 	case "warn-no-item-to-sell":
 		scr_add_text("I am out of things to sell.");
 		break;
+	case "warn-out-of-stock":
+		scr_add_text("Looks like it's out of stock right now. I should come back another time.");
+		break;
 	case "warn-no-item":
 		scr_add_text("I don't have that item.");
 		break;

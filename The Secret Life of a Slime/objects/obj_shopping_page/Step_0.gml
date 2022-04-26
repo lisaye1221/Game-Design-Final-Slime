@@ -17,6 +17,7 @@ if(global.should_shop_restock){
 
 if(array_length(curr_inventory) <= 0){
 	instance_deactivate_object(id);
+	create_textbox("warn-out-of-stock");
 }
 
 accept_key = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && !disabled;
