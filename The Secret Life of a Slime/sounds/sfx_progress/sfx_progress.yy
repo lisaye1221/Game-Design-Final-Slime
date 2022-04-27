@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_footsteps.wav",
-  "duration": 1.0,
+  "soundFile": "sfx_progress.wav",
+  "duration": 1.375011,
   "parent": {
-    "name": "Old",
-    "path": "folders/Sounds/Old.yy",
+    "name": "UI",
+    "path": "folders/Sounds/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_footsteps",
+  "name": "sfx_progress",
   "tags": [],
   "resourceType": "GMSound",
 }

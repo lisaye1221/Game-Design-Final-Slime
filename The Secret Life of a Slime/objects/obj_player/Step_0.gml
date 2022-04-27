@@ -69,8 +69,9 @@ if not (global.dead or global.paused) {
 	
 	if (((x_speed != 0) || (y_speed != 0)) && (footstep_audio_count == 0)) {
 		// play footstep sfx
-		audio_play_sound(sfx_footsteps, 0, false);
+		// audio_play_sound(sfx_footsteps, 0, false);
 		// maybe add squelching sound as well
+		audio_play_sound(sfx_slime_splat, 0, false);
 	}
 	
 	// move the player
@@ -181,26 +182,30 @@ if not (global.dead or global.paused) {
 
 
 	function use_item(item){
-		audio_play_sound(sfx_eat_item, 0, false);
 		switch(item.name){
 			case global.item_list.berries.name:
+				audio_play_sound(sfx_eat_item, 0, false);
 				increase_energy(3);
 				lose_one_item(item);
 				break;
 			case global.item_list.slime_jelly.name:
+				audio_play_sound(sfx_eat_item, 0, false);
 				increase_energy(10);
 				lose_one_item(item);
 				achi_gain_progress("DONT_STARVE", 1);
 				break;
 			case global.item_list.fish.name:
+				audio_play_sound(sfx_eat_item, 0, false);
 				increase_energy(6);
 				lose_one_item(item);
 				break;
 			case global.item_list.stars.name:
+				audio_play_sound(sfx_eat_item, 0, false);
 				increase_energy(10);
 				lose_one_item(item);
 				break;
 			case global.item_list.tulips.name:
+				audio_play_sound(sfx_eat_item, 0, false);
 				increase_energy(6);
 				lose_one_item(item);
 				break;

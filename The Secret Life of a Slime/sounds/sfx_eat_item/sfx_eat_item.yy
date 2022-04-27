@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_eat_item.wav",
-  "duration": 0.679184,
+  "duration": 0.743039,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
