@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_sell_buy_item.wav",
-  "duration": 0.557279,
+  "soundFile": "sfx_footsteps.wav",
+  "duration": 1.0,
   "parent": {
-    "name": "Old",
-    "path": "folders/Sounds/Old.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_sell_buy_item",
+  "name": "sfx_footsteps",
   "tags": [],
   "resourceType": "GMSound",
 }

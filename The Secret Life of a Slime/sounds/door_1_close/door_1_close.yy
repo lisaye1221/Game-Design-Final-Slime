@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_sell_buy_item.wav",
-  "duration": 0.557279,
+  "soundFile": "door_1_close.wav",
+  "duration": 1.701708,
   "parent": {
     "name": "Old",
     "path": "folders/Sounds/Old.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_sell_buy_item",
+  "name": "door_1_close",
   "tags": [],
   "resourceType": "GMSound",
 }

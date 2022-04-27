@@ -63,6 +63,16 @@ if not (global.dead or global.paused) {
 	if(y_check!=noone && y_check.solid){
 		y_speed = 0;
 	}
+	
+	footstep_audio_count += 1;
+	footstep_audio_count = footstep_audio_count mod footstep_audio_reset;
+	
+	if (((x_speed != 0) || (y_speed != 0)) && (footstep_audio_count == 0)) {
+		// play footstep sfx
+		audio_play_sound(sfx_footsteps, 0, false);
+		// maybe add squelching sound as well
+	}
+	
 	// move the player
 	x += x_speed;
 	y += y_speed;

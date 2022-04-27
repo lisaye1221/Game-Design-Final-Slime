@@ -40,3 +40,6 @@ BOUNDARY_SPACE = 50;
 cam = view_camera[0];
 
 name = new_name();
+
+footstep_audio_count = 0;
+footstep_audio_reset = 20;
