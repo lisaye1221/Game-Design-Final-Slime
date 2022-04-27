@@ -3,13 +3,8 @@
 
 
 if !playerTouched and place_meeting(x,y,obj_player) and keyboard_check_pressed(ord("Z")) {
-	playerTouched = true;
+	instance_destroy();
 }
-
-if playerTouched {
-	image_index = 8;
-}
-
 
 if room != roomAssigned {
 	image_index = 8

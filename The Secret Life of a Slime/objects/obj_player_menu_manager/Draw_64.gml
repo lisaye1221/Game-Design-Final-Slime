@@ -192,7 +192,7 @@ if (global.menu_on) {
 		var _bar_width = (width-40)/12;
 		var _bar_height = (height-40)*10/12;
 		
-		var _bar_left = left + ((width-40)*0.875);
+		var _bar_left = left + ((width-40)*0.875)-10;
 		var _bar_top = top + (height-40)/12;
 		var _bar_right = _bar_left + _bar_width;
 		var _bar_bottom = _bar_top + _bar_height;
@@ -200,10 +200,11 @@ if (global.menu_on) {
 		draw_healthbar(_bar_left, _bar_top, _bar_right, _bar_bottom, global.energy, c_grey, c_aqua, c_aqua, 3, false, false);
 		draw_sprite_stretched(spr_bar_cover, 0, _bar_left-5, _bar_top-5, _bar_width+10, _bar_height+10);
 		
-		var _energy_text_x = _bar_left - string_width("Energy: 100") - 10;
-		var _energy_text_y = _bar_bottom - string_height("Energy: 100")/2 + 10;
+		var _energy_text_x = _bar_left - energy_text_width - 10;
+		var _energy_text_y = _bar_bottom - energy_text_height/2 + 10;
 		
 		draw_set_color(c_aqua);
+		
 		draw_text(_energy_text_x, _energy_text_y, "Energy: " + string(ceil(global.energy)));
 	}
 	

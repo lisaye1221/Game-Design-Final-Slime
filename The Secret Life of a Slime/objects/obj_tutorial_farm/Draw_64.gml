@@ -1,11 +1,16 @@
 
 
 if !global.tutorial_ended_farm {
+	if (global.tutorial_stage_on_inv){
+		y_val_pos = y_val_pos_inventory_open;
+	}else{
+		y_val_pos = y_val_pos_inventory_close;
+	}
+	
 	draw_set_halign(fa_center)
 	draw_set_color(c_black)
 	draw_set_alpha(0.65)
 	draw_rectangle(0, y_val_pos - 20 , 900, y_val_pos + 20, false)
-
 	if b15 and sentence_index == 3 {
 		draw_set_color(c_red)
 	}

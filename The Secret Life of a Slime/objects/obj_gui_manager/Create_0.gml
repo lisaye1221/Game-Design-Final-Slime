@@ -14,3 +14,7 @@ cam = view_get_camera(0);
 screen_width = camera_get_view_width(cam);
 screen_height = camera_get_view_height(cam);
 
+draw_set_font(ft_gui)
+text_size = 1.3
+energy_text_width = string_width("Energy: 100") * text_size
+energy_text_height = string_height("Energy: 100") * text_size

@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+depth = -y
 //prompt text
 prompt_text_lst = ["cook food?",
 	"converting...", 

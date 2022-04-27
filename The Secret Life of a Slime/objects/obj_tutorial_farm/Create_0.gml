@@ -16,7 +16,8 @@ b17 = false;
 energyLost = false;
 berryOne = false;
 
-y_val_pos = 70;
+y_val_pos_inventory_close = 70;
+y_val_pos_inventory_open = 40;
 
 s4 = ["This is your farm! Beautiful, isn't it? (x)",
 "Uh-oh, looks like your energy has depleted (x)",

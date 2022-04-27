@@ -20,3 +20,6 @@ ach_min = 1;
 farm_ach_max = array_length(obj_achievement_manager.farm_achievements) - 2;
 town_ach_max = array_length(obj_achievement_manager.town_achievements) - 2;
 
+draw_set_font(ft_tabs)
+energy_text_width = string_width("Energy: 100")
+energy_text_height = string_height("Energy: 100")

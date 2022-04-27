@@ -52,7 +52,7 @@ if not global.dead {
 	var _bar_height = screen_height*1/5 - 10;
 		
 	var _bar_left = 15;
-	var _bar_top = 15;
+	var _bar_top = 5;
 	var _bar_right = _bar_left + _bar_width;
 	var _bar_bottom = _bar_top + _bar_height;
 		
@@ -62,10 +62,11 @@ if not global.dead {
 	var _energy_text_x = _bar_left + _bar_width + 10;
 	var _energy_text_y = _bar_top;
 	
-	draw_sprite_stretched(spr_player_menu_sm, 0, _energy_text_x, _energy_text_y, string_width("Energy: 100")+20, string_height("Energy: 100")+20);
+	draw_sprite_stretched(spr_player_menu_sm, 0, _energy_text_x, _energy_text_y, energy_text_width +20, energy_text_height*2+30);
 		
 	draw_set_color(c_maroon);
-	draw_text(_energy_text_x+10, _energy_text_y+10, "Energy: " + string(ceil(global.energy)));
+	draw_text_transformed(_energy_text_x+10, _energy_text_y+10, "Energy: " + string(ceil(global.energy)),text_size,text_size,0);
+	draw_text_transformed(_energy_text_x+10, _energy_text_y + energy_text_height + 20, "Gold: " + string(ceil(global.gold)),text_size,text_size,0);
 	
 	// town energy
 	if(in_town()){

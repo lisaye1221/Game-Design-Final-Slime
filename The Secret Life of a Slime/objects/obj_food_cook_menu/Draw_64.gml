@@ -6,7 +6,7 @@
 if (menu_open) {
 
 	width = 12*64+40;
-	height = 6*64+40;
+	height = 7.5*64+40;
 	
 	cam = view_get_camera(0);
 
