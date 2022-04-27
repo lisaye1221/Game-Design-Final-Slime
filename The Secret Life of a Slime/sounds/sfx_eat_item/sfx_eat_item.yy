@@ -14,8 +14,8 @@
   "soundFile": "sfx_eat_item.wav",
   "duration": 0.679184,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sounds/UI.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_eat_item",

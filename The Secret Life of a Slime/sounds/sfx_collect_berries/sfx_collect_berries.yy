@@ -14,8 +14,8 @@
   "soundFile": "sfx_collect_berries.mp3",
   "duration": 0.24,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_collect_berries",

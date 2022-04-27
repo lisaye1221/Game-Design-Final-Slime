@@ -14,8 +14,8 @@
   "soundFile": "sfx_use_item.wav",
   "duration": 0.679184,
   "parent": {
-    "name": "To Be Implemented",
-    "path": "folders/Sounds/To Be Implemented.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_use_item",

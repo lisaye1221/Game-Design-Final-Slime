@@ -14,8 +14,8 @@
   "soundFile": "sfx_sell_buy_item.wav",
   "duration": 0.557279,
   "parent": {
-    "name": "To Be Implemented",
-    "path": "folders/Sounds/To Be Implemented.yy",
+    "name": "Back Up Sounds",
+    "path": "folders/Sounds/Back Up Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_sell_buy_item",
