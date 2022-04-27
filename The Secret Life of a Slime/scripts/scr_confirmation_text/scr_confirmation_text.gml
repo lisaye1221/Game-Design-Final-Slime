@@ -10,9 +10,16 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 			scr_add_conf_text("Continue?");
 				scr_confirmation_option("Yes", "wheat-yes");
 				scr_confirmation_option("No", "wheat-no");
-				obj_confirmationbox.curr_item = _item;
-				obj_confirmationbox.curr_machine = _this_machine;
-			break;
+				
+				this_confirm_box = instance_find(obj_confirmationbox, 0);
+				if (this_confirm_box != noone){
+					this_confirm_box.curr_item = _item;
+					this_confirm_box.curr_machine = _this_machine;					
+				} else {
+					show_debug_message("cant find it")
+				}
+
+				break;
 			case "wheat-yes":
 				// call conversion function
 				scr_add_conf_text("You got it dude.");
