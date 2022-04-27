@@ -10,11 +10,18 @@ function scr_add_conf_text(_text){
 /// @param text_id
 /// @param item
 /// @param this_machine
+
+item = ""
+machine = ""
 function create_confirmationbox(_text_id, _item=0, _this_machine=0){
+	if (_this_machine != 0){
+		machine = _this_machine;
+		item = _item;
+	}
 	return_value = 0;
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
 		//return_value = 
-		scr_confirmation_text(_text_id, _item, _this_machine);	
+		scr_confirmation_text(_text_id, item, machine);	
 	}
 	
 	// NOT USED

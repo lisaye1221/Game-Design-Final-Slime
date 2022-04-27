@@ -1,12 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-this_machine = ""
+machine = ""
 item = ""
 
 function scr_confirmation_text(_text_id, _item, _this_machine){
-	if (_this_machine != 0){
-		this_machine = _this_machine;
+	if (_this_machine != ""){
+		machine = _this_machine;
 		item = _item;
 	}
 	switch(_text_id){
@@ -18,19 +18,25 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 				scr_confirmation_option("Yes", "wheat-yes");
 				scr_confirmation_option("No", "wheat-no");
 				
-				this_confirm_box = instance_find(obj_confirmationbox, 0);
+				/*this_confirm_box = instance_find(obj_confirmationbox, 0);
 				if (this_confirm_box != noone){
 					this_confirm_box.curr_item = item;
 					this_confirm_box.curr_machine = this_machine;					
 				} else {
 					show_debug_message("cant find it")
-				}
+				}*/
 
 				break;
 			case "wheat-yes":
 				// call conversion function
 				scr_add_conf_text("You got it dude.");
-				scr_use_item_slime_conv(item, this_machine);
+				if (this_machine == ""){
+					show_debug_message("we're getting quotes");
+				} else if (machine == 0){
+					show_debug_message("we're getting 0");
+				} else {
+					scr_use_item_slime_conv(item, machine);
+				}
 				break;
 			case "wheat-no":
 				// exit
