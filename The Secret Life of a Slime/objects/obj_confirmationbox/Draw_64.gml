@@ -50,7 +50,7 @@ if(accept_key){
 			// link text for options
 			if(option_num > 0){
 				//NEW FUNCTION NAME HERE
-				create_textbox(option_link_id[option_pos]);
+				create_confirmationbox(option_link_id[option_pos], curr_item, curr_machine);
 			}
 			instance_destroy();	
 		}

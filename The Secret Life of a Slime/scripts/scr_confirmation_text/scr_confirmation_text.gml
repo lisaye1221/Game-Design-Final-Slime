@@ -10,6 +10,8 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 			scr_add_conf_text("Continue?");
 				scr_confirmation_option("Yes", "wheat-yes");
 				scr_confirmation_option("No", "wheat-no");
+				obj_confirmationbox.curr_item = _item;
+				obj_confirmationbox.curr_machine = _this_machine;
 			break;
 			case "wheat-yes":
 				// call conversion function

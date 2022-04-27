@@ -28,6 +28,10 @@ option_pos = 0;
 option_num = 0;
 
 
+// for this specific machine call
+curr_item = "";
+curr_machine = "";
+
 // flag for setting up things before drawing text
 setup = false
 
