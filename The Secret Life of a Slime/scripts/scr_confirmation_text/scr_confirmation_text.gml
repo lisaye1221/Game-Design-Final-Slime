@@ -5,8 +5,8 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 	switch(_text_id){
 		// ---------- Text for Slime Jelly conversion machine ------ //
 		case "convert-wheat-to-jelly":
-			scr_add_conf_text(string(global.item_list.wheat.conversion_rate) + " Wheat = 1 Slime Jelly");
-			scr_add_conf_text("You own " + string(get_item_count(global.item_list.wheat)) + " wheat.");
+			scr_add_conf_text(string(_item.conversion_rate) + " Wheat = 1 Slime Jelly");
+			scr_add_conf_text("You own " + string(get_item_count(_item)) + " wheat.");
 			scr_add_conf_text("Continue?");
 				scr_confirmation_option("Yes", "wheat-yes");
 				scr_confirmation_option("No", "wheat-no");
@@ -30,5 +30,31 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 				scr_add_conf_text("Bye then.");
 				//return_value = 0;
 				break;
+		case "convert-carrot-to-jelly":
+			scr_add_conf_text(string(_item.conversion_rate) + " Carrots = 1 Slime Jelly");
+			scr_add_conf_text("You own " + string(get_item_count(_item)) + " Carrots.");
+			scr_add_conf_text("Continue?");
+				scr_confirmation_option("Yes", "carrot-yes");
+				scr_confirmation_option("No", "carrot-no");
+				
+				this_confirm_box = instance_find(obj_confirmationbox, 0);
+				if (this_confirm_box != noone){
+					this_confirm_box.curr_item = _item;
+					this_confirm_box.curr_machine = _this_machine;					
+				} else {
+					show_debug_message("cant find it")
+				}
+
+				break;
+			case "carrot-yes":
+				// call conversion function
+				scr_add_conf_text("You got it dude.");
+				scr_use_item_slime_conv(_item, _this_machine);
+				break;
+			case "carrot-no":
+				// exit
+				scr_add_conf_text("Bye then.");
+				//return_value = 0;
+				break;		
 	}
 }

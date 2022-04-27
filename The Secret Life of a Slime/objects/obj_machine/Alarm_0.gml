@@ -25,7 +25,8 @@ function use_item(item){
 			break;
 		case global.item_list.tomatoes.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.tomatoes) >= global.item_list.tomatoes.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.tomatoes, this_machine);
+			/*if (get_item_count(global.item_list.tomatoes) >= global.item_list.tomatoes.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.tomatoes.conversion_rate;
@@ -33,11 +34,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.carrots.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.carrots) >= global.item_list.carrots.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.carrots, this_machine);
+			/*if (get_item_count(global.item_list.carrots) >= global.item_list.carrots.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.carrots.conversion_rate;
@@ -45,11 +47,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.cauliflower.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.cauliflower) >= global.item_list.cauliflower.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.cauliflower, this_machine);
+			/*if (get_item_count(global.item_list.cauliflower) >= global.item_list.cauliflower.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.cauliflower.conversion_rate;
@@ -57,11 +60,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.cucumbers.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.cucumbers) >= global.item_list.cucumbers.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.cucumbers, this_machine);
+			/*if (get_item_count(global.item_list.cucumbers) >= global.item_list.cucumbers.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.cucumbers.conversion_rate;
@@ -69,11 +73,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.eggplants.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.eggplants) >= global.item_list.eggplants.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.eggplants, this_machine);
+			/*if (get_item_count(global.item_list.eggplants) >= global.item_list.eggplants.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.eggplants.conversion_rate;
@@ -81,11 +86,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;		
 		case global.item_list.lettuce.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.lettuce) >= global.item_list.lettuce.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.lettuce, this_machine);
+			/*if (get_item_count(global.item_list.lettuce) >= global.item_list.lettuce.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.lettuce.conversion_rate;
@@ -93,11 +99,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.pumpkins.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.pumpkins) >= global.item_list.pumpkins.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.pumpkins, this_machine);
+			/*if (get_item_count(global.item_list.pumpkins) >= global.item_list.pumpkins.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.pumpkins.conversion_rate;
@@ -105,11 +112,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;	
 		case global.item_list.radishes.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.radishes) >= global.item_list.radishes.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.radishes, this_machine);
+			/*if (get_item_count(global.item_list.radishes) >= global.item_list.radishes.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.radishes.conversion_rate;
@@ -117,11 +125,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;	
 		case global.item_list.roses.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.roses) >= global.item_list.roses.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.roses, this_machine);
+			/*if (get_item_count(global.item_list.roses) >= global.item_list.roses.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.roses.conversion_rate;
@@ -129,31 +138,12 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
-			break;	
-		/*case global.item_list.star_seeds.name:
-			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_star_crop)){
-				farm_plot = other.id;	
-			}
-			should_be_interactable = false;
-			interactable = false;
-			visible = false;
-			solid = false;
-			lose_one_item(item);
-			break;	*/
-		/*case global.item_list.tulip_seeds.name:
-			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tulip_crop)){
-				farm_plot = other.id;	
-			}
-			should_be_interactable = false;
-			interactable = false;
-			visible = false;
-			solid = false;
-			lose_one_item(item);
-			break;	*/		
+			} */
+			break;		
 		case global.item_list.turnips.name:
 			// inputting tomatoes if they have enough in inventory
-			if (get_item_count(global.item_list.turnips) >= global.item_list.turnips.conversion_rate){
+			scr_use_item_slime_conv(global.item_list.turnips, this_machine);
+			/*if (get_item_count(global.item_list.turnips) >= global.item_list.turnips.conversion_rate){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = global.item_list.turnips.conversion_rate;
@@ -161,7 +151,7 @@ function use_item(item){
 				this_machine.status = "busy";
 				this_machine.durability -= 1;
 				// change text
-			} 
+			} */
 			break;			
 		default:
 			return;
