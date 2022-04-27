@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-// NOT USED
 function scr_confirmation_text(_text_id, _item, _this_machine){
 	switch(_text_id){
 		// ---------- Text for Slime Jelly conversion machine ------ //
