@@ -42,9 +42,7 @@ function achi_track_progress(_achi_name, _item) {
 			var _new_progress = _achievement.progress + 1;
 			
 			if (_new_progress >= _goal) {
-				// update progress and complete goal
-				_achievement.progress = _goal;
-				_achievement.completed = true;
+				complete_ach(_achievement);
 			}
 			else {
 				_achievement.progress = _new_progress;
@@ -79,13 +77,22 @@ function achi_gain_progress(_achi_name, _val){
 		goal = _achievement.goal;
 		// if goes beyond or reach goal
 		if(new_progress >= goal){
-			// update progress and completed to true
-			_achievement.progress = goal;
-			_achievement.completed = true;
+			complete_ach(_achievement);
 		}
 		else{
 			// update progress
 			_achievement.progress = new_progress;
 		}
 	}
+}
+
+function complete_ach(_achievement) {
+	// update progress and completed to true
+	_achievement.progress = goal;
+	_achievement.completed = true;
+	// update global completed val for animation
+	global.curr_completed_ach = _achievement;
+	// create the pop-up instance
+	instance_create_layer(0, 0, "Instances", obj_pop_up);
+	audio_play_sound(sfx_achievement, 0, false);
 }

@@ -192,3 +192,6 @@ town_achievements =
 	achievement_list.SLIME_OF_THE_PEOPLE
 	
 ]
+
+// create currently completed achievement global
+global.curr_completed_ach = undefined;
