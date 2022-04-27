@@ -193,5 +193,3 @@ town_achievements =
 	
 ]
 
-// create currently completed achievement global
-global.curr_completed_ach = undefined;

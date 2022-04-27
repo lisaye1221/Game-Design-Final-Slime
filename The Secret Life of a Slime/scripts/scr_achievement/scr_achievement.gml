@@ -88,11 +88,12 @@ function achi_gain_progress(_achi_name, _val){
 
 function complete_ach(_achievement) {
 	// update progress and completed to true
-	_achievement.progress = goal;
+	_achievement.progress = _achievement.goal;
 	_achievement.completed = true;
-	// update global completed val for animation
-	global.curr_completed_ach = _achievement;
-	// create the pop-up instance
-	instance_create_layer(0, 0, "Instances", obj_pop_up);
-	audio_play_sound(sfx_achievement, 0, false);
+	
+	// add ach popup to the popup queue
+	// 0 means achievement popup
+	ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, _achievement);
+	ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, 0);
+		
 }

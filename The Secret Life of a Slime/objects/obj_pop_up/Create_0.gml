@@ -28,12 +28,30 @@ border_size = 20;
 
 cam = view_get_camera(0);
 
-if (global.curr_completed_ach != undefined) {
+if (obj_pop_up_manager.pop_up_type == 0) {
+	
+	// play sound effect
+	audio_play_sound(sfx_achievement, 0, false);
 	
 	top_text = "Achievement Completed:";
-	bottom_text = global.curr_completed_ach.ach_name;
+	bottom_text = obj_pop_up_manager.pop_up_item.ach_name;
 	
 	icon = spr_trophy;
+
+}
+else if (obj_pop_up_manager.pop_up_type == 1) {
+	
+	// play sound effect
+	audio_play_sound(sfx_tier_up, 0, false);
+	
+	top_text = "Relationship Tier Up:";
+	bottom_text = obj_pop_up_manager.pop_up_item.npc_name + ": Tier " + string(obj_pop_up_manager.pop_up_item.tier);
+	
+	icon = spr_heart;
+	
+}
+
+if (obj_pop_up_manager.pop_up_type >= 0) {
 	
 	// get text sizing
 	text_width = max(string_width(top_text), string_width(bottom_text));
@@ -47,6 +65,6 @@ if (global.curr_completed_ach != undefined) {
 	y_start = -box_height;
 	y_curr = y_start;
 
-	
 }
+
 
