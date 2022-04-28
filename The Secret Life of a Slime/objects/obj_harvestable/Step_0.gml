@@ -27,5 +27,5 @@ if(growing && grow_time_remaining <= 0){
 	ready = true;
 	growing = false;
 	prompt_text = "Pick "+harvest.name+"?";
-	instance_create_depth(x-sprite_xoffset,y-sprite_yoffset,depth-1,obj_sparkle);
+	instance_create_depth(x - sprite_width/2,y - sprite_height/2,depth-1,obj_sparkle);
 }

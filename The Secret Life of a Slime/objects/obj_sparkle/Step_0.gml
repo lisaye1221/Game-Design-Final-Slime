@@ -7,9 +7,9 @@ if !playerTouched and place_meeting(x,y,obj_player) and keyboard_check_pressed(o
 }
 
 if room != roomAssigned {
-	image_index = 8
+	visible = false
 }
 else {
-	image_speed = 1;
+	visible = true;
 }
 
