@@ -3,6 +3,7 @@
 
 event_inherited()
 activation_text_triggered = true;
+activation_text = "";
 
 interactable = true; // false when we are at town
 // statuses are: "empty", "busy", "full", "broken", "repairing"
@@ -26,3 +27,4 @@ which_text = 0;
 
 uses_inventory = true;
 inv_slot = 0;
+

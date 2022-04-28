@@ -18,3 +18,4 @@ inv_slot = 0;
 ds_map_add(obj_game_manager.objects_with_daily_events,id,0);
 deactive_persistent_interactable(id)
 activation_text_triggered = false;
+activation_text = "oven-unlock"

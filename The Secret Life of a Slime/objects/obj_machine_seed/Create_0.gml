@@ -8,3 +8,5 @@ activation_text_triggered = false;
 
 sprite_ready = spr_machine_seed;
 sprite_broken = spr_machine_seed_broken;
+
+activation_text = "seed-machine-unlock"
