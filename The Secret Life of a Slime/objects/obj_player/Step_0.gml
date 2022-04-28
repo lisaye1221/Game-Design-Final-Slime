@@ -179,12 +179,12 @@ if not (global.dead or global.paused) {
 		switch(item.name){
 			case global.item_list.berries.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(3);
+				increase_energy(5);
 				lose_one_item(item);
 				break;
 			case global.item_list.slime_jelly.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(10);
+				increase_energy(15);
 				lose_one_item(item);
 				achi_gain_progress("DONT_STARVE", 1);
 				break;
@@ -195,7 +195,7 @@ if not (global.dead or global.paused) {
 				break;
 			case global.item_list.stars.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(10);
+				increase_energy(20);
 				lose_one_item(item);
 				break;
 			case global.item_list.tulips.name:
