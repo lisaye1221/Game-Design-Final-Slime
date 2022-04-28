@@ -5,11 +5,11 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 	
 	switch(_text_id){
 		case "crops-to-jelly":
-			scr_add_conf_text(string(_item.conversion_rate) + " " + _item.name + " = 1 Slime Jelly \n");
-			scr_add_conf_text("You own " + string(get_item_count(_item)) + " " + _item.name + ".");
+			scr_add_conf_text(string(_item.conversion_rate) + " " + _item.name + " = 1 Slime Jelly \n" +
+			"You own " + string(get_item_count(_item)) + " " + _item.name + ".");
 			
 			if (get_item_count(_item) >= _item.conversion_rate){
-				scr_add_conf_text("Continue?");
+				scr_add_conf_text("You will have " + string(get_item_count(_item) - _item.conversion_rate) + " " + _item.name + " left. \n" + "Continue?");
 					scr_confirmation_option("Yes", "yes-crops-to-jelly");
 					scr_confirmation_option("No", "no-crops-to-jelly");			
 			}
