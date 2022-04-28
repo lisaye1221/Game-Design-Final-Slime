@@ -28,7 +28,10 @@ right_key = keyboard_check_pressed(vk_right) && !disabled;
 
 if(up_key){
 	if(menu_level == 0){
-		option_pos--;	
+		option_pos--;
+		if(option_pos >= 0 && option_pos < option_num){
+			audio_play_sound(sfx_move_cursor, 2, false);
+		}
 		option_pos = clamp(option_pos, 0, option_num - 1);
 	}
 	
@@ -37,6 +40,9 @@ if(up_key){
 if(down_key){
 	if(menu_level == 0){
 		option_pos++;	
+		if(option_pos >= 0 && option_pos < option_num){
+			audio_play_sound(sfx_move_cursor, 2, false);
+		}
 		option_pos = clamp(option_pos, 0, option_num - 1);
 	}	
 }
@@ -44,6 +50,9 @@ if(down_key){
 if(left_key){
 	if(menu_level == 1){
 		selected_amount--;
+		if(selected_amount >= 1 && selected_amount <= selected_item.stock){
+			audio_play_sound(sfx_move_cursor, 2, false);
+		}
 		selected_amount = clamp(selected_amount, 1, selected_item.stock)
 		total_cost = selected_amount * selected_item.unit_price;
 	}
@@ -52,6 +61,9 @@ if(left_key){
 if(right_key){
 	if(menu_level == 1){
 		selected_amount++;
+		if(selected_amount >= 1 && selected_amount <= selected_item.stock){
+			audio_play_sound(sfx_move_cursor, 2, false);
+		}
 		selected_amount = clamp(selected_amount, 1, selected_item.stock)
 		total_cost = selected_amount * selected_item.unit_price;
 	}
@@ -72,6 +84,7 @@ if(accept_key){
 			
 			// subtract money
 			global.gold -= total_cost;
+			audio_play_sound(sfx_transaction, 1, false);
 			// gain item
 			gain_item(selected_item.item, selected_amount);
 			// subtract stock
