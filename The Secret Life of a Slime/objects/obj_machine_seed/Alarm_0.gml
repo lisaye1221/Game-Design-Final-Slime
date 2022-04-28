@@ -26,39 +26,48 @@ function use_item(item){
 			break;
 		case global.item_list.tomatoes.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.tomatoes, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.tomatoes, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.tomatoes, this_machine);
 			break;
 		case global.item_list.carrots.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.carrots, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.carrots, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.carrots, this_machine);
 			break;
 		case global.item_list.cauliflower.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.cauliflower, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.cauliflower, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.cauliflower, this_machine);
 			break;
 		case global.item_list.cucumbers.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.cucumbers, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.cucumbers, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.cucumbers, this_machine);
 			break;
 		case global.item_list.eggplants.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.eggplants, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.eggplants, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.eggplants, this_machine);
 			break;		
 		case global.item_list.lettuce.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.lettuce, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.lettuce, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.lettuce, this_machine);
 			break;
 		case global.item_list.pumpkins.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.pumpkins, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.pumpkins, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.pumpkins, this_machine);
 			break;	
 		case global.item_list.radishes.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.radishes, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.radishes, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.radishes, this_machine);
 			break;	
 		case global.item_list.roses.name:
 			// inputting tomatoes if they have enough in inventory
-			scr_use_item_seeds_conv(global.item_list.roses, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.roses, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.roses, this_machine);
 			break;	
 		/*case global.item_list.stars.name:
 			scr_use_item_seeds_conv(global.item_list.stars, this_machine);
@@ -67,7 +76,8 @@ function use_item(item){
 			scr_use_item_seeds_conv(global.item_list.tulips, this_machine);
 			break;	*/		
 		case global.item_list.turnips.name:
-			scr_use_item_seeds_conv(global.item_list.turnips, this_machine);
+			//scr_use_item_seeds_conv(global.item_list.turnips, this_machine);
+			create_confirmationbox("crops-to-seeds", global.item_list.turnips, this_machine);
 			// inputting tomatoes if they have enough in inventory
 			break;			
 		default:
