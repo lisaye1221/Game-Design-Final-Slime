@@ -16,6 +16,7 @@ if(!ready && !growing){
 
 if(grow_time_remaining>0){
 	if(growing) {
+		prompt_text = "The "+harvest.name+" is still growing (" + string(floor(grow_time_remaining)) + "s)";
 		grow_time_remaining -= global.delta_second;	
 		image_index = floor((MAX_GROWTH_TIME - grow_time_remaining) / interval)
 	}
