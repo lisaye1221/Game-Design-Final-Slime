@@ -28,5 +28,7 @@ if(growing && grow_time_remaining <= 0){
 	ready = true;
 	growing = false;
 	prompt_text = "Pick "+harvest.name+"?";
-	instance_create_depth(x - sprite_width/2,y - sprite_height/2,depth-1,obj_sparkle);
+	with (instance_create_depth(x - sprite_width/2,y - sprite_height/2,depth-1,obj_sparkle)){
+		roomAssigned = other.created_room;
+	};
 }
