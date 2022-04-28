@@ -149,28 +149,31 @@ switch(_text_id){
 	// dialogue marked with relationship tier 1 will only appear when 
 	// relationship level is tier 1
 	case "Lavana-0-1":
-		scr_add_text("Hi, good to see you!");
+		scr_add_text("Hello, good to see you!");
 		scr_add_text("We have some nice produce in stock today. Check them out!");
 		break;
 	case "Lavana-0-2":
-		scr_add_text("Hi, how are you today?");
+		scr_add_text("Hello, how are you today?");
 		scr_add_text("Come look at today's fresh produce!");
 		break;
 	case "Lavana-0-3":
-		scr_add_text("Hi, great to see you!");
+		scr_add_text("Hello, great to see you!");
 		scr_add_text("We have some nice produce in stock today. Check them out!");
 		break;
 	case "Lavana-1-1":
-		scr_add_text("Hi, good to see you!");
+		scr_add_text("Hello, good to see you!");
 		scr_add_text("Are you eating well?");
 		scr_add_text("It's important to get your nutrients!");
 		break;
 	case "Lavana-1-2":
-		scr_add_text("Hi! How are you doing today?");
+		scr_add_text("Hello! How are you doing today?");
 		scr_add_text("The tomatos are super fresh today, you should try them!");
 		break;
 	case "Lavana-1-3":
-		scr_add_text("1-3");
+		scr_add_text("Hello again! Nice weather outside right?");
+		scr_add_text("How are you doing? How is that seed machine I sent you working?");
+		scr_add_text("Good! Glad you find it helpful.");
+		scr_add_text("I couldn't use it anyways and it was just sitting there. Just don't let Claude know haha, he'd say I'm ruining his business!");
 		break;
 	case "Lavana-2-1":
 		scr_add_text("Oh hey! It's you again!");
@@ -179,15 +182,15 @@ switch(_text_id){
 		scr_add_text("Haha you fit right in! Unlike the girl living down there, I don't think I've ever see her during the day.");
 		break;
 	case "Lavana-2-2":
-		scr_add_text("Hi! Good to see you, how are you today?");
+		scr_add_text("Hey! Good to see you, how are you today?");
 		scr_add_text("It's a nice day today isn't it? Hope your farm is doing well!");
 		scr_add_text("Don't overwork yourself. If you're feeling lazy, you can always come to me for some fresh produce.");
 		break;
 	case "Lavana-2-3":
-		scr_add_text("2-3");
+		scr_add_text("Hey! How are you?");
 		break;
 	case "Lavana-2-4":
-		scr_add_text("2-4");
+		scr_add_text("Oh hey! Nice to see you again!");
 		break;
 	case "Lavana-3-1":
 		scr_add_text("3-1");
@@ -219,22 +222,37 @@ switch(_text_id){
 		scr_add_text("How are you doing today?");
 		break;
 	case "Claude-1-1":
-		scr_add_text("1-1");
+		scr_add_text("Hey, great to see you again!");
+		scr_add_text("Coming in for some seeds? Hope your farm is doing alright!");
+		scr_add_text("Oh yea, I've stocked some new seeds, have you tried them yet?");
 		break;
 	case "Claude-1-2":
-		scr_add_text("1-2");
+		scr_add_text("Hey friend, good to see you!");
 		break;
 	case "Claude-1-3":
-		scr_add_text("1-3");
+		scr_add_text("Hey friend, how's it going?");
 		break;
 	case "Claude-2-1":
-		scr_add_text("2-1");
+		scr_add_text("Hello my friend!");
+		scr_add_text("How's your farm doing? My seeds grow well don't they?");
+		scr_add_text("It must be quite a lot of work to keep a farm.");
+		scr_add_text("Well, if you want a break, take a walk in town or the forest nearby!");
 		break;
 	case "Claude-2-2":
-		scr_add_text("2-2");
+		scr_add_text("Glad to see you again my friend! ");
+		scr_add_text("Here to get some seeds or some machine parts again?");
+		scr_add_text("What do you even do with the machine parts, just curious?");
+		scr_add_text("Wow you fix things yourself? That's incredible! You've got to teach me some day.");
 		break;
 	case "Claude-2-3":
-		scr_add_text("2-3");
+		scr_add_text("Hey my friend! How's it going?");
+		scr_add_text("Taking a break from your farm chores?");
+		scr_add_text("You know, I like to sit by that lake down south of town and chill there sometimes. You should try it!");
+		scr_add_text("Speaking of which, you know that house down there? Everybody says they never seen the person who lives there.");
+		scr_add_text("But I saw her the other day coming out the house going somewhere, yep a girl.");
+		scr_add_text("Lavana likes to judge her but some folks are just not the people type of people.");
+		scr_add_text("Anyways that girl seems pretty busy, but I'm surprised she never come to us to buy things. Where does she get her stuff?");
+		scr_add_text("Oh well. If you want to go say hi, I know you like doing that, maybe you can go try at night, that's when I saw her.");
 		break;
 	case "Claude-2-4":
 		scr_add_text("2-4");
@@ -268,21 +286,30 @@ switch(_text_id){
 		scr_add_text("Got anything you need me to take from your hands today?");
 		break;
 	case "Nelu-1-1":
-		scr_add_text("Oooo it's you!");
-		scr_add_text("Wasssssuuupppppppppppppppp");
+		scr_add_text("My good friend! Hello hello!");
+		scr_add_text("Are you here to see me?");
 		break;
 	case "Nelu-1-2":
-		scr_add_text("1-2"); 
+		scr_add_text("My friend! Mi amiga! Wo de peng you! Boku no tomodachi!"); 
+		scr_add_text("You have things for me again? I'll make ya RICH."); 
 		break;
 	case "Nelu-1-3":
-		scr_add_text("1-3");
+		scr_add_text("Hiiiiiiiiii");
+		scr_add_text("Slow day today? Maybe I should ditch the shop and go take a walk with you!!!");
+		scr_add_text("Haha just kidding, I need to stay here and make bank, maybe another day though.");
 		break;
 	case "Nelu-2-1":
-		scr_add_text("My friend! Hello hello!");
-		scr_add_text("My friend! Hello hello!");
+		scr_add_text("Oooo it's you!");
+		scr_add_text("Wasssssuuupppppppppppppppp");
+		scr_add_text("How ya doing? Eating well? Sleeping well? Dreaming well?");
+		scr_add_text("LET ME TELL YOU!");
+		scr_add_text("The other day I was taking a break from the shop and taking an evening stroll south of town.");
+		scr_add_text("You know that house down there? Whoever lives there is like NEVER there. Wonder what they be up to.");
+		scr_add_text("Anyways the house is pretty dark but I saw some flicker of lights. No clue what the HECK that was.");
+		scr_add_text("That's pretty spooky wooky if you ask me, I booked it out of there asap.");
 		break;
 	case "Nelu-2-2":
-		scr_add_text("2-2");
+		scr_add_text("");
 		break;
 	case "Nelu-2-3":
 		scr_add_text("2-3");
@@ -291,7 +318,7 @@ switch(_text_id){
 		scr_add_text("2-4");
 		break;
 	case "Nelu-3-1":
-		scr_add_text("3-1");
+		scr_add_text("HI BESTIE!!!");
 		break;
 	case "Nelu-3-2":
 		scr_add_text("3-2");
