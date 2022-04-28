@@ -59,7 +59,7 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 				
 				
 		case "crops-to-seeds":
-			scr_add_conf_text("1 " + _item.name + " = 3 " + _item.name + " seeds \n" +
+			scr_add_conf_text("1 " + _item.name + " = Between 1 and 3 " + _item.name + " seeds \n" +
 			"You own " + string(get_item_count(_item)) + " " + _item.name + ".");
 			
 			if (get_item_count(_item) >= 1){
