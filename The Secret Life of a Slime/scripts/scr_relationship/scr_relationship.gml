@@ -52,11 +52,12 @@ function talk_to(_npc){
 	if(!has_met_npc(_npc)){
 		// ex: Lavana-first-meet
 		_text_id = _npc_name + "-first-meet";
+		_npc_name = "???";
 	}
 	else{
 		gain_relationship_through_talking(_npc);
 	}
-	create_textbox(_text_id);
+	create_textbox(_text_id, _npc_name);
 }
 
 #macro GIFT_POINTS 5
