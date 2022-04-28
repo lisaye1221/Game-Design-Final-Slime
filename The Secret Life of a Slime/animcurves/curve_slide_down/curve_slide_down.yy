@@ -8,8 +8,8 @@
       ],"resourceVersion":"1.0","name":"y","tags":[],"resourceType":"GMAnimCurveChannel",},
   ],
   "parent": {
-    "name": "The Secret Life of a Slime",
-    "path": "The Secret Life of a Slime.yyp",
+    "name": "Animation Curves",
+    "path": "folders/Animation Curves.yy",
   },
   "resourceVersion": "1.2",
   "name": "curve_slide_down",

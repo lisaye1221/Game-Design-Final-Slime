@@ -14,6 +14,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;
 		case global.item_list.tomato_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tomato_crop)){
@@ -21,6 +22,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;
 		case global.item_list.carrot_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_carrot_crop)){
@@ -28,6 +30,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;
 		case global.item_list.cauliflower_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_cauli_crop)){
@@ -35,6 +38,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;
 		case global.item_list.cucumber_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_cucumber_crop)){
@@ -42,6 +46,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;	
 		case global.item_list.eggplant_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_eggplant_crop)){
@@ -49,6 +54,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;			
 		case global.item_list.lettuce_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_lettuce_crop)){
@@ -56,6 +62,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;	
 		case global.item_list.pumpkin_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_pumpkin_crop)){
@@ -63,6 +70,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;		
 		case global.item_list.radish_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_radish_crop)){
@@ -70,6 +78,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;	
 		case global.item_list.rose_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_rose_crop)){
@@ -77,6 +86,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;		
 		case global.item_list.star_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_star_crop)){
@@ -84,6 +94,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;	
 		case global.item_list.tulip_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_tulip_crop)){
@@ -91,6 +102,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;			
 		case global.item_list.turnip_seeds.name:
 			with (instance_create_layer(relative_pos_x, relative_pos_y, "crops", obj_turnip_crop)){
@@ -98,6 +110,7 @@ function use_item(item){
 			}
 			deactive_persistent_interactable(id)
 			lose_one_item(item);
+			audio_play_sound(sfx_use_item, 0, false);
 			break;			
 		default:
 			return;
