@@ -89,6 +89,12 @@ if(accept_key){
 			if(end_pos == option_num - 1&& start_pos > 0){
 				// adjust start pos (scroll up)
 				start_pos = end_pos - (NUM_ITEM_SHOWN_MAX-1);
+				if(option_num > NUM_ITEM_SHOWN_MAX){
+						start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
+					}
+					else{
+						start_pos = clamp(start_pos, 0, option_num - 1);
+					}
 			}
 		}
 			
@@ -123,8 +129,15 @@ if(array_length(curr_inventory) <= 0){
 if(option_pos > end_pos) {
 	end_pos = option_pos;
 	start_pos = end_pos - (NUM_ITEM_SHOWN_MAX-1);
+	if(option_num > NUM_ITEM_SHOWN_MAX){
+						start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
+					}
+					else{
+						start_pos = clamp(start_pos, 0, option_num - 1);
+					}
 }
 if(option_pos < start_pos){
 	start_pos = option_pos;	
 	end_pos = start_pos + (NUM_ITEM_SHOWN_MAX-1);
+	end_pos = clamp(end_pos, 0, option_num - 1)
 }
