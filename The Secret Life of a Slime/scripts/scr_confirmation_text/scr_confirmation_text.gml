@@ -1,7 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+
 function scr_confirmation_text(_text_id, _item, _this_machine){
+	
+	// DEFINE
+	CROP_TO_SEED = 3;
 	
 	switch(_text_id){
 		case "crops-to-jelly":
@@ -20,6 +24,26 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 				scr_use_item_slime_conv(_item, _this_machine);
 				break;
 			case "no-crops-to-jelly":
+				// exit
+				scr_add_conf_text("Bye then.");
+				break;		
+				
+		case "crops-to-seeds":
+			scr_add_conf_text("1 " + _item.name + " = " + string(CROP_TO_SEED) + " " + _item.name + " seeds \n" +
+			"You own " + string(get_item_count(_item)) + " " + _item.name + ".");
+			
+			if (get_item_count(_item) >= CROP_TO_SEED){
+				scr_add_conf_text("You will have " + string(get_item_count(_item) - CROP_TO_SEED) + " " + _item.name + " left. \n" + "Continue?");
+					scr_confirmation_option("Yes", "yes-crops-to-seeds");
+					scr_confirmation_option("No", "no-crops-to-seeds");			
+			}
+				break;
+			case "yes-crops-to-seeds":
+				// call conversion function
+				scr_add_conf_text("You got it dude.");
+				scr_use_item_seeds_conv(_item, _this_machine);
+				break;
+			case "no-crops-to-seeds":
 				// exit
 				scr_add_conf_text("Bye then.");
 				break;			
