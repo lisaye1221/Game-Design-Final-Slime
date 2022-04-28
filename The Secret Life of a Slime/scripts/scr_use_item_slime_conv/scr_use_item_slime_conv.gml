@@ -16,7 +16,7 @@ function scr_use_item_slime_conv(item, this_machine){
 }
 
 function scr_use_item_seeds_conv(item, this_machine){
-		if (get_item_count(item) >= 3){
+		if (get_item_count(item) >= 1){
 		// take wheat from player, start timer, show progress bar
 		audio_play_sound(sfx_machine_operate, 2, false);
 		this_machine.amount_to_convert = 3;

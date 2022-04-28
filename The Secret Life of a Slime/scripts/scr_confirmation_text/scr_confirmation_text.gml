@@ -5,7 +5,7 @@
 function scr_confirmation_text(_text_id, _item, _this_machine){
 	
 	// DEFINE
-	CROP_TO_SEED = 3;
+	CROP_TO_SEED = 3;	// 3:1 RATIO
 	
 	switch(_text_id){
 		case "crops-to-jelly":
@@ -29,11 +29,11 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 				break;		
 				
 		case "crops-to-seeds":
-			scr_add_conf_text("1 " + _item.name + " = " + string(CROP_TO_SEED) + " " + _item.name + " seeds \n" +
+			scr_add_conf_text("1 " + _item.name + " = 3 " + _item.name + " seeds \n" +
 			"You own " + string(get_item_count(_item)) + " " + _item.name + ".");
 			
-			if (get_item_count(_item) >= CROP_TO_SEED){
-				scr_add_conf_text("You will have " + string(get_item_count(_item) - CROP_TO_SEED) + " " + _item.name + " left. \n" + "Continue?");
+			if (get_item_count(_item) >= 1){
+				scr_add_conf_text("You will have " + string(get_item_count(_item) - 1) + " " + _item.name + " left. \n" + "Continue?");
 					scr_confirmation_option("Yes", "yes-crops-to-seeds");
 					scr_confirmation_option("No", "no-crops-to-seeds");			
 			}
