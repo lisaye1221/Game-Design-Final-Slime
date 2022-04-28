@@ -9,10 +9,16 @@ if global.unlock_homedoor {
 }
 
 if keyboard_check_pressed(ord("S")) {
+	global.tutorial_restrict = false;
 	global.tut_keys_on = false;
 	global.tutorial_ended = true;
 	global.tutorial_ended_farm = true;
 	global.unlock_homedoor = true;
+}
+
+if (timerCheck and timerStart) {
+	timerCheck = false;
+	alarm[4] = 3.0 * room_speed;
 }
 
 if (b1 and sentence_index < array_length(s1) - 1 and keyboard_check_pressed(ord("X"))) {	

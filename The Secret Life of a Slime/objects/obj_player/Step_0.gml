@@ -3,23 +3,26 @@
 
 if not (global.dead or global.paused) {
 	depth = -y;
-	key_up = keyboard_check(vk_up);
-	key_right = keyboard_check(vk_right);
-	key_down = keyboard_check(vk_down);
-	key_left = keyboard_check(vk_left);
-	key_z = keyboard_check_pressed(ord("Z"));
+	
+	if !global.tutorial_restrict {
+		key_up = keyboard_check(vk_up);
+		key_right = keyboard_check(vk_right);
+		key_down = keyboard_check(vk_down);
+		key_left = keyboard_check(vk_left);
+		key_z = keyboard_check_pressed(ord("Z"));
 
-	key_1 = keyboard_check_pressed(ord("1"));
-	key_2 = keyboard_check_pressed(ord("2"));
-	key_3 = keyboard_check_pressed(ord("3"));
-	key_4 = keyboard_check_pressed(ord("4"));
-	key_5 = keyboard_check_pressed(ord("5"));
-	key_6 = keyboard_check_pressed(ord("6"));
+		key_1 = keyboard_check_pressed(ord("1"));
+		key_2 = keyboard_check_pressed(ord("2"));
+		key_3 = keyboard_check_pressed(ord("3"));
+		key_4 = keyboard_check_pressed(ord("4"));
+		key_5 = keyboard_check_pressed(ord("5"));
+		key_6 = keyboard_check_pressed(ord("6"));
 
-	// ** Movement ** //
+		// ** Movement ** //
 
-	x_speed = (key_right - key_left) * move_spd;
-	y_speed = (key_down - key_up) * move_spd;
+		x_speed = (key_right - key_left) * move_spd;
+		y_speed = (key_down - key_up) * move_spd;
+	}
 
 	// set sprite direction	
 	if(y_speed > 0) {face = DOWN;}

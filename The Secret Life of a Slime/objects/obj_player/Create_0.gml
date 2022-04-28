@@ -30,6 +30,7 @@ global.tutorial_stage_on_inv = false;
 global.touchedBed = false;
 global.tutorialBedDone = false;
 global.unlock_homedoor = false;
+global.tutorial_restrict = false;
 
 DIR = [[1,0],[0,-1],[-1,0],[0,1]]
 interactable_object = noone;

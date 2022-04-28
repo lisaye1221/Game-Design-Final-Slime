@@ -1,7 +1,36 @@
 if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 	global.tutorial_stage_on_inv = false;
+	global.tutorial_restrict = false;
 }
+
+if global.tutorial_ended_farm and global.tutorial_ended{
+	global.tutorial_restrict = false;
+}
+
+//restricting movement code
+if !global.tutorial_ended_farm and b4 and sentence_index == 2 {
+	global.tutorial_restrict = false;
+}
+
+if b5 and sentence_index == 0 {
+	global.tutorial_restrict = true;
+}
+
+/*
+if b9 and sentence_index == 1 {
+	global.tutorial_restrict = false;
+}
+
+if b10 and sentence_index == 0 {
+	global.tutorial_restrict = true;
+}
+*/
+
+if b10 and sentence_index == 3 {
+	global.tutorial_restrict = false;
+}
+
 
 
 if global.tutorial_ended_farm {
@@ -117,6 +146,8 @@ if b8 and (get_item_count(global.item_list.wheat_seeds) == 0) {
 //what is berry is in 1? 
 
 if berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("1")) {
+		global.energy +=5;
+		lose_item(global.item_list.berries, 1);
 		b9 = false;
 		b10 = true;
 		sentence_index = 0;
@@ -124,6 +155,8 @@ if berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_chec
 }
 
 if !berryOne and b9 and sentence_index == array_length(s9) - 1  and keyboard_check_pressed(ord("2")) {
+		global.energy +=5;
+		lose_item(global.item_list.berries, 1);
 		b9 = false;
 		b10 = true;
 		sentence_index = 0;
@@ -147,7 +180,7 @@ if b11 and sentence_index == array_length(s11) - 1  and (get_item_count(global.i
 }
 
 //change to 4 and make tutorial speed crops FAST
-if b12 and sentence_index == array_length(s12) - 1  and (get_item_count(global.item_list.wheat) == 4) {
+if b12 and sentence_index == array_length(s12) - 1  and (get_item_count(global.item_list.wheat) == 3) {
 		b12 = false;
 		b13 = true;
 		sentence_index = 0;
@@ -155,7 +188,7 @@ if b12 and sentence_index == array_length(s12) - 1  and (get_item_count(global.i
 }
 
 //change to 1  //make s16 red? 
-if b13 and sentence_index == array_length(s13) - 1  and (get_item_count(global.item_list.wheat) == 1) {
+if b13 and sentence_index == array_length(s13) - 1  and (get_item_count(global.item_list.wheat) == 0) {
 		b13 = false;
 		b14 = true;
 		sentence_index = 0;
@@ -179,7 +212,9 @@ if b15 and sentence_index == array_length(s15) - 1 {
 
 
 if b16 or (b15 and sentence_index == array_length(s15) - 1)  {
+	global.tutorial_active = false;
 	global.tutorial_ended_farm = true;
+	global.tutorial_restrict = false;
 }
 
 

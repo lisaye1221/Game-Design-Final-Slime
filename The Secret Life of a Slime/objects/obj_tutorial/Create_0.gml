@@ -6,12 +6,15 @@ b2 = false;
 b3 = false;
 b4 = false;
 
+timerStart = false;
+timerCheck = false;
+
 
 s1 = [" ","WAKE UP, my fellow slime (press X to continue)",
-"You have been banished to the human world.",
+"You have been banished to the human world (X)",
 "or hell, as I like to call it. Try moving around."]
 
-s2 = ["Good job, bet that hardwood feels C-O-L-D",
+s2 = ["Good job, bet that hardwood feels C-O-L-D (X)",
 "Now, try interacting with that bed."]
 
 s3 = ["The human world is full of mysterious things (X)",
