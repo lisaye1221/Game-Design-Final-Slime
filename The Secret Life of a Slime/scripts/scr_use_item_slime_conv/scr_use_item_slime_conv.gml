@@ -8,6 +8,7 @@ function scr_use_item_slime_conv(item, this_machine){
 		// take wheat from player, start timer, show progress bar
 		audio_play_sound(sfx_machine_operate, 2, false);
 		this_machine.amount_to_convert = (item.conversion_rate * this_machine.offering);
+		this_machine.convert_to_count = this_machine.offering;
 		lose_item(item, (item.conversion_rate * this_machine.offering));
 		this_machine.status = "busy";
 		this_machine.durability -= 1;
