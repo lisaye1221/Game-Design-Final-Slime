@@ -31,5 +31,8 @@ option_num = 0;
 // flag for setting up things before drawing text
 setup = false
 
+// empty string = no name shown
+speaker_name = "";
+
 is_previously_paused = global.paused;
 global.paused = true;

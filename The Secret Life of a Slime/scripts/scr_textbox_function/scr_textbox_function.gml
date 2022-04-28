@@ -8,16 +8,14 @@ function scr_add_text(_text){
 }
 
 /// @param text_id
-function create_textbox(_text_id){
-	return_value = 0;
+/// @param name
+function create_textbox(_text_id, _name = ""){
+
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
-		return_value = scr_game_text(_text_id);	
+		scr_game_text(_text_id);
+		speaker_name = _name;
 	}
 	
-	// NOT USED
-	show_debug_message("Return from textbox_function: " + string(return_value));
-	return return_value;
-
 }
 
 /// @param option_text

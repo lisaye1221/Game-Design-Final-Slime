@@ -79,6 +79,35 @@ draw_sprite_ext(
 	c_white, 
 	1
 );
+// name of speaker 
+if(speaker_name != ""){
+	// bg
+	var speaker_name_bg_w = 100;
+	var speaker_name_bg_h = 40;
+	draw_sprite_ext(
+		textbox_spr, 
+		0, 
+		_textbox_x + textbox_width - speaker_name_bg_w, 
+		_textbox_y - speaker_name_bg_h, 
+		speaker_name_bg_w/textbox_spr_w, 
+		speaker_name_bg_h/textbox_spr_h, 
+		0, 
+		c_white, 
+		1
+	);
+	// name
+	draw_set_halign(fa_center);
+	draw_set_color(c_aqua);
+	var speaker_name_padding = 8;
+	draw_text(
+	_textbox_x + textbox_width - (speaker_name_bg_w / 2), 
+	_textbox_y - speaker_name_bg_h + speaker_name_padding, 
+	speaker_name
+	);
+	draw_set_halign(fa_left);
+	draw_set_color(c_white);
+}
+
 
 // ** Draw the Options ** //
 if (draw_char == text_length[page] && page == page_number - 1){
