@@ -10,7 +10,8 @@ function use_item(item){
 	switch(item.name){
 		case global.item_list.wheat.name:
 			// inputting wheat if they have enough in inventory
-			if (get_item_count(global.item_list.wheat) >= convert_from_count){
+			scr_use_item_seeds_conv(global.item_list.wheat, this_machine);
+			/*if (get_item_count(global.item_list.wheat) >= convert_from_count){
 				// take wheat from player, start timer, show progress bar
 				audio_play_sound(sfx_machine_operate, 2, false);
 				this_machine.amount_to_convert = convert_from_count;
@@ -20,7 +21,7 @@ function use_item(item){
 				this_machine.durability -= 1;
 				convert_to = global.item_list.wheat_seeds;
 				// change text
-			} 
+			} */
 			break;
 		case global.item_list.tomatoes.name:
 			// inputting tomatoes if they have enough in inventory

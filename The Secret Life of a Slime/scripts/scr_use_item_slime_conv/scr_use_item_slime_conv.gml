@@ -14,3 +14,15 @@ function scr_use_item_slime_conv(item, this_machine){
 		// change text
 	} 
 }
+
+function scr_use_item_seeds_conv(item, this_machine){
+		if (get_item_count(item) >= this_machine.convert_from_count){
+		// take wheat from player, start timer, show progress bar
+		audio_play_sound(sfx_machine_operate, 2, false);
+		this_machine.amount_to_convert = convert_from_count;
+		lose_one_item(item);
+		this_machine.status = "busy";
+		this_machine.durability -= 1;
+		if (item.seeds != noone) this_machine.convert_to = item.seeds;
+	} 
+}

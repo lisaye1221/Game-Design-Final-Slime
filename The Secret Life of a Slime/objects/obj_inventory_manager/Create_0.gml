@@ -23,7 +23,7 @@ INV_TOP_LEFT_Y = 550;
 ICON_SIZE = 16;
 
 // item constructor
-function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc, _conversion_rate=0, _sell_price) constructor {
+function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc, _conversion_rate=0, _sell_price, _seeds=noone) constructor {
 	name = _name;
 	icon = _icon;
 	menu_icon = _menu_icon;
@@ -32,6 +32,7 @@ function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc, _conve
 	desc = _desc;
 	conversion_rate = _conversion_rate;
 	sell_price = _sell_price;
+	seeds = _seeds;
 }
 
 global.menu_on = false;
@@ -109,7 +110,7 @@ global.item_list =
 		0,
 		"2 Tomatoes = 1 Slime Jelly",
 		3,
-		8
+		8,
 	),
 	tomato_seeds: new create_item(
 		"Tomato Seeds",
@@ -129,7 +130,7 @@ global.item_list =
 		0,
 		"2 Carrots = 1 Slime Jelly",
 		3,
-		15
+		15,
 	),
 	carrot_seeds : new create_item(
 		"Carrot Seeds",
@@ -149,7 +150,7 @@ global.item_list =
 		0,
 		"2 Cauliflower = 1 Slime Jelly",
 		2,
-		10
+		10,
 	),
 	cauliflower_seeds : new create_item(
 		"Cauliflower Seeds",
@@ -169,7 +170,7 @@ global.item_list =
 		0,
 		"2 Cucumber = 1 Slime Jelly",
 		4,
-		10
+		10,
 	),
 	cucumber_seeds : new create_item(
 		"Cucumber Seeds",
@@ -189,7 +190,7 @@ global.item_list =
 		0,
 		"2 Eggplant = 1 Slime Jelly",
 		2,
-		6
+		6,
 	),
 	eggplant_seeds : new create_item(
 		"Eggplant Seeds",
@@ -209,7 +210,7 @@ global.item_list =
 		0,
 		"4 Lettuce = 1 Slime Jelly",
 		4,
-		5
+		5,
 	),
 	lettuce_seeds : new create_item(
 		"Lettuce Seeds",
@@ -229,7 +230,7 @@ global.item_list =
 		0,
 		"2 Pumpkin = 1 Slime Jelly",
 		2,
-		20
+		20,
 	),
 	pumpkin_seeds : new create_item(
 		"Pumpkin Seeds",
@@ -249,7 +250,7 @@ global.item_list =
 		0,
 		"2 Radish = 1 Slime Jelly",
 		3,
-		15
+		15,
 	),
 	radish_seeds : new create_item(
 		"Radish Seeds",
@@ -269,7 +270,7 @@ global.item_list =
 		0,
 		"1 Rose = 1 Slime Jelly",
 		1,
-		25
+		25,
 	),
 	rose_seeds : new create_item(
 		"Rose Seeds",
@@ -289,7 +290,7 @@ global.item_list =
 		0,
 		"Star Fruit description",
 		0,
-		30
+		30,
 	),
 	star_seeds : new create_item(
 		"Star Fruit Seeds",
@@ -309,7 +310,7 @@ global.item_list =
 		0,
 		"Tulip description",
 		0,
-		15
+		15,
 	),
 	tulip_seeds : new create_item(
 		"Tulip Seeds",
@@ -329,7 +330,7 @@ global.item_list =
 		0,
 		"2 Turnip = 1 Slime Jelly",
 		2,
-		9
+		9,
 	),
 	turnip_seeds : new create_item(
 		"Turnip Seeds",
@@ -443,6 +444,21 @@ global.item_list =
 		15,
 	),
 }
+
+// assigning seeds values
+global.item_list.carrots.seeds = global.item_list.carrot_seeds;
+global.item_list.cauliflower.seeds = global.item_list.cauliflower_seeds;
+global.item_list.wheat.seeds = global.item_list.wheat_seeds;
+global.item_list.cucumbers.seeds = global.item_list.cucumber_seeds;
+global.item_list.eggplants.seeds = global.item_list.eggplant_seeds;
+global.item_list.lettuce.seeds = global.item_list.lettuce_seeds;
+global.item_list.pumpkins.seeds = global.item_list.pumpkin_seeds;
+global.item_list.radishes.seeds = global.item_list.radish_seeds;
+global.item_list.roses.seeds = global.item_list.rose_seeds;
+global.item_list.stars.seeds = global.item_list.star_seeds;
+global.item_list.tomatoes.seeds = global.item_list.tomato_seeds;
+global.item_list.tulips.seeds = global.item_list.tulip_seeds;
+global.item_list.turnips.seeds = global.item_list.turnip_seeds;
 
 // create the inventory
 inventory = array_create(0);
