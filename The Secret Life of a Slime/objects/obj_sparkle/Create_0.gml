@@ -3,3 +3,4 @@
 
 playerTouched = false;
 roomAssigned = room;
+triggered = false;

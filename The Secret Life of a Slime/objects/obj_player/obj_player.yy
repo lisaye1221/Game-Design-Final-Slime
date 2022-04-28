@@ -3,7 +3,7 @@
     "name": "spr_slime_down",
     "path": "sprites/spr_slime_down/spr_slime_down.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,
