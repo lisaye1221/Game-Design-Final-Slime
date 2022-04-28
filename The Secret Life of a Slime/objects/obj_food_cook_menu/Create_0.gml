@@ -81,9 +81,15 @@ recipes = {
 		[global.item_list.wheat],
 		[3],
 	),
+	burrito_recipe : new create_recipe(
+		"Burrito",
+		global.item_list.burrito,
+		[global.item_list.wheat, global.item_list.lettuce, global.item_list.tomatoes, global.item_list.carrots, global.item_list.radishes],
+		[3, 2, 1, 1, 1],
+	),
 }
 
 // i know this is ridiculous but bear with me
-recipes2 = [recipes.spaghetti_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.sandwich_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.cookies_recipe, recipes.pancake_recipe, recipes.bread_recipe];
+recipes2 = [recipes.spaghetti_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.sandwich_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.cookies_recipe, recipes.pancake_recipe, recipes.bread_recipe, recipes.burrito_recipe];
 
 num_recipes = array_length(recipes2);

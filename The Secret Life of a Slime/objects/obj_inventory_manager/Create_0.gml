@@ -443,6 +443,16 @@ global.item_list =
 		0,
 		15,
 	),
+	burrito : new create_item(
+		"Burrito",
+		spr_burrito,
+		spr_burrito_menu,
+		1,
+		0,
+		"Pre-rolled.",
+		0,
+		80,
+	),
 }
 
 // assigning seeds values
