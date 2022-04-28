@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_machine",
-    "path": "sprites/spr_machine/spr_machine.yy",
+    "name": "spr_machine_seed",
+    "path": "sprites/spr_machine_seed/spr_machine_seed.yy",
   },
   "solid": true,
   "visible": true,
