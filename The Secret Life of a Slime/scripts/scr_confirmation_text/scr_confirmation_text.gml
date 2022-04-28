@@ -4,9 +4,6 @@
 
 function scr_confirmation_text(_text_id, _item, _this_machine){
 	
-	// DEFINE
-	CROP_TO_SEED = 3;	// 3:1 RATIO
-	
 	switch(_text_id){
 		case "crops-to-jelly":
 			scr_add_conf_text(string(_item.conversion_rate) + " " + _item.name + " = 1 Slime Jelly \n" +
