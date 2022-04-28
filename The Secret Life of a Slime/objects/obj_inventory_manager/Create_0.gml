@@ -264,8 +264,8 @@ global.item_list =
 	),
 	roses : new create_item(
 		"Rose",
-		spr_item_rose,
-		spr_item_rose_menu,
+		spr_item_tulip,
+		spr_item_tulip_menu,
 		CROPS_MAX,
 		0,
 		"1 Rose = 1 Slime Jelly",
@@ -274,8 +274,8 @@ global.item_list =
 	),
 	rose_seeds : new create_item(
 		"Rose Seeds",
-		spr_item_rose_seeds,
-		spr_item_rose_seeds_menu,
+		spr_item_tulip_seeds,
+		spr_item_tulip_seeds_menu,
 		10,
 		0,
 		"Rose Seeds description",
