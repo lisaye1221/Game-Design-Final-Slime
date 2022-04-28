@@ -9,15 +9,15 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 			scr_add_conf_text(string(_item.conversion_rate) + " " + _item.name + " = 1 Slime Jelly \n" +
 			"You own " + string(get_item_count(_item)) + " " + _item.name + ".");
 			
-			_offering = 1;
+			_this_machine.offering = 1;
 			
 			if (get_item_count(_item) >= _item.conversion_rate){
 				scr_add_conf_text("You will have " + string(get_item_count(_item) - _item.conversion_rate) + " " + _item.name + " left. \n" + "Continue?");
-					if (get_item_count(_item) >= _item.conversion_rate * (_offering+1)){
+					if (get_item_count(_item) >= _item.conversion_rate * (_this_machine.offering+1)){
 						scr_confirmation_option("+", "more-crops-to-jelly");
 					}
-					scr_confirmation_option("Convert " + string(_offering), "yes-crops-to-jelly");
-					if (_offering > 1){
+					scr_confirmation_option("Convert " + string(_this_machine.offering) + " " + _item.name, "yes-crops-to-jelly");
+					if (_this_machine.offering > 1){
 						scr_confirmation_option("-", "less-crops-to-jelly");					
 					}
 					scr_confirmation_option("Cancel", "no-crops-to-jelly");			
@@ -33,25 +33,25 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 				scr_add_conf_text("Bye then.");
 				break;		
 			case "more-crops-to-jelly":
-				_offering++;
-				scr_add_conf_text("You will have " + string(get_item_count(_item) - (_item.conversion_rate * _offering)) + " " + _item.name + " left. \n" + "Continue?");
-				if (get_item_count(_item) >= _item.conversion_rate * (_offering+1)){
+				_this_machine.offering++;
+				scr_add_conf_text("You will have " + string(get_item_count(_item) - (_item.conversion_rate * _this_machine.offering)) + " " + _item.name + " left. \n" + "Continue?");
+				if (get_item_count(_item) >= _item.conversion_rate * (_this_machine.offering+1)){
 					scr_confirmation_option("+", "more-crops-to-jelly");
 				}
-				scr_confirmation_option("Convert " + string(_offering), "yes-crops-to-jelly");
-				if (_offering > 1){
+				scr_confirmation_option("Convert " + string(_this_machine.offering), "yes-crops-to-jelly");
+				if (_this_machine.offering > 1){
 					scr_confirmation_option("-", "less-crops-to-jelly");					
 				}
 				scr_confirmation_option("Cancel", "no-crops-to-jelly");			
 				break;
 			case "less-crops-to-jelly":
-				_offering--;
-				scr_add_conf_text("You will have " + string(get_item_count(_item) - (_item.conversion_rate * _offering)) + " " + _item.name + " left. \n" + "Continue?");
-				if (get_item_count(_item) >= _item.conversion_rate * (_offering+1)){
+				_this_machine.offering--;
+				scr_add_conf_text("You will have " + string(get_item_count(_item) - (_item.conversion_rate * _this_machine.offering)) + " " + _item.name + " left. \n" + "Continue?");
+				if (get_item_count(_item) >= _item.conversion_rate * (_this_machine.offering+1)){
 					scr_confirmation_option("+", "more-crops-to-jelly");
 				}
-				scr_confirmation_option("Convert " + string(_offering), "yes-crops-to-jelly");
-				if (_offering > 1){
+				scr_confirmation_option("Convert " + string(_this_machine.offering), "yes-crops-to-jelly");
+				if (_this_machine.offering > 1){
 					scr_confirmation_option("-", "less-crops-to-jelly");					
 				}
 				scr_confirmation_option("Cancel", "no-crops-to-jelly");			
