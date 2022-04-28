@@ -8,10 +8,6 @@ if (room != created_room){
 	solid = false;
 }else{
 	if (should_be_interactable){
-		if (!activation_text_triggered){
-			create_textbox(activation_text)
-			activation_text_triggered = true;
-		}
 		// show_debug_message("resetting "+object_get_name(object_index))
 		visible = true;	
 		interactable = true;
