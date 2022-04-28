@@ -20,9 +20,9 @@ if (global.time >= 60){
 }
 //night event trigger
 if (!night_events_triggered && global.time >= 40){
-	if (!in_door()){
-		//create_textbox("night");
-	}
+	/*if (!in_door()){
+		create_textbox("night");
+	}*/
 	night_events_triggered = true;
 	show_debug_message("triggering night events")
 	for (var _curr = ds_map_find_first(objects_with_night_events);
