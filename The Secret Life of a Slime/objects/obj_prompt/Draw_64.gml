@@ -17,7 +17,9 @@ if not global.dead {
 		else{
 			x_pos = player_x
 		}
+		x_pos -= camera_get_view_x(view_camera[0]);
 		y_pos = player_y - y_offset < 0 ? 0 : player_y - y_offset;
+		y_pos -= camera_get_view_y(view_camera[0]);
 		switch (which_text){
 			case 0:
 				draw_text(x_pos, y_pos, prompt_text);
