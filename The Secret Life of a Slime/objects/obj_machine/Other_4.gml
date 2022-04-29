@@ -7,12 +7,11 @@ if (room != created_room){
 	solid = false;
 }else{
 	if (should_be_interactable){
-		
-		// this causes problem with pausing and when the warn text of overtime in town happens
 		if (!activation_text_triggered){
+			activation_text_triggered = true;
+			//trigger instantly or start queueing
 			if (!global.paused){
 				create_textbox(activation_text)
-				activation_text_triggered = true;
 			}else{
 				alarm[11] = 1;
 			}
