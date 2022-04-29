@@ -46,6 +46,9 @@ global.paused = false;
 global.lola_door_unlock_day = 10;
 global.extra_plot_unlock_day = 15;
 global.advanced_machine_unlock_day = 20;
+global.seedTier = 0;
+global.addedSeeds1 = false;
+global.addedSeeds2 = false;
 
 objects_with_daily_events = ds_map_create();
 objects_with_night_events = ds_map_create();

@@ -12,7 +12,7 @@ function get_gift(_npc){
 #macro TIER_3_DIALOGUE_AMOUNT 5
 function talk_to(_npc){
 	var _npc_name = "";
-	var dialogue_amount = 1;
+	var dialogue_amount = 2;
 	var relationship_tier = get_relationship_tier(_npc);
 	// get npc name
 	switch(_npc){
@@ -114,7 +114,7 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_machine_seed.should_be_interactable = true;
-					obj_food_shop_menu.option = obj_food_shop_menu.menu_with_gift;
+					obj_food_shop_menu.option = obj_food_shop_menu.menu_with_gift;				
 	
 				break;
 				case 2:
@@ -129,15 +129,21 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_general_shop_menu.option = obj_general_shop_menu.menu_with_gift;
+					global.seedTier = 1;
 					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,20,5));
 					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,10,5));
 					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,20,5));
+					//variable_struct_set(obj_food_shop_menu.shopping_page.inventory,"radish",new create_shop_item(global.item_list.radishes,20,5));
+					//variable_struct_set(obj_food_shop_menu.shopping_page.inventory,"carrot",new create_shop_item(global.item_list.carrots,20,5));
+					//variable_struct_set(obj_food_shop_menu.shopping_page.inventory,"lettuce",new create_shop_item(global.item_list.lettuce,10,5));
+					
 				break;
 				case 2:
 					obj_general_shop_menu.shopping_page.discount = .9;
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,30,5));
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,35,5));
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,40,5));
+					//variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,30,5));
+					//variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,35,5));
+					//variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,40,5));
+					global.seedTier = 2;
 				break;
 				case 3:
 				break;
