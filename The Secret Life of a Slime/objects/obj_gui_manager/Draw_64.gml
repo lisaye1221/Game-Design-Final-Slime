@@ -99,10 +99,12 @@ if not global.dead {
 	
 	draw_sprite(spr_hotbar_blank, 0, _hotbar_x, _hotbar_y);
 	
+	draw_set_color(c_aqua);
 	for (var i = 0; i<6; i++) {
 		// draw number
 		draw_text(_hotbar_x + (_hotbar_box_width*i) + 9, _hotbar_y + 10, string(i+1));
 	}
+	draw_set_color(c_white);
 	
 	// draw hotbar inventory
 	for(var i = 0; i < array_length(obj_inventory_manager.inventory); i++){

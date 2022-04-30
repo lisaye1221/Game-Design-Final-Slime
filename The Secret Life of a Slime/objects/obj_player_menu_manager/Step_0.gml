@@ -76,8 +76,8 @@ else if (tab_index == 3) {
 
 // moving tab index
 
-var _t_left = keyboard_check_pressed(ord("N"));
-var _t_right = keyboard_check_pressed(ord("M"));
+var _t_left = keyboard_check_pressed(vk_lshift);
+var _t_right = keyboard_check_pressed(vk_rshift);
 
 //show_debug_message(_t_right);
 

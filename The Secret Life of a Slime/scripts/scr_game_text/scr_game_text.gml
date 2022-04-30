@@ -26,10 +26,10 @@ switch(_text_id){
 		
 		case "tutorial-yes":
 			scr_add_text("Use arrow keys to move. Use Z to interact with objects and people.");
-			scr_add_text("Use E to access your status and your inventory. Use M and N to navigate through the tabs.");
+			scr_add_text("Use E to access your status and your inventory. Use the left and right shift key to navigate through the tabs.");
 			scr_add_text("You can only hold 6 items at once. Extra storage is provided in the chest of your home.")
-			scr_add_text("Use the 1-6 keys to use items in your inventory. This includes eating or planting.")
-			scr_add_text("The game ends when you die. Keep your energy up. You can only consume BLUE food.");
+			scr_add_text("Use the 1-6 keys to use the corresponding items in your inventory. This includes eating or planting.")
+			scr_add_text("The game ends when you starve and die. Keep your energy up. You can only consume BLUE food.");
 			scr_add_text("Seeds are required to grow crops. Machines can convert them to BLUE slime jelly.");
 			scr_add_text("Machines can break upon usage and can be repaired with machine parts, which can be bought in town.");
 			scr_add_text("There are many stores in town. Everything can be bought or sold. The market refreshes its item stock daily.");
