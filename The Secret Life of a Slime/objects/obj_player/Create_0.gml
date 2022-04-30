@@ -22,7 +22,7 @@ face = DOWN;
 
 global.energy = 100;
 global.energy_max=100;
-global.gold = 20;
+global.gold = 100;
 global.dead = false;
 global.tutorial_ended = false;
 global.tutorial_ended_farm = false;

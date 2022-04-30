@@ -187,7 +187,7 @@ if not (global.dead or global.paused) {
 				break;
 			case global.item_list.slime_jelly.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(15);
+				increase_energy(25);
 				lose_one_item(item);
 				achi_gain_progress("DONT_STARVE", 1);
 				break;
