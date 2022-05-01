@@ -74,7 +74,13 @@ if not (global.dead or global.paused) {
 		// play footstep sfx
 		// audio_play_sound(sfx_footsteps, 0, false);
 		// maybe add squelching sound as well
-		audio_play_sound(sfx_slime_splat, 0, false);
+		if(sprite == human_sprite){
+			audio_sound_set_track_position(sfx_footsteps, 0.2);
+			audio_play_sound(sfx_footsteps, 0, false);
+		}
+		else{
+			audio_play_sound(sfx_slime_splat, 0, false);
+		}
 	}
 	
 	// move the player
