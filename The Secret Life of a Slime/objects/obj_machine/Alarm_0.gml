@@ -74,6 +74,7 @@ function use_item(item){
 			//scr_use_item_slime_conv(global.item_list.turnips, this_machine);
 			break;			
 		default:
+			create_textbox("warn-cannot-convert");
 			return;
 	}
 }
@@ -108,7 +109,7 @@ if (this_machine != noone){
 					break;
 				case 6:
 					if (inv_count >= 6) use_item(inv[5]);
-					break;			
+					break;
 			}
 		}
 			

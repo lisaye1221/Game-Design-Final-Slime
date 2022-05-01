@@ -113,6 +113,7 @@ function use_item(item){
 			audio_play_sound(sfx_use_item, 0, false);
 			break;			
 		default:
+			create_textbox("warn-cannot-plant");
 			return;
 	}
 }
@@ -142,7 +143,7 @@ switch (inv_slot){
 		break;
 	case 6:
 		if (inv_count >= 6) use_item(inv[5]);
-		break;			
+		break;	
 }
 // the rest is done by the crop itself
 

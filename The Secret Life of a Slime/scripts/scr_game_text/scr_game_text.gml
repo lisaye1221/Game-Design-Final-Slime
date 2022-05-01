@@ -506,6 +506,15 @@ switch(_text_id){
 		break;
 	case "gift-no":
 		break;
+	case "warn-use-number":
+		scr_add_text("Use number keys to indicate which item to use for this.");
+		break;
+	case "warn-cannot-plant":
+		scr_add_text("I can't plant that.");
+		break;
+	case "warn-cannot-convert":
+		scr_add_text("This machine can't convert that.");
+		break;
 		
 	
 	//Decorative Item texts

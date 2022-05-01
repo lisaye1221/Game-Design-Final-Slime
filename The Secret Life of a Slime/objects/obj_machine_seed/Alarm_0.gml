@@ -81,6 +81,7 @@ function use_item(item){
 			// inputting tomatoes if they have enough in inventory
 			break;			
 		default:
+			create_textbox("warn-cannot-convert");
 			return;
 	}
 }
@@ -114,7 +115,7 @@ if (this_machine != noone){
 					break;
 				case 6:
 					if (inv_count >= 6) use_item(inv[5]);
-					break;			
+					break;	
 			}
 			inv_slot = 0;
 		}

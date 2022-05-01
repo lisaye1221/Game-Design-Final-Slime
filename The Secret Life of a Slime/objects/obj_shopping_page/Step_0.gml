@@ -164,5 +164,5 @@ if(option_pos < start_pos){
 	end_pos = clamp(end_pos, 0, option_num - 1);
 }
 
-show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos) + "| option_pos:" + string(option_pos));
+// show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos) + "| option_pos:" + string(option_pos));
 

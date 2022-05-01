@@ -90,7 +90,7 @@ global.item_list =
 		0,
 		"3 Wheat = 1 Slime Jelly",
 		3,
-		4,
+		6,
 	),
 	wheat_seeds: new create_item(
 		"Wheat Seeds",
@@ -109,8 +109,8 @@ global.item_list =
 		CROPS_MAX,
 		0,
 		"2 Tomatoes = 1 Slime Jelly",
-		3,
-		8,
+		2,
+		10,
 	),
 	tomato_seeds: new create_item(
 		"Tomato Seeds",
@@ -129,7 +129,7 @@ global.item_list =
 		CROPS_MAX,
 		0,
 		"2 Carrots = 1 Slime Jelly",
-		3,
+		2,
 		15,
 	),
 	carrot_seeds : new create_item(
@@ -169,8 +169,8 @@ global.item_list =
 		CROPS_MAX,
 		0,
 		"2 Cucumber = 1 Slime Jelly",
-		4,
-		10,
+		2,
+		12,
 	),
 	cucumber_seeds : new create_item(
 		"Cucumber Seeds",
@@ -180,7 +180,7 @@ global.item_list =
 		0,
 		"Cucumber Seeds description",
 		0,
-		8
+		4
 	),
 	eggplants : new create_item(
 		"Eggplant",
@@ -210,7 +210,7 @@ global.item_list =
 		0,
 		"4 Lettuce = 1 Slime Jelly",
 		4,
-		5,
+		7,
 	),
 	lettuce_seeds : new create_item(
 		"Lettuce Seeds",

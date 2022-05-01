@@ -144,37 +144,41 @@ if not (global.dead or global.paused) {
 			interactable_object.inv_slot = 6;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
+		} else if(key_z){
+			create_textbox("warn-use-number");
 		}
 	}
 	//********
 	
 	// use regular interactables
-	else if (keyboard_check_pressed(ord("Z")) && draw_prompt_flag){
+	else if (key_z && draw_prompt_flag){
 		interactable_object.alarm[0] = 1;
 		draw_prompt_flag = false;
 	}
 	
 	
 	// using items
-	inv = obj_inventory_manager.inventory
-	inv_count = array_length(inv);
-	if(key_1 && inv_count >= 1){
-		use_item(inv[0]);
-	}
-	if(key_2 && inv_count >= 2){
-		use_item(inv[1]);
-	}
-	if(key_3 && inv_count >= 3){
-		use_item(inv[2]);
-	}
-	if(key_4 && inv_count >= 4){
-		use_item(inv[3]);
-	}
-	if(key_5 && inv_count >= 5){
-		use_item(inv[4]);
-	}
-	if(key_6 && inv_count >= 6){
-		use_item(inv[5]);
+	if(interactable_object == noone || (interactable_object != noone && !interactable_object.uses_inventory)){
+		inv = obj_inventory_manager.inventory
+		inv_count = array_length(inv);
+		if(key_1 && inv_count >= 1){
+			use_item(inv[0]);
+		}
+		if(key_2 && inv_count >= 2){
+			use_item(inv[1]);
+		}
+		if(key_3 && inv_count >= 3){
+			use_item(inv[2]);
+		}
+		if(key_4 && inv_count >= 4){
+			use_item(inv[3]);
+		}
+		if(key_5 && inv_count >= 5){
+			use_item(inv[4]);
+		}
+		if(key_6 && inv_count >= 6){
+			use_item(inv[5]);
+		}
 	}
 
 
@@ -182,7 +186,7 @@ if not (global.dead or global.paused) {
 		switch(item.name){
 			case global.item_list.berries.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(5);
+				increase_energy(4);
 				lose_one_item(item);
 				break;
 			case global.item_list.slime_jelly.name:
@@ -207,7 +211,7 @@ if not (global.dead or global.paused) {
 				lose_one_item(item);
 				break;
 			default:
-				// create_textbox("warn-cannot-use-item");
+				create_textbox("warn-cannot-use-item");
 				return;
 		}
 	}
