@@ -62,7 +62,7 @@ s15 = ["Now, we have slime jelly! We can choose to eat or sell. (X)",
 "More seeds can be bought in the village among many other things, refreshed daily (X)",
 "You can also sell your goods and buy machine parts to repair your machines upon wear (X)",
 "Listen.. no one should ever find out about your identity (X)", 
-"You'll transform into a human when you're in town for 40 seconds (X)",
+"You'll transform into a human when you're in town for " + string(obj_game_manager.TOWN_TIME_LIMIT) +"seconds (X)",
 "and you'll only able to enter town again after the cooldown ends (X)",
 "Good luck out there, my friend...(X)",
 "I must leave now, they're sending me back. Time is ticking now (X).",""]

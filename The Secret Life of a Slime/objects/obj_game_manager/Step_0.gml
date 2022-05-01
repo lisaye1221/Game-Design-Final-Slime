@@ -60,6 +60,10 @@ if(is_room_transition){
 }
 
 if(in_town()){
+	if(!global.has_been_to_town){
+			global.has_been_to_town = true;
+			create_textbox("first-time-in-town");
+	}
 	if (transformation_remaining >= 0) {
 		transformation_remaining -= (global.delta_second);
 	}

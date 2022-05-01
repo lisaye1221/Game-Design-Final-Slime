@@ -33,8 +33,8 @@ switch(_text_id){
 			scr_add_text("Seeds are required to grow crops. Machines can convert them to BLUE slime jelly.");
 			scr_add_text("Machines can break upon usage and can be repaired with machine parts, which can be bought in town.");
 			scr_add_text("There are many stores in town. Everything can be bought or sold. The market refreshes its item stock daily.");
-			scr_add_text("When accessing town, you are transformed into a human for 40 seconds and will be forced back home afterwards.");
-			scr_add_text("There will be a 45 second cooldown til you can enter town again.");
+			scr_add_text("When accessing town, you are transformed into a human for " + string(obj_game_manager.TOWN_TIME_LIMIT) + " seconds and will be forced back home afterwards.");
+			scr_add_text("There will be a "+ string(obj_game_manager.TRANSFORMATION_COOLDOWN_TIME) +" second cooldown til you can enter town again.");
 			scr_add_text("That is all you need to know, good luck!")		
 		break;
 		
@@ -538,6 +538,14 @@ switch(_text_id){
 	case "oven-unlock":
 		scr_add_text("Finally my oven delivery arrived!");
 		scr_add_text("Now I can cook some scrumptious food in the oven ^_^.")
+		break;
+	case "first-time-in-town":
+		scr_add_text("Wow! This place looks so different from back home.");
+		scr_add_text("I used my magic to turn into a human for now.");
+		scr_add_text("Not really in the mood to get hunted down today.");
+		scr_add_text("The transformation is limited, I should watch the time[red bar on the left].");
+		scr_add_text("Looks like there are a bunch of shops I can check out.");
+		scr_add_text("Time to do human stuff!");
 		break;
 		
 }// end of switch

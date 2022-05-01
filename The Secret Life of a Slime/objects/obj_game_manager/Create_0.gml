@@ -18,11 +18,11 @@ is_room_transition = false;
 
 // ** Time Limit for Town ** //
 // how much time you got in town
-TOWN_TIME_LIMIT = 25; // seconds
+TOWN_TIME_LIMIT = 30; // seconds
 // how much energy you lose if you're forced back
 EXCEED_TIME_ENERGY_COST = 15;
 // how much time to wait until you can go back to town
-TRANSFORMATION_COOLDOWN_TIME = 50;
+TRANSFORMATION_COOLDOWN_TIME = 45;
 transformation_remaining = 0;
 transformation_cooldown = 0;
 // flag for warning going over time in village
@@ -35,6 +35,7 @@ global.player_in_shop = false;
 global.force_player_home = false;
 // every time player goes to village, the shop restocks
 global.should_shop_restock = false;
+global.has_been_to_town = false;
 
 
 
