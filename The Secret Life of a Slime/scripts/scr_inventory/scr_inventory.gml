@@ -33,15 +33,20 @@ function will_item_fit(item, count){
 	for(var i = 0; i < array_length(inv); i++ ){
 		if(item.name == inv[i].name){
 			if(inv[i].count == inv[i].max_count) {continue;} // skip over this stack if it's full
-			remaining = count - (inv[i].max_count - inv[i].count); // how many space left in current slot
+			// calculate how many units are left after filling out current stack
+			remaining = count - (inv[i].max_count - inv[i].count);
+			var slots_needed = ceil(remaining / item.max_count);
+			var slots_open = (obj_inventory_manager.MAX_ITEM - array_length(inv));
 			return  
-			(remaining >= count) // if current stack can fit whatever we need to add
+			(remaining <= 0) // if current stack can fit whatever we need to add, no more remaining to stuff
 			|| 
-			(floor(remaining / item.max_count) < (obj_inventory_manager.MAX_ITEM - array_length(inv))); // if there are still slots in inventory
+			( slots_needed <= slots_open); // if there are still slots in inventory
 		}
 	}
 	// no current stack exists, check if we have enough slots for what we wanna add
-	return floor(count / item.max_count) < (obj_inventory_manager.MAX_ITEM - array_length(inv))
+	var slots_needed = ceil(count / item.max_count);
+	var slots_open = (obj_inventory_manager.MAX_ITEM - array_length(inv));
+	return slots_needed <= slots_open
 }
 
 function gain_one_item(item){

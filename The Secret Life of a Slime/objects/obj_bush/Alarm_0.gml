@@ -9,4 +9,7 @@ if(ready){
 		gain_one_item(harvest);
 		audio_play_sound(sfx_collect_berries, 2, false);
 	}
+	else{
+		create_textbox("warn-inventory-full");	
+	}
 }

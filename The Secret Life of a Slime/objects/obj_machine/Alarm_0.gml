@@ -116,9 +116,9 @@ if (this_machine != noone){
 			// do nothing
 		}
 			
-		// collecting wheat
+		// collecting slime jelly
 		else if (this_machine.status == "full"){
-			// take energy, disable progress bar, reset vars
+			// disable progress bar, reset vars
 			if(will_item_fit(convert_to, convert_to_count)){
 				gain_item(convert_to, convert_to_count);
 				// check if machine has broken
@@ -128,8 +128,9 @@ if (this_machine != noone){
 				else{
 					this_machine.status = "empty";
 				}
+			}else{
+				create_textbox("warn-inventory-full");	
 			}
-			// change text
 		} 
 		
 		
