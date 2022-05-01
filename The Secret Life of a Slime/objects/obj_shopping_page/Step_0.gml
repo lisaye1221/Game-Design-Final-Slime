@@ -80,6 +80,7 @@ if(accept_key){
 	else{
 		// check if we aren't broke
 		if(total_cost <= global.gold){
+			if(will_item_fit(selected_item.item, selected_amount)){
 			// -- buy the item
 			
 			// subtract money
@@ -117,6 +118,10 @@ if(accept_key){
 			
 			// go back to prev menu
 			menu_level--;
+			}
+			else{
+				create_textbox("warn-inventory-full");
+			}
 		}
 		else{
 			create_textbox("warn-no-money");	

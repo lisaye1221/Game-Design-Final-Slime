@@ -525,27 +525,6 @@ switch(_text_id){
 		scr_add_text("Beatiful flowers make me happy ~(^_^)~")
 		break;
 	
-	
-	// ---------- Text for Slime Jelly conversion machine ------ //
-	
-	// NOT USED
-	case "convert-wheat-to-jelly":
-		scr_add_text("4 Wheat = 1 Slime Jelly");
-		scr_add_text("You own " + string(get_item_count(global.item_list.wheat)) + " wheat.");
-		scr_add_text("Continue?");
-			scr_option("Yes", "wheat-yes");
-			scr_option("No", "wheat-no");
-		break;
-		case "wheat-yes":
-			// call conversion function
-			scr_add_text("You got it dude.");
-			return_value = 1;
-			break;
-		case "wheat-no":
-			// exit
-			scr_add_text("Bye then.");
-			return_value = 0;
-			break;
 			
 	// --------- Event texts --------- //
 	case "night":
@@ -560,10 +539,6 @@ switch(_text_id){
 		scr_add_text("Finally my oven delivery arrived!");
 		scr_add_text("Now I can cook some scrumptious food in the oven ^_^.")
 		break;
-}
-
-// NOT USED
-show_debug_message("Return from game_text: " + string(return_value));
-return return_value;
-
-}
+		
+}// end of switch
+}// end of scr_game_text()
