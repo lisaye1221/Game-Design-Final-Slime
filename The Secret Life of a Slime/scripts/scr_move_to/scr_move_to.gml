@@ -5,6 +5,7 @@ function go_to_town(player){
 		room_goto(town)
 		audio_stop_sound(bgm_home);
 		audio_play_sound(bgm_town, 1, true);
+		
 		obj_game_manager.is_room_transition = true;
 		player.sprite = player.human_sprite;
 		player.face = RIGHT;

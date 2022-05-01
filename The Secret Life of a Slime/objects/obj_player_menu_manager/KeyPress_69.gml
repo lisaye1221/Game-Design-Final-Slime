@@ -11,7 +11,8 @@ if (global.menu_on) {
 else{
 	if(
 	!instance_exists(obj_textbox) && 
-	(instance_exists(obj_storage_manager) && !obj_storage_manager.storage_open)
+	(instance_exists(obj_storage_manager) && !obj_storage_manager.storage_open) &&
+	 (instance_exists(obj_food_cook_menu) && !obj_food_cook_menu.menu_open)
 	){// restrict opening inventory in some cases
 		
 		global.menu_on = true;

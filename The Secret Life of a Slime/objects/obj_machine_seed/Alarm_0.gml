@@ -81,7 +81,7 @@ function use_item(item){
 			// inputting tomatoes if they have enough in inventory
 			break;			
 		default:
-			create_textbox("warn-cannot-convert");
+			create_textbox("warn-cannot-convert-to-seeds");
 			return;
 	}
 }
@@ -164,7 +164,7 @@ if (this_machine != noone){
 			// change text
 				
 			this_machine.status = "repairing";
-			this_machine.durability = 2;
+			this_machine.durability = 3;
 				
 				
 				

@@ -2,10 +2,14 @@
 // You can write your code in this editor
 if (global.time < SUNSET_TIME){
 	//day
+	audio_sound_pitch(bgm_home, 1);
+	audio_sound_pitch(bgm_town, 1);
 	alpha = 0;
 }
 else if (global.time < DARK_TIME){
 	//sunset
+	audio_sound_pitch(bgm_home, 0.7);
+	audio_sound_pitch(bgm_town, 0.7);
 	alpha = (global.time - 30) * .07;
 	alpha_color = .1*(5-abs(global.time-35));
 }

@@ -145,7 +145,7 @@ if (this_machine != noone){
 			// change text
 				
 			this_machine.status = "repairing";
-			this_machine.durability = 2;
+			this_machine.durability = 3;
 				
 				
 				

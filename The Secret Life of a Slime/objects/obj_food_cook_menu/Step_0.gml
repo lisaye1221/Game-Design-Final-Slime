@@ -53,7 +53,7 @@ if (menu_open) {
 		audio_play_sound(sfx_move_cursor, 0, false);
 	}
 	
-	var _select = keyboard_check_pressed(vk_enter);
+	var _select = keyboard_check_pressed(ord("Z"));
 
 	if (_select > 0) {
 		

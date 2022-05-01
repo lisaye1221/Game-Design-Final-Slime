@@ -25,7 +25,7 @@ switch(_text_id){
 		break;
 		
 		case "tutorial-yes":
-			scr_add_text("Use arrow keys to move. Use Z to interact with objects and people.");
+			scr_add_text("Use arrow keys to move. Use Z to interact with objects and people. Z for confirming, X for canceling.");
 			scr_add_text("Use E to access your status and your inventory. Use the left and right shift key to navigate through the tabs.");
 			scr_add_text("You can only hold 6 items at once. Extra storage is provided in the chest of your home.")
 			scr_add_text("Use the 1-6 keys to use the corresponding items in your inventory. This includes eating or planting.")
@@ -513,7 +513,10 @@ switch(_text_id){
 		scr_add_text("I can't plant that.");
 		break;
 	case "warn-cannot-convert":
-		scr_add_text("This machine can't convert that.");
+		scr_add_text("This machine can't convert that. It seems like it only takes in crops that are not blue.");
+		break;
+	case "warn-cannot-convert-to-seeds":
+		scr_add_text("This machine can't convert that. It seems like it only takes in crops.");
 		break;
 		
 	
@@ -553,7 +556,7 @@ switch(_text_id){
 		scr_add_text("I used my magic to turn into a human for now.");
 		scr_add_text("Not really in the mood to get hunted down today.");
 		scr_add_text("The transformation is limited, I should watch the time[red bar on the left].");
-		scr_add_text("Looks like there are a bunch of shops I can check out.");
+		scr_add_text("Looks like there are a bunch of shops I can check out. Maybe I should get to know the people in town too.");
 		scr_add_text("Time to do human stuff!");
 		break;
 		

@@ -4,7 +4,7 @@
 old_ui_offset = 80;
 textbox_x = 0;
 textbox_y = (700 - textbox_height) - old_ui_offset;
-accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z"));
+accept_key = keyboard_check_pressed(ord("Z"));
 
 // ** Setup ** //
 if(!setup){
@@ -39,6 +39,7 @@ if(draw_char < text_length[page]){
 if(accept_key){
 	// if current page is done typing
 	if(draw_char == text_length[page]){
+		audio_play_sound(sfx_dialogue_non_npc, 1, false);
 		// next page
 		if(page < page_number - 1){
 			page++;
@@ -113,7 +114,10 @@ if(speaker_name != ""){
 if (draw_char == text_length[page] && page == page_number - 1){
 	
 	// option selection
-	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	var key_down = keyboard_check_pressed(vk_down);
+	var key_up = keyboard_check_pressed(vk_up);
+	if(key_down || key_up) {audio_play_sound(sfx_move_cursor, 1, false);}
+	option_pos += key_down - key_up;
 	option_pos = clamp(option_pos, 0, option_num - 1);
 
 	// draw the options
