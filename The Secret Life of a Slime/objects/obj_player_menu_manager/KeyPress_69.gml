@@ -9,7 +9,11 @@ if (global.menu_on) {
 	}
 }
 else{
-	if(!instance_exists(obj_textbox)){
+	if(
+	!instance_exists(obj_textbox) && 
+	(instance_exists(obj_storage_manager) && !obj_storage_manager.storage_open)
+	){// restrict opening inventory in some cases
+		
 		global.menu_on = true;
 		is_previously_paused = global.paused;
 		global.paused = true;

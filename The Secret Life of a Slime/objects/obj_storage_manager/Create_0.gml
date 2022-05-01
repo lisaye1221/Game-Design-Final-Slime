@@ -8,6 +8,7 @@ persistent = true;
 MAX_ITEM = 30;
 
 storage_open = false;
+is_previously_paused = false;
 
 // create the storage inventory
 inventory = array_create(0);
