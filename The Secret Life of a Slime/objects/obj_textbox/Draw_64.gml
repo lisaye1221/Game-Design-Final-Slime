@@ -30,6 +30,22 @@ draw_set_font(ft_dialog)
 
 // ** Typing the Text ** //
 if(draw_char < text_length[page]){
+	if(!is_speaker_sfx_playing && speaker_name != "" && speaker_name != "???"){
+		switch(speaker_name){
+			case "Lavana":
+				speaker_sfx = choose(sfx_talk_Lavana_1, sfx_talk_Lavana_2, sfx_talk_Lavana_3, sfx_talk_Lavana_4);
+				break;
+			case "Claude":
+				break;
+			case "Nelu":
+				break;
+			case "Lola":
+				break;	
+		}
+		audio_play_sound(speaker_sfx, 1, false);
+		is_speaker_sfx_playing = true;
+	}
+	
 	draw_char += text_speed;
 	// sets a min/max for draw_char
 	draw_char = clamp(draw_char, 0, text_length[page]);
@@ -57,7 +73,11 @@ if(accept_key){
 	}
 	// if current page isn't filled yet
 	else{ // display the whole page
-		draw_char = text_length[page];
+		if(page > 0){
+			draw_char = text_length[page];
+			audio_stop_sound(speaker_sfx);
+			is_speaker_sfx_playing = false;
+		}
 	}
 }
 

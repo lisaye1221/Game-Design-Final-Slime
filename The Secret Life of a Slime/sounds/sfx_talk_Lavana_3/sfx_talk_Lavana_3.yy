@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.06,
+  "volume": 0.35,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "bgm_home.wav",
-  "duration": 66.47437,
+  "soundFile": "sfx_talk_Lavana_3.wav",
+  "duration": 2.024694,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "dialogue",
+    "path": "folders/Sounds/dialogue.yy",
   },
   "resourceVersion": "1.0",
-  "name": "bgm_home",
+  "name": "sfx_talk_Lavana_3",
   "tags": [],
   "resourceType": "GMSound",
 }

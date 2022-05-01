@@ -18,7 +18,7 @@ text[0] = "";
 // indicates length of text
 text_length[0] = string_length(text[0]);
 // how many char are being drawn currently
-draw_char = 0;
+draw_char = 1;
 text_speed = 1;
 
 // options
@@ -33,6 +33,8 @@ setup = false
 
 // empty string = no name shown
 speaker_name = "";
+speaker_sfx = noone;
+is_speaker_sfx_playing = false;
 
 is_previously_paused = global.paused;
 global.paused = true;

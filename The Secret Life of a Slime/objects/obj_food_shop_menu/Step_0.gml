@@ -4,7 +4,7 @@
 // get inputs
 up_key = keyboard_check_pressed(vk_up);
 down_key = keyboard_check_pressed(vk_down);
-accept_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"));
+accept_key = keyboard_check_pressed(ord("Z"));
 
 // num options in current menu
 op_length = array_length(option[menu_level]);
