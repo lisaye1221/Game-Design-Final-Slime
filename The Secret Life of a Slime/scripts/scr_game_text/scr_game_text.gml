@@ -560,5 +560,13 @@ switch(_text_id){
 		scr_add_text("Time to do human stuff!");
 		break;
 		
+	// --------- Ending texts --------- //
+	case "ending-normal":
+		scr_add_text("Hello. ");
+		scr_add_text("I have been sent here to come check up on you.");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
+		scr_add_text("How does it feel here?");
+		break;
+		
 }// end of switch
 }// end of scr_game_text()

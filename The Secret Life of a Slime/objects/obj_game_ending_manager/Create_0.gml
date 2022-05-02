@@ -17,3 +17,5 @@ array_push(achi_requirement,
 obj_achievement_manager.achievement_list.PASSION_IN_AGRICULTURE);
 array_push(achi_requirement, 
 obj_achievement_manager.achievement_list.BIG_SPENDER);
+
+ending_setup = false;
