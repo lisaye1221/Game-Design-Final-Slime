@@ -18,6 +18,8 @@ function create_relationship(_name, _icon, _relationship, _has_met) constructor 
 	tier = 0;
 }
 
+#macro RELATIONSHIP_VAL_START 0
+#macro RELATIONSHIP_VAL_MAX 100
 #macro RELATIONSHIP_AMOUNT 4
 #macro LAVANA 0
 #macro CLAUDE 1
@@ -39,28 +41,28 @@ relationships =
 	new create_relationship(
 	"Lavana",
 	spr_npc,
-	10,
+	RELATIONSHIP_VAL_START,
 	false
 	),
 	
 	new create_relationship(
 	"Claude",
 	spr_machineman,
-	10,
+	RELATIONSHIP_VAL_START,
 	false
 	),
 	
 	new create_relationship(
 	"Nelu",
 	spr_farmer_right,
-	10,
+	RELATIONSHIP_VAL_START,
 	false
 	),
 	
 	new create_relationship(
 	"Lola",
 	spr_npc,
-	10,
+	RELATIONSHIP_VAL_START,
 	false
 	)
 ]

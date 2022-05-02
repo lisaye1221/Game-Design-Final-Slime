@@ -36,6 +36,7 @@ global.force_player_home = false;
 // every time player goes to village, the shop restocks
 global.should_shop_restock = false;
 global.has_been_to_town = false;
+global.has_reached_ending = false;
 
 
 

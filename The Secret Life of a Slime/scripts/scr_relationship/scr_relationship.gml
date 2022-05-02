@@ -65,9 +65,10 @@ function gain_relationship_through_gift(_name){
 	increase_relationship(_name, GIFT_POINTS);	
 }
 
+#macro TALK_POINTS 2
 function gain_relationship_through_talking(_name){
 	if(!global.talked_this_trip_already[_name]){
-		increase_relationship(_name, 1);
+		increase_relationship(_name, TALK_POINTS);
 		global.talked_this_trip_already[_name] = true;
 	}
 }
@@ -91,6 +92,7 @@ function get_relationship_tier(_name){
 function increase_relationship(_name, _val){
 	var _target_relationship = obj_relationship_manager.relationships[_name]
 	_target_relationship.relationship += _val;
+	_target_relationship.relationship = clamp(_target_relationship.relationship, 0, RELATIONSHIP_VAL_MAX);
 	while (_target_relationship.relationship >= obj_relationship_manager.relationship_thresholds[_target_relationship.tier]){
 		++_target_relationship.tier;
 		relationship_tier_up_rewards(_target_relationship);
