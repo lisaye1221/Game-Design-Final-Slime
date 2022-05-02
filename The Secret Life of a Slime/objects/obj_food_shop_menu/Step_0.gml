@@ -40,7 +40,7 @@ if (accept_key){
 				case 2:
 					if(option == menu_with_gift){
 						// bring up gift shit
-						create_textbox("Lavana-gift-1");
+						create_textbox("Lavana-gift-1", "Lavana");
 					}
 					instance_deactivate_object(id);
 					break;
