@@ -125,7 +125,7 @@ if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_
 }
 
 
-if b7 and (keyboard_check_pressed(ord("M")) or keyboard_check_pressed(ord("N"))) {
+if b7 and (keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) {
 	b7 = false;
 	global.tutorial_stage_on_inv = false;
 	alarm[1] = 3.0 * room_speed

@@ -32,7 +32,7 @@ s6 = ["These are all your items, you can only hold 6 items at once (X)",
 "You can store more items in the chest of your home (X) ",
 "Press the arrow keys to take a closer look of these items"]
 
-s7 =  ["Use left/right shift to navigate through the tabs"]
+s7 =  ["Press A and D to navigate through the tabs"]
 
 s8 = ["Now press E again to close your inventory"]
 
