@@ -88,7 +88,7 @@ switch(_text_id){
 		break;
 	case "ending_farming_lock":
 		scr_add_text("There is somebody here to see me.");
-		scr_add_text("I shouldn't leave them hanging. I'll do these later.");
+		scr_add_text("I shouldn't leave them hanging. I'll do this later.");
 		break;
 		
 	
@@ -575,6 +575,24 @@ switch(_text_id){
 		scr_add_text("Looks like somebody is here.");
 		break;
 	case "ending-normal":
+		scr_add_text("Hello. ");
+		scr_add_text("I have been sent here to come check up on you.");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
+		scr_add_text("How does it feel here?");
+		break;
+	case "ending-betrayl":
+		scr_add_text("Hello. ");
+		scr_add_text("I have been sent here to come check up on you.");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
+		scr_add_text("How does it feel here?");
+		break;
+	case "ending-choice":
+		scr_add_text("Hello. ");
+		scr_add_text("I have been sent here to come check up on you.");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
+		scr_add_text("How does it feel here?");
+		break;
+	case "ending-special":
 		scr_add_text("Hello. ");
 		scr_add_text("I have been sent here to come check up on you.");
 		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
