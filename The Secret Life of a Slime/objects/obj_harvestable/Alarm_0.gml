@@ -5,6 +5,7 @@
 event_inherited();
 
 if(ready){
+	if(!global.has_reached_ending){
 	if (will_item_fit(harvest, 1)){
 		ready = false;
 		sprite_index = sprite_empty;
@@ -18,5 +19,9 @@ if(ready){
 	}
 	else{
 		create_textbox("warn-inventory-full");
+	}
+	}
+	else{
+		create_textbox("ending_farming_lock");	
 	}
 }

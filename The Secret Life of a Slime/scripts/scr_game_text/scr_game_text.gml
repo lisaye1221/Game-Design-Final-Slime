@@ -82,6 +82,15 @@ switch(_text_id){
 		scr_add_text("Cannot enter until after tutorial is finished. (Press Z to continue). ");
 		break;
 		
+	case "ending_town_lock":
+		scr_add_text("There is somebody here to see me.");
+		scr_add_text("I shouldn't go to town right now.");
+		break;
+	case "ending_farming_lock":
+		scr_add_text("There is somebody here to see me.");
+		scr_add_text("I shouldn't leave them hanging. I'll do these later.");
+		break;
+		
 	
 		
 		
@@ -561,6 +570,10 @@ switch(_text_id){
 		break;
 		
 	// --------- Ending texts --------- //
+	case "warn-slime-arrival":
+		scr_add_text("?");
+		scr_add_text("Looks like somebody is here.");
+		break;
 	case "ending-normal":
 		scr_add_text("Hello. ");
 		scr_add_text("I have been sent here to come check up on you.");

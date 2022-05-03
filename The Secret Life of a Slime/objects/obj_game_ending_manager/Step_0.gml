@@ -29,3 +29,19 @@ if(global.days >= UNLOCK_ENDING_DAY){
 	
 }
 
+if(global.has_reached_ending && in_home() && !ending_setup){
+	ending_setup = true;
+	/*
+	if(in_home() && !object_exists(obj_textbox)){
+		ending_setup = true;
+		create_textbox("warn-slime-arrival");
+	}
+	
+	*/
+	if (!global.paused){
+		create_textbox("warn-slime-arrival")
+	}else{
+		alarm[11] = 1;
+	}
+}
+

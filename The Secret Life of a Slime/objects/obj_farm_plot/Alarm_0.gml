@@ -118,33 +118,37 @@ function use_item(item){
 	}
 }
 
-// if you have seeds AND no plant here currently
-inv = obj_inventory_manager.inventory
-inv_count = array_length(inv);
+if(!global.has_reached_ending){
+	// if you have seeds AND no plant here currently
+	inv = obj_inventory_manager.inventory
+	inv_count = array_length(inv);
 	
-// plant (attempt to use item if seed)
-switch (inv_slot){
-	case 0:
-		break;
-	case 1:
-		if (inv_count >= 1) use_item(inv[0]);
-		break;
-	case 2:
-		if (inv_count >= 2) use_item(inv[1]);
-		break;
-	case 3:
-		if (inv_count >= 3) use_item(inv[2]);
-		break;
-	case 4:
-		if (inv_count >= 4) use_item(inv[3]);
-		break;
-	case 5:
-		if (inv_count >= 5) use_item(inv[4]);
-		break;
-	case 6:
-		if (inv_count >= 6) use_item(inv[5]);
-		break;	
+	// plant (attempt to use item if seed)
+	switch (inv_slot){
+		case 0:
+			break;
+		case 1:
+			if (inv_count >= 1) use_item(inv[0]);
+			break;
+		case 2:
+			if (inv_count >= 2) use_item(inv[1]);
+			break;
+		case 3:
+			if (inv_count >= 3) use_item(inv[2]);
+			break;
+		case 4:
+			if (inv_count >= 4) use_item(inv[3]);
+			break;
+		case 5:
+			if (inv_count >= 5) use_item(inv[4]);
+			break;
+		case 6:
+			if (inv_count >= 6) use_item(inv[5]);
+			break;	
+	}
+	// the rest is done by the crop itself
+	}
+else{
+	create_textbox("ending_farming_lock");	
 }
-// the rest is done by the crop itself
-
 

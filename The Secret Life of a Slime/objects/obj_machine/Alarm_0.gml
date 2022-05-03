@@ -85,6 +85,7 @@ function use_item(item){
 inv = obj_inventory_manager.inventory
 inv_count = array_length(inv);
 
+if(!global.has_reached_ending){
 if (this_machine != noone){
 		if(this_machine.status == "empty"){
 			// gets sent inv_slot from player interaction
@@ -156,4 +157,8 @@ if (status == "repairing" || status == "busy"){
 	ready = false;
 }else{
 	ready = true;
+}
+}
+else{
+	create_textbox("ending_farming_lock");	
 }

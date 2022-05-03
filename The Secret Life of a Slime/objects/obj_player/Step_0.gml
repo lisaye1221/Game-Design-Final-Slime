@@ -94,7 +94,12 @@ if not (global.dead or global.paused) {
 
 	// ** Interaction ** //
 	if(place_meeting(x, y, obj_prompt_town) && key_z){
-		go_to_town(self);
+		if(global.has_reached_ending){
+			create_textbox("ending_town_lock");
+		}
+		else{
+			go_to_town(self);
+		}
 	}
 	if(place_meeting(x,y, obj_prompt_home) && key_z){
 		go_home(self);
