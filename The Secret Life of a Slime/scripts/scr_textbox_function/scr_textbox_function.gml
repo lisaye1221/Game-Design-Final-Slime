@@ -7,6 +7,10 @@ function scr_add_text(_text){
 	 page_number++;
 }
 
+function change_speaker(_name){
+	speaker_name = _name;	
+}
+
 /// @param text_id
 /// @param name
 function create_textbox(_text_id, _name = ""){
