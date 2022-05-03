@@ -71,6 +71,12 @@ if (storage_open) {
 	draw_sprite_stretched_ext(spr_player_menu_tab, 0, _str_tab_left, _tab_top, _str_tab_width, _tab_height, c_white, 1);
 	draw_text(_str_tab_txt_x, _tab_txt_y, "Storage");
 	
+	draw_set_font(ft_details);
+	draw_set_alpha(0.6)
+	draw_text(105, 500, "(Use Z to move items)")
+	draw_text(135, 520, "(Use X to exit)")
+	draw_set_alpha(1.0)
+	
 	_str_left += 20;
 	_str_top += 20;
 	

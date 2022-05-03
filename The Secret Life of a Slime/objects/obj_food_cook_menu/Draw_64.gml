@@ -100,6 +100,12 @@ if (menu_open) {
 		
 		draw_set_font(ft_name);
 		
+		draw_set_font(ft_details)
+		draw_set_alpha(0.7)
+		draw_text(125, 530, "(Use Z to cook the item)")
+		draw_text(170, 560, "(Use X to exit)")
+		draw_set_alpha(1.0)
+		
 		if (i_cursor < array_length(recipes2)) {
 			
 			selected = recipes2[i_cursor];

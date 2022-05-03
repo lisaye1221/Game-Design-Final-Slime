@@ -6,6 +6,11 @@ if keyboard_check_pressed(ord("S")) {
 
 if global.tutorial_ended_farm and global.tutorial_ended{
 	global.tutorial_restrict = false;
+	if !global.gainedTutorialSeeds {
+		gain_item(global.item_list.wheat_seeds, 3);
+		global.gainedTutorialSeeds = true;
+	}
+	
 } 
 
 if !global.tutorial_ended_farm and b4 and sentence_index == 0{
@@ -175,6 +180,7 @@ if b10 and (obj_player.interactable_object!= noone && (obj_player.interactable_o
 		sentence = s11[sentence_index]
 		// giving them the three seeds
 		gain_item(global.item_list.wheat_seeds, 3);
+		global.gainedTutorialSeeds = true;
 }
 
 
