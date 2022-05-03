@@ -15,6 +15,7 @@ page = 0;
 page_number = 0;
 // holds the text of dialogue
 text[0] = "";
+speaker_names[0] = "";
 // indicates length of text
 text_length[0] = string_length(text[0]);
 // how many char are being drawn currently

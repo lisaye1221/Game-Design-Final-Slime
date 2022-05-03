@@ -1,14 +1,11 @@
 // Script assets have changed for v2.3.0 see
 
 /// @param text
-function scr_add_text(_text){
+function scr_add_text(_text, _name = ""){
 	 text[page_number] = _text;
+	 speaker_names[page_number] = _name;
 	 
 	 page_number++;
-}
-
-function change_speaker(_name){
-	speaker_name = _name;	
 }
 
 /// @param text_id
@@ -16,8 +13,11 @@ function change_speaker(_name){
 function create_textbox(_text_id, _name = ""){
 
 	with(instance_create_depth(0, 0, -9999, obj_textbox)){
-		scr_game_text(_text_id);
 		speaker_name = _name;
+		scr_game_text(_text_id);
+		if(_name != ""){
+			speaker_names = array_create(page_number, _name);
+		}
 	}
 	
 }

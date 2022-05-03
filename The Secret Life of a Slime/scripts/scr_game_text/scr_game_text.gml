@@ -575,77 +575,71 @@ switch(_text_id){
 		scr_add_text("Looks like somebody is here.");
 		break;
 	case "ending-normal":
-		scr_add_text("Hello. ");
-		scr_add_text("I have been sent here to come check up on you.");
-		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
-		scr_add_text("How does it feel here?");
+		scr_add_text("Hello. ", "Messenger");
+		scr_add_text("I have been sent here to come check up on you.", "Messenger");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.", "Messenger");
+		scr_add_text("How does it feel here?", "Messenger");
 		break;
 	case "ending-betrayal":
-		scr_add_text("Hello. ");
-		scr_add_text("I have been sent here to come check up on you.");
-		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
-		scr_add_text("Wow! You have been managing your little farm pretty well haven’t you? Seems like you’re not just surviving, you’re flourishing! ");
-		scr_add_text("Very well, very well. The king would be please to hear this.");
-		scr_add_text("Since you're living so prosperously, we've been thinking about...expanding our world a little. And this area looks perfect for us. I mean, look at you!");
-		scr_add_text("So, what do you say? Want to help us relocate these humans to make some space for us? As a reward, you'll be allow back to the slime world. Well, this place would be part of that world very soon, wouldn't it? HAHA.");
+		scr_add_text("Hello. ", "Messenger");
+		scr_add_text("I have been sent here to come check up on you.", "Messenger");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.", "Messenger");
+		scr_add_text("Wow! You have been managing your little farm pretty well haven't you? Seems like you're not just surviving, you're flourishing! ", "Messenger");
+		scr_add_text("Very well, very well. The king would be please to hear this.", "Messenger");
+		scr_add_text("Since you're living so prosperously, we've been thinking about...expanding our world a little. And this area looks perfect for us. I mean, look at you!", "Messenger");
+		scr_add_text("So, what do you say? Want to help us relocate these humans to make some space for us? As a reward, you'll be allow back to the slime world. ", "Messenger");
 			scr_option("Accept", "ending-betrayal-accept");
 			scr_option("Hesitate", "ending-betrayal-hesitate");
 		break;
 		case "ending-betrayal-accept":
-			change_speaker("");
 			scr_add_text("I can finally go back! Sorry to the humans over at the town but I want to go home.");
 			scr_add_text("I'll take on this deal.");
-			change_speaker("Messenger");
-			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.");
-			scr_add_text("See you soon.")
+			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.", "Messenger");
+			scr_add_text("See you soon.", "Messenger")
 			break;
 		case "ending-betrayal-hesitate":
-			change_speaker("");
 			scr_add_text("Should I really accept this? This means we're taking over the town right? What would happen to the humans there?");
 			scr_add_text("But if I accept this, then I can go home! ");
-			change_speaker("Messenger");
-			scr_add_text("I see that you're hesitating. Do you feel bad for the humans? Don't.")
-			scr_add_text("The miunte they find out you are a slime, they'll hunt you down without a thought. So why feel bad for them?")
-			scr_add_text("We're just trying to create a space for us to live, what's wrong with that?")
-			change_speaker("");
+			scr_add_text("I see that you're hesitating. Do you feel bad for the humans? Don't.", "Messenger")
+			scr_add_text("The minute they find out you are a slime, they'll hunt you down without a thought. So why feel bad for them?", "Messenger")
+			scr_add_text("We're just trying to create a space for us to live, what's wrong with that?", "Messenger")
 			scr_add_text("That's true... I guess I should accept the deal.")
-			change_speaker("Messenger");
-			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.");
-			scr_add_text("See you soon.")
+			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.", "Messenger");
+			scr_add_text("See you soon.", "Messenger")
 			break;
 	case "ending-choice":
-		scr_add_text("Hello. ");
-		scr_add_text("I have been sent here to come check up on you.");
-		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
-		scr_add_text("Wow! You have been managing your little farm pretty well haven’t you? Seems like you’re not just surviving, you’re flourishing! ");
-		scr_add_text("Very well, very well. The king would be please to hear this.");
-		scr_add_text("Since you're living so prosperously, we've been thinking about...expanding our world a little. And this area looks perfect for us. I mean, look at you!");
-		scr_add_text("So, what do you say? Want to help us relocate these humans to make some space for us? As a reward, you'll be allow back to the slime world. Well, this place would be part of that world very soon, wouldn't it? HAHA.");
+		scr_add_text("Hello. ", "Messenger");
+		scr_add_text("I have been sent here to come check up on you.", "Messenger");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.", "Messenger");
+		scr_add_text("Wow! You have been managing your little farm pretty well haven't you? Seems like you're not just surviving, you're flourishing! ", "Messenger");
+		scr_add_text("Very well, very well. The king would be please to hear this.", "Messenger");
+		scr_add_text("Since you're living so prosperously, we've been thinking about...expanding our world a little. And this area looks perfect for us. I mean, look at you!", "Messenger");
+		scr_add_text("So, what do you say? Want to help us relocate these humans to make some space for us? As a reward, you'll be allow back to the slime world. ", "Messenger");
 			scr_option("Hesitate", "ending-choice-hesitate");
 			scr_option("Decline", "ending-choice-decline");
 		break;
 		case "ending-choice-hesitate":
-			scr_add_text();
+			//scr_add_text();
 			break;
 		case "ending-choice-decline":
-			scr_add_text();
+			//scr_add_text();
 			break;
 	case "ending-special":
-		scr_add_text("Hello. ");
-		scr_add_text("I have been sent here to come check up on you.");
-		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.");
-		scr_add_text("Wow! You have been managing your little farm pretty well haven’t you? Seems like you’re not just surviving, you’re flourishing! ");
-		scr_add_text("Very well, very well. The king would be please to hear this.");
-		scr_add_text("Since you're living so prosperously, we've been thinking about...expanding our world a little. And this area looks perfect for us. I mean, look at you!");
-		scr_add_text("So, what do you say? Want to help us relocate these humans to make some space for us? As a reward, you'll be allow back to the slime world. Well, this place would be part of that world very soon, wouldn't it? HAHA.");
+		scr_add_text("Hello. ", "Messenger");
+		scr_add_text("I have been sent here to come check up on you.", "Messenger");
+		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.", "Messenger");
+		scr_add_text("Wow! You have been managing your little farm pretty well haven't you? Seems like you're not just surviving, you're flourishing! ", "Messenger");
+		scr_add_text("Very well, very well. The king would be please to hear this.", "Messenger");
+		scr_add_text("Since you're living so prosperously, we've been thinking about...expanding our world a little. And this area looks perfect for us. I mean, look at you!", "Messenger");
+		scr_add_text("So, what do you say? Want to help us relocate these humans to make some space for us? As a reward, you'll be allow back to the slime world. ", "Messenger");
 			scr_option("Hesitate", "ending-special-hesitate");
 			scr_option("Decline", "ending-special-decline");
 		break;
 		case "ending-special-hesitate":
-			scr_add_text();
+			//scr_add_text();
 			break;
 		case "ending-special-decline":
-			scr_add_text();
+			//scr_add_text();
 			break;
 		
 }// end of switch

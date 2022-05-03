@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(global.days >= UNLOCK_ENDING_DAY){
+if(global.days >= UNLOCK_ENDING_DAY && !global.has_reached_ending){
 	global.has_reached_ending = true;
 	
 	// determine which ending

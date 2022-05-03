@@ -101,9 +101,11 @@ draw_sprite_ext(
 	1
 );
 // name of speaker 
-if(speaker_name != ""){
+var _name = speaker_names[page]
+if(_name != ""){
 	// bg
-	var speaker_name_bg_w = 100;
+	var speaker_name_width = string_width(_name);
+	var speaker_name_bg_w = speaker_name_width + 20;
 	var speaker_name_bg_h = 40;
 	draw_sprite_ext(
 		textbox_spr, 
@@ -123,7 +125,7 @@ if(speaker_name != ""){
 	draw_text(
 	_textbox_x + textbox_width - (speaker_name_bg_w / 2), 
 	_textbox_y - speaker_name_bg_h + speaker_name_padding, 
-	speaker_name
+	_name
 	);
 	draw_set_halign(fa_left);
 	draw_set_color(c_white);

@@ -17,3 +17,16 @@ if(relationship_nelu){
 if(relationship_lola){
 	increase_relationship(LOLA, 5);
 }
+
+if(keyboard_check_pressed(ord("0"))){
+	obj_game_ending_manager.ending = ENDING_NORMAL;	
+}
+if(keyboard_check_pressed(ord("9"))){
+	obj_game_ending_manager.ending = ENDING_BETRAYAL;	
+}
+if(keyboard_check_pressed(ord("8"))){
+	obj_game_ending_manager.ending = ENDING_CHOICE;	
+}
+if(keyboard_check_pressed(ord("7"))){
+	obj_game_ending_manager.ending = ENDING_SPECIAL;	
+}
