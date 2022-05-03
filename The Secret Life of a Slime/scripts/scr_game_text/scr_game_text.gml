@@ -602,7 +602,7 @@ switch(_text_id){
 			scr_add_text("But if I accept this, then I can go home! ");
 			scr_add_text("I see that you're hesitating. Do you feel bad for the humans? Don't.", "Messenger")
 			scr_add_text("The minute they find out you are a slime, they'll hunt you down without a thought. So why feel bad for them?", "Messenger")
-			scr_add_text("We're just trying to create a space for us to live, what's wrong with that?", "Messenger")
+			scr_add_text("We're just trying to create some space for us to live, what's wrong with that?", "Messenger")
 			scr_add_text("That's true... I guess I should accept the deal.")
 			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.", "Messenger");
 			scr_add_text("See you soon.", "Messenger")
@@ -619,10 +619,32 @@ switch(_text_id){
 			scr_option("Decline", "ending-choice-decline");
 		break;
 		case "ending-choice-hesitate":
-			//scr_add_text();
+			scr_add_text("Should I really accept this deal? This means we're taking over the town right? What would happen to the humans there?");
+			scr_add_text("Lavana, Claude, Nelu, and even Lola. They're all my friends. I can't let that happen to them.");
+			scr_add_text("Even though I do want to go home, I can't betray my friends like that.");
+			scr_add_text("I see that you're hesitating. Do you feel bad for the humans? Don't.", "Messenger")
+			scr_add_text("The minute they find out you are a slime, they'll hunt you down without a thought. So why feel bad for them?", "Messenger")
+			scr_add_text("We're just trying to create some space for us to live, what's wrong with that? Come on, make the right choice, help us out.", "Messenger")
+				scr_option("Decline", "ending-choice-decline")
+				scr_option("Accept", "ending-choice-accept")
 			break;
 		case "ending-choice-decline":
-			//scr_add_text();
+			scr_add_text("No! I can't do that. Those humans are my friends. ");
+			scr_add_text("I can't help you kick them out of their home. That's not right.");
+			scr_add_text("Your friends? Look at you, made some human friends haven't you?", "Messenger")
+			scr_add_text("You are so naive. Friends? Do you think those humans will still regard you as that when you show your true form, as a slime?", "Messenger")
+			scr_add_text("Ok then, hope you don’t regret your choice", "Messenger")
+			scr_add_text("Since you love the humans so much, you don't need to come back to us right? You can stay here with your friends.", "Messenger")
+			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend.", "Messenger")
+			scr_add_text("I’ll be taking my leave now, enjoy yourself here, forever. Goodbye. ", "Messenger")
+			break;
+		case "ending-choice-accept":
+			scr_add_text("...");
+			scr_add_text("He's right. Maybe I shouldn't feel bad. Maybe the humans are just nice to me because they don't know who I truly am.");
+			scr_add_text("We also deserve space to live, space to live in the open, not secretly. ");
+			scr_add_text("Ok... I'll take on your deal.");
+			scr_add_text("Wonderful! I knew you would understand.", "Messenger");
+			scr_add_text("I'll be back with more details soon. See you later.", "Messenger");
 			break;
 	case "ending-special":
 		scr_add_text("Hello. ", "Messenger");
