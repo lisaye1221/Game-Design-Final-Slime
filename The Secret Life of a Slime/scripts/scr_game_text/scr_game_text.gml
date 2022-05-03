@@ -311,11 +311,10 @@ switch(_text_id){
 		scr_add_text("Oooo it's you!");
 		scr_add_text("Wasssssuuupppppppppppppppp");
 		scr_add_text("How ya doing? Eating well? Sleeping well? Dreaming well?");
-		scr_add_text("LET ME TELL YOU!");
-		scr_add_text("The other day I was taking a break from the shop and taking an evening stroll south of town.");
-		scr_add_text("You know that house down there? Whoever lives there is like NEVER there. Wonder what they be up to.");
-		scr_add_text("Anyways the house is pretty dark but I saw some flicker of lights. No clue what the HECK that was.");
-		scr_add_text("That's pretty spooky wooky if you ask me, I booked it out of there asap.");
+		scr_add_text("Oh yea have you met Lola yet? That's the girl living south of town.");
+		scr_add_text("She doesn't come out often, a reserved girl, with a personality for sure! But she's actually super sweet!");
+		scr_add_text("Actually, she's originally not from this town just like you, but I helped her settled here. She didn't have a farm like you did.");
+		scr_add_text("Let me know if you want to move here too haha! Maybe we can move your farm here? Then the products you sell me can be even more fresh!!");
 		break;
 	case "Nelu-2-2":
 		scr_add_text("");
@@ -658,10 +657,54 @@ switch(_text_id){
 			scr_option("Decline", "ending-special-decline");
 		break;
 		case "ending-special-hesitate":
-			//scr_add_text();
+			scr_add_text("Should I really accept this deal? This means we're taking over the town right? What would happen to the humans there?");
+			scr_add_text("Lavana, Claude, Nelu, and even Lola. They're all my friends. I can't let that happen to them.");
+			scr_add_text("Even though I do want to go home, I can't betray my friends like that.");
+			// cue Lola's entrance
+			scr_add_text("That's a quite an offer you're making. Don't you think that's not very nice to the humans?","???")
+			scr_add_text("And who might you be- WAIT", "Messenger")
+			scr_add_text("You.... Is that you? Princess?", "Messenger")
+			scr_add_text("Where have you been! We've been searching for you all this time. Wait! It's the humans isn't it? They abducted you! ", "Messenger")
+			scr_add_text("No, nobody abducted me, who do you think I am?", "Princess?")
+			scr_add_text("I left myself, to see the human world myself. Was probably not a good idea since I had nothing on me.", "Princess?")
+			scr_add_text("But it's the same human you loathe that helped me out, got me a place to live, to live amongst them.", "Princess?")
+			scr_add_text("The humans... helped you?", "Messenger")
+			scr_add_text("Without them, I probably would not be standing here right now. ", "Princess?")
+			scr_add_text("[what is going on...]")
+			scr_add_text("Haha, don't say you don't recognize me. Aren't we good friends?", "Princess?")
+			scr_add_text("It's me, Lola.", "Lola")
+			scr_add_text("LOLA? YOU'RE A SLIME????");
+			scr_add_text("What's the big deal? You're a slime too.", "Lola");
+			scr_add_text("I must inform the king right away that you are well my princess. Let us return at once.", "Messenger")
+			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to cancel that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola")
+			scr_add_text("If that is what you wish my princess.", "Messenger");
 			break;
 		case "ending-special-decline":
-			//scr_add_text();
+			scr_add_text("No! I can't do that. Those humans are my friends. ");
+			scr_add_text("I can't help you kick them out of their home. That's not right.");
+			scr_add_text("Your friends? Look at you, made some human friends haven't you?", "Messenger")
+			scr_add_text("You are so naive. Friends? Do you think those humans will still regard you as that when you show your true form, as a slime?", "Messenger")
+			scr_add_text("Ok then, hope you don’t regret your choice", "Messenger")
+			scr_add_text("Since you love the humans so much, you don't need to come back to us right? You can stay here with your friends.", "Messenger")
+			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend.", "Messenger")
+			// cue Lola's entrance
+			scr_add_text("No you won't.", "???")
+			scr_add_text("And who might you be- WAIT", "Messenger")
+			scr_add_text("You.... Is that you? Princess?", "Messenger")
+			scr_add_text("Where have you been! We've been searching for you all this time. Wait! It's the humans isn't it? They abducted you! ", "Messenger")
+			scr_add_text("No, nobody abducted me, who do you think I am?", "Princess?")
+			scr_add_text("I left myself, to see the human world myself. Was probably not a good idea since I had nothing on me.", "Princess?")
+			scr_add_text("But it's the same human you loathe that helped me out, got me a place to live, to live amongst them.", "Princess?")
+			scr_add_text("The humans... helped you?", "Messenger")
+			scr_add_text("Without them, I probably would not be standing here right now. ", "Princess?")
+			scr_add_text("[what is going on...]")
+			scr_add_text("Haha, don't say you don't recognize me. Aren't we good friends?", "Princess?")
+			scr_add_text("It's me, Lola.", "Lola")
+			scr_add_text("LOLA? YOU'RE A SLIME????");
+			scr_add_text("What's the big deal? You're a slime too.", "Lola");
+			scr_add_text("I must inform the king right away that you are well my princess. Let us return at once.", "Messenger")
+			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to cancel that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola")
+			scr_add_text("If that is what you wish my princess.", "Messenger");
 			break;
 		
 }// end of switch
