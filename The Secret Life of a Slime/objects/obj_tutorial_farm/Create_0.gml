@@ -19,7 +19,6 @@ berryOne = false;
 y_val_pos_inventory_close = 70;
 y_val_pos_inventory_open = 40;
 
-global.tutorial_restrict = true;
 
 s4 = ["This is your farm! Beautiful, isn't it? (X)",
 "Uh-oh, looks like your energy has depleted (X)",

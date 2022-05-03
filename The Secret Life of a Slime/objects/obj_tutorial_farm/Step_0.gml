@@ -6,6 +6,10 @@ if keyboard_check_pressed(ord("S")) {
 
 if global.tutorial_ended_farm and global.tutorial_ended{
 	global.tutorial_restrict = false;
+} 
+
+if !global.tutorial_ended_farm and b4 and sentence_index == 0{
+	global.tutorial_restrict = true;
 }
 
 //restricting movement code
