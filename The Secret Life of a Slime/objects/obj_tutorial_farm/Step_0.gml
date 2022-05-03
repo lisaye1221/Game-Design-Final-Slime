@@ -173,6 +173,8 @@ if b10 and (obj_player.interactable_object!= noone && (obj_player.interactable_o
 		b11 = true;
 		sentence_index = 0;
 		sentence = s11[sentence_index]
+		// giving them the three seeds
+		gain_item(global.item_list.wheat_seeds, 3);
 }
 
 

@@ -46,7 +46,7 @@ s10 = [
 "That's why you need to get your hands slimey and grow real food yourself (X)",
 "Head over to the farm area",]
 
-s11 = ["Press 1 to grow some wheat. Let's use up all of our seeds"]
+s11 = ["Here are some seeds. Press 1 to grow some wheat. Let's use them up."]
 
 s12 = ["Crops take time to grow. I'll make them instantly grow for ya this time (X)", 
 "Let's harvest all these crops"]
