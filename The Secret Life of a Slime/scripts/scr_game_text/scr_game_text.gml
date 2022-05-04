@@ -576,7 +576,7 @@ switch(_text_id){
 		scr_add_text("Wow! This place looks so different from back home.");
 		scr_add_text("I used my magic to turn into a human for now.");
 		scr_add_text("Not really in the mood to get hunted down today.");
-		scr_add_text("The transformation is limited, I should watch the time[red bar on the left].");
+		scr_add_text("The transformation is limited, I should watch the time [red bar on the left].");
 		scr_add_text("Looks like there are a bunch of shops I can check out. Maybe I should get to know the people in town too.");
 		scr_add_text("Time to do human stuff!");
 		break;

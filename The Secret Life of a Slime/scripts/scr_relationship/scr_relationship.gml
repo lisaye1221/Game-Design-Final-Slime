@@ -116,35 +116,40 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_machine_seed.should_be_interactable = true;
-					obj_food_shop_menu.option = obj_food_shop_menu.menu_with_gift;				
+					obj_relationship_manager.food_shop_menu.option = obj_relationship_manager.food_shop_menu.menu_with_gift;				
 	
 				break;
 				case 2:
-					obj_food_shop_menu.shopping_page.discount = .9;
+					obj_relationship_manager.food_shop_menu.shopping_page.discount = .9;
+					obj_relationship_manager.general_shop_menu.shopping_page.inventory.egg.max_stock = 4;
 				break;
 				case 3:
 					//TODO:unlock high level food
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"spaghetti",new create_shop_item(global.item_list.spaghetti,40,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pancake",new create_shop_item(global.item_list.pancake,40,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.cookies,40,5));
 				break;
 			}
 		break;
 		case "Claude":
 			switch (_relationship.tier){
 				case 1:
-					obj_general_shop_menu.option = obj_general_shop_menu.menu_with_gift;
+					obj_relationship_manager.general_shop_menu.option = obj_relationship_manager.general_shop_menu.menu_with_gift;
 					global.seedTier = 1;
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5));
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5));
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5));
+					obj_relationship_manager.general_shop_menu.shopping_page.inventory.parts.max_stock = 4;
 					//variable_struct_set(obj_food_shop_menu.shopping_page.inventory,"radish",new create_shop_item(global.item_list.radishes,20,5));
 					//variable_struct_set(obj_food_shop_menu.shopping_page.inventory,"carrot",new create_shop_item(global.item_list.carrots,20,5));
 					//variable_struct_set(obj_food_shop_menu.shopping_page.inventory,"lettuce",new create_shop_item(global.item_list.lettuce,10,5));
 					
 				break;
 				case 2:
-					obj_general_shop_menu.shopping_page.discount = .9;
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5));
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5));
-					variable_struct_set(obj_general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5));
+					obj_relationship_manager.general_shop_menu.shopping_page.discount = .9;
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5));
 					global.seedTier = 2;
 				break;
 				case 3:
@@ -154,11 +159,11 @@ function relationship_tier_up_rewards(_relationship){
 		case "Nelu":
 			switch (_relationship.tier){
 				case 1:
-					obj_marketplace_menu.option = obj_marketplace_menu.menu_with_gift;
+					obj_relationship_manager.marketplace_menu.option = obj_relationship_manager.marketplace_menu.menu_with_gift;
 					obj_inventory_manager.MAX_ITEM += 2;
 				break;
 				case 2:
-					active_persistent_interactable(obj_oven);
+					obj_oven.should_be_interactable = true;
 				break;
 				case 3:
 					obj_inventory_manager.MAX_ITEM +=2 ;
@@ -169,7 +174,7 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_game_manager.TOWN_TIME_LIMIT *= 1.5;
-					obj_lola_menu.option = obj_lola_menu.menu_with_gift;
+					obj_inventory_manager.lola_menu.option = obj_lola_menu.menu_with_gift;
 				break;
 				case 2:
 					player.move_spd *= 1.5;
