@@ -19,15 +19,17 @@ if(global.days >= UNLOCK_ENDING_DAY && !global.has_reached_ending){
 		ending = ENDING_BETRAYAL;	
 	}
 	if(
-		get_relationship(LAVANA) >= RELATIONSHIP_VAL_MAX &&
-		get_relationship(CLAUDE) >= RELATIONSHIP_VAL_MAX &&
-		get_relationship(NELU) >= RELATIONSHIP_VAL_MAX
+		get_relationship_tier(LAVANA) >= 3 &&
+		get_relationship_tier(CLAUDE) >= 3 &&
+		get_relationship_tier(NELU) >= 3
 	){
 		ending = ENDING_CHOICE;
 	}
 	if(get_relationship(LOLA) >= RELATIONSHIP_VAL_MAX){
 		ending = ENDING_SPECIAL;
 	}
+	
+	has_met_Lola = has_met_npc(LOLA);
 	
 }
 
@@ -49,6 +51,16 @@ if(global.go_to_ending_cutscene && !instance_exists(obj_textbox) && in_home()){
 		switch(ending){
 			case ENDING_NORMAL:
 				room_goto(ending_normal_scene)
+				instance_deactivate_all(true);
+				break;
+			case ENDING_BETRAYAL:
+				room_goto(ending_betrayal_scene)
+				audio_stop_sound(bgm_home);
+				instance_deactivate_all(true);
+				break;
+			case ENDING_CHOICE_BETRAYAL:
+				room_goto(ending_betrayal_scene)
+				audio_stop_sound(bgm_home);
 				instance_deactivate_all(true);
 				break;
 		}

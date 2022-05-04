@@ -202,10 +202,17 @@ switch(_text_id){
 		scr_add_text("Oh hey! Nice to see you again!");
 		break;
 	case "Lavana-3-1":
-		scr_add_text("3-1");
+		scr_add_text("Hi Hi!");
+		scr_add_text("Taking a break? Oh yea, check out some of the food I've stocked!");
+		scr_add_text("Oh no I didn't cook them, you know I can't cook hahaha. They're from another supplier.");
+		scr_add_text("Actually, to be honest, I think the food you cook tastes better.");
+		scr_add_text("Want to consider being my supplier? Haha, jk, you don't have time to be a full time chef right.");
 		break;
 	case "Lavana-3-2":
-		scr_add_text("3-2");
+		scr_add_text("Oh heyyy!");
+		scr_add_text("How are you doing? Isn't it nice outside?");
+		scr_add_text("Speaking of which, I was taking a walk earlier and I finally met Lola, yep the girl who lives down there!");
+		scr_add_text("I saw her by the river and introduced myself to her. Nice girl, just a bit shy. Well, I hope she's eating well!");
 		break;
 	case "Lavana-3-3":
 		scr_add_text("3-3");
@@ -267,7 +274,10 @@ switch(_text_id){
 		scr_add_text("2-4");
 		break;
 	case "Claude-3-1":
-		scr_add_text("3-1");
+		scr_add_text("Oh hey, if it isn't my friend! How ya doing?");
+		scr_add_text("You caught me just in time, I just came back from Nelu's place.");
+		scr_add_text("And did you know? Apparently he helped Lola settled in when she first came to town back then.");
+		scr_add_text("Lola's the girl living down there if ya didn't know. Anyways, Nelu's always so helpful! Glad to have him here.");
 		break;
 	case "Claude-3-2":
 		scr_add_text("3-2");
@@ -327,6 +337,9 @@ switch(_text_id){
 		break;
 	case "Nelu-3-1":
 		scr_add_text("HI BESTIE!!!");
+		scr_add_text("Very random, are you...");
+		scr_add_text("Nevermind haha! It doesn't matter. I mean it does, but it doesn't.");
+		scr_add_text("What am I saying? I'm saying glad to see you!! Wanna hang out later?");
 		break;
 	case "Nelu-3-2":
 		scr_add_text("3-2");
@@ -599,16 +612,18 @@ switch(_text_id){
 			scr_add_text("I'll take on this deal.");
 			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.", "Messenger");
 			scr_add_text("See you soon.", "Messenger")
+			global.go_to_ending_cutscene = true;
 			break;
 		case "ending-betrayal-hesitate":
 			scr_add_text("Should I really accept this? This means we're taking over the town right? What would happen to the humans there?");
 			scr_add_text("But if I accept this, then I can go home! ");
-			scr_add_text("I see that you're hesitating. Do you feel bad for the humans? Don't.", "Messenger")
+			scr_add_text("I see that you're hesitating. Do you feel bad for the humans? Don't. Are you even close with them?", "Messenger")
 			scr_add_text("The minute they find out you are a slime, they'll hunt you down without a thought. So why feel bad for them?", "Messenger")
 			scr_add_text("We're just trying to create some space for us to live, what's wrong with that?", "Messenger")
-			scr_add_text("That's true... I guess I should accept the deal.")
+			scr_add_text("That's true... I guess I should accept the deal. I do want to go home.")
 			scr_add_text("Very well! I knew you'll accept the deal. I'll be back again very soon with more details.", "Messenger");
 			scr_add_text("See you soon.", "Messenger")
+			global.go_to_ending_cutscene = true;
 			break;
 	case "ending-choice":
 		scr_add_text("Hello. ", "Messenger");
@@ -633,13 +648,14 @@ switch(_text_id){
 			break;
 		case "ending-choice-decline":
 			scr_add_text("No! I can't do that. Those humans are my friends. ");
-			scr_add_text("I can't help you kick them out of their home. That's not right.");
+			scr_add_text("I can't help you kick them out of their home. That's messed up.");
 			scr_add_text("Your friends? Look at you, made some human friends haven't you?", "Messenger")
 			scr_add_text("You are so naive. Friends? Do you think those humans will still regard you as that when you show your true form, as a slime?", "Messenger")
 			scr_add_text("Ok then, hope you don’t regret your choice", "Messenger")
 			scr_add_text("Since you love the humans so much, you don't need to come back to us right? You can stay here with your friends.", "Messenger")
-			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend.", "Messenger")
-			scr_add_text("I’ll be taking my leave now, enjoy yourself here, forever. Goodbye. ", "Messenger")
+			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend HAHA.", "Messenger")
+			scr_add_text("I'll be taking my leave now, enjoy yourself here, forever. Goodbye. ", "Messenger")
+			scr_add_text("Wait!");
 			break;
 		case "ending-choice-accept":
 			scr_add_text("...");
@@ -648,6 +664,8 @@ switch(_text_id){
 			scr_add_text("Ok... I'll take on your deal.");
 			scr_add_text("Wonderful! I knew you would understand.", "Messenger");
 			scr_add_text("I'll be back with more details soon. See you later.", "Messenger");
+			global.go_to_ending_cutscene = true;
+			obj_game_ending_manager.ending = ENDING_CHOICE_BETRAYAL;
 			break;
 	case "ending-special":
 		scr_add_text("Hello. ", "Messenger");
@@ -715,6 +733,55 @@ switch(_text_id){
 			scr_add_text("Oh, looks like I'm out of seeds. I should go to town to get some.");
 			scr_add_text("Maybe I should check on my machine too to see if I need any parts.");
 			break;
+		case "ending-betrayal-cutscene":
+			scr_add_text(".....");
+			scr_add_text("Sorry everybody.");
+			scr_add_text("This is something I have to do. Please don't blame me.");
+			break;
+		case "ending-betrayal-human-dialogue":
+			scr_add_text("Oh hi, what a cute slime! Hm, you look a little familiar", "Lavana");
+			scr_add_text("Wait. What are you doing?", "Lavana");
+			scr_add_text("WAIT NO.", "Lavana");
+			scr_add_text("....");
+			scr_add_text("Oh what do we have here? Hey there little one.", "Claude");
+			scr_add_text("Hold up a minute, why are you doing that.", "Claude");
+			scr_add_text("....");
+			scr_add_text("Oh my god, if it isn't another slime! Hello, hello, are you lost as well?", "Nelu");
+			scr_add_text("Wait, wait, wait, wait, WHAT ARE YOU DOING", "Nelu")
+			scr_add_text("....");
+			if(obj_game_ending_manager.has_met_Lola){
+				scr_add_text("Hm, Lola is not here. Well, that's for the better.");
+			}
+			else{
+				scr_add_text("Hm, whoever lives here is not here. Well, that's for the better.");
+			}
+			break;
+		case "ending-betrayal-choice-human-dialogue":
+			scr_add_text("Oh hi, what a cute slime! Wait, are you....?", "Lavana");
+			scr_add_text("Wait. What are you doing?", "Lavana");
+			scr_add_text("WAIT NO. Why would you do that?", "Lavana");
+			scr_add_text("I thought we were friends.", "Lavana");
+			scr_add_text("....");
+			scr_add_text("I'm sorry Lavana.");
+			scr_add_text("Oh what do we have here? Hey there little one.", "Claude");
+			scr_add_text("Hold up a minute, you are....", "Claude");
+			scr_add_text("...What are you doing?", "Claude");
+			scr_add_text("....");
+			scr_add_text("I'm sorry Claude.");
+			scr_add_text("Oh my god, if it isn't another slime! Hello, hello, are you lost as well?", "Nelu");
+			scr_add_text("Wait a minute.. it's you my friend isn't it! Haha, it makes sense now.", "Nelu");
+			scr_add_text("Wait, wait, wait, wait, WHAT ARE YOU DOING", "Nelu")
+			scr_add_text("....");
+			scr_add_text("I'm so sorry Nelu.");
+			if(obj_game_ending_manager.has_met_Lola){
+				scr_add_text("Hm, Lola is not here. Well, that's for the better.");
+			}
+			else{
+				scr_add_text("Hm, whoever lives here is not here. Well, that's for the better.");
+			}
+			break;
+			
+			
 		
 }// end of switch
 }// end of scr_game_text()

@@ -6,13 +6,19 @@ draw_sprite(spr_title, 0, 50, 30);
 var ending_text = "";
 switch(obj_game_ending_manager.ending){
 	case ENDING_NORMAL:
-		ending_text = "Normal ending: My Secret Life"
+		ending_text = "Ending 1: My Secret Life"
 		break;
 	case ENDING_BETRAYAL:
-		ending_text = "Ending 1: Attack on Slime"
+		ending_text = "Ending 2: A Town with No Humans"
+		break;
+	case ENDING_CHOICE_BETRAYAL:
+		ending_text = "Ending 3: Betrayal and Guilt"
+		break;
+	case ENDING_CHOICE:
+		ending_text = "Ending 4: The Not So Secret Life of a Slime"
 		break;
 	case ENDING_SPECIAL:
-		ending_text = "Special Ending: Two Worlds in Harmony"
+		ending_text = "Ending 5: Two Worlds in Harmony"
 		break;
 }
 

@@ -8,7 +8,8 @@ global.go_to_ending_cutscene = false;
 #macro ENDING_NORMAL 0
 #macro ENDING_BETRAYAL 1
 #macro ENDING_CHOICE 2
-#macro ENDING_SPECIAL 3
+#macro ENDING_CHOICE_BETRAYAL 3
+#macro ENDING_SPECIAL 4
 
 UNLOCK_ENDING_DAY = 42;
 // defaults to this ending
@@ -23,3 +24,5 @@ array_push(achi_requirement,
 obj_achievement_manager.achievement_list.BIG_SPENDER);
 
 ending_setup = false;
+
+has_met_Lola = false;
