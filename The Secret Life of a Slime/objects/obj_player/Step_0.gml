@@ -56,16 +56,22 @@ if not (global.dead or global.paused) {
 	if (y > camera_get_view_y(cam) + camera_get_view_height(cam)){
 		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) + camera_get_view_height(cam)/2);
 	}
-
-	// set collision for solid
-	var x_check = find_first_interactable(obj_solid,x+x_speed, y);
-	if(x_check!=noone && x_check.solid){
-		x_speed = 0;
+	
+	
+	//check if stuck, skip collision check if already stuck
+	var _curr_location_instance = find_first_interactable(obj_solid,x,y);
+	if (!(_curr_location_instance != noone && _curr_location_instance.solid)){
+		// set collision for solid
+		var x_check = find_first_interactable(obj_solid,x+x_speed, y);
+		if(x_check!=noone && x_check.solid){
+			x_speed = 0;
+		}
+		var y_check = find_first_interactable(obj_solid,x, y+y_speed)
+		if(y_check!=noone && y_check.solid){
+			y_speed = 0;
+		}
 	}
-	var y_check = find_first_interactable(obj_solid,x, y+y_speed)
-	if(y_check!=noone && y_check.solid){
-		y_speed = 0;
-	}
+	
 	
 	footstep_audio_count += 1;
 	footstep_audio_count = footstep_audio_count mod footstep_audio_reset;
