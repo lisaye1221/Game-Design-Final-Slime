@@ -17,6 +17,7 @@ var _text_x = x_pos + border_size + icon_width;
 var _top_text_y = y_curr + box_height/2 - text_height/2;
 var _bottom_text_y = _top_text_y + text_height/2;
 
+draw_set_color(c_black)
 draw_text(_text_x, _top_text_y, top_text);
 draw_text(_text_x, _bottom_text_y, bottom_text);
 

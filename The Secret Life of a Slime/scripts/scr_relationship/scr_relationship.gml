@@ -158,7 +158,7 @@ function relationship_tier_up_rewards(_relationship){
 					obj_inventory_manager.MAX_ITEM += 2;
 				break;
 				case 2:
-					active_persistent_interactable(obj_oven);
+					obj_oven.should_be_interactable = true;
 				break;
 				case 3:
 					obj_inventory_manager.MAX_ITEM +=2 ;
