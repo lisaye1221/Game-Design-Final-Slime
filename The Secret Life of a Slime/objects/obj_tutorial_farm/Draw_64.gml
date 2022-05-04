@@ -23,7 +23,6 @@ if !global.tutorial_ended_farm {
 	
 	draw_set_alpha(0.8)
 	draw_set_font(ft_tutorial)
-	
 
 	
 

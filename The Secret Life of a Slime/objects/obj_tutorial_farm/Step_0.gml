@@ -13,6 +13,13 @@ if global.tutorial_ended_farm and global.tutorial_ended{
 	
 } 
 
+if b10 and sentence_index == 3 {
+	instance_activate_object(obj_arrow)
+}
+else {
+	instance_deactivate_object(obj_arrow)
+}
+
 if !global.tutorial_ended_farm and b4 and sentence_index == 0{
 	global.tutorial_restrict = true;
 }
