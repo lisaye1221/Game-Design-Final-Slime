@@ -577,7 +577,11 @@ switch(_text_id){
 		scr_add_text("Hello. ", "Messenger");
 		scr_add_text("I have been sent here to come check up on you.", "Messenger");
 		scr_add_text("Looks like you managed to survive in the human world for a good amount of time.", "Messenger");
-		scr_add_text("How does it feel here?", "Messenger");
+		scr_add_text("How does it feel here? I'd imagine it's not as comfortable as back home.", "Messenger");
+		scr_add_text("I took the liberty to look around. We feel like you can do much better than this.", "Messenger");
+		scr_add_text("How about this, once you make your farm flourish and master the ins and outs of the human world. We can consider letting you back to the slime world.", "Messenger");
+		scr_add_text("Until then, good luck!", "Messenger");
+		global.go_to_ending_cutscene = true;
 		break;
 	case "ending-betrayal":
 		scr_add_text("Hello. ", "Messenger");
@@ -705,6 +709,11 @@ switch(_text_id){
 			scr_add_text("I must inform the king right away that you are well my princess. Let us return at once.", "Messenger")
 			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to cancel that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola")
 			scr_add_text("If that is what you wish my princess.", "Messenger");
+			break;
+			
+		case "ending-normal-cutscene":
+			scr_add_text("Oh, looks like I'm out of seeds. I should go to town to get some.");
+			scr_add_text("Maybe I should check on my machine too to see if I need any parts.");
 			break;
 		
 }// end of switch

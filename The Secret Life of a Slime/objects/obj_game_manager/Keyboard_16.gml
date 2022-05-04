@@ -30,3 +30,7 @@ if(keyboard_check_pressed(ord("8"))){
 if(keyboard_check_pressed(ord("7"))){
 	obj_game_ending_manager.ending = ENDING_SPECIAL;	
 }
+
+if(keyboard_check_pressed(ord("E"))){
+	global.days = 42;	
+}

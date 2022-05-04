@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+a = 0
+
+global.go_to_ending_cutscene = false;
+
 #macro ENDING_NORMAL 0
 #macro ENDING_BETRAYAL 1
 #macro ENDING_CHOICE 2

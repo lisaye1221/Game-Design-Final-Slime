@@ -35,6 +35,7 @@ function forced_home(player){
 	global.energy -= obj_game_manager.EXCEED_TIME_ENERGY_COST;
 }
 
+
 function die() {
 	if(!global.dead){
 		audio_stop_all();
