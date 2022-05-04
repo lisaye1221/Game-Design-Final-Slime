@@ -29,4 +29,3 @@ text_2[6] = "Maybe I made the wrong choice, but it's all too late now."
 if(obj_game_ending_manager.ending == ENDING_CHOICE_BETRAYAL){
 	text = text_2;	
 }
-

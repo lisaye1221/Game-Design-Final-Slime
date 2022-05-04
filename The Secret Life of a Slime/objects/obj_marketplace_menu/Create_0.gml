@@ -14,5 +14,5 @@ menu_with_gift[0,3] = "Exit";
 
 option = get_relationship_tier(NELU) >= 1? menu_with_gift : menu;
 
-
+obj_relationship_manager.marketplace_menu = id;
 instance_deactivate_object(self);
