@@ -17,6 +17,10 @@ if not (global.dead or global.paused) {
 		key_4 = keyboard_check_pressed(ord("4"));
 		key_5 = keyboard_check_pressed(ord("5"));
 		key_6 = keyboard_check_pressed(ord("6"));
+		key_7 = keyboard_check_pressed(ord("7"));
+		key_8 = keyboard_check_pressed(ord("8"));
+		key_9 = keyboard_check_pressed(ord("9"));
+		key_0 = keyboard_check_pressed(ord("0"));
 
 		// ** Movement ** //
 
@@ -159,6 +163,22 @@ if not (global.dead or global.paused) {
 			interactable_object.inv_slot = 6;
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
+		} else if (key_7 && inv_count >= 7){
+			interactable_object.inv_slot = 7;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_8 && inv_count >= 8){
+			interactable_object.inv_slot = 8;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_9 && inv_count >= 9){
+			interactable_object.inv_slot = 9;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
+		} else if (key_0 && inv_count >= 10){
+			interactable_object.inv_slot = 10;
+			interactable_object.alarm[0] = 1;
+			draw_prompt_flag = false;
 		} else if(key_z){
 			create_textbox("warn-use-number");
 		}
@@ -193,6 +213,18 @@ if not (global.dead or global.paused) {
 		}
 		if(key_6 && inv_count >= 6){
 			use_item(inv[5]);
+		}
+		if(key_7 && inv_count >= 7){
+			use_item(inv[6]);
+		}
+		if(key_8 && inv_count >= 8){
+			use_item(inv[7]);
+		}
+		if(key_9 && inv_count >= 9){
+			use_item(inv[8]);
+		}
+		if(key_0 && inv_count >= 10){
+			use_item(inv[9]);
 		}
 	}
 

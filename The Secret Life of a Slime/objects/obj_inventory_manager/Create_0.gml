@@ -12,8 +12,6 @@ depth = -9999;
 
 MAX_ITEM = 6;
 
-HOTBAR_SLOTS = 6;
-
 // item constructor
 function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc, _conversion_rate=0, _sell_price, _seeds=noone) constructor {
 	name = _name;
