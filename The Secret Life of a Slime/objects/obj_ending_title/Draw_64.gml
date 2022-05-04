@@ -1,4 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_set_halign(fa_center);
+draw_sprite(spr_title, 0, 50, 30);
+
+var ending_text = "";
+switch(obj_game_ending_manager.ending){
+	case ENDING_NORMAL:
+		ending_text = "Normal ending: My Secret Life"
+		break;
+	case ENDING_BETRAYAL:
+		ending_text = "Ending 1: Attack on Slime"
+		break;
+	case ENDING_SPECIAL:
+		ending_text = "Special Ending: Two Worlds in Harmony"
+		break;
+}
+
+draw_set_halign(fa_center)
+draw_set_valign(fa_top)
+draw_text_transformed(450, 500, ending_text, 2, 2, 0 );
+
+replay_prompt = "Press R to start over."
+
+draw_text_transformed(450, 650, replay_prompt, 1, 1, 0 );

@@ -15,5 +15,5 @@ if(obj_player_ending.y >= 360){
 
 if(obj_player_ending.x >= 900){
 	obj_player_ending.x_speed = 0;
-	audio_stop_sound(bgm_home);
+	
 }
