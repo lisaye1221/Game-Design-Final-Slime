@@ -132,11 +132,9 @@ if not (global.dead or global.paused) {
 
 	// for interactables which use inventory slots instead of generic z key
 	// (farm plots and machines)
-	if (draw_prompt_flag && interactable_object.uses_inventory){
-		
+	if (interactable_object != noone && instance_exists(interactable_object) && interactable_object.uses_inventory){
 		inv = obj_inventory_manager.inventory
 		inv_count = array_length(inv);
-	
 		if (key_1 && inv_count >= 1){
 			interactable_object.inv_slot = 1;
 			interactable_object.alarm[0] = 1;
@@ -168,7 +166,7 @@ if not (global.dead or global.paused) {
 	//********
 	
 	// use regular interactables
-	else if (key_z && draw_prompt_flag){
+	else if (key_z && interactable_object != noone && instance_exists(interactable_object)){
 		interactable_object.alarm[0] = 1;
 		draw_prompt_flag = false;
 	}
