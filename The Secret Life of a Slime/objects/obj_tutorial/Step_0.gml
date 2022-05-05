@@ -16,6 +16,13 @@ if keyboard_check_pressed(ord("S")) {
 	global.unlock_homedoor = true;
 }
 
+if b2 and sentence_index == 1 {
+	instance_activate_object(inst_bedarrow)
+}
+else {
+	instance_deactivate_object(inst_bedarrow)
+}
+
 if (timerCheck and timerStart) {
 	timerCheck = false;
 	alarm[4] = 3.0 * room_speed;

@@ -14,10 +14,19 @@ if global.tutorial_ended_farm and global.tutorial_ended{
 } 
 
 if b10 and sentence_index == 3 {
-	instance_activate_object(obj_arrow)
+	instance_activate_object(inst_farmarrow)
+	instance_activate_object(inst_farmarrow2)
 }
 else {
-	instance_deactivate_object(obj_arrow)
+	instance_deactivate_object(inst_farmarrow)
+	instance_deactivate_object(inst_farmarrow2)
+}
+
+if b13 and sentence_index == 2 {
+	instance_activate_object(inst_machinearrow)
+}
+else {
+	instance_deactivate_object(inst_machinearrow)
 }
 
 if !global.tutorial_ended_farm and b4 and sentence_index == 0{
@@ -129,7 +138,7 @@ if b4 and sentence_index == array_length(s4) - 1 and (obj_player.interactable_ob
 if b5 and keyboard_check_pressed(ord("E")) {
 		b5 = false;
 		b6 = true;
-		global.tutorial_stage_on_inv = true;
+		on_inventory = true;
 		sentence_index = 0;
 		sentence = s6[sentence_index]
 }
@@ -143,14 +152,16 @@ if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_
 
 if b7 and (keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) {
 	b7 = false;
-	global.tutorial_stage_on_inv = false;
 	alarm[1] = 3.0 * room_speed
 
 }
 
 if b8 and keyboard_check_pressed(ord("E")) {
 		b8 = false;
-		alarm[2] = 1.0 * room_speed;
+		b9 = true;
+		sentence_index = 0;
+		sentence = s9[sentence_index]
+		on_inventory = false;
 }
 
 

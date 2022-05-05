@@ -16,9 +16,10 @@ b17 = false;
 energyLost = false;
 berryOne = false;
 
-y_val_pos_inventory_close = 70;
+y_val_pos_inventory_close = 230;
 y_val_pos_inventory_open = 40;
 
+on_inventory = false;
 
 s4 = ["This is your farm! Beautiful, isn't it? (X)",
 "Uh-oh, looks like your energy has depleted (X)",
@@ -27,9 +28,9 @@ s4 = ["This is your farm! Beautiful, isn't it? (X)",
 s5 = ["TA-DA! Look at the bottom, it's in your inventory now (X)",
 "You can even press E to view your items"]
 
-s6 = ["These are all your items, you can only hold 6 items at once (X)",
+s6 = ["Your items go here, you can only hold 6 items at once (X)",
 "You can store more items in the chest of your home (X) ",
-"Press the arrow keys to take a closer look of these items"]
+"Press the arrow keys to take a closer look of your items "]
 
 s7 =  ["Press A and D to navigate through the tabs"]
 
@@ -61,7 +62,7 @@ s15 = ["Now, we have slime jelly! We can choose to eat or sell. (X)",
 "More seeds can be bought in the village among many other things, refreshed daily (X)",
 "You can also sell your goods and buy machine parts to repair your machines upon wear (X)",
 "Listen.. no one should ever find out about your identity (X)", 
-"You'll transform into a human when you're in town for " + string(obj_game_manager.TOWN_TIME_LIMIT) +"seconds (X)",
+"You'll transform into a human when you're in town for " + string(obj_game_manager.TOWN_TIME_LIMIT) +" seconds (X)",
 "and you'll only able to enter town again after the cooldown ends (X)",
 "Good luck out there, my friend...(X)",
 "I must leave now, they're sending me back. Time is ticking now (X).",""]
