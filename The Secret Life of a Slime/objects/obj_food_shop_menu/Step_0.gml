@@ -5,6 +5,7 @@
 up_key = keyboard_check_pressed(vk_up);
 down_key = keyboard_check_pressed(vk_down);
 accept_key = keyboard_check_pressed(ord("Z"));
+exit_key = keyboard_check_pressed(ord("X"))
 
 // num options in current menu
 op_length = array_length(option[menu_level]);
@@ -15,6 +16,10 @@ if (down_key || up_key){
 	// loop to top or bottom when out of range
 	if (pos >= op_length) pos = 0;
 	if (pos < 0) pos = op_length-1;
+}
+
+if(exit_key){
+	instance_deactivate_object(id);
 }
 
 // use options
@@ -41,12 +46,8 @@ if (accept_key){
 					if(option == menu_with_gift){
 						// bring up gift shit
 						create_textbox("Lavana-gift-1", "Lavana");
+						instance_deactivate_object(id);
 					}
-					instance_deactivate_object(id);
-					break;
-				// exit
-				case 3:
-					instance_deactivate_object(id);
 					break;
 			}
 			pos = 0;

@@ -5,12 +5,10 @@ event_inherited();
 // main menu
 menu[0,0] = "Buy";
 menu[0,1] = "Talk";
-menu[0,2] = "Exit";
 
 menu_with_gift[0,0] = "Buy";
 menu_with_gift[0,1] = "Talk";
 menu_with_gift[0,2] = "Gift";
-menu_with_gift[0,3] = "Exit";
 
 option = get_relationship_tier(CLAUDE) >= 1? menu_with_gift : menu;
 
