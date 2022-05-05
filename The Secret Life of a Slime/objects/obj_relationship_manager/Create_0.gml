@@ -77,7 +77,7 @@ gifts =
 	global.item_list.wheat, // for testing
 	//global.item_list.spaghetti, // tier 1
 	global.item_list.spaghetti, // tier 2
-	global.item_list.pancake, // tier 3 placeholder
+	global.item_list.cake, // tier 3 placeholder
 	],
 	// Claude
 	[
@@ -94,7 +94,7 @@ gifts =
 	// Lola
 	[
 	global.item_list.pumpkin_pie, // tier 1
-	global.item_list.pancake, // tier 2
+	global.item_list.cake, // tier 2
 	global.item_list.gummy_bear, // tier 3
 	],
 ]

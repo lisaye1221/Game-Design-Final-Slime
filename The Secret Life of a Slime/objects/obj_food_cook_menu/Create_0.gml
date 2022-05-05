@@ -69,9 +69,9 @@ recipes = {
 		[global.item_list.wheat, global.item_list.egg],
 		[3,2],
 	),
-	pancake_recipe : new create_recipe(
-		"Pancakes",
-		global.item_list.pancake,
+	cake_recipe : new create_recipe(
+		"Cake",
+		global.item_list.cake,
 		[global.item_list.wheat, global.item_list.egg, global.item_list.roses],
 		[4,4,1],
 	),
@@ -91,7 +91,7 @@ recipes = {
 
 // i know this is ridiculous but bear with me
 tier0_recipes = [recipes.bread_recipe, recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe];
-tier1_recipes = [recipes.bread_recipe, recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.pancake_recipe, recipes.burrito_recipe];
+tier1_recipes = [recipes.bread_recipe, recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.cake_recipe, recipes.burrito_recipe];
 
 recipe_tiers = [tier0_recipes, tier1_recipes]
 

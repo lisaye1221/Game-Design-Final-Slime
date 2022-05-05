@@ -413,13 +413,13 @@ global.item_list =
 		0,
 		35,
 	),
-	pancake : new create_item(
-		"Pancake",
-		spr_pancake,
-		spr_pancake_menu,
+	cake : new create_item(
+		"Cake",
+		spr_cake,
+		spr_cake_menu,
 		1,
 		0,
-		"A hot stack.",
+		"Sweet and floral.",
 		0,
 		10,
 	),

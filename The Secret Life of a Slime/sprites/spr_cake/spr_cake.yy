@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 8,
-  "bbox_right": 57,
-  "bbox_top": 11,
-  "bbox_bottom": 57,
+  "bbox_left": 0,
+  "bbox_right": 15,
+  "bbox_top": 1,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 16,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cf7cd7a1-e4ce-4236-b203-04566532afc9","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cf7cd7a1-e4ce-4236-b203-04566532afc9","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},"LayerId":{"name":"9e22ed76-3345-4d1a-af8f-d842ebbe498f","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pancake_menu","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},"resourceVersion":"1.0","name":"cf7cd7a1-e4ce-4236-b203-04566532afc9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c4a0a3a8-b99b-493a-ac16-bde48e01abf9","path":"sprites/spr_cake/spr_cake.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c4a0a3a8-b99b-493a-ac16-bde48e01abf9","path":"sprites/spr_cake/spr_cake.yy",},"LayerId":{"name":"cf1a0fc2-1f1c-481a-8e0f-968fe0d1ce0e","path":"sprites/spr_cake/spr_cake.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cake","path":"sprites/spr_cake/spr_cake.yy",},"resourceVersion":"1.0","name":"c4a0a3a8-b99b-493a-ac16-bde48e01abf9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pancake_menu","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},
+    "spriteId": {"name":"spr_cake","path":"sprites/spr_cake/spr_cake.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ee01b3b8-3b58-466b-b183-4bfa71aeb46d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf7cd7a1-e4ce-4236-b203-04566532afc9","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7813fa5-297f-4d7a-a043-6034924838fd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4a0a3a8-b99b-493a-ac16-bde48e01abf9","path":"sprites/spr_cake/spr_cake.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pancake_menu","path":"sprites/spr_pancake_menu/spr_pancake_menu.yy",},
+    "parent": {"name":"spr_cake","path":"sprites/spr_cake/spr_cake.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_pancake_menu",
+    "name": "spr_cake",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9e22ed76-3345-4d1a-af8f-d842ebbe498f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cf1a0fc2-1f1c-481a-8e0f-968fe0d1ce0e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/food.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_pancake_menu",
+  "name": "spr_cake",
   "tags": [],
   "resourceType": "GMSprite",
 }
