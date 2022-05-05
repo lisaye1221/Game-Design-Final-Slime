@@ -4,14 +4,14 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_restrict = false;
 }
 
-if global.tutorial_ended_farm and global.tutorial_ended{
+if global.tutorial_ended_farm{
 	global.tutorial_restrict = false;
 	if !global.gainedTutorialSeeds {
 		gain_item(global.item_list.wheat_seeds, 3);
 		global.gainedTutorialSeeds = true;
 	}
-	
 } 
+
 
 if b10 and sentence_index == 3 {
 	instance_activate_object(inst_farmarrow)
@@ -38,21 +38,11 @@ if !global.tutorial_ended_farm and b4 and sentence_index == 2 {
 	global.tutorial_restrict = false;
 }
 
-if b5 and sentence_index == 0 {
+if !global.tutorial_ended_farm and b5 and sentence_index == 0 {
 	global.tutorial_restrict = true;
 }
 
-/*
-if b9 and sentence_index == 1 {
-	global.tutorial_restrict = false;
-}
-
-if b10 and sentence_index == 0 {
-	global.tutorial_restrict = true;
-}
-*/
-
-if b10 and sentence_index == 3 {
+if !global.tutorial_ended_farm and b10 and sentence_index == 3 {
 	global.tutorial_restrict = false;
 }
 
@@ -82,6 +72,7 @@ if (b5 and sentence_index < array_length(s5) - 1 and keyboard_check_pressed(ord(
 if (b6 and sentence_index < array_length(s6) - 1 and keyboard_check_pressed(ord("X"))) {	
 	sentence_index +=1
 	sentence = s6[sentence_index]
+	global.tutorial_stage_on_inv = true;
 }
 
 if (b9 and sentence_index < array_length(s9) - 1 and keyboard_check_pressed(ord("X"))) {	
@@ -162,6 +153,7 @@ if b8 and keyboard_check_pressed(ord("E")) {
 		sentence_index = 0;
 		sentence = s9[sentence_index]
 		on_inventory = false;
+		global.tutorial_stage_on_inv = false;
 }
 
 
