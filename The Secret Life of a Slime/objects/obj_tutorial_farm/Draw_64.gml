@@ -1,6 +1,6 @@
 
 
-if !global.tutorial_ended_farm {
+
 	if (on_inventory){
 		y_val_pos = y_val_pos_inventory_open;
 	}else{
@@ -51,7 +51,6 @@ if !global.tutorial_ended_farm {
 		draw_text(480,y_val_pos,string(string_copy(sentence,0,100)))
 	}
 
-}
 
 
 

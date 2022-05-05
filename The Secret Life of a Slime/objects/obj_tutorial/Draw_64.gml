@@ -60,3 +60,4 @@ if global.tut_keys_on {
 
 }
 
+draw_set_alpha(1)

@@ -10,6 +10,9 @@ if global.tutorial_ended_farm{
 		gain_item(global.item_list.wheat_seeds, 3);
 		global.gainedTutorialSeeds = true;
 	}
+	instance_deactivate_object(inst_farmlock)
+	instance_deactivate_object(inst_homelock)
+	instance_destroy()
 } 
 
 
@@ -44,13 +47,6 @@ if !global.tutorial_ended_farm and b5 and sentence_index == 0 {
 
 if !global.tutorial_ended_farm and b10 and sentence_index == 3 {
 	global.tutorial_restrict = false;
-}
-
-
-
-if global.tutorial_ended_farm {
-	instance_deactivate_object(inst_farmlock)
-	instance_deactivate_object(inst_homelock)
 }
 
 if !global.tutorial_ended_farm and !energyLost and b4 and sentence_index == 1 {
@@ -240,13 +236,13 @@ if b16 or (b15 and sentence_index == array_length(s15) - 1)  {
 }
 
 
-
 /*
 if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {
 	alarm[3] = 2.0 * room_speed;
 	global.touchedBed = false;
 	
 }
+
 
 
 
