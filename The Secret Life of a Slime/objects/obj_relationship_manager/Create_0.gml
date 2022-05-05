@@ -76,25 +76,25 @@ gifts =
 	[
 	global.item_list.wheat, // for testing
 	//global.item_list.spaghetti, // tier 1
-	global.item_list.pancake, // tier 2
+	global.item_list.spaghetti, // tier 2
 	global.item_list.pancake, // tier 3 placeholder
 	],
 	// Claude
 	[
-	global.item_list.cookies, // tier 1
-	global.item_list.curry, // tier 2
+	global.item_list.cucumbers, // tier 1
+	global.item_list.cookies, // tier 2
 	global.item_list.curry, // tier 3
 	],
 	// Nelu
 	[
-	global.item_list.spaghetti, // tier 1
-	global.item_list.pumpkin_pie, // tier 2
+	global.item_list.tomatoes, // tier 1
+	global.item_list.sandwich, // tier 2
 	global.item_list.pumpkin_pie, // tier 3
 	],
 	// Lola
 	[
-	global.item_list.pancake, // tier 1
-	global.item_list.gummy_bear, // tier 2
+	global.item_list.pumpkin_pie, // tier 1
+	global.item_list.pancake, // tier 2
 	global.item_list.gummy_bear, // tier 3
 	],
 ]
