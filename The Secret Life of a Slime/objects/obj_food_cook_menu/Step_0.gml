@@ -8,6 +8,8 @@ var _down = keyboard_check_pressed(vk_down);
 var _h_move = _right - _left;
 var _v_move = _down - _up;
 
+recipe_list = recipe_tiers[which_tier];
+num_recipes = array_length(recipe_list);
 var _size = num_recipes
 
 
@@ -58,46 +60,22 @@ if (menu_open) {
 	if (_select > 0) {
 		
 		// start cooking item
-		if (can_cook_this(recipes2[i_cursor])){
+		if (can_cook_this(recipe_list[i_cursor])){
 			// lose # of each ingredient
-			_ingredients_list = recipes2[i_cursor].ingredients;
-			_amounts_list = recipes2[i_cursor].amounts;
+			_ingredients_list = recipe_list[i_cursor].ingredients;
+			_amounts_list = recipe_list[i_cursor].amounts;
 			for (i=0; i < array_length(_ingredients_list); i++){
 				lose_item(_ingredients_list[i], _amounts_list[i]);
 			}
 		
 			// turn on oven
-			obj_oven.convert_to = recipes2[i_cursor].item;
+			obj_oven.convert_to = recipe_list[i_cursor].item;
 			obj_oven.alarm[1] = 1;
 			
 			// turn off menu
 			menu_open = false;
 			global.paused = false;
 		}
-		
-		
-		
-		/*// attempt to move from inventory to storage
-		if (i_cursor < array_length(obj_inventory_manager.inventory)) {
-			var _moved_item = obj_inventory_manager.inventory[i_cursor];
-			
-			if(str_will_item_fit(_moved_item, _moved_item.count)) {
-				move_from_inventory(_moved_item, _moved_item.count);
-			}
-		}
-		
-
-		var _temp_cursor = i_cursor - _inv_size;
-		show_debug_message(_temp_cursor);
-		show_debug_message(i_cursor);
-		
-		// attempt to move from storage to inventory
-		if (_temp_cursor < array_length(obj_storage_manager.inventory)) {
-			var _moved_item = obj_storage_manager.inventory[_temp_cursor];
-			
-			if(will_item_fit(_moved_item, _moved_item.count)) {
-				move_from_storage(_moved_item, _moved_item.count);
-			}*/
 			
 		}
 		

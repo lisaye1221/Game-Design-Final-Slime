@@ -67,10 +67,10 @@ if (menu_open) {
 			var yy = top + (i div rowLength) * 64;
 			draw_sprite(spr_inv_slot, 0, xx, yy);
 		
-			if (i < array_length(recipes2)) {
-				draw_sprite(recipes2[i].item.menu_icon, 0, xx, yy);
+			if (i < num_recipes) {
+				draw_sprite(recipe_list[i].item.menu_icon, 0, xx, yy);
 				
-				if (!can_cook_this(recipes2[i])){
+				if (!can_cook_this(recipe_list[i])){
 					draw_sprite(spr_greyed_out, 0, xx, yy);
 				}
 			}
@@ -106,9 +106,9 @@ if (menu_open) {
 		draw_text(170, 560, "(Use X to exit)")
 		draw_set_alpha(1.0)
 		
-		if (i_cursor < array_length(recipes2)) {
+		if (i_cursor < num_recipes) {
 			
-			selected = recipes2[i_cursor];
+			selected = recipe_list[i_cursor];
 			
 			var _sprite_scale = _sprite_dis_height/64;
 			

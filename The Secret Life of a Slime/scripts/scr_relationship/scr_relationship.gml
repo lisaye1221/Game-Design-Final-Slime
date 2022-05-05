@@ -164,6 +164,7 @@ function relationship_tier_up_rewards(_relationship){
 				break;
 				case 2:
 					obj_oven.should_be_interactable = true;
+					obj_food_cook_menu.which_tier = 1;
 				break;
 				case 3:
 					obj_inventory_manager.MAX_ITEM +=2 ;

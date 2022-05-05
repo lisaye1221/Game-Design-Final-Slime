@@ -31,7 +31,7 @@ recipes = {
 		"Spaghetti",
 		global.item_list.spaghetti,
 		[global.item_list.wheat, global.item_list.tomatoes],
-		[5, 3],
+		[4, 2],
 	),
 	ramen_recipe : new create_recipe(
 		"Ramen",
@@ -42,26 +42,26 @@ recipes = {
 	curry_recipe : new create_recipe(
 		"Curry",
 		global.item_list.curry,
-		[global.item_list.carrots, global.item_list.eggplants, global.item_list.cauliflower],
-		[3,3,3],
+		[global.item_list.carrots, global.item_list.radishes, global.item_list.pumpkins],
+		[2,2,3],
 	),
 	sandwich_recipe : new create_recipe(
 		"Sandwich",
 		global.item_list.sandwich,
-		[global.item_list.lettuce, global.item_list.tomatoes, global.item_list.cucumbers, global.item_list.wheat],
-		[3, 3, 3, 3],
+		[global.item_list.lettuce, global.item_list.tomatoes, global.item_list.cucumbers, global.item_list.bread],
+		[1, 1, 1, 2],
 	),
 	pumpkin_pie_recipe : new create_recipe(
 		"Pumpkin Pie",
 		global.item_list.pumpkin_pie,
 		[global.item_list.wheat, global.item_list.pumpkins],
-		[6,4],
+		[6,3],
 	),
 	gummy_bear_recipe : new create_recipe(
 		"Gummy Bear",
 		global.item_list.gummy_bear,
-		[global.item_list.stars, global.item_list.roses, global.item_list.tulips],
-		[2,4,2],
+		[global.item_list.stars, global.item_list.roses, global.item_list.berries],
+		[4,3,10],
 	),
 	cookies_recipe : new create_recipe(
 		"Cookies",
@@ -92,4 +92,12 @@ recipes = {
 // i know this is ridiculous but bear with me
 recipes2 = [recipes.spaghetti_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.sandwich_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.cookies_recipe, recipes.pancake_recipe, recipes.bread_recipe, recipes.burrito_recipe];
 
-num_recipes = array_length(recipes2);
+tier0_recipes = [recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe, recipes.bread_recipe];
+tier1_recipes = [recipes.ramen_recipe, recipes.curry_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.pancake_recipe, recipes.burrito_recipe];
+
+recipe_tiers = [tier0_recipes, tier1_recipes]
+
+which_tier = 0;
+
+recipe_list = recipe_tiers[which_tier];
+num_recipes = array_length(recipe_list);
