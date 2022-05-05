@@ -21,7 +21,7 @@ if (draw_prompt_flag){
 		draw_set_font(ft_prompt)
 		//adding text here is slightly performancewise costy. it reduce manual effort though
 		if (interactable_object.uses_inventory){
-			var _text = interactable_object.ready?interactable_object.prompt_text+"[1-"+string(obj_inventory_manager.HOTBAR_SLOTS)+"]":interactable_object.prompt_text;
+			var _text = interactable_object.ready?interactable_object.prompt_text+"[1-"+string(obj_inventory_manager.MAX_ITEM)+"]":interactable_object.prompt_text;
 		} else {
 			var _text = interactable_object.ready?interactable_object.prompt_text+"[Z]":interactable_object.prompt_text;
 		}

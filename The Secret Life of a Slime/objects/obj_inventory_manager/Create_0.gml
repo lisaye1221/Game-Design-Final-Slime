@@ -12,16 +12,6 @@ depth = -9999;
 
 MAX_ITEM = 6;
 
-HOTBAR_SLOTS = 6;
-
-INV_LEFT_X = 680;
-INV_BACKGROUND_WIDTH = 200;
-INV_BACKGROUND_HEIGHT = 20;
-INV_BACKGROUND_MARGIN = 5;
-INV_RIGHT_X = INV_LEFT_X + INV_BACKGROUND_WIDTH;
-INV_TOP_LEFT_Y = 550;
-ICON_SIZE = 16;
-
 // item constructor
 function create_item(_name, _icon, _menu_icon, _max_count, _count, _desc, _conversion_rate=0, _sell_price, _seeds=noone) constructor {
 	name = _name;

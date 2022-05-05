@@ -115,7 +115,19 @@ if (this_machine != noone){
 					break;
 				case 6:
 					if (inv_count >= 6) use_item(inv[5]);
-					break;	
+					break;
+				case 7:
+					if (inv_count >= 7) use_item(inv[6]);
+					break;
+				case 8:
+					if (inv_count >= 8) use_item(inv[7]);
+					break;
+				case 9:
+					if (inv_count >= 9) use_item(inv[8]);
+					break;
+				case 10:
+					if (inv_count >= 10) use_item(inv[9]);
+					break;
 			}
 			inv_slot = 0;
 		}

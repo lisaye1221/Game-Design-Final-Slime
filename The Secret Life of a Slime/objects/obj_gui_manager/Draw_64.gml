@@ -90,19 +90,30 @@ if not global.dead {
 	//show_debug_message(max(string_height("1"), string_height("2"), string_height("3"), string_height("4"), string_height("5"), string_height("6")));
 	
 	// draw hotbar
-	var _hotbar_width = sprite_get_width(spr_hotbar);
-	var _hotbar_height = sprite_get_height(spr_hotbar);
-	var _hotbar_box_width = _hotbar_width/6;
+	var _hotbar_width = sprite_get_width(spr_hotbar_box)*obj_inventory_manager.MAX_ITEM;
+	var _hotbar_height = sprite_get_height(spr_hotbar_box);
+	var _hotbar_box_width = sprite_get_width(spr_hotbar_box);
 	
 	var _hotbar_x = screen_width/2 - (_hotbar_width/2);
 	var _hotbar_y = screen_height - _hotbar_height;
 	
-	draw_sprite(spr_hotbar_blank, 0, _hotbar_x, _hotbar_y);
+	
 	
 	draw_set_color(c_aqua);
-	for (var i = 0; i<6; i++) {
+	for (var i = 0; i<obj_inventory_manager.MAX_ITEM; i++) {
+		
+		if (i >= 9) {
+			var _num = string(0);
+		}
+		else {
+			var _num = string(i+1);
+		}
+		
+		// draw hotbar box
+		draw_sprite(spr_hotbar_box, 0, _hotbar_x + (_hotbar_box_width*i), _hotbar_y);
 		// draw number
-		draw_text(_hotbar_x + (_hotbar_box_width*i) + 9, _hotbar_y + 10, string(i+1));
+		draw_text(_hotbar_x + (_hotbar_box_width*i) + 9, _hotbar_y + 10, _num);
+		
 	}
 	draw_set_color(c_white);
 	
@@ -110,7 +121,7 @@ if not global.dead {
 	for(var i = 0; i < array_length(obj_inventory_manager.inventory); i++){
 		
 		
-		if (i < obj_inventory_manager.HOTBAR_SLOTS) {
+		if (i < obj_inventory_manager.MAX_ITEM) {
 	
 		// icon
 		draw_sprite(obj_inventory_manager.inventory[i].menu_icon, 0, _hotbar_x + (_hotbar_box_width*i), _hotbar_y);
