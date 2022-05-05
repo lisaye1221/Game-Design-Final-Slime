@@ -382,7 +382,7 @@
     {"instances":[
         {"properties":[
             {"propertyId":{"name":"roomToGo","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"town","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"newX","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"320","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"newX","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"560","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"newY","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"value":"192","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_roomMoveEvent","path":"objects/obj_roomMoveEvent/obj_roomMoveEvent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":544.0,"resourceVersion":"1.0","name":"inst_7C7EAD03","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
