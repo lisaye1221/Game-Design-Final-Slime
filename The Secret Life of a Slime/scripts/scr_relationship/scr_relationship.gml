@@ -126,7 +126,7 @@ function relationship_tier_up_rewards(_relationship){
 				case 3:
 					//TODO:unlock high level food
 					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"spaghetti",new create_shop_item(global.item_list.spaghetti,40,5));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pancake",new create_shop_item(global.item_list.pancake,40,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"cake",new create_shop_item(global.item_list.cake,40,5));
 					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.cookies,40,5));
 				break;
 			}
@@ -165,6 +165,7 @@ function relationship_tier_up_rewards(_relationship){
 				case 2:
 					obj_oven.should_be_interactable = true;
 					obj_food_cook_menu.which_tier = 1;
+					obj_food_cook_menu.alarm[11] = 1;
 				break;
 				case 3:
 					obj_inventory_manager.MAX_ITEM +=2 ;
