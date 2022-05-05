@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if not global.dead {
+if not (global.dead or instance_exists(obj_room_transition)) {
 	// time of day
 	draw_set_font(ft_name);
 	var _time_box_width = max(string_width(parts_of_day[0]),

@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if not (global.dead or global.paused) {
+// player cannot perform actions during room transitions
+if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 	depth = -y;
 	
 	if !global.tutorial_restrict {
@@ -27,6 +28,8 @@ if not (global.dead or global.paused) {
 		x_speed = (key_right - key_left) * move_spd;
 		y_speed = (key_down - key_up) * move_spd;
 	}
+	
+	
 
 	// set sprite direction	
 	if(y_speed > 0) {face = DOWN;}
@@ -103,7 +106,7 @@ if not (global.dead or global.paused) {
 	}
 
 	// ** Interaction ** //
-	if(place_meeting(x, y, obj_prompt_town) && key_z){
+	if(place_meeting(x, y, obj_prompt_town) && key_z && !instance_exists(obj_room_transition)){
 		if(global.has_reached_ending){
 			create_textbox("ending_town_lock");
 		}
@@ -111,7 +114,7 @@ if not (global.dead or global.paused) {
 			go_to_town(self);
 		}
 	}
-	if(place_meeting(x,y, obj_prompt_home) && key_z){
+	if(place_meeting(x,y, obj_prompt_home) && key_z && !instance_exists(obj_room_transition)){
 		go_home(self);
 	}
 	
