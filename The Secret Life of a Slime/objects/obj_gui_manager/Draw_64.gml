@@ -52,7 +52,7 @@ if not global.dead {
 	var _bar_height = screen_height*1/5 - 10;
 		
 	var _bar_left = 15;
-	var _bar_top = 5;
+	var _bar_top = 15;
 	var _bar_right = _bar_left + _bar_width;
 	var _bar_bottom = _bar_top + _bar_height;
 		
@@ -62,7 +62,7 @@ if not global.dead {
 	var _energy_text_x = _bar_left + _bar_width + 10;
 	var _energy_text_y = _bar_top;
 	
-	draw_sprite_stretched(spr_player_menu_sm, 0, _energy_text_x, _energy_text_y, energy_text_width +20, energy_text_height*2+30);
+	draw_sprite_stretched(spr_player_menu_sm, 0, _energy_text_x, _energy_text_y, energy_text_width+20, energy_text_height*2+30);
 		
 	draw_set_color(c_maroon);
 	draw_text_transformed(_energy_text_x+10, _energy_text_y+10, "Energy: " + string(ceil(global.energy)),text_size,text_size,0);
@@ -77,6 +77,21 @@ if not global.dead {
 		
 		draw_healthbar(_bar_left, _trans_bar_top, _bar_right, _trans_bar_bottom, obj_game_manager.transformation_remaining * (100 / obj_game_manager.TOWN_TIME_LIMIT), c_white, c_red, c_red, 3, false, false);
 		draw_sprite_stretched(spr_bar_cover, 0, _bar_left-5, _trans_bar_top-5, _bar_width+10, _trans_bar_height+10);
+		
+	}
+	else if (obj_game_manager.transformation_cooldown > 0) {
+		
+		var _cooldown_x = _energy_text_x;
+		var _cooldown_y = _energy_text_y + energy_text_height*2+30 + 10;
+		var _cooldown_width = string_width("Town Cooldown:")*text_size+20;
+		var _cooldown_height = string_height("Town Cooldown:")*text_size*2+30;
+		
+		draw_sprite_stretched(spr_player_menu_sm, 0, _cooldown_x, _cooldown_y, _cooldown_width, _cooldown_height);
+		
+		draw_text_transformed(_cooldown_x+10, _cooldown_y+10, "Town Cooldown:",text_size,text_size,0);
+		draw_set_halign(fa_middle);
+		draw_text_transformed(_cooldown_x+(_cooldown_width/2), _cooldown_y + energy_text_height + 20,  string(ceil(obj_game_manager.transformation_cooldown)),text_size,text_size,0);
+		draw_set_halign(fa_left)
 		
 	}
 	
