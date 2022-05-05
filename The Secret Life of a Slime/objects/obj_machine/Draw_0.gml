@@ -15,6 +15,3 @@ else if (status == "repairing") {
 if (full_signal){
 	draw_sprite(spr_exclamation,0,x+sprite_width-sprite_xoffset,y-sprite_yoffset)
 }
-if (highlight){
-	//draw an arrow 
-}
