@@ -580,6 +580,10 @@ switch(_text_id){
 		scr_add_text("Looks like there are a bunch of shops I can check out. Maybe I should get to know the people in town too.");
 		scr_add_text("Time to do human stuff!");
 		break;
+	case "tier1-food-recipes":
+		scr_add_text("Oh look! Nelu sent me a cookbook with some new recipes for me to try.");
+		scr_add_text("What a good friend :-)")
+		break;
 		
 	// --------- Ending texts --------- //
 	case "warn-slime-arrival":

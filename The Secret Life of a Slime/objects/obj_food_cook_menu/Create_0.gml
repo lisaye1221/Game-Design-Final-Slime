@@ -90,10 +90,8 @@ recipes = {
 }
 
 // i know this is ridiculous but bear with me
-recipes2 = [recipes.spaghetti_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.sandwich_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.cookies_recipe, recipes.pancake_recipe, recipes.bread_recipe, recipes.burrito_recipe];
-
-tier0_recipes = [recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe, recipes.bread_recipe];
-tier1_recipes = [recipes.ramen_recipe, recipes.curry_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.pancake_recipe, recipes.burrito_recipe];
+tier0_recipes = [recipes.bread_recipe, recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe];
+tier1_recipes = [recipes.bread_recipe, recipes.spaghetti_recipe, recipes.sandwich_recipe, recipes.cookies_recipe, recipes.ramen_recipe, recipes.curry_recipe, recipes.pumpkin_pie_recipe, recipes.gummy_bear_recipe, recipes.pancake_recipe, recipes.burrito_recipe];
 
 recipe_tiers = [tier0_recipes, tier1_recipes]
 
