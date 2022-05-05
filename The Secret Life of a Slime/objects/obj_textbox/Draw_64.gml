@@ -36,6 +36,7 @@ if(draw_char < text_length[page]){
 				speaker_sfx = choose(sfx_talk_Lavana_1, sfx_talk_Lavana_2, sfx_talk_Lavana_3, sfx_talk_Lavana_4);
 				break;
 			case "Claude":
+				speaker_sfx = choose(sfx_talk_Claude_1, sfx_talk_Claude_2, sfx_talk_Claude_3, sfx_talk_Claude_3);
 				break;
 			case "Nelu":
 				break;
