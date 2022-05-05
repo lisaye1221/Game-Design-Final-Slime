@@ -1,7 +1,7 @@
 
 
 if !global.tutorial_ended_farm {
-	if (global.tutorial_stage_on_inv){
+	if (on_inventory){
 		y_val_pos = y_val_pos_inventory_open;
 	}else{
 		y_val_pos = y_val_pos_inventory_close;
@@ -9,10 +9,15 @@ if !global.tutorial_ended_farm {
 	
 	draw_set_halign(fa_center)
 	draw_set_color(c_black)
-	draw_set_alpha(0.65)
+	draw_set_alpha(0.55)
 	draw_rectangle(0, y_val_pos - 20 , 900, y_val_pos + 20, false)
-	if b15 and sentence_index == 3 {
+	if (b15 and sentence_index == 3) {
 		draw_set_color(c_red)
+	}
+	else if (on_inventory) {
+		draw_set_alpha(0.35)
+		draw_rectangle(0, y_val_pos - 20 , 900, y_val_pos + 20, false)
+		draw_set_color(c_yellow)
 	}
 	else if b13 and sentence_index == 0 {
 		draw_set_color(c_aqua)
@@ -21,9 +26,8 @@ if !global.tutorial_ended_farm {
 		draw_set_color(c_white)
 	}
 	
-	draw_set_alpha(0.8)
+	draw_set_alpha(0.7)
 	draw_set_font(ft_tutorial)
-	
 
 	
 
