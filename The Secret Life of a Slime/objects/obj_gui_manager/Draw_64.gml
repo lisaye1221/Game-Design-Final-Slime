@@ -90,7 +90,7 @@ if not global.dead {
 		
 		draw_text_transformed(_cooldown_x+10, _cooldown_y+10, "Town Cooldown:",text_size,text_size,0);
 		draw_set_halign(fa_middle);
-		draw_text_transformed(_cooldown_x+(_cooldown_width/2), _cooldown_y + energy_text_height + 20,  string(ceil(obj_game_manager.transformation_cooldown)),text_size,text_size,0);
+		draw_text_transformed(_cooldown_x+(_cooldown_width/2), _cooldown_y + energy_text_height + 20,  string(ceil(obj_game_manager.transformation_cooldown)) + "s",text_size,text_size,0);
 		draw_set_halign(fa_left)
 		
 	}
