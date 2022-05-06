@@ -21,8 +21,8 @@ function create_relationship(_name, _icon, _relationship, _has_met) constructor 
 #macro RELATIONSHIP_VAL_START 0
 #macro RELATIONSHIP_VAL_MAX 100
 #macro RELATIONSHIP_AMOUNT 4
-#macro LAVANA 0
-#macro CLAUDE 1
+#macro CLAUDE 0
+#macro LAVANA 1
 #macro NELU 2
 #macro LOLA 3
 
@@ -61,7 +61,7 @@ relationships =
 	
 	new create_relationship(
 	"Lola",
-	spr_npc,
+	spr_lola,
 	RELATIONSHIP_VAL_START,
 	false
 	)
