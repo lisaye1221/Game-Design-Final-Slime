@@ -412,56 +412,121 @@ switch(_text_id){
 	case "Lavana-gift-1":
 		scr_add_text("Maybe I can gift Lavana something?");
 		var gift = get_gift(LAVANA);
-		scr_add_text("If I remember, Lavana wants a " + gift.name +".");
+		var relation = get_relationship_tier(LAVANA);
+		if relation == 2 or relation == 3 {
+			scr_add_text("If I remember, Lavana wants a " + gift.name +".");
+		}
+		else {
+			scr_add_text("If I remember, Lavana wants 3 " + gift.name +"s.");
+		}
 			scr_option("Gift", "Lavana-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Lavana-gift-yes":
 				var gift = get_gift(LAVANA);
-				if(has_item(gift)){
-					lose_one_item(gift);
-					gain_relationship_through_gift(LAVANA);
-					scr_game_text("Lavana-gift-success");
+				var relation = get_relationship_tier(LAVANA);
+				//if it's tier 2 or 3 only accept one of that item
+				if relation == 2 or relation == 3 {
+					if(has_item(gift)){
+						lose_one_item(gift);
+						gain_relationship_through_gift(LAVANA);
+						scr_game_text("Lavana-gift-success");
+					}	
+					else{
+						scr_game_text("warn-no-item");	
+					}
 				}
+				//if it'st tier 1.. take 3 of the crops
 				else{
-					scr_game_text("warn-no-item");	
+					if(has_triple_item(gift)){
+						lose_three_items(gift);
+						gain_relationship_through_gift(LAVANA);
+						scr_game_text("Lavana-gift-success");
+					}	
+					else{
+						scr_game_text("warn-not-enough-items");	
+					}
 				}
+						
 				break;
 	case "Claude-gift-1":
 		scr_add_text("Maybe I can gift Claude something?");
+		var relation = get_relationship_tier(CLAUDE);
 		var gift = get_gift(CLAUDE);
-		scr_add_text("If I remember, Claude wants a " + gift.name +".");
+		if relation == 2 or relation == 3 {
+			scr_add_text("If I remember, Claude wants a " + gift.name +".");
+		}
+		else {
+			scr_add_text("If I remember, Claude wants 3 " + gift.name +"s.");
+		}
 			scr_option("Gift", "Claude-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Claude-gift-yes":
 				var gift = get_gift(CLAUDE);
-				if(has_item(gift)){
-					lose_one_item(gift);
-					gain_relationship_through_gift(CLAUDE);
-					scr_game_text("Claude-gift-success");
+				var relation = get_relationship_tier(CLAUDE);
+				//if it's tier 2 or 3 only accept one of that item
+				if relation == 2 or relation == 3 {
+					if(has_item(gift)){
+						lose_one_item(gift);
+						gain_relationship_through_gift(CLAUDE);
+						scr_game_text("Claude-gift-success");
+					}	
+					else{
+						scr_game_text("warn-no-item");	
+					}
 				}
+				//if it'st tier 1.. take 3 of the crops
 				else{
-					scr_game_text("warn-no-item");	
+					if(has_triple_item(gift)){
+						lose_three_items(gift);
+						gain_relationship_through_gift(CLAUDE);
+						scr_game_text("Claude-gift-success");
+					}	
+					else{
+						scr_game_text("warn-not-enough-items");	
+					}
 				}
 				break;
 	case "Nelu-gift-1":
 		scr_add_text("Maybe I can gift Nelu something?");
+		var relation = get_relationship_tier(NELU);
 		var gift = get_gift(NELU);
-		scr_add_text("If I remember, Nelu wants a " + gift.name +".");
+		if relation == 2 or relation == 3 {
+			scr_add_text("If I remember, Nelu wants a " + gift.name +".");
+		}
+		else {
+			scr_add_text("If I remember, Nelu wants 3 " + gift.name +"es.");
+		}
 			scr_option("Gift", "Nelu-gift-yes");
 			scr_option("Maybe next time...", "gift-no");
 		break;
 			case "Nelu-gift-yes":
 				var gift = get_gift(NELU);
-				if(has_item(gift)){
-					lose_one_item(gift);
-					gain_relationship_through_gift(NELU);
-					scr_game_text("Nelu-gift-success");
+				var relation = get_relationship_tier(NELU);
+				//if it's tier 2 or 3 only accept one of that item
+				if relation == 2 or relation == 3 {
+					if(has_item(gift)){
+						lose_one_item(gift);
+						gain_relationship_through_gift(NELU);
+						scr_game_text("Nelu-gift-success");
+					}	
+					else{
+						scr_game_text("warn-no-item");	
+					}
 				}
+				//if it'st tier 1.. take 3 of the crops
 				else{
-					scr_game_text("warn-no-item");	
+					if(has_triple_item(gift)){
+						lose_three_items(gift);
+						gain_relationship_through_gift(NELU);
+						scr_game_text("Nelu-gift-success");
+					}	
+					else{
+						scr_game_text("warn-not-enough-items");	
+					}
 				}
+				
 				break;
 	case "Lola-gift-1":
 		scr_add_text("Maybe I can gift Lola something?");
@@ -524,6 +589,9 @@ switch(_text_id){
 		break;
 	case "warn-no-item":
 		scr_add_text("I don't have that item.");
+		break;
+	case "warn-not-enough-items":
+		scr_add_text("I don't have enough.");
 		break;
 	case "gift-no":
 		break;

@@ -16,6 +16,10 @@ function has_item(item){
 	return get_item_count(item) > 0;	
 }
 
+function has_triple_item(item){
+	return get_item_count(item) > 2;	
+}
+
 // inventory manipulation
 function get_item_count(item){
 	inv = obj_inventory_manager.inventory;
@@ -55,6 +59,10 @@ function gain_one_item(item){
 
 function lose_one_item(item){
 	lose_item(item,1);
+}
+
+function lose_three_items(item){
+	lose_item(item,3);
 }
 
 function gain_item(item, count){

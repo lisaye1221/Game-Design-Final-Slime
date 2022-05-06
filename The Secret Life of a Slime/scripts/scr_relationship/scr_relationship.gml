@@ -175,7 +175,7 @@ function relationship_tier_up_rewards(_relationship){
 			switch (_relationship.tier){
 				case 1:
 					obj_game_manager.TOWN_TIME_LIMIT *= 1.5;
-					obj_inventory_manager.lola_menu.option = obj_lola_menu.menu_with_gift;
+					obj_relationship_manager.lola_menu.option = obj_lola_menu.menu_with_gift;
 				break;
 				case 2:
 					player.move_spd *= 1.5;
