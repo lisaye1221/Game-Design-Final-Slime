@@ -65,7 +65,7 @@ function gain_relationship_through_gift(_name){
 	increase_relationship(_name, GIFT_POINTS);	
 }
 
-#macro TALK_POINTS 2
+#macro TALK_POINTS 3
 function gain_relationship_through_talking(_name){
 	if(!global.talked_this_trip_already[_name]){
 		increase_relationship(_name, TALK_POINTS);
@@ -127,7 +127,7 @@ function relationship_tier_up_rewards(_relationship){
 					//TODO:unlock high level food
 					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"spaghetti",new create_shop_item(global.item_list.spaghetti,40,5));
 					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"cake",new create_shop_item(global.item_list.cake,40,5));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.cookies,40,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"cookies",new create_shop_item(global.item_list.cookies,40,5));
 				break;
 			}
 		break;

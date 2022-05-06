@@ -18,11 +18,11 @@ is_room_transition = false;
 
 // ** Time Limit for Town ** //
 // how much time you got in town
-TOWN_TIME_LIMIT = 30; // seconds
+TOWN_TIME_LIMIT = 40; // seconds
 // how much energy you lose if you're forced back
-EXCEED_TIME_ENERGY_COST = 15;
+EXCEED_TIME_ENERGY_COST = 10;
 // how much time to wait until you can go back to town
-TRANSFORMATION_COOLDOWN_TIME = 45;
+TRANSFORMATION_COOLDOWN_TIME = 30;
 transformation_remaining = 0;
 transformation_cooldown = 0;
 // flag for warning going over time in village
