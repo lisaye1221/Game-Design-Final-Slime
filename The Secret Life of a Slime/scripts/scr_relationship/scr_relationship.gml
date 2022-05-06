@@ -60,7 +60,7 @@ function talk_to(_npc){
 	create_textbox(_text_id, _npc_name);
 }
 
-#macro GIFT_POINTS 5
+#macro GIFT_POINTS 10
 function gain_relationship_through_gift(_name){
 	increase_relationship(_name, GIFT_POINTS);	
 }
