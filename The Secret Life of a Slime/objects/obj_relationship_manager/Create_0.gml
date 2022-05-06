@@ -39,15 +39,15 @@ global.talked_this_trip_already = array_create(RELATIONSHIP_AMOUNT, false);
 relationships = 
 [
 	new create_relationship(
-	"Lavana",
-	spr_npc,
+	"Claude",
+	spr_machineman,
 	RELATIONSHIP_VAL_START,
 	false
 	),
 	
 	new create_relationship(
-	"Claude",
-	spr_machineman,
+	"Lavana",
+	spr_npc,
 	RELATIONSHIP_VAL_START,
 	false
 	),
