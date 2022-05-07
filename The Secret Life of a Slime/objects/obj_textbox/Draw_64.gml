@@ -142,7 +142,7 @@ if (draw_char == text_length[page] && page == page_number - 1){
 	// option selection
 	var key_down = keyboard_check_pressed(vk_down);
 	var key_up = keyboard_check_pressed(vk_up);
-	if(key_down || key_up) {audio_play_sound(sfx_move_cursor, 1, false);}
+	if((key_down || key_up) && option_num > 0) {audio_play_sound(sfx_move_cursor, 1, false);}
 	option_pos += key_down - key_up;
 	option_pos = clamp(option_pos, 0, option_num - 1);
 
