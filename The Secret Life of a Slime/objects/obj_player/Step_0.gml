@@ -183,7 +183,9 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 			interactable_object.alarm[0] = 1;
 			draw_prompt_flag = false;
 		} else if(key_z){
-			create_textbox("warn-use-number");
+			interactable_object.alarm[1] = 1;
+			// create_textbox("warn-use-number")
+			
 		}
 	}
 	//********

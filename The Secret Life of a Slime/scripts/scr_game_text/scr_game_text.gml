@@ -597,7 +597,16 @@ switch(_text_id){
 	case "gift-no":
 		break;
 	case "warn-use-number":
-		scr_add_text("Use number keys to indicate which item to use for this.");
+		scr_add_text("Use number keys to indicate which item from inventory to use.");
+		break;
+	case "warn-plot-use-number":
+		scr_add_text("A farm plot where I can plant things. [Use number keys to indicate which seed from inventory to plant]");
+		break;
+	case "warn-machine-use-number":
+		scr_add_text("My slime jelly machine. [Use number keys to indicate which crops to convert.]");
+		break;
+	case "warn-seed-machine-use-number":
+		scr_add_text("My seed machine. [Use number keys to indicate which crops to convert.]");
 		break;
 	case "warn-cannot-plant":
 		scr_add_text("I can't plant that.");
