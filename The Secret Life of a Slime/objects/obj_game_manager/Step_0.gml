@@ -56,7 +56,6 @@ if(is_room_transition){
 		transformation_remaining = TOWN_TIME_LIMIT;
 		transformation_cooldown = TRANSFORMATION_COOLDOWN_TIME;
 	}
-	is_room_transition = false;
 }
 
 if(in_town()){
@@ -68,12 +67,7 @@ if(in_town()){
 		transformation_remaining -= (global.delta_second);
 	}
 	else{ // exceeded transformation time
-		if (global.player_in_shop) {
-			global.force_player_home = true;
-		}
-		else {
-			forced_home(obj_player);
-		}
+		forced_home(obj_player);
 		should_warn_went_over_time_limit = true;
 	}
 }

@@ -99,11 +99,6 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 	// move the player
 	x += x_speed;
 	y += y_speed;
-	
-	if (global.force_player_home) {
-		global.force_player_home = false;
-		forced_home(id);
-	}
 
 	// ** Interaction ** //
 	if(place_meeting(x, y, obj_prompt_town) && key_z && !instance_exists(obj_room_transition)){
