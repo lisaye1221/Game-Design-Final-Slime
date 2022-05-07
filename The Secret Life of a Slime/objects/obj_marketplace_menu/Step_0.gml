@@ -35,6 +35,7 @@ if (accept_key){
 					}
 					else{
 						instance_activate_object(obj_selling_page);
+						obj_selling_page.should_refresh_inventory = true;
 					}
 					instance_deactivate_object(id);
 					break;
@@ -49,7 +50,7 @@ if (accept_key){
 				case 2:
 					if(option == menu_with_gift){
 						// bring up gift shit
-						create_textbox("Nelu-gift-1", "Nelu");
+						create_textbox("Nelu-gift-1");
 						instance_deactivate_object(id);
 					}
 					break;

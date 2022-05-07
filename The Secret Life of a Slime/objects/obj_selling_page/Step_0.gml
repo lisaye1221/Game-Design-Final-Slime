@@ -14,6 +14,12 @@ down_key = keyboard_check_pressed(vk_down) && !disabled;
 left_key = keyboard_check_pressed(vk_left) && !disabled;
 right_key = keyboard_check_pressed(vk_right) && !disabled;
 
+if(should_refresh_inventory){
+	curr_inventory = create_selling_inventory();
+	option_num = array_length(curr_inventory);
+	should_refresh_inventory = false;
+}
+
 if(up_key){
 	if(menu_level == 0){
 		option_pos--;	
@@ -141,3 +147,5 @@ if(option_pos < start_pos){
 	end_pos = start_pos + (NUM_ITEM_SHOWN_MAX-1);
 	end_pos = clamp(end_pos, 0, option_num - 1)
 }
+
+

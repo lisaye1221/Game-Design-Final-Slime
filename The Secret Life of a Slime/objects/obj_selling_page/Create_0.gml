@@ -14,6 +14,7 @@ function create_selling_inventory() {
 	
 	return result;
 }
+should_refresh_inventory = false;
 
 
 // a list of items for sale now

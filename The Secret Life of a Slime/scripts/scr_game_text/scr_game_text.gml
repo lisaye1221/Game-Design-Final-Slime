@@ -548,18 +548,18 @@ switch(_text_id){
 				break;
 				
 	case "Lavana-gift-success":
-		scr_add_text("Oh is that for me?");
-		scr_add_text("I was just thinking I wanted some of those.");
-		scr_add_text("Thank you! You're too sweet.");
+		scr_add_text("Oh is that for me?", "Lavana");
+		scr_add_text("I was just thinking I wanted some of those.", "Lavana");
+		scr_add_text("Thank you! You're too sweet.", "Lavana");
 		break;
 	case "Claude-gift-success":
-		scr_add_text("A gift for me?");
-		scr_add_text("Thanks! I appreciate it a lot.");
+		scr_add_text("A gift for me?", "Claude");
+		scr_add_text("Thanks! I appreciate it a lot.", "Claude");
 		break;
 	case "Nelu-gift-success":
-		scr_add_text("WOWWWW. For meeeeeeeeee?");
-		scr_add_text("Thank you so much!!!!!");
-		scr_add_text("You're the best!");
+		scr_add_text("WOWWWW. For meeeeeeeeee?", "Nelu");
+		scr_add_text("Thank you so much!!!!!", "Nelu");
+		scr_add_text("You're the best!", "Nelu");
 		break;
 	case "Lola-gift-success":
 		scr_add_text("....");
