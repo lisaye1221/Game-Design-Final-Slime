@@ -30,17 +30,13 @@ if (accept_key){
 					talk_to(LOLA);
 					instance_deactivate_object(id);
 					break;
-				// exit | gift
+				// gift
 				case 1:
 					if(option == menu_with_gift){
 						// bring up gift shit
 						create_textbox("Lola-gift-1", "Lola");
+						instance_deactivate_object(id);
 					}
-					instance_deactivate_object(id);
-					break;
-				// exit
-				case 2:
-					instance_deactivate_object(id);
 					break;
 			}
 			pos = 0;
