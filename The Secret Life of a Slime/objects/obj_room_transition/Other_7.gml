@@ -9,5 +9,5 @@ with (obj_player){
 
 
 image_speed = -1;
-global.paused = false;
+global.unpause_signal = true;
 instance_destroy()

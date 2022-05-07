@@ -7,6 +7,6 @@ if (!instance_exists(menu) &&
 	!instance_exists(obj_selling_page)
 	){
 	if (!global.menu_on){
-		global.paused = false;
+		global.unpause_signal = true;
 	}
 }

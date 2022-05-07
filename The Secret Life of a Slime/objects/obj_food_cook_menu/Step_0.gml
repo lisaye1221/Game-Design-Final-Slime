@@ -74,7 +74,7 @@ if (menu_open) {
 			
 			// turn off menu
 			menu_open = false;
-			global.paused = false;
+			global.unpause_signal = true;
 		}
 			
 		}

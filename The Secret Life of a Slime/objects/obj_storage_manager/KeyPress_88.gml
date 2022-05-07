@@ -3,6 +3,6 @@
 
 if (storage_open) {
 	storage_open = false;
-	global.paused = false;
+	global.unpause_signal = true;
 	audio_play_sound(sfx_str_close, 0, false);
 }

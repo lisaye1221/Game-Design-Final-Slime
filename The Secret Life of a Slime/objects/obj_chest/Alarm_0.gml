@@ -7,7 +7,7 @@ event_inherited();
 // Can not interact with chest if game is paused
 if (obj_storage_manager.storage_open) {
 	obj_storage_manager.storage_open = false;
-	global.paused = false;
+	global.unpause_signal = true;
 }
 else {
 	obj_storage_manager.storage_open = true;

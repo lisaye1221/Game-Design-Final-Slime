@@ -44,6 +44,7 @@ global.is_forced_back = false;
 global.tut_keys_on = true;
 global.tutorial_active = true;
 global.paused = false;
+global.unpause_signal = false;
 
 global.lola_door_unlock_day = 10;
 global.extra_plot_unlock_day = 15;
