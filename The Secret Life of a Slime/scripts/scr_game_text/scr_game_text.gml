@@ -577,6 +577,7 @@ switch(_text_id){
 	case "warn-transformation-time-out":
 		scr_add_text("I lost some energy while rushing home.");
 		scr_add_text("I should be aware of the transformation time next time in town...");
+		global.is_forced_back = false;
 		break;
 	case "warn-inventory-full":
 		scr_add_text("My bag is full.");

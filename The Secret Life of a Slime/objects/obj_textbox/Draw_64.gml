@@ -30,8 +30,9 @@ draw_set_font(ft_dialog)
 
 // ** Typing the Text ** //
 if(draw_char < text_length[page]){
-	if(!is_speaker_sfx_playing && speaker_name != "" && speaker_name != "???"){
-		switch(speaker_name){
+	var _speaker_name = speaker_names[page];
+	if(!is_speaker_sfx_playing && _speaker_name != "" && _speaker_name != "???"){
+		switch(_speaker_name){
 			case "Lavana":
 				speaker_sfx = choose(sfx_talk_Lavana_1, sfx_talk_Lavana_2, sfx_talk_Lavana_3, sfx_talk_Lavana_4);
 				break;
@@ -39,8 +40,10 @@ if(draw_char < text_length[page]){
 				speaker_sfx = choose(sfx_talk_Claude_1, sfx_talk_Claude_2, sfx_talk_Claude_3, sfx_talk_Claude_3);
 				break;
 			case "Nelu":
+				speaker_sfx = choose(sfx_talk_Nelu_1, sfx_talk_Nelu_2, sfx_talk_Nelu_3, sfx_talk_Nelu_4);
 				break;
 			case "Lola":
+				speaker_sfx = choose(sfx_talk_Lola_1, sfx_talk_Lola_2, sfx_talk_Lola_3, sfx_talk_Lola_4);
 				break;	
 		}
 		audio_play_sound(speaker_sfx, 1, false);

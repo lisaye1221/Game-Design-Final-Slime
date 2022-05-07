@@ -34,7 +34,9 @@
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"MIN_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"60","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "interactables",
     "path": "folders/Objects/interactables.yy",
