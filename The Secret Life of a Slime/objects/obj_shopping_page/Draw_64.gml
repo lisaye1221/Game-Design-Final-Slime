@@ -97,7 +97,7 @@ if(array_length(curr_inventory) > 0){
 		draw_text(
 		menu_x + background_w - option_x_margin,
 		menu_y + arrow_y_space + (i * option_y_space),
-		string(_item.unit_price*discount) +"G",
+		string(floor(_item.unit_price*discount)) +"G",
 		)
 	
 	

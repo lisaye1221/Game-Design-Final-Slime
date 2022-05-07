@@ -33,6 +33,7 @@ function go_home(player){
 function forced_home(player){
 	go_home(player);
 	global.energy -= obj_game_manager.EXCEED_TIME_ENERGY_COST;
+	global.is_forced_back = true;
 }
 
 

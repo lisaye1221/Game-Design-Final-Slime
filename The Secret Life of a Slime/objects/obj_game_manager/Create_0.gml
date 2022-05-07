@@ -37,7 +37,7 @@ global.force_player_home = false;
 global.should_shop_restock = false;
 global.has_been_to_town = false;
 global.has_reached_ending = false;
-
+global.is_forced_back = false;
 
 
 

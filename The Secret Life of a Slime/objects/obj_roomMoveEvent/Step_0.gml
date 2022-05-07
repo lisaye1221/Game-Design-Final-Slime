@@ -11,3 +11,7 @@ if (position_meeting(obj_player.x,obj_player.y,id)) && (!instance_exists(obj_roo
 	_trans_inst.newY = newY;
 	_trans_inst.roomToGo = roomToGo;
 }
+
+if(global.is_forced_back){
+	triggered = false;	
+}
