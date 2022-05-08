@@ -1,6 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+// for recording cooking 
+function achi_cook_food(){
+	achi_gain_progress("COOKING_SLIME", 1);	
+	achi_gain_progress("GORDAN_RAMSLIME", 1);	
+}
+
 // for recording gold spent for achievements
 function achi_spent_gold(_amount_spent){
 	achi_gain_progress("MODEST_SPENDER", _amount_spent);
@@ -15,6 +21,7 @@ function achi_harvest_crop(_amount_harvest, _item_harvest){
 	achi_gain_progress("FARMING_MASTER", _amount_harvest);
 	achi_track_progress("DIVERSE_FARM", _item_harvest);
 	achi_track_progress("PASSION_IN_AGRICULTURE", _item_harvest);
+	achi_track_progress("AGRICULTURE_SPECIALIST", _item_harvest);
 }
 
 // for recording relationship progress achievements

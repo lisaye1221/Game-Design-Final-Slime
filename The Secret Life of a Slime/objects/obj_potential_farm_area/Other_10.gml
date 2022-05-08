@@ -1,6 +1,6 @@
 /// @description unlock at certain day
 // You can write your code in this editor
-show_debug_message("daily check for farm plot triggered")
+// show_debug_message("daily check for farm plot triggered")
 
 if (global.days >= unlock_requirement){
 	ds_map_delete(obj_game_manager.objects_with_daily_events,id)
