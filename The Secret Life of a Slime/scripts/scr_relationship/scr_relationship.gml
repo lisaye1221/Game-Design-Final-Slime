@@ -181,7 +181,7 @@ function relationship_tier_up_rewards(_relationship){
 					obj_relationship_manager.lola_menu.option = obj_relationship_manager.lola_menu.menu_with_gift;
 				break;
 				case 2:
-					player.move_spd *= 1.5;
+					obj_player.move_spd *= 1.5;
 				break;
 				case 3:
 					//TBD
