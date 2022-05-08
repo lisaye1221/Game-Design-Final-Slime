@@ -62,8 +62,7 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 	}
 	
 	// move the player
-	x += x_speed;
-	y += y_speed;
+
 	//this code is not working. commenting out::
 	/*
 	// move camera left when player walks off screen
@@ -100,7 +99,8 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 			y_speed = 0;
 		}
 	}
-
+	x += x_speed;
+	y += y_speed;
 	// ** Interaction ** //
 	if(place_meeting(x, y, obj_prompt_town) && key_z && !instance_exists(obj_room_transition)){
 		if(global.has_reached_ending){
