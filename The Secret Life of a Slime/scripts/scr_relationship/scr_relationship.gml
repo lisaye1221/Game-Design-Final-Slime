@@ -113,7 +113,7 @@ function increase_relationship(_name, _val){
 
 
 function relationship_tier_up_rewards(_relationship){
-	show_debug_message("tier up event for "+_relationship.npc_name+" triggered")
+	// show_debug_message("tier up event for "+_relationship.npc_name+" triggered")
 	switch (_relationship.npc_name){
 		case "Lavana":
 			switch (_relationship.tier){
@@ -141,17 +141,17 @@ function relationship_tier_up_rewards(_relationship){
 				case 1:
 					obj_relationship_manager.general_shop_menu.option = obj_relationship_manager.general_shop_menu.menu_with_gift;
 					global.seedTier = 1;
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5, 2));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5, 2));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5, 2));
 					obj_relationship_manager.general_shop_menu.shopping_page.inventory.parts.max_stock = 4;
 				
 				break;
 				case 2:
 					obj_relationship_manager.general_shop_menu.shopping_page.discount = .9;
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5, 2));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5, 2));
+					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5, 2));
 					global.seedTier = 2;
 				break;
 				case 3:
@@ -189,7 +189,7 @@ function relationship_tier_up_rewards(_relationship){
 			}
 		break;
 	}
-	show_debug_message("tier up event completed")
+	// show_debug_message("tier up event completed")
 }
 function first_talk_completed(_name){
 	obj_relationship_manager.relationships[_name].has_met = true;	

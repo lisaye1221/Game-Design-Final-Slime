@@ -8,7 +8,7 @@ depth = -9999;
 #macro SLIME_JELLY_MAX 2
 
 // the amount of crops in the game
-#macro CROP_AMOUNT 13
+#macro CROP_AMOUNT 9
 
 MAX_ITEM = 6;
 

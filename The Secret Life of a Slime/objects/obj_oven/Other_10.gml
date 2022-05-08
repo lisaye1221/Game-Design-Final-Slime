@@ -1,6 +1,6 @@
 /// @description daily unlock check
 // You can write your code in this editor
-show_debug_message("daily check for oven triggered")
+// show_debug_message("daily check for oven triggered")
 
 if (global.days>=global.advanced_machine_unlock_day){
 	should_be_interactable = true;

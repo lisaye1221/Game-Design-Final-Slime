@@ -18,7 +18,7 @@ ending = ENDING_NORMAL;
 
 achi_requirement = array_create(0);
 array_push(achi_requirement, 
-obj_achievement_manager.achievement_list.FARMING_MASTER);
+obj_achievement_manager.achievement_list.FARMING_INTERMEDIATE);
 array_push(achi_requirement, 
 obj_achievement_manager.achievement_list.PASSION_IN_AGRICULTURE);
 array_push(achi_requirement, 

@@ -62,15 +62,23 @@ achievement_list =
 		false
 		),
 	
-	/*
+	
 	COOKING_SLIME: new create_achievement(
 		"Cooking Slime",
-		"Use machine 30 times to make food",
+		"Cook and collect food 5 times",
 		0,
-		30,
+		5,
 		false
 		),
-	*/
+		
+	GORDAN_RAMSLIME: new create_achievement(
+		"Gordan Ranslime",
+		"Cook and collect food 15 times",
+		0,
+		15,
+		false
+		),
+	
 	
 	DIVERSE_FARM: new create_achievement(
 		"Diverse Farm",
@@ -82,11 +90,20 @@ achievement_list =
 		
 	PASSION_IN_AGRICULTURE: new create_achievement(
 		"Passion in Agriculture",
+		"Harvest 6 species of crops",
+		0,
+		6,
+		false
+		),
+	
+	AGRICULTURE_SPECIALIST:  new create_achievement(
+		"Agriculure Specialist",
 		"Harvest every species of crops",
 		0,
 		CROP_AMOUNT,
 		false
 		),
+	
 		
 	NOT_FREE_REAL_ESTATE: new create_achievement(
 		"It's Not Free Real Estate",
@@ -166,11 +183,15 @@ farm_achievements =
 	
 	achievement_list.FARMING_MASTER,
 	
-	//achievement_list.COOKING_SLIME,
+	achievement_list.COOKING_SLIME,
+	
+	achievement_list.GORDAN_RAMSLIME,
 	
 	achievement_list.DIVERSE_FARM,
 	
 	achievement_list.PASSION_IN_AGRICULTURE,
+	
+	achievement_list.AGRICULTURE_SPECIALIST,
 	
 	achievement_list.NOT_FREE_REAL_ESTATE
 	

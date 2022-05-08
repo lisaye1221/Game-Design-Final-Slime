@@ -149,11 +149,12 @@ if (this_machine != noone){
 			// do nothing
 		}
 			
-		// collecting wheat
+		// collecting seeds
 		else if (this_machine.status == "full"){
-			// take energy, disable progress bar, reset vars
+			// disable progress bar, reset vars
 			if(will_item_fit(convert_to, convert_to_count)){
 				gain_item(convert_to, convert_to_count);
+				audio_play_sound(sfx_collect_seed, 2, false);
 				// check if machine has broken
 				if (this_machine.durability <= 0) {
 					this_machine.status = "broken";

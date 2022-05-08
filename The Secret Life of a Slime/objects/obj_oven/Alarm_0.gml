@@ -11,6 +11,8 @@ if(!global.has_reached_ending){
 		// do nothing
 	} else if (this_machine.status == "full"){
 		if (will_item_fit(convert_to, convert_to_count)){
+			achi_cook_food();
+			audio_play_sound(sfx_collect_food, 2, false);
 			gain_item(convert_to, convert_to_count);
 			this_machine.status = "empty";
 		}
