@@ -34,7 +34,8 @@ global.farm_collision_name = "Farmlock_Collision";
 global.player_in_shop = false;
 global.force_player_home = false;
 // every time player goes to village, the shop restocks
-global.should_shop_restock = false;
+global.should_food_shop_restock = false;
+global.should_general_shop_restock = false;
 global.has_been_to_town = false;
 global.has_reached_ending = false;
 global.is_forced_back = false;
