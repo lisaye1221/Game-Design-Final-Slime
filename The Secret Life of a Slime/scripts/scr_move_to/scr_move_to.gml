@@ -4,7 +4,9 @@ function go_to_town(player){
 	if(obj_game_manager.transformation_cooldown <= 0){
 		room_goto(town)
 		audio_stop_sound(bgm_home);
-		audio_play_sound(bgm_town, 1, true);
+		if(!audio_is_playing(bgm_town)){
+			audio_play_sound(bgm_town, 1, true);
+		}
 		
 		obj_game_manager.is_room_transition = true;
 		player.sprite = player.human_sprite;
@@ -22,7 +24,9 @@ function go_to_town(player){
 function go_home(player){
 	room_goto(home)
 	audio_stop_sound(bgm_town);
-	audio_play_sound(bgm_home, 1, true);
+	if(!audio_is_playing(bgm_home)){
+			audio_play_sound(bgm_home, 1, true);
+	}
 	obj_game_manager.is_room_transition = true;
 	player.sprite = player.slime_sprite;
 	player.face = LEFT;

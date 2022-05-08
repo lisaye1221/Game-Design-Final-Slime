@@ -11,3 +11,9 @@ if (!obj_game_manager.is_room_transition && position_meeting(obj_player.x,obj_pl
 	_trans_inst.newY = newY;
 	_trans_inst.roomToGo = roomToGo;
 }
+
+if(obj_game_manager.is_room_transition){
+	if(instance_exists(obj_room_transition)){
+		instance_destroy(obj_room_transition);	
+	}
+}
