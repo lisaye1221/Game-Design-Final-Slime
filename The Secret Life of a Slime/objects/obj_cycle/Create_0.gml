@@ -27,8 +27,4 @@ surface_reset_target();
 surface_free(_surf);
 sprite_delete(_transparency_sprite);
 
-
-
-currently = "day";
-
 surf = noone;

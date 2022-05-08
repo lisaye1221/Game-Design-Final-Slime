@@ -1,4 +1,4 @@
-/// @description create light surface
+/// @description Insert description here
 // You can write your code in this editor
 if (global.time < SUNSET_TIME){
 	//day

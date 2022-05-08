@@ -45,41 +45,6 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 		y_speed = 0;
 	}*/
 	
-	// move camera left when player walks off screen
-	if (x < camera_get_view_x(cam)){
-		//view_x -= view_width;	// i think this is shifting by an entire screen width
-		//show_debug_message("player pos: " + string(x) + ", cam pos: " + string(camera_get_view_x(cam)));
-		camera_set_view_pos(cam, camera_get_view_x(cam) - camera_get_view_width(cam)/2, camera_get_view_y(cam));
-	}
-	if(x > camera_get_view_x(cam) + camera_get_view_width(cam)) {
-		camera_set_view_pos(cam, camera_get_view_x(cam) + camera_get_view_width(cam)/2, camera_get_view_y(cam));
-	}
-	
-	// move camera down when player walks below screen
-	if (y < camera_get_view_y(cam)){
-		//show_debug_message("player pos: " + string(y) + ", cam pos: " + string(camera_get_view_y(cam)));
-		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) - camera_get_view_height(cam)/2);
-	}
-	if (y > camera_get_view_y(cam) + camera_get_view_height(cam)){
-		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) + camera_get_view_height(cam)/2);
-	}
-	
-	
-	//check if stuck, skip collision check if already stuck
-	var _curr_location_instance = find_first_interactable(obj_solid,x,y);
-	if (!(_curr_location_instance != noone && _curr_location_instance.solid)){
-		// set collision for solid
-		var x_check = find_first_interactable(obj_solid,x+x_speed, y);
-		if(x_check!=noone && x_check.solid){
-			x_speed = 0;
-		}
-		var y_check = find_first_interactable(obj_solid,x, y+y_speed)
-		if(y_check!=noone && y_check.solid){
-			y_speed = 0;
-		}
-	}
-	
-	
 	footstep_audio_count += 1;
 	footstep_audio_count = footstep_audio_count mod footstep_audio_reset;
 	
@@ -99,6 +64,42 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 	// move the player
 	x += x_speed;
 	y += y_speed;
+	//this code is not working. commenting out::
+	/*
+	// move camera left when player walks off screen
+	if (x < camera_get_view_x(cam)){
+		//view_x -= view_width;	// i think this is shifting by an entire screen width
+		//show_debug_message("player pos: " + string(x) + ", cam pos: " + string(camera_get_view_x(cam)));
+		camera_set_view_pos(cam, camera_get_view_x(cam) - camera_get_view_width(cam)/2, camera_get_view_y(cam));
+	}
+	if(x > camera_get_view_x(cam) + camera_get_view_width(cam)) {
+		camera_set_view_pos(cam, camera_get_view_x(cam) + camera_get_view_width(cam)/2, camera_get_view_y(cam));
+	}
+	
+	// move camera down when player walks below screen
+	if (y < camera_get_view_y(cam)){
+		//show_debug_message("player pos: " + string(y) + ", cam pos: " + string(camera_get_view_y(cam)));
+		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) - camera_get_view_height(cam)/2);
+	}
+	if (y > camera_get_view_y(cam) + camera_get_view_height(cam)){
+		camera_set_view_pos(cam, camera_get_view_x(cam), camera_get_view_y(cam) + camera_get_view_height(cam)/2);
+	}
+	*/
+	
+	
+	//check if stuck, skip collision check if already stuck
+	var _curr_location_instance = find_first_interactable(obj_solid,x,y);
+	if (!(_curr_location_instance != noone && _curr_location_instance.solid)){
+		// set collision for solid
+		var x_check = find_first_interactable(obj_solid,x+x_speed, y);
+		if(x_check!=noone && x_check.solid){
+			x_speed = 0;
+		}
+		var y_check = find_first_interactable(obj_solid,x, y+y_speed)
+		if(y_check!=noone && y_check.solid){
+			y_speed = 0;
+		}
+	}
 
 	// ** Interaction ** //
 	if(place_meeting(x, y, obj_prompt_town) && key_z && !instance_exists(obj_room_transition)){
