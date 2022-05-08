@@ -566,6 +566,60 @@ switch(_text_id){
 		scr_add_text("Seems like Lola liked the gift.");
 		break;
 		
+	// --------------- Relationship Up Text --------------- //
+	
+	case "Lavana-relationship-1":
+		scr_add_text("Oh hey, thanks for always coming by and saying hi.", "Lavana");
+		scr_add_text("By the way, I have this machine that I have no idea how to use.", "Lavana");
+		scr_add_text("It's supposed to convert crops into seeds, apparently.", "Lavana");
+		scr_add_text("Since it's just sitting there and taking up space for me so why don't you have it?", "Lavana");
+		break;
+	case "Lavana-relationship-2":
+		scr_add_text("Oh, forgot to tell you, but I actually offer a discount to regular customers.");
+		scr_add_text("And since you've been coming here so often and are such a good friend");
+		scr_add_text("I'll be offering you a discount from now on!");
+		break;
+	case "Lavana-relationship-3":
+		scr_add_text("Oh yea by the way!");
+		scr_add_text("Thanks for the gifts and telling me about cooking")
+		scr_add_text("And thanks to you, I think my cooking is much better now!")
+		scr_add_text("So I'll be carrying some dishes in the shop soon.")
+		scr_add_text("Obviously won't be as good as what you make, but if you ever get lazy, you know where to come.")
+		break;
+	case "Claude-relationship-1":
+		scr_add_text("What's up my friend! Thanks for stopping by again.");
+		scr_add_text("Also want to let you know that I'll be stocking some new seeds very soon, don't forget to come check it out.");
+		scr_add_text("Good luck on your farm!");
+		break;
+	case "Claude-relationship-2":
+		scr_add_text("Oh right, before you head out.");
+		scr_add_text("Need to let you know that I'll be offering you special prices from now on, just for you!");
+		scr_add_text("Don't be shy! This is a thank you for being such a good buddy.");
+		scr_add_text("You help me out, I help you out, am I right? Haha");
+		scr_add_text("Oh AND I'll have some new seeds for you the next time I restock.");
+		scr_add_text("It's like Christmas or something right?");
+		break;
+	case "Claude-relationship-3":
+		break;
+	case "Nelu-relationship-1":
+		scr_add_text("Heyyyy, a bit random, but");
+		scr_add_text("You don't carry a lot of stuff with you do you?");
+		scr_add_text("Want a bigger bag? I have an extra. Here you go!");
+		scr_add_text("No need to thank me! This way, you can carry more stuff over here to me haha!");
+		break;
+	case "Nelu-relationship-2":
+		scr_add_text("Ooo before I forget, I got this recipe book recently.");
+		scr_add_text("I know you like to cook right?");
+		scr_add_text("You can have it! I have no use for this, I mean, do I look like I cook? HAHA");
+		scr_add_text("If you want to thank me, you can cook me something from the book next time!");
+		break;
+	case "Nelu-relationship-3":
+		scr_add_text("Guess what I have.");
+		scr_add_text("Another bag for you! Yep, this one is even bigger.");
+		scr_add_text("Here you go, you need it more than me right? You're always bringing stuff back and forth from your farm.");
+		scr_add_text("If things get too heavy you can ask me for help!");
+		break;
+		
 	// -------------------- Text for Warnings/Hints --------------------- //
 	
 	case "warn-no-money":

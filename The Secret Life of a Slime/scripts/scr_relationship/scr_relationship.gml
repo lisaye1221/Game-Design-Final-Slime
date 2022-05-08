@@ -97,6 +97,9 @@ function increase_relationship(_name, _val){
 		++_target_relationship.tier;
 		relationship_tier_up_rewards(_target_relationship);
 		
+		// create relationship up text
+		obj_npc_with_menu.alarm[11] = 1;
+		
 		// add relationship popup to the popup queue
 		// 1 means tier up popup
 		ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, _target_relationship);
