@@ -72,7 +72,7 @@ achievement_list =
 		),
 		
 	GORDAN_RAMSLIME: new create_achievement(
-		"Gordan Ranslime",
+		"Gordan Ramslime",
 		"Cook and collect food 15 times",
 		0,
 		15,
