@@ -3,9 +3,12 @@
 
 // Inherit the parent event
 event_inherited();
-
-if (unlock_method == "day"){
-	ds_map_add(obj_game_manager.objects_with_daily_events,id,0)
+if (!place_free(x,y)){
+	instance_destroy()
 }
-
-gold_and_days_daycount = 20;
+else{
+	if (unlock_method == "day"){
+		ds_map_add(obj_game_manager.objects_with_daily_events,id,0)
+	}
+	gold_and_days_daycount = 20;
+}

@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+if (place_free(x,y)){
 if (global.days >= unlock_requirement&&room == home){
 	var _farm_plot_distance_x = (sprite_width-obj_farm_plot.sprite_width)/(x_plot_num-1);
 	var _farm_plot_distance_y = (sprite_height-obj_farm_plot.sprite_height)/(y_plot_num-1);
@@ -14,5 +14,8 @@ if (global.days >= unlock_requirement&&room == home){
 			instance_create_layer(_farm_plot_x,_farm_plot_y,"crops",obj_farm_plot);
 		}
 	}
+	instance_destroy()
+}
+}else{
 	instance_destroy()
 }
