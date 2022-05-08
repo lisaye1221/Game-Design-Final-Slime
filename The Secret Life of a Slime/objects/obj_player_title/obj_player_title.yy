@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "deco",
-    "path": "folders/Objects/ending/deco.yy",
+    "name": "title",
+    "path": "folders/Objects/ending/deco/title.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_title",

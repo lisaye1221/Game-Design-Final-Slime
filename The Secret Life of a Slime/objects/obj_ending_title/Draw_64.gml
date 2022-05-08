@@ -15,7 +15,7 @@ switch(obj_game_ending_manager.ending){
 		ending_text = "Ending 3: Betrayal and Guilt"
 		break;
 	case ENDING_CHOICE:
-		ending_text = "Ending 4: The Not So Secret Life of a Slime"
+		ending_text = "Ending 4: \n The Not So Secret Life of a Slime"
 		break;
 	case ENDING_SPECIAL:
 		ending_text = "Ending 5: Two Worlds in Harmony"
@@ -24,7 +24,7 @@ switch(obj_game_ending_manager.ending){
 
 draw_set_halign(fa_center)
 draw_set_valign(fa_top)
-draw_text_transformed(450, 500, ending_text, 2, 2, 0 );
+draw_text_ext_transformed(450,500,ending_text, 20, 600 ,2,2,0)
 
 replay_prompt = "Press R to start over."
 

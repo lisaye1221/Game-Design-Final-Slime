@@ -15,9 +15,12 @@ if(show_text){
 		next++;
 	}
 	if((next == array_length(text) - 1) && (letter > string_length(curr_text) + 80)){
+		audio_stop_sound(bgm_ending_betrayal_cutscene)
 		if(obj_game_ending_manager.ending == ENDING_CHOICE_BETRAYAL){
-			audio_stop_sound(bgm_ending_betrayal_cutscene)
 			audio_play_sound(bgm_ending_betrayal_choice, 1, true);
+		}
+		else{
+			audio_play_sound(bgm_ending_betrayal, 1, true);
 		}
 		room_goto(ending_title);
 		instance_deactivate_object(id);

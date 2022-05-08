@@ -33,6 +33,7 @@ if(global.days >= UNLOCK_ENDING_DAY && !global.has_reached_ending){
 	
 }
 
+// display a text that lets player know somebody is here
 if(global.has_reached_ending && in_home() && !ending_setup){
 	ending_setup = true;
 
@@ -43,8 +44,8 @@ if(global.has_reached_ending && in_home() && !ending_setup){
 	}
 }
 																
-
-if(global.go_to_ending_cutscene && !instance_exists(obj_textbox) && in_home()){
+// switch to respective cutscene based on ending
+if(global.go_to_ending_cutscene && !instance_exists(obj_textbox) && room == home){
 	a = min(a+0.005, 1);	
 	instance_deactivate_object(obj_messenger_slime);
 	if(a >= 1){
@@ -62,6 +63,13 @@ if(global.go_to_ending_cutscene && !instance_exists(obj_textbox) && in_home()){
 				room_goto(ending_betrayal_scene)
 				audio_stop_sound(bgm_home);
 				instance_deactivate_all(true);
+				break;
+			case ENDING_CHOICE:
+				room_goto(ending_confess_scene)
+				audio_stop_sound(bgm_home);
+				instance_deactivate_all(true);
+				break;
+			case ENDING_SPECIAL:
 				break;
 		}
 	}

@@ -733,11 +733,13 @@ switch(_text_id){
 			scr_add_text("I can't help you kick them out of their home. That's messed up.");
 			scr_add_text("Your friends? Look at you, made some human friends haven't you?", "Messenger")
 			scr_add_text("You are so naive. Friends? Do you think those humans will still regard you as that when you show your true form, as a slime?", "Messenger")
-			scr_add_text("Ok then, hope you don’t regret your choice", "Messenger")
+			scr_add_text("Ok then, hope you don't regret your choice", "Messenger")
 			scr_add_text("Since you love the humans so much, you don't need to come back to us right? You can stay here with your friends.", "Messenger")
 			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend HAHA.", "Messenger")
 			scr_add_text("I'll be taking my leave now, enjoy yourself here, forever. Goodbye. ", "Messenger")
 			scr_add_text("Wait!");
+			global.go_to_ending_cutscene = true;
+			obj_game_ending_manager.ending = ENDING_CHOICE;
 			break;
 		case "ending-choice-accept":
 			scr_add_text("...");
@@ -861,6 +863,48 @@ switch(_text_id){
 			else{
 				scr_add_text("Hm, whoever lives here is not here. Well, that's for the better.");
 			}
+			break;
+		case "ending-confess-dialogue-1":
+			scr_add_text("I don't have my magic anymore...")
+			scr_add_text("10 days has gone by. I tried to stay at the farm as much as I can, but I'm running out of supplies.")
+			scr_add_text("Well I guess if I am staying in the human world forever, I can't hide forever like this")
+			scr_add_text("I think it's time to confess to the humans my true identity")
+			break;
+		case "ending-confess-dialogue-2":
+			scr_add_text("Oh look, they're all gathered over there. ")
+			scr_add_text("Oh man, what if they kick me out of here because I'm a slime.")
+			scr_add_text("Here goes nothing.")
+			break;
+		case "ending-confess-dialogue-3":
+			scr_add_text("Um....Hi")
+			scr_add_text("OMG LOOK A SLIME!", "Nelu")
+			scr_add_text("oh no...maybe I should make a run for it...")
+			scr_add_text("Calm down Nelu, we know you love slimes, but you're scaring the little one here.", "Claude")
+			scr_add_text("How cute! Hi, do you need anything?", "Lavana")
+			scr_add_text("Cute......?")
+			scr_add_text("Wait a minute, you sound a bit familiar...", "Nelu")
+			scr_add_text("Now that you mention it...", "Claude")
+			scr_add_text("Oh um yea, it's me...if you can even recognize me like this...")
+			scr_add_text("Sorry for hiding it, I am actually a slime, not a human. Please don't-")
+			scr_add_text("OMG BESTIE WHERE HAVE YOU BEEN. We were soooooo worried about you. You didn't come to town for so long!!", "Nelu")
+			scr_add_text("Yea! We were actually just talking about finding your farm to go check up on you.", "Lavana")
+			scr_add_text("It's unusal of you not coming to town for so long. We thought something happened to you.", "Claude")
+			scr_add_text("Yea... I lost my magic that turns myself into human.")
+			scr_add_text("Why do you need to turn into a human to come to town?", "Lavana")
+			scr_add_text("Is it because you can't carry stuff as a slime? We can all help you! Nelu's strong.", "Claude")
+			scr_add_text("Oh. I thought you guys would hunt me down or something, cause you know, slimes.")
+			scr_add_text("WHAT, we'd NEVER do something like that!", "Nelu")
+			scr_add_text("Sorry if we made you thought that, it must've been a lot of work trying to hide yourself.", "Lavana")
+			scr_add_text("Oh yea, Nelu'll hunt us down if we even have the thought of hunting a slime HAHA.", "Claude")
+			scr_add_text("Oh, so, you guys don't mind, um, me?")
+			scr_add_text("Oh come on, we're friends right?", "Lavana")
+			scr_add_text("Don't mind not even one bit. In fact, I think you're cuter this way. Actually, can I ask you a favor?", "Nelu")
+			scr_add_text("Can I touch you?", "Nelu")
+			scr_add_text("[Face palm]", "Claude&Lavana")
+			scr_add_text("No.")
+			scr_add_text("Oh come on, not even a little squish? Fine. Ok what about that magic you're talking about. Teach me some magic!!", "Nelu")
+			scr_add_text("Nelu, he said he lost the magic!", "Claude")
+			scr_add_text("Oh.", "Nelu")
 			break;
 			
 			
