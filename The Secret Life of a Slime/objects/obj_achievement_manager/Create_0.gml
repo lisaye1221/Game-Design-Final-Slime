@@ -40,9 +40,9 @@ achievement_list =
 		
 	FARMING_BEGINNER: new create_achievement(
 		"Farming Beginner",
-		"Harvest 30 crops",
+		"Harvest 25 crops",
 		0,
-		30,
+		25,
 		false
 		),
 		
@@ -56,12 +56,13 @@ achievement_list =
 		
 	FARMING_MASTER: new create_achievement(
 		"Farming Master",
-		"Harvest 300 crops",
+		"Harvest 150 crops",
 		0,
-		300,
+		150,
 		false
 		),
-		
+	
+	/*
 	COOKING_SLIME: new create_achievement(
 		"Cooking Slime",
 		"Use machine 30 times to make food",
@@ -69,6 +70,7 @@ achievement_list =
 		30,
 		false
 		),
+	*/
 	
 	DIVERSE_FARM: new create_achievement(
 		"Diverse Farm",
@@ -98,25 +100,25 @@ achievement_list =
 	
 	MODEST_SPENDER: new create_achievement(
 		"Modest Spender",
+		"Spend 100G",
+		0,
+		100,
+		false
+	),
+	
+	BIG_SPENDER: new create_achievement(
+		"Big Spender",
 		"Spend 500G",
 		0,
 		500,
 		false
 	),
 	
-	BIG_SPENDER: new create_achievement(
-		"Big Spender",
+	THE_ECONOMY_IS_ON_MY_SHOULDER: new create_achievement(
+		"The Economy is on My Shoulder",
 		"Spend 1000G",
 		0,
 		1000,
-		false
-	),
-	
-	THE_ECONOMY_IS_ON_MY_SHOULDER: new create_achievement(
-		"The Economy is on My Shoulder",
-		"Spend 5000G",
-		0,
-		5000,
 		false
 	),
 	
@@ -164,7 +166,7 @@ farm_achievements =
 	
 	achievement_list.FARMING_MASTER,
 	
-	achievement_list.COOKING_SLIME,
+	//achievement_list.COOKING_SLIME,
 	
 	achievement_list.DIVERSE_FARM,
 	

@@ -15,7 +15,6 @@ function achi_harvest_crop(_amount_harvest, _item_harvest){
 	achi_gain_progress("FARMING_MASTER", _amount_harvest);
 	achi_track_progress("DIVERSE_FARM", _item_harvest);
 	achi_track_progress("PASSION_IN_AGRICULTURE", _item_harvest);
-	
 }
 
 // for recording relationship progress achievements
