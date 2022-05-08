@@ -10,6 +10,8 @@ if(obj_game_ending_manager.ending == ENDING_CHOICE){
 }
 else if(obj_game_ending_manager.ending == ENDING_SPECIAL){
 	visible = true;
+	x = 460;
+	y = 377;
 }
 else{
 	visible = false;

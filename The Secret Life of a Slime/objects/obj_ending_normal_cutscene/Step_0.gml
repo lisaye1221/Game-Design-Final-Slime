@@ -18,6 +18,7 @@ if(show_text){
 		next++;
 	}
 	if((next == array_length(text) - 1) && (letter > string_length(curr_text) + 40)){
+		obj_game_ending_manager.ending = ENDING_SPECIAL;
 		room_goto(ending_title);
 		audio_stop_sound(bgm_home);
 		audio_play_sound(bgm_ending_normal, 1, true);
