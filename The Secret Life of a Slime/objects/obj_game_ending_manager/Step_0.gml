@@ -43,6 +43,11 @@ if(global.has_reached_ending && in_home() && !ending_setup){
 		alarm[11] = 1;
 	}
 }
+
+// lola shows up
+if(global.has_reached_ending && global.should_lola_appear){
+	instance_activate_object(obj_lola_slime);	
+}
 																
 // switch to respective cutscene based on ending
 if(global.go_to_ending_cutscene && !instance_exists(obj_textbox) && room == home){

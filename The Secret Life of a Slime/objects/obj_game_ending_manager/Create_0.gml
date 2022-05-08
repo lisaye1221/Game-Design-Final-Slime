@@ -4,6 +4,7 @@
 a = 0
 
 global.go_to_ending_cutscene = false;
+global.should_lola_appear = false;
 
 #macro ENDING_NORMAL 0
 #macro ENDING_BETRAYAL 1

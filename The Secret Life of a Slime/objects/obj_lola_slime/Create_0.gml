@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
-prompt_text = "Speak?"
+instance_deactivate_object(id);
 
-special_ending_lola_text_id = "";
+image_speed = 0.25;

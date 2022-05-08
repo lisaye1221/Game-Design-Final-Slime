@@ -766,7 +766,11 @@ switch(_text_id){
 			scr_add_text("Should I really accept this deal? This means we're taking over the town right? What would happen to the humans there?");
 			scr_add_text("Lavana, Claude, Nelu, and even Lola. They're all my friends. I can't let that happen to them.");
 			scr_add_text("Even though I do want to go home, I can't betray my friends like that.");
-			// cue Lola's entrance
+			obj_messenger_slime.special_ending_lola_text_id = "ending-special-hesitate-lola"
+			break;
+		case "ending-special-hesitate-lola":
+			obj_player.face = RIGHT;
+			global.should_lola_appear = true;
 			scr_add_text("That's a quite an offer you're making. Don't you think that's not very nice to the humans?","???")
 			scr_add_text("And who might you be- WAIT", "Messenger")
 			scr_add_text("You.... Is that you? Princess?", "Messenger")
@@ -780,24 +784,30 @@ switch(_text_id){
 			scr_add_text("Haha, don't say you don't recognize me. Aren't we good friends?", "Princess?")
 			scr_add_text("It's me, Lola.", "Lola")
 			scr_add_text("LOLA? YOU'RE A SLIME????");
-			scr_add_text("What's the big deal? You're a slime too.", "Lola");
+			scr_add_text("What's the big deal? You're a slime too.", "Lola(Slime)");
+			scr_add_text("I-")
 			scr_add_text("I must inform the king right away that you are well my princess. Let us return at once.", "Messenger")
-			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to cancel that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola")
+			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to cancel that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola(Slime)")
 			scr_add_text("If that is what you wish my princess.", "Messenger");
+			global.go_to_ending_cutscene = true;
 			break;
 		case "ending-special-decline":
 			scr_add_text("No! I can't do that. Those humans are my friends. ");
 			scr_add_text("I can't help you kick them out of their home. That's not right.");
 			scr_add_text("Your friends? Look at you, made some human friends haven't you?", "Messenger")
 			scr_add_text("You are so naive. Friends? Do you think those humans will still regard you as that when you show your true form, as a slime?", "Messenger")
-			scr_add_text("Ok then, hope you don’t regret your choice", "Messenger")
+			scr_add_text("Ok then, hope you don't regret your choice", "Messenger")
 			scr_add_text("Since you love the humans so much, you don't need to come back to us right? You can stay here with your friends.", "Messenger")
 			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend.", "Messenger")
-			// cue Lola's entrance
+			obj_messenger_slime.special_ending_lola_text_id = "ending-special-decline-lola"
+			break;
+		case "ending-special-decline-lola":
+			obj_player.face = RIGHT;
+			global.should_lola_appear = true;
 			scr_add_text("No you won't.", "???")
 			scr_add_text("And who might you be- WAIT", "Messenger")
 			scr_add_text("You.... Is that you? Princess?", "Messenger")
-			scr_add_text("Where have you been! We've been searching for you all this time. Wait! It's the humans isn't it? They abducted you! ", "Messenger")
+			scr_add_text("Where have you been! We've been searching for you all this time. Oh I know! It's the humans isn't it? They abducted you! ", "Messenger")
 			scr_add_text("No, nobody abducted me, who do you think I am?", "Princess?")
 			scr_add_text("I left myself, to see the human world myself. Was probably not a good idea since I had nothing on me.", "Princess?")
 			scr_add_text("But it's the same human you loathe that helped me out, got me a place to live, to live amongst them.", "Princess?")
@@ -807,10 +817,12 @@ switch(_text_id){
 			scr_add_text("Haha, don't say you don't recognize me. Aren't we good friends?", "Princess?")
 			scr_add_text("It's me, Lola.", "Lola")
 			scr_add_text("LOLA? YOU'RE A SLIME????");
-			scr_add_text("What's the big deal? You're a slime too.", "Lola");
+			scr_add_text("What's the big deal? You're a slime too.", "Lola(Slime)");
+			scr_add_text("I-")
 			scr_add_text("I must inform the king right away that you are well my princess. Let us return at once.", "Messenger")
-			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to cancel that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola")
+			scr_add_text("No, you go ahead, I'll stay here. Oh, and tell father to forget that ridiculous scheme. Nobody's getting driven out of their homes on my watch.", "Lola(Slime)")
 			scr_add_text("If that is what you wish my princess.", "Messenger");
+			global.go_to_ending_cutscene = true;
 			break;
 			
 		case "ending-normal-cutscene":

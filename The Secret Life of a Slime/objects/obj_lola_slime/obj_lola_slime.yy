@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_messenger_slime",
-    "path": "sprites/spr_messenger_slime/spr_messenger_slime.yy",
+    "name": "spr_slime_lola_left",
+    "path": "sprites/spr_slime_lola_left/spr_slime_lola_left.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_solid_interactable",
-    "path": "objects/obj_solid_interactable/obj_solid_interactable.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,18 +23,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":11,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "npc",
-    "path": "folders/Objects/interactables/npc.yy",
+    "name": "deco",
+    "path": "folders/Objects/ending/deco.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_messenger_slime",
+  "name": "obj_lola_slime",
   "tags": [],
   "resourceType": "GMObject",
 }

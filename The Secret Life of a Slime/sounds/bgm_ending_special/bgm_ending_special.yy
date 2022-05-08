@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "bgm_ending_special.wav",
-  "duration": 46.4,
+  "duration": 39.72413,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

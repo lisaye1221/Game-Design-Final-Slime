@@ -15,5 +15,6 @@ switch(_ending){
 		break
 	case ENDING_SPECIAL:
 		create_textbox("ending-special");
+		alarm[11] = 1;
 		break
 }

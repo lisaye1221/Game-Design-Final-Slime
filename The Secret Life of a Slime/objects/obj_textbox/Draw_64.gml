@@ -35,19 +35,29 @@ if(draw_char < text_length[page]){
 		switch(_speaker_name){
 			case "Lavana":
 				speaker_sfx = choose(sfx_talk_Lavana_1, sfx_talk_Lavana_2, sfx_talk_Lavana_3, sfx_talk_Lavana_4);
+				audio_play_sound(speaker_sfx, 1, false);
+				is_speaker_sfx_playing = true;
 				break;
 			case "Claude":
 				speaker_sfx = choose(sfx_talk_Claude_1, sfx_talk_Claude_2, sfx_talk_Claude_3, sfx_talk_Claude_3);
+				audio_play_sound(speaker_sfx, 1, false);
+				is_speaker_sfx_playing = true;
 				break;
 			case "Nelu":
 				speaker_sfx = choose(sfx_talk_Nelu_1, sfx_talk_Nelu_2, sfx_talk_Nelu_3, sfx_talk_Nelu_4);
+				audio_play_sound(speaker_sfx, 1, false);
+				is_speaker_sfx_playing = true;
 				break;
 			case "Lola":
 				speaker_sfx = choose(sfx_talk_Lola_1, sfx_talk_Lola_2, sfx_talk_Lola_3, sfx_talk_Lola_4);
+				audio_play_sound(speaker_sfx, 1, false);
+				is_speaker_sfx_playing = true;
 				break;	
+			default:
+				speaker_sfx = noone;
+				break;
 		}
-		audio_play_sound(speaker_sfx, 1, false);
-		is_speaker_sfx_playing = true;
+		
 	}
 	
 	draw_char += text_speed;

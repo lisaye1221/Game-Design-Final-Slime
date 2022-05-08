@@ -44,7 +44,7 @@ function forced_home(player){
 function die() {
 	if(!global.dead){
 		audio_stop_all();
-		// sad death music ?
+		audio_play_sound(bgm_death, 1, true);
 		global.dead = true;
 		room_goto(lose);
 		instance_deactivate_all(false);
