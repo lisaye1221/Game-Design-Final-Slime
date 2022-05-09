@@ -78,7 +78,20 @@ function scr_confirmation_text(_text_id, _item, _this_machine){
 			case "no-crops-to-seeds":
 				// exit
 				scr_add_conf_text("Bye then.");
-				break;			
+				break;	
+				
+		case "money-unlock-confirm":
+			scr_add_conf_text("Purchase this farm plot for 50G?");		
+				scr_confirmation_option("Yes", "buy-plot-yes");
+				scr_confirmation_option("No", "buy-plot-no");		
+			break;
+			case "buy-plot-yes":
+				scr_add_conf_text("Nice!");
+				_this_machine.alarm[5] = 1;
+				break;		
+			case "buy-plot-no":
+				scr_add_conf_text("Ok then.")
+				break;
 	}
 
 	//switch(_text_id){

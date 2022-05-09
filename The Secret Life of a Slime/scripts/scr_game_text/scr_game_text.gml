@@ -809,6 +809,13 @@ switch(_text_id){
 		scr_add_text("Oh look! Nelu sent me a cookbook with some new recipes for me to try.");
 		scr_add_text("What a good friend :-)")
 		break;
+	case "auto-unlock-plot":
+		scr_add_text("I finally got that plot of land cleared. Now, I can plant more crops at once!");
+		break;
+	case "day-unlocked-money":
+		scr_add_text("I unlocked a new farming plot! I can purchase it right from my farm for 50G.");
+		break;		
+
 		
 	// --------- Ending texts --------- //
 	case "warn-slime-arrival":

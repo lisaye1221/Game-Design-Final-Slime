@@ -14,8 +14,15 @@ if (global.days >= unlock_requirement&&room == home){
 			instance_create_layer(_farm_plot_x,_farm_plot_y,"crops",obj_farm_plot);
 		}
 	}
+	create_textbox("auto-unlock-plot");
 	instance_destroy()
 }
+}else if (gold_and_days){
+	if (global.days >= gold_and_days_daycount){
+		if(room == home){
+			create_textbox("day-unlocked-money");		
+		}
+	}
 }else{
 	instance_destroy()
 }
