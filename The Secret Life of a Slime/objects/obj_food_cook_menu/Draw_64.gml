@@ -131,13 +131,14 @@ if (menu_open) {
 			var _recipe_string_3 = "";
 			
 			// first two ingredients
-			for(i=0; i < array_length(selected.ingredients); i++){
+			for(i=0; i < array_length(selected.ingredients) - 1; i++){
 				if (i < 2){
 					_recipe_string_2 += string(selected.amounts[i]) + " " + selected.ingredients[i].name + ", ";
 				} else {
 					_recipe_string_3 += string(selected.amounts[i]) + " " + selected.ingredients[i].name + ", ";
 				}
 			}
+			_recipe_string_3 += string(selected.amounts[array_length(selected.ingredients) - 1]) + " " + selected.ingredients[array_length(selected.ingredients) - 1].name;
 			
 			//var _quan_string = "Quantity: " + string(selected.item.count);
 			//var _quan_height = string_height(_quan_string);

@@ -35,6 +35,7 @@
     {"propertyId":{"name":"convert_to","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"global.item_list.wheat_seeds","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"convert_from_count","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"convert_to_count","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"durability","path":"objects/obj_machine/obj_machine.yy",},"objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "interactables",

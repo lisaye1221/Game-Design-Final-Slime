@@ -44,7 +44,7 @@ global.item_list =
 		"Berries",
 		spr_item_berries,
 		spr_item_berries_menu,
-		8, 
+		5, 
 		0,
 		"Blue berries, delicious and sweet.",
 		0,
