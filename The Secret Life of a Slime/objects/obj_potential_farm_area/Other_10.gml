@@ -30,6 +30,7 @@ if (unlock_method == "day"){
 
 if (unlock_method=="gold"){
 	if (gold_and_days && global.days >= gold_and_days_daycount){
+		ds_map_delete(obj_game_manager.objects_with_daily_events,id)	
 		if(room == home){
 			create_textbox("day-unlocked-money");		
 			prompt_text = "Unlock for 50G";
