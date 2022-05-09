@@ -25,6 +25,9 @@ EXCEED_TIME_ENERGY_COST = 10;
 TRANSFORMATION_COOLDOWN_TIME = 30;
 transformation_remaining = 0;
 transformation_cooldown = 0;
+// bool for if a warning pop up has occured for this visit
+transformation_popup = false;
+energy_popup = false;
 // flag for warning going over time in village
 should_warn_went_over_time_limit = false;
 

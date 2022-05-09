@@ -52,22 +52,37 @@ else if (obj_pop_up_manager.pop_up_type == 1) {
 	icon = spr_heart;
 	
 }
-/*
-// possible implementation of popup whenever a player makes achievement progress
+// transformation time warning pop-up
 else if (obj_pop_up_manager.pop_up_type == 2) {
 	
 	// play sound effect
 	audio_play_sound(sfx_tier_up, 0, false);
 	
-	top_text = obj_pop_up_manager.pop_up_item.ach_name + ":";
-	bottom_text =  "Progress: " + string(obj_pop_up_manager.pop_up_item.progress);
+	top_text = "Low Transformation Time";
+	bottom_text =  "";
 	
 	icon = undefined;
 	
 	icon_height = 0;
 	icon_width = 0;
 	
-}*/
+}
+
+// transformation time warning pop-up
+else if (obj_pop_up_manager.pop_up_type == 3) {
+	
+	// play sound effect
+	audio_play_sound(sfx_tier_up, 0, false);
+	
+	top_text = "Low Energy";
+	bottom_text =  "";
+	
+	icon = undefined;
+	
+	icon_height = 0;
+	icon_width = 0;
+	
+}
 
 if (obj_pop_up_manager.pop_up_type >= 0) {
 	

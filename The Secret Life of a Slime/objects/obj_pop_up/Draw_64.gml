@@ -8,10 +8,12 @@ draw_set_valign(fa_left);
 
 draw_sprite_stretched(spr_player_menu, 0, x_pos, y_curr, box_width, box_height);
 
-var _icon_x = x_pos + border_size;
-var _icon_y = y_curr + box_height/2 - icon_height/2;
+if (icon) {
+	var _icon_x = x_pos + border_size;
+	var _icon_y = y_curr + box_height/2 - icon_height/2;
 
-draw_sprite(icon, 0, _icon_x, _icon_y);
+	draw_sprite(icon, 0, _icon_x, _icon_y);
+}
 
 var _text_x = x_pos + border_size + icon_width;
 var _top_text_y = y_curr + box_height/2 - text_height/2;

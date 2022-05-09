@@ -37,6 +37,16 @@ if (!night_events_triggered && global.time >= 40){
 
 if !global.tutorial_active {
 	global.energy -= ((.1*global.delta_second) * ENERGY_DEPLETION_MULTIPLIER);
+	
+	if (global.energy <= 20) && (!energy_popup) {
+		energy_popup = true;
+		ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, undefined);
+		ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, 3);
+		
+	}
+	else if (global.energy > 20) && (energy_popup) {
+		energy_popup = false;
+	}
 }
 
 if global.tutorial_active and global.tutorial_ended and global.tutorial_ended_farm {
@@ -53,6 +63,7 @@ if(is_room_transition){
 	if(in_town()){
 		transformation_remaining = TOWN_TIME_LIMIT;
 		transformation_cooldown = TRANSFORMATION_COOLDOWN_TIME;
+		transformation_popup = false;
 	}
 }
 
@@ -63,6 +74,13 @@ if(in_town()){
 	}
 	if (transformation_remaining >= 0) {
 		transformation_remaining -= (global.delta_second);
+		
+		if (transformation_remaining <= 10) && (!transformation_popup) {
+			ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, undefined);
+			ds_queue_enqueue(obj_pop_up_manager.pop_up_queue, 2);
+			transformation_popup = true;
+		}
+		
 	}
 	else{ // exceeded transformation time
 		forced_home(obj_player);
