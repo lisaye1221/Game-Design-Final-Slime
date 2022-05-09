@@ -162,7 +162,7 @@ if not (global.dead or instance_exists(obj_room_transition)) {
 
 }
 
-if !instance_exists(obj_room_transition) and (global.paused or global.tutorial_active) {
+if !instance_exists(obj_room_transition) and !global.tut_keys_on and (global.paused or global.tutorial_active) {
 	draw_set_font(ft_name);
 	draw_set_color(c_black);
 	draw_set_alpha(0.4)

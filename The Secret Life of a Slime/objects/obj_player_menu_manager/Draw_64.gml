@@ -123,6 +123,11 @@ if (global.menu_on) {
 			
 		}
 		
+		draw_set_font(ft_details);
+		draw_set_alpha(0.6)
+		draw_text(265, 520, "Use A and D to switch beteen tabs")
+		draw_set_alpha(1.0)
+		
 		
 	}
 	
@@ -394,8 +399,6 @@ if (global.menu_on) {
 		}
 			
 		
-	}
-
-		
+	}	
 	
 }
