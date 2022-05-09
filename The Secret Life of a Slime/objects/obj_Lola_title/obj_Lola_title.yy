@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_lola_title",
-    "path": "sprites/spr_lola_title/spr_lola_title.yy",
+    "name": "spr_lola_down",
+    "path": "sprites/spr_lola_down/spr_lola_down.yy",
   },
   "solid": false,
   "visible": true,

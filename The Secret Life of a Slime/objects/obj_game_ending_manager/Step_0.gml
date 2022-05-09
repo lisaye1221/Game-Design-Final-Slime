@@ -75,6 +75,9 @@ if(global.go_to_ending_cutscene && !instance_exists(obj_textbox) && room == home
 				instance_deactivate_all(true);
 				break;
 			case ENDING_SPECIAL:
+				room_goto(ending_special_scene)
+				audio_stop_sound(bgm_home);
+				instance_deactivate_all(true);
 				break;
 		}
 	}

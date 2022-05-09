@@ -846,7 +846,7 @@ switch(_text_id){
 			obj_messenger_slime.special_ending_lola_text_id = "ending-special-hesitate-lola"
 			break;
 		case "ending-special-hesitate-lola":
-			obj_player.face = RIGHT;
+			obj_player.sprite_index = spr_slime_right;
 			global.should_lola_appear = true;
 			scr_add_text("That's a quite an offer you're making. Don't you think that's not very nice to the humans?","???")
 			scr_add_text("And who might you be- WAIT", "Messenger")
@@ -879,7 +879,7 @@ switch(_text_id){
 			obj_messenger_slime.special_ending_lola_text_id = "ending-special-decline-lola"
 			break;
 		case "ending-special-decline-lola":
-			obj_player.face = RIGHT;
+			obj_player.sprite_index = spr_slime_right;
 			global.should_lola_appear = true;
 			scr_add_text("No you won't.", "???")
 			scr_add_text("And who might you be- WAIT", "Messenger")
@@ -994,6 +994,67 @@ switch(_text_id){
 			scr_add_text("Oh come on, not even a little squish? Fine. Ok what about that magic you're talking about. Teach me some magic!!", "Nelu")
 			scr_add_text("Nelu, he said he lost the magic!", "Claude")
 			scr_add_text("Oh.", "Nelu")
+			break;
+		case "ending-special-dialogue-1":
+			scr_add_text("Um, is it ok if we just walk into town looking like this?");
+			scr_add_text("Yea, why wouldn't it?", "Lola");
+			scr_add_text("Back to your other voice...")
+			scr_add_text("Well if anybody sees us, wouldn't they, um, try to do something about it?");
+			scr_add_text("Oh please, still believing the bullshit from back home?", "Lola");
+			scr_add_text("Don't you know them well enough to know they wouldn't hurt us? Plus, Nelu already knows I'm a slime, not sure about the others though.", "Lola");
+			scr_add_text("NELU KNOWS WHAT. Wait why were you a human then all those times when I saw you.")
+			scr_add_text("Just for fun. Don't you think I look cute as a human?", "Lola");
+			scr_add_text("And, so that people from back home wouldn't recognize me I guess.", "Lola")
+			scr_add_text("I thought you would knew. I mean did you not realize those potions I gave you were a little bit...too convenient?", "Lola")
+			scr_add_text("Oh, well maybe you were a master in magic! Which I guess you kind of are.")
+			scr_add_text("Haha, well, aren't you glad I stuck around? What would happen if I didn't stop that slime back there?", "Lola")
+			scr_add_text("Stuck around?")
+			scr_add_text("Yea, I was going to leave, onward to my next place. But, I think I like it here, and the people here.", "Lola")
+			scr_add_text("What about you. You staying here? You can go home if you want, I'll let them let you back.", "Lola")
+			scr_add_text("Me?")
+			break
+		case "ending-special-dialogue-2":
+			scr_add_text("I think.");
+			scr_add_text("I think I'll stay.");
+			scr_add_text("Good choice! I think everybody would be happy to hear that too. Shall we go tell them the big news?", "Lola")
+			break;
+		case "ending-special-dialogue-3":
+			scr_add_text("Just in time", "Lola");
+			scr_add_text("Omg they're all there. Did you call them over?");
+			scr_add_text("Yea, told them their dear friend has something to say.", "Lola")
+			scr_add_text("...You knew I was going to decide to stay didn't you?")
+			scr_add_text("Let's not worry about the details. Come on, let's go.", "Lola")
+			break;
+		case "ending-special-dialogue-4":
+			scr_add_text("Hi everybody", "Lola");
+			scr_add_text("Lola? You, you're in your slime form today? Is that ok? I mean super cute but what about your slimes back home", "Nelu");
+			scr_add_text("Nah it's ok, they found out, it was for the better too.", "Lola")
+			scr_add_text("Hold up, when did Lola turn into a slime?", "Claude")
+			scr_add_text("I think she was originally a slime Claude. Wow, wait, this is actually so cool. Look at you, so cute!", "Lavana")
+			scr_add_text("Is this what you called us here for? And is this your slime friend?", "Lavana")
+			scr_add_text("Well, not quite. And this one here, I think you all know who this is. Take a closer look.", "Lola")
+			scr_add_text("Um, hi Claude, hi Lavana, hi Nelu...well, this is more awkward than I thought.")
+			scr_add_text("OMG WHAT,if it isn't my friendo!!! Wait, you too? Hahaha I kinda had an idea.", "Nelu")
+			scr_add_text("Oh it's you! Hold up, why's everybody a slime. Can I be one too?", "Lavana")
+			scr_add_text("If it isn't my friend! Ok, spill it Nelu, you're a slime too right?", "Claude")
+			scr_add_text("Nope, I'm an elf.", "Nelu")
+			scr_add_text("Why were you in human form anyways, same reason as Lola?", "Lavana")
+			scr_add_text("Oh, is it because you can't carry stuff as a slime? We can all help you! Nelu's strong.", "Claude")
+			scr_add_text("Haha, this one here thinks you guys would em down or something for being a slime.", "Lola")
+			scr_add_text("WHAT, we'd NEVER do something like that!", "Nelu")
+			scr_add_text("Haha, yea, I guess that was a silly thought. So... I guess you guys will see me more like this from now on.")
+			scr_add_text("Hold up, don't tell me you were farming like that the whole time. Wow, how does that even work, you're amazing.", "Claude")
+			scr_add_text("You guys are always welcome here! By the way, is the reason why your food taste so good magic? You should teach me-", "Lavana")
+			scr_add_text("YES! Stay like that. And also, can I ask you something.", "Nelu")
+			scr_add_text("Can I touch you? Just a little squish?", "Nelu")
+			scr_add_text("No.")
+			scr_add_text("He asked me the same thing before too.", "Lola")
+			scr_add_text("Oh come on! I'll let you touch my ears or something.", "Nelu")
+			scr_add_text("No? Fine! How about this, you should bring more slimes here [and maybe one of them will let me squish them]", "Nelu")
+			scr_add_text("Hm, not a bad idea. Though I doubt any of them would let you squish them.", "Lola")
+			scr_add_text("WHAT", "Nelu")
+			scr_add_text("How about you turn into a slime and squish yourself?", "Claude")
+			scr_add_text("It doesn't work like that!!!", "Nelu")
 			break;
 			
 			

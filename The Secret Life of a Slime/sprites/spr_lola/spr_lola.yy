@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "npc",
-    "path": "folders/Sprites/npc.yy",
+    "name": "lola",
+    "path": "folders/Sprites/npc/lola.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lola",
