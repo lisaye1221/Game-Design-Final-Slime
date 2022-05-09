@@ -32,6 +32,7 @@ if (unlock_method=="gold"){
 	if (gold_and_days && global.days >= gold_and_days_daycount){
 		if(room == home){
 			create_textbox("day-unlocked-money");		
+			prompt_text = "Unlock for 50G";
 			show_debug_message("gold and days: user event")			
 		}		
 	}
