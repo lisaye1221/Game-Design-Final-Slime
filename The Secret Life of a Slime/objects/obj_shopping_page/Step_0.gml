@@ -85,14 +85,20 @@ if(accept_key){
 			
 			if(selected_item.stock <= 0){
 				array_delete(curr_inventory, option_pos, 1);
+				option_num = array_length(curr_inventory);
 				// move cursors up 
 				if(option_pos > 0){
 					option_pos--;
 				}
-				if(end_pos > 0){
+				if(end_pos > 0 && end_pos >= option_num){
 					end_pos--;
 				}
-				option_num = array_length(curr_inventory);
+				// buying the last item
+				if(option_pos > 0 && option_pos >= option_num){
+					option_pos--;
+					end_pos--;
+				}
+				end_pos = clamp(end_pos, 0, option_num - 1);
 				// if end_pos is last index and start_pos is not at the very beginning
 				if(end_pos == option_num - 1 && start_pos > 0){
 					// adjust start pos (scroll up)
@@ -101,9 +107,11 @@ if(accept_key){
 						start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
 					}
 					else{
-						start_pos = clamp(start_pos, 0, option_num - 1);
+						start_pos = 0;
 					}
 				}
+				
+				
 			}
 			
 			// go back to prev menu
@@ -143,7 +151,7 @@ if(option_pos > end_pos) {
 		start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
 	}
 	else{
-		start_pos = clamp(start_pos, 0, option_num - 1);
+		start_pos = 0;
 	}
 	
 }
@@ -153,5 +161,5 @@ if(option_pos < start_pos){
 	end_pos = clamp(end_pos, 0, option_num - 1);
 }
 
-// show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos) + "| option_pos:" + string(option_pos));
+// show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos) + " | option_pos:" + string(option_pos) + " | last index:" + string(option_num - 1));
 

@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/// @description Insert description here
-// You can write your code in this editor
-
 disabled = instance_exists(obj_textbox);
 
 accept_key = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && !disabled;
@@ -17,6 +14,9 @@ right_key = keyboard_check_pressed(vk_right) && !disabled;
 if(should_refresh_inventory){
 	curr_inventory = create_selling_inventory();
 	option_num = array_length(curr_inventory);
+	option_pos = 0;
+	start_pos = 0;
+	end_pos = option_num > NUM_ITEM_SHOWN_MAX ? NUM_ITEM_SHOWN_MAX - 1 : option_num - 1 ;
 	should_refresh_inventory = false;
 }
 
@@ -77,21 +77,30 @@ if(accept_key){
 		// add money
 		global.gold += total_cost;
 		audio_play_sound(sfx_transaction, 1, false);
-		// gain item
+		// lose item
 		lose_item(selected_item.item, selected_amount);
 		// subtract stock
 		selected_item.stock -= selected_amount;
 			
 		if(selected_item.stock <= 0){
 			array_delete(curr_inventory, option_pos, 1);
+			option_num = array_length(curr_inventory);
 			// move cursors up 
 			if(option_pos > 0){
 				option_pos--;
 			}
-			if(end_pos > 0){
+			if(end_pos > 0 && end_pos >= option_num){
 				end_pos--;
 			}
+			// buying the last item
+			if(option_pos > 0 && option_pos >= option_num){
+				option_pos--;
+				end_pos--;
+			}
+			end_pos = clamp(end_pos, 0, option_num - 1);
+			// else: option_pos & end_pos = 0 - pointing to first item, no change
 			option_num = array_length(curr_inventory);
+			// if we're at the end of the page
 			if(end_pos == option_num - 1&& start_pos > 0){
 				// adjust start pos (scroll up)
 				start_pos = end_pos - (NUM_ITEM_SHOWN_MAX-1);
@@ -99,7 +108,7 @@ if(accept_key){
 						start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
 					}
 					else{
-						start_pos = clamp(start_pos, 0, option_num - 1);
+						start_pos = 0;
 					}
 			}
 		}
@@ -135,12 +144,14 @@ if(array_length(curr_inventory) <= 0){
 if(option_pos > end_pos) {
 	end_pos = option_pos;
 	start_pos = end_pos - (NUM_ITEM_SHOWN_MAX-1);
+	// if there are more things than can fit on one page: needs scrolling
 	if(option_num > NUM_ITEM_SHOWN_MAX){
-						start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
-					}
-					else{
-						start_pos = clamp(start_pos, 0, option_num - 1);
-					}
+		start_pos = clamp(start_pos, 0, option_num - (NUM_ITEM_SHOWN_MAX));
+	}
+	// if everything can be displayed with no scrolling
+	else{
+		start_pos = 0;
+	}
 }
 if(option_pos < start_pos){
 	start_pos = option_pos;	
@@ -148,4 +159,4 @@ if(option_pos < start_pos){
 	end_pos = clamp(end_pos, 0, option_num - 1)
 }
 
-
+// show_debug_message("start_pos:" + string(start_pos) + " | end_pos:" + string(end_pos) + " | option_pos:" + string(option_pos) + " | last index:" + string(option_num - 1));
