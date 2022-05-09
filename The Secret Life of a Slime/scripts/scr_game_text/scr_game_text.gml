@@ -196,15 +196,18 @@ switch(_text_id){
 		scr_add_text("Don't overwork yourself. If you're feeling lazy, you can always come to me for some fresh produce.");
 		break;
 	case "Lavana-2-3":
-		scr_add_text("Hey! How are you?");
+		scr_add_text("Hey! How are you? Are you eating well?");
+		scr_add_text("On the topic of eating well, I have a confession to make.");
+		scr_add_text("I'm not very good at cooking. Is that surprising?");
+		scr_add_text("It's a shame, I can't put these produce to use! Are you good at cooking? You should teach me some time!");
 		break;
 	case "Lavana-2-4":
 		scr_add_text("Oh hey! Nice to see you again!");
+		scr_add_text("How's your farm doing? I hope it does so well that you don't even need to buy my produce haha!");
 		break;
 	case "Lavana-3-1":
 		scr_add_text("Hi Hi!");
-		scr_add_text("Taking a break? Oh yea, check out some of the food I've stocked!");
-		scr_add_text("Oh no I didn't cook them, you know I can't cook hahaha. They're from another supplier.");
+		scr_add_text("Taking a break? Oh yea, have you check out some of the food I've stocked yet?");
 		scr_add_text("Actually, to be honest, I think the food you cook tastes better.");
 		scr_add_text("Want to consider being my supplier? Haha, jk, you don't have time to be a full time chef right.");
 		break;
@@ -244,9 +247,13 @@ switch(_text_id){
 		break;
 	case "Claude-1-2":
 		scr_add_text("Hey friend, good to see you!");
+		scr_add_text("How's your farm doing? If you don't know what to grow, I suggest some good old wheat!");
+		scr_add_text("Ok, or some radishes, Nelu told me they're profitable.");
 		break;
 	case "Claude-1-3":
 		scr_add_text("Hey friend, how's it going?");
+		scr_add_text("Want to go out for a walk later? No?");
+		scr_add_text("Haha you're always in a rush, guess it's busy at the farm isn't it?");
 		break;
 	case "Claude-2-1":
 		scr_add_text("Hello my friend!");
@@ -327,13 +334,25 @@ switch(_text_id){
 		scr_add_text("Let me know if you want to move here too haha! Maybe we can move your farm here? Then the products you sell me can be even more fresh!!");
 		break;
 	case "Nelu-2-2":
-		scr_add_text("");
+		scr_add_text("Heyyyyyyy wasssupppppp");
+		scr_add_text("How's that recipe book I gave you? Hope it helped your cooking!");
+		scr_add_text("What do I eat? Hmmm usually I eat a sandwhich, simple and quick!");
+		scr_add_text("I am pretty busy despite what it looks like HAHA.");
+		scr_add_text("What about you? What do you usually eat?");
+		scr_add_text("Berries and jelly? Hmmmm, interesting, but those do taste good, can't blame you!" );
 		break;
 	case "Nelu-2-3":
-		scr_add_text("2-3");
+		scr_add_text("Yooooooooo hiiiiiii");
+		scr_add_text("What chu up to, wanna hang out later, I'm closing my shop earlier today.");
+		scr_add_text("Whatttt come on, you're always busy! It's time to relax bro.");
+		scr_add_text("Work hard, play hard, prioritize mental health, reject hustle culture, etc.");
+		scr_add_text("Ok fine, next time, I'll drag you out of work!");
 		break;
 	case "Nelu-2-4":
-		scr_add_text("2-4");
+		scr_add_text("Hey hey hey my friendo");
+		scr_add_text("What are you up to today? Busy as usual?");
+		scr_add_text("It sure isn't easy to keep up a farm, and I've got you to thank for bringing me all these products to trade!");
+		scr_add_text("Well, just let me know if you need a hand, I'll hop right on over to water your crops or something.");
 		break;
 	case "Nelu-3-1":
 		scr_add_text("HI BESTIE!!!");
@@ -342,7 +361,10 @@ switch(_text_id){
 		scr_add_text("What am I saying? I'm saying glad to see you!! Wanna hang out later?");
 		break;
 	case "Nelu-3-2":
-		scr_add_text("3-2");
+		scr_add_text("Heyyyyyyy my besto friendo");
+		scr_add_text("How's that recipe book I gave you some time ago? Putting it to good use?");
+		scr_add_text("My favorite is probably the pumpkin pie! People don't usually make them unless it's Thanksgiving though.");
+		scr_add_text("But I think it should be a year-round dessert! Pumpkin pie is the best pie, I will not participate in any debate.");
 		break;
 	case "Nelu-3-3":
 		scr_add_text("3-3");
@@ -611,7 +633,8 @@ switch(_text_id){
 		scr_add_text("Ooo before I forget, I got this recipe book recently.");
 		scr_add_text("I know you like to cook right?");
 		scr_add_text("You can have it! I have no use for this, I mean, do I look like I cook? HAHA");
-		scr_add_text("If you want to thank me, you can cook me something from the book next time!");
+		scr_add_text("Oh and if you don't have an oven yet, you can take my old one.");
+		scr_add_text("No need to thank me! But if you do want to thank me, you can cook me something tasty next time!");
 		break;
 	case "Nelu-relationship-3":
 		scr_add_text("Guess what I have.");
