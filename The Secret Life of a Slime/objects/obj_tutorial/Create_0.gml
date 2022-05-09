@@ -1,5 +1,3 @@
-
-
 b0 = true;
 b1 = false;
 b2 = false;

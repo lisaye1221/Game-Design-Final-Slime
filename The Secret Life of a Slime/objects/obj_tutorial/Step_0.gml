@@ -10,6 +10,7 @@ if b0 and curr_page == 5 {
 
 if global.unlock_homedoor {
 	instance_deactivate_object(inst_lock)
+	instance_destroy();
 }
 
 if keyboard_check_pressed(ord("S")) {
