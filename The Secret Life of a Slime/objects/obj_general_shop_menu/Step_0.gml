@@ -13,6 +13,7 @@ op_length = array_length(option[menu_level]);
 if (down_key || up_key){
 	// move through menu
 	pos += down_key - up_key;
+	audio_play_sound(sfx_move_cursor, 2, false);
 	// loop to top or bottom when out of range
 	if (pos >= op_length) pos = 0;
 	if (pos < 0) pos = op_length-1;
@@ -32,6 +33,7 @@ if (accept_key){
 				case 0:
 					// bring up the shopping page
 					instance_activate_object(obj_general_shopping_page);
+					audio_play_sound(sfx_open_close_inventory, 2, false);
 					instance_deactivate_object(id);
 					break;
 				// talk
