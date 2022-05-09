@@ -56,6 +56,10 @@ if(array_length(curr_inventory) > 0){
 	draw_set_color(c_white);
 	var _things_to_draw = option_num < NUM_ITEM_SHOWN_MAX ? option_num : NUM_ITEM_SHOWN_MAX;
 	for(var i = 0; i < _things_to_draw; i++){
+		// ultimate crash proof code
+		if(start_pos+i >= array_length(curr_inventory)){
+			break;
+		}
 	
 		var _item = curr_inventory[start_pos+i];
 		var _icon = _item.item.icon;
