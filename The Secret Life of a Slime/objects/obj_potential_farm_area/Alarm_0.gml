@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description for gold_and_days when 'z' is pressed
 // You can write your code in this editor
 
 // Inherit the parent event

@@ -5,7 +5,6 @@
 
 if (unlock_method == "day"){
 	if (global.days >= unlock_requirement){
-		ds_map_delete(obj_game_manager.objects_with_daily_events,id)
 		if(room == home){
 			if (global.paused){
 				alarm[2] = 1;
@@ -22,16 +21,20 @@ if (unlock_method == "day"){
 					instance_create_layer(_farm_plot_x,_farm_plot_y,"crops",obj_farm_plot);
 				}
 			}
+			ds_map_delete(obj_game_manager.objects_with_daily_events,id)			
 			instance_destroy()
+			show_debug_message("user event")
 		}
 	}
-} else if (gold_and_days){
-	if (global.days >= gold_and_days_daycount){
+} 
+
+if (unlock_method=="gold"){
+	if (gold_and_days && global.days >= gold_and_days_daycount){
 		if(room == home){
 			create_textbox("day-unlocked-money");		
-		}
+			show_debug_message("gold and days: user event")			
+		}		
 	}
 }
-
 
 
