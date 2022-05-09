@@ -815,6 +815,9 @@ switch(_text_id){
 	case "day-unlocked-money":
 		scr_add_text("I unlocked a new farming plot! I can purchase it right from my farm for 50G.");
 		break;		
+	case "cant-afford-plot":
+		scr_add_text("I don't have enough money for that. This plot costs 50G.");
+		break;			
 
 		
 	// --------- Ending texts --------- //
