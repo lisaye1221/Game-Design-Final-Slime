@@ -3,7 +3,9 @@
 
 // if textbox is empty, delete self
 if(page_number = 0){
-	global.paused = is_previously_paused;
+	if(!is_previously_paused){
+		global.unpause_signal = true;
+	}
 	instance_destroy(id);
 }
 
