@@ -19,12 +19,14 @@ if (global.days >= unlock_requirement&&room == home){
 	instance_destroy()
 }
 }
-
-if (gold_and_days){
-	if (global.days >= gold_and_days_daycount){
+if (unlock_method=="gold"){
+	if (gold_and_days && global.days >= gold_and_days_daycount){
 		if(room == home){
 			create_textbox("day-unlocked-money");		
 			show_debug_message("gold and days: room start")			
-		}
+		}		
 	}
 }
+
+
+
