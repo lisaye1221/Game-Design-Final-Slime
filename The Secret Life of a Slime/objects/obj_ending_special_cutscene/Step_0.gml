@@ -29,6 +29,9 @@ if(show_text){
 		letter = 0;
 		next++;
 	}
+	if(next == 2){
+		fadeout = true;	
+	}
 	if((next == array_length(text) - 1) && (letter > string_length(curr_text) + 40)){
 		room_goto(ending_title);
 		audio_stop_sound(bgm_ending_normal);
@@ -73,9 +76,9 @@ if(scene_2_should_walk_over && !instance_exists(obj_textbox) && !show_text){
 	if(obj_player_ending.y <= 385){
 		obj_player_ending.y_speed = 0;
 		obj_lola_cutscene.face = UP;
-		obj_Nelu_deco.sprite_index = spr_farmer_left;
+		obj_Nelu_deco.sprite_index = spr_farmer_down;
 		obj_Nelu_deco.image_index = 1;
-		obj_Claude_deco.sprite_index = spr_machineman_right;
+		obj_Claude_deco.sprite_index = spr_machineman_down;
 		obj_Claude_deco.image_index = 1;
 		create_textbox("ending-special-dialogue-4");
 		alarm[2] = 1;
