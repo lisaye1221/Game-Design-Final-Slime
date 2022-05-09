@@ -21,7 +21,9 @@ if (unlock_method == "day"){
 			show_debug_message("user event")
 		}
 	}
-} else if (gold_and_days){
+} 
+
+if (gold_and_days){
 	if (global.days >= gold_and_days_daycount){
 		if(room == home){
 			create_textbox("day-unlocked-money");

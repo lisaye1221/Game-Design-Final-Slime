@@ -18,7 +18,9 @@ if (global.days >= unlock_requirement&&room == home){
 	show_debug_message("room start")
 	instance_destroy()
 }
-}else if (gold_and_days){
+}
+
+if (gold_and_days){
 	if (global.days >= gold_and_days_daycount){
 		if(room == home){
 			create_textbox("day-unlocked-money");		
