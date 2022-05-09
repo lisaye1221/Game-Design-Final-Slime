@@ -116,7 +116,7 @@ if global.tut_keys_on and curr_page == 2 {
 	draw_text(610,200,"Use E to view your inventory and status")
 	draw_sprite(spr_slime_idle,0,435,260);
 	draw_text(530,300,"You can store 6 items")
-	draw_text(640,350,"More storage is provided in the chest of home")
+	draw_text(640,350,"More storage is provided in the chest at home")
 }
 
 if global.tut_keys_on and curr_page == 3 {
@@ -132,7 +132,7 @@ if global.tut_keys_on and curr_page == 3 {
 	
 	draw_sprite(spr_npc,1, 360, 280);
 	draw_sprite(spr_machineman,1, 410, 280);
-	draw_sprite(spr_farmer_down,3, 460, 280);
+	draw_sprite(spr_farmer_down,1, 460, 280);
 	draw_sprite(spr_lola,1, 510, 280);
 	
 	draw_set_color(c_white)
@@ -155,7 +155,7 @@ if global.tut_keys_on and curr_page == 4 {
 	
 	draw_set_font(ft_tutorial)
 	draw_set_color(c_black)
-	draw_text(570,190,"Lastly,keep that energy bar up")
+	draw_text(570,190,"Lastly, keep that energy bar up")
 	draw_set_color(c_blue)
 	draw_text(570,220,"You may only consume BLUE foods")
 	draw_set_color(c_black)

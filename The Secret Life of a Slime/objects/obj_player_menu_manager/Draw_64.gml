@@ -246,16 +246,16 @@ if (global.menu_on) {
 			
 			draw_sprite_stretched(spr_bar_cover, 0, _portrait_x, _portrait_y, _portrait_width, _portrait_height);
 			
+			var _sprite_height = sprite_get_height(_curr.icon);
+			var _sprite_width = sprite_get_width(_curr.icon);
+			
+			var _sprite_scale_y = (_portrait_height*2/3)/_sprite_height;
+			var _sprite_scale_x = (_portrait_width*2/3)/_sprite_width;
+			
+			var _sprite_x = _portrait_x + _portrait_width/2;
+			var _sprite_y = _portrait_y + _portrait_height/2;
+			
 			if (_curr.has_met) {
-			
-				var _sprite_height = sprite_get_height(_curr.icon);
-				var _sprite_width = sprite_get_width(_curr.icon);
-			
-				var _sprite_scale_y = (_portrait_height*2/3)/_sprite_height;
-				var _sprite_scale_x = (_portrait_width*2/3)/_sprite_width;
-			
-				var _sprite_x = _portrait_x + _portrait_width/2;
-				var _sprite_y = _portrait_y + _portrait_height/2;
 			
 				draw_sprite_ext(_curr.icon, 0, _sprite_x, _sprite_y, _sprite_scale_x, _sprite_scale_y, 0, c_white, 1);
 				
@@ -273,6 +273,11 @@ if (global.menu_on) {
 			else {
 				draw_set_color(c_black);
 				draw_set_font(ft_name);
+				
+				draw_sprite_ext(_curr.icon, 1, _sprite_x, _sprite_y, _sprite_scale_x, _sprite_scale_y, 0, c_white, 1);
+				draw_set_color(c_white);
+				draw_text(_sprite_x - 8, _sprite_y, "?");
+				draw_set_color(c_black);
 				draw_text(_name_x, _name_y, "???");
 			}
 			

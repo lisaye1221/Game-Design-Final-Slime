@@ -54,7 +54,7 @@ relationships =
 	
 	new create_relationship(
 	"Nelu",
-	spr_farmer_right,
+	spr_farmer_down,
 	RELATIONSHIP_VAL_START,
 	false
 	),
