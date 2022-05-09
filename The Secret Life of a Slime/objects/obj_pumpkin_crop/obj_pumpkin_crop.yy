@@ -28,8 +28,8 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"MIN_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"48","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"MAX_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"48","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"MIN_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"50","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"MAX_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"50","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"harvest","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"global.item_list.pumpkins","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sprite_empty","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"spr_pumpkin_crop","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sprite_full","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"spr_pumpkin_crop","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
