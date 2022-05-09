@@ -161,3 +161,16 @@ if not (global.dead or instance_exists(obj_room_transition)) {
 	draw_set_halign(fa_left);
 
 }
+
+if !instance_exists(obj_room_transition) and (global.paused or global.tutorial_active) {
+	draw_set_font(ft_name);
+	draw_set_color(c_black);
+	draw_set_alpha(0.4)
+	draw_rectangle(330, 0 , 595, 30, false)
+	draw_set_alpha(1.0)
+	draw_set_color(c_white);
+	draw_text(350,15,"*TIME IS PAUSED*");
+}
+
+
+
