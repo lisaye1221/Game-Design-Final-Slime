@@ -218,7 +218,7 @@ switch(_text_id){
 		scr_add_text("I saw her by the river and introduced myself to her. Nice girl, just a bit shy. Well, I hope she's eating well!");
 		break;
 	case "Lavana-3-3":
-		scr_add_text("3-3");
+		scr_add_text("Hii! You caught me just in time, I just came back from a walk.");
 		break;
 	case "Lavana-3-4":
 		scr_add_text("3-4");
@@ -415,19 +415,29 @@ switch(_text_id){
 		scr_add_text("Oh hey, here to see me again?");
 		break;
 	case "Lola-3-1":
-		scr_add_text("3-1");
+		scr_add_text("Here to talk?");
 		break;
 	case "Lola-3-2":
-		scr_add_text("3-2");
+		scr_add_text("Oh hey, how is it going?");
 		break;
 	case "Lola-3-3":
-		scr_add_text("3-3");
+		scr_add_text("....");
+		scr_add_text("Oh, didn't see you there for a sec.");
+		scr_add_text("Here to visit me again? Haha, you really like me don't you?");
 		break;
 	case "Lola-3-4":
-		scr_add_text("3-4");
+		scr_add_text("Oh hey, not busy today?");
+		scr_add_text("Want to help me with some of these things?");
+		scr_add_text("Oh wait, you can't stay long right? Cause, you're busy?");
+		scr_add_text("Or how about you drink another one of my potion to slow down time?");
+		scr_add_text("Haha, just kidding, I don't have one that can slow it down any more");
 		break;
 	case "Lola-3-5":
-		scr_add_text("3-5");
+		scr_add_text("It's you again.");
+		scr_add_text("You know, if it wasn't you, I woulda kicked you out for trespassing so many times.");
+		scr_add_text("Oh I tried to when we first met? Did that happen?");
+		scr_add_text("It's not trespassing if we're friends?");
+		scr_add_text("I suppose that could be true.");
 		break;
 		
 	// --------------------- Text for NPCs for Gifting ---------------------- //
@@ -585,6 +595,7 @@ switch(_text_id){
 		break;
 	case "Lola-gift-success":
 		scr_add_text("....");
+		scr_add_text("Thanks", "Lola");
 		scr_add_text("Seems like Lola liked the gift.");
 		break;
 		
@@ -641,6 +652,20 @@ switch(_text_id){
 		scr_add_text("Another bag for you! Yep, this one is even bigger.");
 		scr_add_text("Here you go, you need it more than me right? You're always bringing stuff back and forth from your farm.");
 		scr_add_text("If things get too heavy you can ask me for help!");
+		break;
+	case "Lola-relationship-1":
+		scr_add_text("Hey.");
+		scr_add_text("Since you like to go around and talk to people.");
+		scr_add_text("Here's a potion that'll help you.");
+		scr_add_text("Drink this and you'll find time slowing down whenever you're in town.");
+		scr_add_text("You know what that means right?");
+		break;
+	case "Lola-relationship-2":
+		scr_add_text("Oh another thing.");
+		scr_add_text("I made another potion that you may or may not like.");
+		scr_add_text("You should still drink it though, it should be fun.");
+		scr_add_text("Here you go, a potion that'll make you speedy.");
+		scr_add_text("Let me know how you like it!");
 		break;
 		
 	// -------------------- Text for Warnings/Hints --------------------- //

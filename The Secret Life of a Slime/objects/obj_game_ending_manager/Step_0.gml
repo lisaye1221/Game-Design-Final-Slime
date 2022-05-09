@@ -25,7 +25,12 @@ if(global.days >= UNLOCK_ENDING_DAY && !global.has_reached_ending){
 	){
 		ending = ENDING_CHOICE;
 	}
-	if(get_relationship(LOLA) >= RELATIONSHIP_VAL_MAX){
+	if(
+		get_relationship_tier(LAVANA) >= 2 &&
+		get_relationship_tier(CLAUDE) >= 2 &&
+		get_relationship_tier(NELU) >= 2 &&
+		get_relationship_tier(LOLA) >= 3
+	){
 		ending = ENDING_SPECIAL;
 	}
 	
