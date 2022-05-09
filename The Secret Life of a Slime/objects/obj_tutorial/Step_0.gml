@@ -14,6 +14,7 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended = true;
 	global.tutorial_ended_farm = true;
 	global.unlock_homedoor = true;
+	global.allow_inv = true;
 }
 
 if b2 and sentence_index == 1 {

@@ -59,6 +59,11 @@ if (global.menu_on) {
 	// draw the inventory screen
 	if (tab_index == 0) {
 		
+			draw_set_font(ft_details);
+			draw_set_alpha(0.5)
+			draw_text(90, 520, "Use A and D to switch beteen tabs")
+			draw_set_alpha(1.0)
+		
 		// draw the inventory boxes with items
 		for (var i = 0; i < obj_inventory_manager.MAX_ITEM; i ++) {
 		
@@ -73,7 +78,7 @@ if (global.menu_on) {
 			if (i == i_cursor) {
 				draw_sprite(spr_inv_cursor, 0, xx, yy);
 			}
-		
+			
 		
 		}
 		
@@ -121,12 +126,10 @@ if (global.menu_on) {
 			
 			draw_text_ext(_name_left, _name_top+10+_name_height+_quan_height+20, selected.desc, 3 + _quan_height, _desc_width-40);
 			
+		
+			
 		}
 		
-		draw_set_font(ft_details);
-		draw_set_alpha(0.6)
-		draw_text(265, 520, "Use A and D to switch beteen tabs")
-		draw_set_alpha(1.0)
 		
 		
 	}
