@@ -3,6 +3,8 @@
 
 persistent = true;
 
+depth = -9999;
+
 draw_set_font(ft_dialog);
 
 // load animation curve assets
