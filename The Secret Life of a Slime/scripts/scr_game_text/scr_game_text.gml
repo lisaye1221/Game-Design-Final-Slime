@@ -218,13 +218,19 @@ switch(_text_id){
 		scr_add_text("I saw her by the river and introduced myself to her. Nice girl, just a bit shy. Well, I hope she's eating well!");
 		break;
 	case "Lavana-3-3":
-		scr_add_text("Hii! You caught me just in time, I just came back from a walk.");
+		scr_add_text("Hii! ");
+		scr_add_text("You caught me just in time, I just came back from a walk from the forest over there.");
+		scr_add_text("I like to go there sometimes. Last time I could have sworn I saw a shadow of a something round hopping really fast.");
+		scr_add_text("Maybe I saw it wrong.");
+		scr_add_text("Wait don't you live over there? I didn't go that deep in the forest, you should give me a tour of the forest next time!");
+
 		break;
 	case "Lavana-3-4":
-		scr_add_text("3-4");
-		break;
-	case "Lavana-3-5":
-		scr_add_text("3-5");
+		scr_add_text("Hey hey how's it going?");
+		scr_add_text("Yesterday I went to help out at Claude's farm.");
+		scr_add_text("Well I kinda just went to water the crops, he was the busy one.");
+		scr_add_text("But wow, there's so much work to do on the farm, no wonder you're busy all the time!");
+		scr_add_text("Your farm is doing ok? Let me know if there's anything I can help with.");
 		break;
 		
 		
@@ -264,7 +270,7 @@ switch(_text_id){
 	case "Claude-2-2":
 		scr_add_text("Glad to see you again my friend! ");
 		scr_add_text("Here to get some seeds or some machine parts again?");
-		scr_add_text("What do you even do with the machine parts, just curious?");
+		scr_add_text("What do you do with the machine parts, just curious?");
 		scr_add_text("Wow you fix things yourself? That's incredible! You've got to teach me some day.");
 		break;
 	case "Claude-2-3":
@@ -275,28 +281,42 @@ switch(_text_id){
 		scr_add_text("But I saw her the other day coming out the house going somewhere, yep a girl.");
 		scr_add_text("Lavana likes to judge her but some folks are just not the people type of people.");
 		scr_add_text("Anyways that girl seems pretty busy, but I'm surprised she never come to us to buy things. Where does she get her stuff?");
-		scr_add_text("Oh well. If you want to go say hi, I know you like doing that, maybe you can go try at night, that's when I saw her.");
+		scr_add_text("Oh well. If you want to go say hi, maybe you can go try at night, that's when I saw her.");
 		break;
 	case "Claude-2-4":
-		scr_add_text("2-4");
+		scr_add_text("Hello hello!");
+		scr_add_text("Taking it slow today? Not really? Haha.");
+		scr_add_text("I bet the farm is giving you a lot of work.");
+		scr_add_text("I heard from Lavana that you do some cooking too?");
+		scr_add_text("Wow, so skilled! Me? Oh no, I'm too lazy to cook.");
+		scr_add_text("Unless you got some super simple recipes for me?");
 		break;
 	case "Claude-3-1":
 		scr_add_text("Oh hey, if it isn't my friend! How ya doing?");
 		scr_add_text("You caught me just in time, I just came back from Nelu's place.");
 		scr_add_text("And did you know? Apparently he helped Lola settled in when she first came to town back then.");
-		scr_add_text("Lola's the girl living down there if ya didn't know. Anyways, Nelu's always so helpful! Glad to have him here.");
+		scr_add_text("Lola's the girl living down there if ya didn't know. Nelu's always so helpful! Glad to have him here.");
 		break;
 	case "Claude-3-2":
-		scr_add_text("3-2");
+		scr_add_text("Hey my friend! What are you up to today?");
+		scr_add_text("You busy later? Want to come with me to visit Nelu later?");
+		scr_add_text("He told me he just got something rare that he wanted to show me.");
+		scr_add_text("Oh man you're busy again? Alright then, maybe next time.");
 		break;
 	case "Claude-3-3":
-		scr_add_text("3-3");
+		scr_add_text("How's it going!");
+		scr_add_text("Yesterday I was visiting the lake down there and I was wondering if we can fish in there.");
+		scr_add_text("Took a look in there, zero fish. What's going on? Is the lake fake?");
+		scr_add_text("Do you have somewhere I can try fishing near your farm?");
+		scr_add_text("Speaking of which let me know if you need any help on your farm, I've got some time lately.");
 		break;
 	case "Claude-3-4":
-		scr_add_text("3-4");
-		break;
-	case "Claude-3-5":
-		scr_add_text("3-5");
+		scr_add_text("Hello hello my friend!");
+		scr_add_text("I feel like the weather is starting to get hot.");
+		scr_add_text("Maybe I should stop wearing this outfit. What else would I wear though.");
+		scr_add_text("You know what we need in this town? A clothing shop.");
+		scr_add_text("Come to think of it, this town is pretty small isn't it?");
+		scr_add_text("You should migrate your farm closer to here and come live with us here haha!");
 		break;
 		
 	case "Nelu-0-1":
@@ -357,7 +377,7 @@ switch(_text_id){
 	case "Nelu-3-1":
 		scr_add_text("HI BESTIE!!!");
 		scr_add_text("Very random, are you...");
-		scr_add_text("Nevermind haha! It doesn't matter. I mean it does, but it doesn't.");
+		scr_add_text("Actually nevermind haha! I'll leave it like that.");
 		scr_add_text("What am I saying? I'm saying glad to see you!! Wanna hang out later?");
 		break;
 	case "Nelu-3-2":
@@ -367,13 +387,20 @@ switch(_text_id){
 		scr_add_text("But I think it should be a year-round dessert! Pumpkin pie is the best pie, I will not participate in any debate.");
 		break;
 	case "Nelu-3-3":
-		scr_add_text("3-3");
+		scr_add_text("Yoooooo wassuppp");
+		scr_add_text("Came in just in time. Come check out what I got. A golden branch!");
+		scr_add_text("What do you mean what I'm going to do with it, sell it of course!");
+		scr_add_text("Where did I get this? Oh sometimes I take a short trip to places to do some trading.");
+		scr_add_text("Wanna come with me next time? It's super fun! Claude and Lavana can't leave their shops.");
+		scr_add_text("Oh wait, you have your farm too right.");
 		break;
 	case "Nelu-3-4":
-		scr_add_text("3-4");
-		break;
-	case "Nelu-3-5":
-		scr_add_text("3-5");
+		scr_add_text("Wassssuppp my bestie. Here to see me?");
+		scr_add_text("Oh man why are you always so busy, we need to hang out.");
+		scr_add_text("Actually you know what, let me hop on over to your farm and help you out.");
+		scr_add_text("Yep, right now, let's go. What? Why not, are you hiding some stuff at your farm? HAHA");
+		scr_add_text("Oh right, I do have a shop to look after...");
+		scr_add_text("Fine, you win. Ok but don't forget to rest!");
 		break;
 		
 	case "Lola-0-1":
@@ -395,45 +422,61 @@ switch(_text_id){
 		break;
 	case "Lola-1-1":
 		scr_add_text("Oh, it's you.");
+		scr_add_text("What you doing out so late?");
 		break;
 	case "Lola-1-2":
 		scr_add_text("You love coming here don't you?"); 
+		scr_add_text("You like my house?"); 
 		break;
 	case "Lola-1-3":
 		scr_add_text("Thought you would be coming.");
+		scr_add_text("I don't have much time to chat with you though.");
 		break;
 	case "Lola-2-1":
 		scr_add_text("Oh, it's you. Hello.");
+		scr_add_text("Here to talk again? Or here to give me something haha. I prefer the latter.");
 		break;
 	case "Lola-2-2":
 		scr_add_text("Oh hey, slow day today?");
+		scr_add_text("Well, at least you're fast right? After that potion I gave you?");
+		scr_add_text("Oh not a slow day?");
+		scr_add_text("Good! Your speed can match the speed of your day. Isn't that great?");
 		break;
 	case "Lola-2-3":
 		scr_add_text("Oh hey, how are you doing?");
+		scr_add_text("Me? I'm polishing this jewel.");
+		scr_add_text("Nelu, you know him right? Got it off of him.");
+		scr_add_text("We're pretty close, he's the one who helped me settled into this town after all.");
+		scr_add_text("I have a lot to thank him.");
+		scr_add_text("Oh yea I'm not from this town, like you. I left home, it was too annoying back there.");
 		break;
 	case "Lola-2-4":
 		scr_add_text("Oh hey, here to see me again?");
+		scr_add_text("How are those potions I gave you working?");
+		scr_add_text("I actually have no idea if they would work. Thanks for being my guinea pig.");
+		scr_add_text("Oh come on, what's with the face. It's working isn't it?");
 		break;
 	case "Lola-3-1":
-		scr_add_text("Here to talk?");
+		scr_add_text("Oh hello, dropping by again?");
+		scr_add_text("You come here so many times at night, you're a night owl?");
+		scr_add_text("You don't sleep much? I supposed I can say the same.");
+		scr_add_text("The night is when it quiets down and I can do some work. The day is when I head out.");
+		scr_add_text("Why am I always out during the day? Aren't you also not just sitting around at home during the day too?");
 		break;
 	case "Lola-3-2":
-		scr_add_text("Oh hey, how is it going?");
-		break;
-	case "Lola-3-3":
 		scr_add_text("....");
 		scr_add_text("Oh, didn't see you there for a sec.");
 		scr_add_text("Here to visit me again? Haha, you really like me don't you?");
 		break;
-	case "Lola-3-4":
+	case "Lola-3-3":
 		scr_add_text("Oh hey, not busy today?");
 		scr_add_text("Want to help me with some of these things?");
 		scr_add_text("Oh wait, you can't stay long right? Cause, you're busy?");
 		scr_add_text("Or how about you drink another one of my potion to slow down time?");
 		scr_add_text("Haha, just kidding, I don't have one that can slow it down any more");
 		break;
-	case "Lola-3-5":
-		scr_add_text("It's you again.");
+	case "Lola-3-4":
+		scr_add_text("Oh hey, it's you again.");
 		scr_add_text("You know, if it wasn't you, I woulda kicked you out for trespassing so many times.");
 		scr_add_text("Oh I tried to when we first met? Did that happen?");
 		scr_add_text("It's not trespassing if we're friends?");
@@ -594,9 +637,8 @@ switch(_text_id){
 		scr_add_text("You're the best!", "Nelu");
 		break;
 	case "Lola-gift-success":
-		scr_add_text("....");
-		scr_add_text("Thanks", "Lola");
-		scr_add_text("Seems like Lola liked the gift.");
+		scr_add_text("For me?", "Lola");
+		scr_add_text("Thanks.", "Lola");
 		break;
 		
 	// --------------- Relationship Up Text --------------- //
@@ -622,6 +664,7 @@ switch(_text_id){
 	case "Claude-relationship-1":
 		scr_add_text("What's up my friend! Thanks for stopping by again.");
 		scr_add_text("Also want to let you know that I'll be stocking some new seeds very soon, don't forget to come check it out.");
+		scr_add_text("Oh yea, this also means Lavana will stock more produce if you need them.")
 		scr_add_text("Good luck on your farm!");
 		break;
 	case "Claude-relationship-2":
@@ -666,6 +709,8 @@ switch(_text_id){
 		scr_add_text("You should still drink it though, it should be fun.");
 		scr_add_text("Here you go, a potion that'll make you speedy.");
 		scr_add_text("Let me know how you like it!");
+		break;
+	case "Lola-relationship-3":
 		break;
 		
 	// -------------------- Text for Warnings/Hints --------------------- //

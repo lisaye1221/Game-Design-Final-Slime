@@ -9,7 +9,7 @@ function get_gift(_npc){
 #macro TIER_0_DIALOGUE_AMOUNT 3
 #macro TIER_1_DIALOGUE_AMOUNT 3
 #macro TIER_2_DIALOGUE_AMOUNT 4
-#macro TIER_3_DIALOGUE_AMOUNT 5
+#macro TIER_3_DIALOGUE_AMOUNT 4
 function talk_to(_npc){
 	var _npc_name = "";
 	var dialogue_amount = 2;
