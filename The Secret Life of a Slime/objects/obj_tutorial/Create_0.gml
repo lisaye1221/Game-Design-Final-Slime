@@ -9,6 +9,8 @@ b4 = false;
 timerStart = false;
 timerCheck = false;
 
+curr_page = 0;
+
 
 s1 = [" ","WAKE UP, my fellow slime (press X to continue)",
 "You have been banished to the human world (X)",
