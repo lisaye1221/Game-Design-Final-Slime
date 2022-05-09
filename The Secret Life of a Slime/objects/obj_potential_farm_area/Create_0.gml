@@ -7,7 +7,7 @@ if (!place_free(x,y)){
 	instance_destroy()
 }
 else{
-	if (unlock_method == "day"){
+	if (unlock_method == "day"||gold_and_days){
 		ds_map_add(obj_game_manager.objects_with_daily_events,id,0)
 	}
 	//gold_and_days_daycount = 20;
