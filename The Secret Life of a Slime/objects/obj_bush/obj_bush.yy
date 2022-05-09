@@ -35,8 +35,8 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"MAX_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"40","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"MIN_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"MAX_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"60","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"MIN_GROWTH_TIME","path":"objects/obj_harvestable/obj_harvestable.yy",},"objectId":{"name":"obj_harvestable","path":"objects/obj_harvestable/obj_harvestable.yy",},"value":"50","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "interactables",
