@@ -130,10 +130,10 @@ if global.tut_keys_on and curr_page == 3 {
 	draw_text(600,200,"Who are the villagers of this town?")
 	
 	
-	draw_sprite(spr_npc,1, 360, 280);
-	draw_sprite(spr_machineman,1, 410, 280);
-	draw_sprite(spr_farmer_down,1, 460, 280);
-	draw_sprite(spr_lola,1, 510, 280);
+	draw_sprite(spr_npc_sil,0, 360, 280);
+	draw_sprite(spr_machineman_sil,0, 410, 280);
+	draw_sprite(spr_farmer_sil,0, 460, 280);
+	draw_sprite(spr_lola_sil,0, 510, 280);
 	
 	draw_set_color(c_white)
 	draw_text(365,280,"?")

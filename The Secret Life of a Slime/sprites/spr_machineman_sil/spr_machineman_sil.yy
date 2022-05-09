@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f896668f-946d-465f-9182-0ef786be5580","path":"sprites/spr_npc/spr_npc.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f896668f-946d-465f-9182-0ef786be5580","path":"sprites/spr_npc/spr_npc.yy",},"LayerId":{"name":"efdbe892-5156-4acd-baeb-656965a89ec1","path":"sprites/spr_npc/spr_npc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},"resourceVersion":"1.0","name":"f896668f-946d-465f-9182-0ef786be5580","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e65fd929-bee7-4964-94ef-318a1aca5284","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e65fd929-bee7-4964-94ef-318a1aca5284","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},"LayerId":{"name":"c211c50f-1776-468c-8dad-c750512bbb00","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_machineman_sil","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},"resourceVersion":"1.0","name":"e65fd929-bee7-4964-94ef-318a1aca5284","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},
+    "spriteId": {"name":"spr_machineman_sil","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0113ae6a-aa3a-4e70-9e68-6b2c2dfb7932","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f896668f-946d-465f-9182-0ef786be5580","path":"sprites/spr_npc/spr_npc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7f4257e3-8111-4c7e-b5e0-8c791a0de404","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e65fd929-bee7-4964-94ef-318a1aca5284","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 20,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},
+    "parent": {"name":"spr_machineman_sil","path":"sprites/spr_machineman_sil/spr_machineman_sil.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_npc",
+    "name": "spr_machineman_sil",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"efdbe892-5156-4acd-baeb-656965a89ec1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c211c50f-1776-468c-8dad-c750512bbb00","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/npc.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_npc",
+  "name": "spr_machineman_sil",
   "tags": [],
   "resourceType": "GMSprite",
 }

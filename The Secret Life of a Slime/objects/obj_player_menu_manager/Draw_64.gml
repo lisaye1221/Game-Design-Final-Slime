@@ -274,7 +274,7 @@ if (global.menu_on) {
 				draw_set_color(c_black);
 				draw_set_font(ft_name);
 				
-				draw_sprite_ext(_curr.icon, 1, _sprite_x, _sprite_y, _sprite_scale_x, _sprite_scale_y, 0, c_white, 1);
+				draw_sprite_ext(_curr.iconsil, 0, _sprite_x, _sprite_y, _sprite_scale_x, _sprite_scale_y, 0, c_white, 1);
 				draw_set_color(c_white);
 				draw_text(_sprite_x - 8, _sprite_y, "?");
 				draw_set_color(c_black);

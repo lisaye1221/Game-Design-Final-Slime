@@ -10,9 +10,10 @@ persistent = true;
 // icon: sprite with NPC's portrait
 // relationship: int with player's relationship stat out of 100
 // has_met: bool where false means player has not met and true means player has met
-function create_relationship(_name, _icon, _relationship, _has_met) constructor {
+function create_relationship(_name, _icon, _iconsil, _relationship, _has_met) constructor {
 	npc_name = _name;
 	icon = _icon;
+	iconsil = _iconsil;
 	relationship = _relationship;
 	has_met = _has_met;
 	tier = 0;
@@ -41,6 +42,7 @@ relationships =
 	new create_relationship(
 	"Claude",
 	spr_machineman,
+	spr_machineman_sil,
 	RELATIONSHIP_VAL_START,
 	false
 	),
@@ -48,13 +50,15 @@ relationships =
 	new create_relationship(
 	"Lavana",
 	spr_npc,
+	spr_npc_sil,
 	RELATIONSHIP_VAL_START,
 	false
 	),
 	
 	new create_relationship(
 	"Nelu",
-	spr_farmer_down,
+	spr_farmer,
+	spr_farmer_sil,
 	RELATIONSHIP_VAL_START,
 	false
 	),
@@ -62,6 +66,7 @@ relationships =
 	new create_relationship(
 	"Lola",
 	spr_lola,
+	spr_lola_sil,
 	RELATIONSHIP_VAL_START,
 	false
 	)
