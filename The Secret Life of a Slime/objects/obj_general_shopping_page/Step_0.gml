@@ -11,4 +11,11 @@ if(global.should_general_shop_restock){
 	global.should_general_shop_restock = false;
 }
 
+// store curr invntory when exiting shopping page
+if(keyboard_check_pressed(ord("X")) && !instance_exists(obj_textbox) && menu_level == 0){
+	obj_game_manager.general_shop_inventory = curr_inventory;
+}
+
 event_inherited();
+
+

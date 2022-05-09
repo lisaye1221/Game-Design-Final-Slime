@@ -129,10 +129,10 @@ function relationship_tier_up_rewards(_relationship){
 				case 3:
 					//TODO:unlock high level food
 					//I only put some foods, I didn't put all (not sure if we should put all?)
-					variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"bread",new create_shop_item(global.item_list.bread,25,1));
-					variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"spaghetti",new create_shop_item(global.item_list.spaghetti,65,1));
-					variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"cake",new create_shop_item(global.item_list.burrito,120,1));
-					variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"cookies",new create_shop_item(global.item_list.cookies,50,1));
+					//variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"bread",new create_shop_item(global.item_list.bread,25,1));
+					//variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"spaghetti",new create_shop_item(global.item_list.spaghetti,65,1));
+					//variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"cake",new create_shop_item(global.item_list.burrito,120,1));
+					//variable_struct_set(obj_relationship_manager.food_shop_menu.shopping_page.inventory,"cookies",new create_shop_item(global.item_list.cookies,50,1));
 				break;
 			}
 		break;
@@ -141,17 +141,18 @@ function relationship_tier_up_rewards(_relationship){
 				case 1:
 					obj_relationship_manager.general_shop_menu.option = obj_relationship_manager.general_shop_menu.menu_with_gift;
 					global.seedTier = 1;
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5, 2));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5, 2));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5, 2));
+					// moved to obj_general_shopping_page because the obj is no longer persistent
+					//variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5, 2));
+					//variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5, 2));
+					//variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5, 2));
 					obj_relationship_manager.general_shop_menu.shopping_page.inventory.parts.max_stock = 4;
 				
 				break;
 				case 2:
 					obj_relationship_manager.general_shop_menu.shopping_page.discount = .9;
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5, 2));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5, 2));
-					variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5, 2));
+					//variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5, 2));
+					//variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5, 2));
+					//variable_struct_set(obj_relationship_manager.general_shop_menu.shopping_page.inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5, 2));
 					global.seedTier = 2;
 				break;
 				case 3:

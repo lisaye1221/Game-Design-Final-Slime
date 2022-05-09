@@ -7,19 +7,9 @@ if(global.should_food_shop_restock){
 	global.should_food_shop_restock = false;
 }
 
+// store curr invntory when exiting shopping page
+if(keyboard_check_pressed(ord("X")) && !instance_exists(obj_textbox) && menu_level == 0){
+	obj_game_manager.food_shop_inventory = curr_inventory;
+}
+
 event_inherited();
-
-
-if (global.seedTier == 1 and global.addedSeeds1 == false) {
-	variable_struct_set(inventory,"radish",new create_shop_item(global.item_list.radishes,20,5));
-	variable_struct_set(inventory,"carrot",new create_shop_item(global.item_list.carrots,20,5));
-	variable_struct_set(inventory,"lettuce",new create_shop_item(global.item_list.lettuce,10,5));
-}	
-
-
-if (global.seedTier == 2 and global.addedSeeds2 == false) {
-	variable_struct_set(inventory,"radish",new create_shop_item(global.item_list.pumpkins,30,5));
-	variable_struct_set(inventory,"carrot",new create_shop_item(global.item_list.roses,35,5));
-	variable_struct_set(inventory,"lettuce",new create_shop_item(global.item_list.stars,40,5));
-}	
-
