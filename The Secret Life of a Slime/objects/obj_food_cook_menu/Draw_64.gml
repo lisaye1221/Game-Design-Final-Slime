@@ -138,12 +138,18 @@ if (menu_open) {
 					_recipe_string_3 += string(selected.amounts[i]) + " " + selected.ingredients[i].name + ", ";
 				}
 			}
-			_recipe_string_3 += string(selected.amounts[array_length(selected.ingredients) - 1]) + " " + selected.ingredients[array_length(selected.ingredients) - 1].name;
+			
+			if  array_length(selected.ingredients) == 1 {
+				_recipe_string_2 += string(selected.amounts[array_length(selected.ingredients) - 1]) + " " + selected.ingredients[array_length(selected.ingredients) - 1].name;
+			}
+			else {
+				_recipe_string_3 += string(selected.amounts[array_length(selected.ingredients) - 1]) + " " + selected.ingredients[array_length(selected.ingredients) - 1].name;
+			}
 			
 			//var _quan_string = "Quantity: " + string(selected.item.count);
 			//var _quan_height = string_height(_quan_string);
 			
-			draw_text(_name_left, _name_top+10+_name_height+10, _recipe_string_1);
+			draw_text(_name_left + 10, _name_top+10+_name_height+10, _recipe_string_1);
 			
 			draw_text_ext(_name_left, _name_top+10+_name_height+_rs1_height+20, _recipe_string_2, 3, _desc_width-40);
 			draw_text_ext(_name_left, _name_top+10+_name_height+_rs1_height+40, _recipe_string_3, 3, _desc_width-40);
