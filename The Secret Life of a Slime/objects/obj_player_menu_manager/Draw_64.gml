@@ -63,24 +63,42 @@ if (global.menu_on) {
 			draw_set_alpha(0.5)
 			draw_text(90, 520, "Use A and D to switch beteen tabs")
 			draw_set_alpha(1.0)
+			
+			draw_set_font(ft_hotbar);
+			draw_set_color(c_white);
+			draw_set_halign(fa_center);
+			draw_set_valign(fa_bottom);
 		
 		// draw the inventory boxes with items
 		for (var i = 0; i < obj_inventory_manager.MAX_ITEM; i ++) {
 		
 			var xx = left + (i mod rowLength) * 64;
 			var yy = top + (i div rowLength) * 64;
-			draw_sprite(spr_inv_slot, 0, xx, yy);
 		
 			if (i < array_length(obj_inventory_manager.inventory)) {
 				draw_sprite(obj_inventory_manager.inventory[i].menu_icon, 0, xx, yy);
+				draw_sprite(spr_inv_slot_count, 0, xx, yy);
+				
+			}
+			else {
+				draw_sprite(spr_inv_slot, 0, xx, yy);
 			}
 		
 			if (i == i_cursor) {
 				draw_sprite(spr_inv_cursor, 0, xx, yy);
 			}
 			
+			if (i < array_length(obj_inventory_manager.inventory)) {
+				draw_text(xx + 47, yy + 56, obj_inventory_manager.inventory[i].count);
+				
+			}
+			
 		
 		}
+		
+		draw_set_color(c_black);
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_middle);
 		
 		// draw the description box and selected item
 		var _desc_left = left+width/2;
@@ -94,7 +112,6 @@ if (global.menu_on) {
 		var _sprite_dis_width = _sprite_dis_height;
 		var _sprite_dis_left = _desc_left + (_desc_width/2) - _sprite_dis_width/2;
 		var _sprite_dis_top = _desc_top + 20;
-		
 		
 		draw_sprite_stretched(spr_desc_menu, 0, _sprite_dis_left, _sprite_dis_top, _sprite_dis_width, _sprite_dis_height);
 		

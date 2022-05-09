@@ -37,24 +37,43 @@ if (storage_open) {
 	top += 20;
 		
 	// draw the inventory screen
+	
+	draw_set_font(ft_hotbar);
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_bottom);
 		
 	// draw the inventory boxes with items
 	for (var i = 0; i < obj_inventory_manager.MAX_ITEM; i ++) {
 		
 		var xx = left + (i mod rowLength) * 64;
 		var yy = top + (i div rowLength) * 64;
-		draw_sprite(spr_inv_slot, 0, xx, yy);
 		
 		if (i < array_length(obj_inventory_manager.inventory)) {
 			draw_sprite(obj_inventory_manager.inventory[i].menu_icon, 0, xx, yy);
+			draw_sprite(spr_inv_slot_count, 0, xx, yy);
+				
+		}
+		else {
+			draw_sprite(spr_inv_slot, 0, xx, yy);
 		}
 		
 		if (i == i_cursor) {
 			draw_sprite(spr_inv_cursor, 0, xx, yy);
 		}
-		
+			
+		if (i < array_length(obj_inventory_manager.inventory)) {
+			draw_text(xx + 47, yy + 56, obj_inventory_manager.inventory[i].count);
+				
+		}
+			
 		
 	}
+		
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
+	draw_set_font(ft_tabs);
 		
 	// draw the storage inv 
 	var _str_left = camera_get_view_width(cam)/2 + 10;
@@ -80,21 +99,40 @@ if (storage_open) {
 	_str_left += 20;
 	_str_top += 20;
 	
+	draw_set_font(ft_hotbar);
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_bottom);
+	
 	// draw the storage boxes with items
 	for (var i = 0; i < obj_storage_manager.MAX_ITEM; i ++) {
 		
 		var xx = _str_left + (i mod rowLength) * 64;
 		var yy = _str_top + (i div rowLength) * 64;
-		draw_sprite(spr_inv_slot, 0, xx, yy);
 		
 		if (i < array_length(obj_storage_manager.inventory)) {
 			draw_sprite(obj_storage_manager.inventory[i].menu_icon, 0, xx, yy);
+			draw_sprite(spr_inv_slot_count, 0, xx, yy);
+				
+		}
+		else {
+			draw_sprite(spr_inv_slot, 0, xx, yy);
 		}
 		
 		if (i == (i_cursor - obj_inventory_manager.MAX_ITEM)) {
 			draw_sprite(spr_inv_cursor, 0, xx, yy);
 		}
+			
+		if (i < array_length(obj_storage_manager.inventory)) {
+			draw_text(xx + 47, yy + 56, obj_storage_manager.inventory[i].count);
+				
+		}
 		
 	}
+	
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
+	draw_set_font(ft_tabs);
 		
 }
