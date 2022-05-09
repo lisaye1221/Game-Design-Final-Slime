@@ -38,7 +38,7 @@ global.item_list =
 		0,
 		"My favorite food.",
 		0,
-		10
+		12
 	),
 	berries : new create_item(
 		"Berries",
@@ -130,7 +130,7 @@ global.item_list =
 		0,
 		"Seeds that grow carrot. Takes 30 seconds to grow.",
 		0,
-		10
+		5
 	),
 	cauliflower : new create_item(
 		"Cauliflower",
@@ -218,7 +218,7 @@ global.item_list =
 		spr_item_pumpkin_menu,
 		CROPS_MAX,
 		0,
-		"An orange Fall gourd, apparently gets carved into different shapes during a certain holiday. \n 2 Pumpkin = 1 Slime Jelly",
+		"An orange Fall gourd popular during a certain holiday. \n 2 Pumpkin = 1 Slime Jelly",
 		2,
 		20,
 	),

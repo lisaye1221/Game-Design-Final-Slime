@@ -123,7 +123,7 @@ function relationship_tier_up_rewards(_relationship){
 	
 				break;
 				case 2:
-					obj_relationship_manager.food_shop_menu.shopping_page.discount = .9;
+					obj_relationship_manager.food_shop_menu.shopping_page.discount = .8;
 					obj_relationship_manager.food_shop_menu.shopping_page.inventory.egg.max_stock = 4;
 				break;
 				case 3:

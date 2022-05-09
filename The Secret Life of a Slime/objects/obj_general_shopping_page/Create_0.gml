@@ -11,14 +11,14 @@ inventory =
 }
 
 if(get_relationship_tier(CLAUDE) >= 1){
-	variable_struct_set(inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,15,5, 2));
+	variable_struct_set(inventory,"carrot_seed",new create_shop_item(global.item_list.carrot_seeds,12,5, 2));
 	variable_struct_set(inventory,"lettuce_seed",new create_shop_item(global.item_list.lettuce_seeds,6,5, 2));
 	variable_struct_set(inventory,"radish_seed",new create_shop_item(global.item_list.radish_seeds,10,5, 2));
 }
 if(get_relationship_tier(CLAUDE) >= 2){
-	variable_struct_set(inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,20,5, 2));
+	variable_struct_set(inventory,"rose_seed",new create_shop_item(global.item_list.rose_seeds,15,5, 2));
 	variable_struct_set(inventory,"pumpkin_seed",new create_shop_item(global.item_list.pumpkin_seeds,10,5, 2));
-	variable_struct_set(inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,15,5, 2));
+	variable_struct_set(inventory,"star_seed",new create_shop_item(global.item_list.star_seeds,20,5, 2));
 }
 
 if(!global.general_shop_created){
