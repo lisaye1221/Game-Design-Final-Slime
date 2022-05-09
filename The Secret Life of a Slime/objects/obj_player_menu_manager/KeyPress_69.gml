@@ -12,7 +12,7 @@ else{
 	if(
 	!(instance_exists(obj_textbox) or instance_exists(obj_room_transition)) && 
 	(instance_exists(obj_storage_manager) && !obj_storage_manager.storage_open) &&
-	 (instance_exists(obj_food_cook_menu) && !obj_food_cook_menu.menu_open)
+	 (instance_exists(obj_food_cook_menu) && !obj_food_cook_menu.menu_open && global.allow_inv) 
 	){// restrict opening inventory in some cases
 		
 		global.menu_on = true;

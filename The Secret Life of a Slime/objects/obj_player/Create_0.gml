@@ -32,6 +32,7 @@ global.tutorialBedDone = false;
 global.unlock_homedoor = false;
 global.tutorial_restrict = false;
 global.gainedTutorialSeeds = false;
+global.allow_inv = false;
 
 DIR = [[1,0],[0,-1],[-1,0],[0,1]]
 interactable_object = noone;

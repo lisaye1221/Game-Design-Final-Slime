@@ -40,9 +40,9 @@ achievement_list =
 		
 	FARMING_BEGINNER: new create_achievement(
 		"Farming Beginner",
-		"Harvest 25 crops",
+		"Harvest 50 crops",
 		0,
-		25,
+		50,
 		false
 		),
 		
@@ -56,9 +56,9 @@ achievement_list =
 		
 	FARMING_MASTER: new create_achievement(
 		"Farming Master",
-		"Harvest 150 crops",
+		"Harvest 200 crops",
 		0,
-		150,
+		200,
 		false
 		),
 	
@@ -73,9 +73,9 @@ achievement_list =
 		
 	GORDAN_RAMSLIME: new create_achievement(
 		"Gordan Ramslime",
-		"Cook and collect food 15 times",
+		"Cook and collect food 12 times",
 		0,
-		15,
+		12,
 		false
 		),
 	
@@ -117,25 +117,25 @@ achievement_list =
 	
 	MODEST_SPENDER: new create_achievement(
 		"Modest Spender",
-		"Spend 100G",
+		"Spend 300G",
 		0,
-		100,
+		300,
 		false
 	),
 	
 	BIG_SPENDER: new create_achievement(
 		"Big Spender",
-		"Spend 500G",
+		"Spend 750G",
 		0,
-		500,
+		750,
 		false
 	),
 	
 	THE_ECONOMY_IS_ON_MY_SHOULDER: new create_achievement(
 		"The Economy is on My Shoulder",
-		"Spend 1000G",
+		"Spend 1500G",
 		0,
-		1000,
+		1500,
 		false
 	),
 	

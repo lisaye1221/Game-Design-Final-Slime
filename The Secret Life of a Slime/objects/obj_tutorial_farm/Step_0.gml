@@ -2,10 +2,12 @@ if keyboard_check_pressed(ord("S")) {
 	global.tutorial_ended_farm = true;
 	global.tutorial_stage_on_inv = false;
 	global.tutorial_restrict = false;
+	global.allow_inv = true;
 }
 
 if global.tutorial_ended_farm{
 	global.tutorial_restrict = false;
+	global.allow_inv = true;
 	if !global.gainedTutorialSeeds {
 		gain_item(global.item_list.wheat_seeds, 3);
 		global.gainedTutorialSeeds = true;
@@ -120,12 +122,14 @@ if b4 and sentence_index == array_length(s4) - 1 and (obj_player.interactable_ob
 		b5 = true;
 		sentence_index = 0;
 		sentence = s5[sentence_index]
+		global.allow_inv = true;
 }
 
 if b5 and keyboard_check_pressed(ord("E")) {
 		b5 = false;
 		b6 = true;
 		on_inventory = true;
+		global.tutorial_stage_on_inv = true;
 		sentence_index = 0;
 		sentence = s6[sentence_index]
 }
@@ -140,6 +144,7 @@ if b6 and sentence_index == array_length(s6) - 1 and (keyboard_check_pressed(vk_
 if b7 and (keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) {
 	b7 = false;
 	alarm[1] = 3.0 * room_speed
+	global.tutorial_stage_on_inv = false;
 
 }
 
@@ -149,7 +154,6 @@ if b8 and keyboard_check_pressed(ord("E")) {
 		sentence_index = 0;
 		sentence = s9[sentence_index]
 		on_inventory = false;
-		global.tutorial_stage_on_inv = false;
 }
 
 
