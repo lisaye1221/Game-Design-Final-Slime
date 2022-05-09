@@ -13,4 +13,3 @@ else{
 	gold_and_days_daycount = 20;
 }
 
-shown_text=true;

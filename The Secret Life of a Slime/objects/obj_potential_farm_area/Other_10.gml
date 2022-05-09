@@ -3,9 +3,8 @@
 // show_debug_message("daily check for farm plot triggered")
 
 
-if (unlock_method == "days"){
+if (unlock_method == "day"){
 	if (global.days >= unlock_requirement){
-		ds_map_delete(obj_game_manager.objects_with_daily_events,id)
 		if(room == home){
 			create_textbox("auto-unlock-plot");
 			var _farm_plot_distance_x = (sprite_width-obj_farm_plot.sprite_width)/(x_plot_num-1);
@@ -17,6 +16,7 @@ if (unlock_method == "days"){
 					instance_create_layer(_farm_plot_x,_farm_plot_y,"crops",obj_farm_plot);
 				}
 			}
+			ds_map_delete(obj_game_manager.objects_with_daily_events,id)			
 			instance_destroy()
 		}
 	}
