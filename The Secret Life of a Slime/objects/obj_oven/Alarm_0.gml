@@ -7,6 +7,7 @@
 if(!global.has_reached_ending){
 	if (this_machine.status == "empty"){
 		obj_food_cook_menu.alarm[0] = 1;
+		audio_play_sound(sfx_open_close_inventory, 2, false);
 	} else if (this_machine.status == "busy"){
 		// do nothing
 	} else if (this_machine.status == "full"){
