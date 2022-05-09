@@ -12,10 +12,11 @@
 	draw_set_alpha(0.55)
 	draw_rectangle(0, y_val_pos - 20 , 900, y_val_pos + 20, false)
 	if (b15 and sentence_index == 3) {
-		draw_set_color(c_red)
+		draw_set_alpha(0.9)
+		draw_set_color(c_red);
 	}
 	else if (on_inventory) {
-		draw_set_alpha(0.35)
+		draw_set_alpha(0.50)
 		draw_rectangle(0, y_val_pos - 20 , 900, y_val_pos + 20, false)
 		draw_set_color(c_yellow)
 	}

@@ -2,7 +2,7 @@ if global.tut_keys_on and keyboard_check_pressed(ord("X")) {
 	curr_page +=1;
 }
 
-if b0 and curr_page == 7 {
+if b0 and curr_page == 5 {
 	global.tut_keys_on = false;
 	b0 = false;
 	b1 = true;
