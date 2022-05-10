@@ -14,6 +14,7 @@ if global.unlock_homedoor {
 }
 
 if keyboard_check_pressed(ord("S")) {
+	global.tutorial_active = false;
 	global.tutorial_restrict = false;
 	global.tut_keys_on = false;
 	global.tutorial_ended = true;
@@ -64,12 +65,9 @@ if b2 and keyboard_check_pressed(ord("Z")) and global.touchedBed {
 
 if b3 and sentence_index == 2 {
 	global.tutorial_ended = true;
-}
-
-
-if b3 and sentence_index == 1 {
 	global.unlock_homedoor = true;
 }
+
 
 
 

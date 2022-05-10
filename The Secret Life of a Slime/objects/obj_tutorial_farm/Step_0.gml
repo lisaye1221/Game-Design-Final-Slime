@@ -6,6 +6,7 @@ if keyboard_check_pressed(ord("S")) {
 }
 
 if global.tutorial_ended_farm{
+	global.tutorial_active = false;
 	global.tutorial_restrict = false;
 	global.allow_inv = true;
 	if !global.gainedTutorialSeeds {

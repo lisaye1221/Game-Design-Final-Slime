@@ -18,7 +18,7 @@ s2 = ["Good job, bet that hardwood feels C-O-L-D (X)",
 "Now, try interacting with that bed."]
 
 s3 = ["The human world is full of mysterious things (X)",
-"Head out of the house when you're done exploring"," "]
+"Head out of the house when you're done exploring (X)"," "]
 
 s4 = ["This is your farm!", "Beautiful, isn't it?",
 "Uh-oh, looks like your energy has depleted",
