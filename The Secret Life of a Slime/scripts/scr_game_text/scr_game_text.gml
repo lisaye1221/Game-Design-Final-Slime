@@ -764,6 +764,8 @@ switch(_text_id){
 	case "warn-cannot-convert-to-seeds":
 		scr_add_text("This machine can't convert that. It seems like it only takes in crops.");
 		break;
+	case "empty":
+		break;
 		
 	
 	//Decorative Item texts
@@ -892,7 +894,7 @@ switch(_text_id){
 			scr_add_text("You are so naive. Friends? Do you think those humans will still regard you as that when you show your true form, as a slime?", "Messenger")
 			scr_add_text("Ok then, hope you don't regret your choice", "Messenger")
 			scr_add_text("Since you love the humans so much, you don't need to come back to us right? You can stay here with your friends.", "Messenger")
-			scr_add_text("Oh and I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if those humans still see you as a friend HAHA.", "Messenger")
+			scr_add_text("And I'll be taking away that transformation magic you've been using to disguise yourself. Let's see if they still see you as a friend.", "Messenger")
 			scr_add_text("I'll be taking my leave now, enjoy yourself here, forever. Goodbye. ", "Messenger")
 			scr_add_text("Wait!");
 			global.go_to_ending_cutscene = true;
