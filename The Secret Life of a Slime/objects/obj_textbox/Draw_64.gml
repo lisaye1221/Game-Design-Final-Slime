@@ -19,6 +19,56 @@ if(!setup){
 		// get the x position for the textbox
 			// no character pic (center the textbox)
 			text_x_offset[p] = (camera_get_view_width(view_camera[0]) - textbox_width) / 2;
+			
+		// setting individual characters and finding where the lines of text should break
+		for(var c = 0; c < text_length[p]; c++){
+			var _char_pos = c+1;
+			// store individual character in the "char" array
+			char[c,p] = string_char_at(text[p], _char_pos);
+			
+			// get current width of line
+			var _txt_up_to_char = string_copy(text[p], 1, _char_pos);
+			var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[c,p]);
+			
+			// get the last free space 
+			if(char[c,p] == " ") { last_free_space = _char_pos+1; }
+			
+			// get the line breaks 
+			if(_current_txt_w - line_break_offset[p] > line_width){
+				line_break_pos[ line_break_num[p], p] = last_free_space;
+				line_break_num[p]++;
+				var _txt_up_to_last_space = string_copy(text[p], 1, last_free_space);
+				var _last_free_space_string = string_char_at(text[p], last_free_space);
+				line_break_offset[p] = string_width(_txt_up_to_last_space) - string_width(_last_free_space_string);	
+			}
+		}
+		// getting each character's coordinate
+		for(var c = 0; c < text_length[p]; c++){
+			var _char_pos = c+1;
+			var _txt_x = textbox_x + text_x_offset[p] + text_border;
+			var _txt_y = textbox_y + text_border;
+			
+			// get current width of line
+			var _txt_up_to_char = string_copy(text[p], 1, _char_pos);
+			var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[c,p]);
+			var _txt_line = 0;
+			
+			// compensate for string breaks
+			for(var lb = 0; lb < line_break_num[p]; lb++){
+				// if the current looping character is after a line break
+				if (_char_pos >= line_break_pos[lb, p]) {
+					var _str_copy = string_copy(text[p], line_break_pos[lb,p], _char_pos-line_break_pos[lb,p])
+					_current_txt_w = string_width(_str_copy)
+					
+					// record the "line" this char should be on
+					_txt_line = lb+1 // +1 since lb starts at 0
+				}
+			} // end of for loop
+			
+			// add to the x and y coordinates based on the new info
+			char_x[c, p] = _txt_x + _current_txt_w;
+			char_y[c,p] = _txt_y + _txt_line * line_margin;
+		}// end of for loop
 	}
 	
 }
@@ -195,6 +245,7 @@ if (draw_char == text_length[page] && page == page_number - 1){
 
 
 // draw the text
+/*
 var _drawtext = string_copy(text[page], 1, draw_char);
 
 draw_text_ext(
@@ -204,3 +255,10 @@ draw_text_ext(
 	line_margin,
 	line_width
 );
+*/
+
+for(var c = 0; c < draw_char; c++){
+	// the text
+	draw_text( char_x[c,page], char_y[c,page], char[c,page]);
+}
+

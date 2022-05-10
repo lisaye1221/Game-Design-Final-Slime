@@ -18,6 +18,11 @@ text[0] = "";
 speaker_names[0] = "";
 // indicates length of text
 text_length[0] = string_length(text[0]);
+
+char[0,0] = "";
+char_x[0,0] = 0;
+char_y[0,0] = 0;
+
 // how many char are being drawn currently
 draw_char = 1;
 text_speed = 1;
@@ -39,3 +44,7 @@ is_speaker_sfx_playing = false;
 
 is_previously_paused = global.paused;
 global.paused = true;
+
+// effects
+scr_set_defaults_for_text();
+last_free_space = 0;

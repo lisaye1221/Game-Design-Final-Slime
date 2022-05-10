@@ -1,7 +1,15 @@
 // Script assets have changed for v2.3.0 see
 
+function scr_set_defaults_for_text() {
+	line_break_pos[0, page_number] = 999;
+	line_break_num[page_number] = 0;
+	line_break_offset[page_number] = 0;
+	
+}
+
 /// @param text
 function scr_add_text(_text, _name = ""){
+	 scr_set_defaults_for_text()
 	 text[page_number] = _text;
 	 speaker_names[page_number] = _name;
 	 
