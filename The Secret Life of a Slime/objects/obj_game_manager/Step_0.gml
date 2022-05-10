@@ -9,9 +9,11 @@ if (global.time >= 60){
 	global.days++;
 	//daily event trigger
 	// show_debug_message("new day: "+string(global.days))
-	for (var _curr = ds_map_find_first(objects_with_daily_events);
+	var _mapcp = ds_map_create()
+	ds_map_copy(_mapcp,objects_with_daily_events)
+	for (var _curr = ds_map_find_first(_mapcp);
 		_curr!=undefined;
-		_curr = ds_map_find_next(objects_with_daily_events, _curr);){
+		_curr = ds_map_find_next(_mapcp, _curr);){
 			with (_curr){
 				event_user(ds_map_find_value(other.objects_with_daily_events,_curr))
 			}
