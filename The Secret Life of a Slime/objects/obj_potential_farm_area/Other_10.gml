@@ -29,9 +29,9 @@ if (unlock_method == "day"){
 
 if (unlock_method=="gold"){
 	if (gold_and_days && global.days >= gold_and_days_daycount){
+		if(room == home && !gold_and_days_text_displayed){
 		ds_map_delete(obj_game_manager.objects_with_daily_events,id)	
-		//gold_and_days_text_displayed = true;
-		if(room == home){
+		gold_and_days_text_displayed = true;
 			if (global.paused){
 				alarm[3] = 1;
 			}else{
