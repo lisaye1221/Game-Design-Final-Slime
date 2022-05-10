@@ -11,5 +11,6 @@ else{
 		ds_map_add(obj_game_manager.objects_with_daily_events,id,0)
 	}
 	gold_and_days_daycount = 20;
+	gold_and_days_text_displayed = false;
 }
 
