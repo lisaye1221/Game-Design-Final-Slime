@@ -22,20 +22,23 @@ if (!((place_meeting(x,y,obj_farm_plot)||place_meeting(x,y,obj_harvestable))))
 			}
 			instance_destroy()
 		}
-	}
-		else if (gold_and_days){
-			if (global.days >= gold_and_days_daycount){
-				if(room == home){
-					if (!gold_and_days_text_displayed){
-						gold_and_days_text_displayed = true;
-						if (global.paused){
-							alarm[3] = 1;
-						}
-						else{
-							create_textbox("day-unlocked-money");
-						}
-					}
-				}
+	} else if (unlock_method=="gold"){
+		if (gold_and_days && global.days >= gold_and_days_daycount){
+			if(room == home && !gold_and_days_text_displayed){
+				ds_map_delete(obj_game_manager.objects_with_daily_events,id)
+				gold_and_days_text_displayed = true;
+				alarm[3] = 1;
+				show_debug_message("gold and days: room start")			
 			}
 		}
+	}
+}
+
+
+if (unlock_method=="gold"){
+	if (gold_and_days && global.days >= gold_and_days_daycount){
+		
+		
+		
+	}
 }

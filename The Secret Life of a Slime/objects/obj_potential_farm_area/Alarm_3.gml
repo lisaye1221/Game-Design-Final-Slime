@@ -5,4 +5,5 @@ if (global.paused){
 }
 else{
 	create_textbox("day-unlocked-money");
+	prompt_text = "Unlock for 50G";
 }

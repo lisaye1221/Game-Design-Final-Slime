@@ -10,11 +10,11 @@ if (room != created_room){
 		if (!activation_text_triggered){
 			activation_text_triggered = true;
 			//trigger instantly or start queueing
-			if (!global.paused){
-				create_textbox(activation_text)
-			}else{
+			//if (!global.paused){
+			//	create_textbox(activation_text)
+			//}else{
 				alarm[11] = 1;
-			}
+			//}
 		}
 		
 		// show_debug_message("resetting "+object_get_name(object_index))
