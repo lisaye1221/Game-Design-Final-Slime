@@ -27,7 +27,7 @@ if global.tut_keys_on and curr_page == 0 {
 	draw_text(700,350,"by farming and getting to know this world and its people.")
 	
 	draw_set_color(c_red)
-	draw_text(590,420,"Press X to continue the tutorial")
+	draw_text(523,420,"Press X to continue")
 	//draw_text(570,425,"Press S to skip the tutorial")
 }
 
