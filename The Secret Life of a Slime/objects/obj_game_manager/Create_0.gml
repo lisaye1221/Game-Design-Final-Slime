@@ -52,7 +52,7 @@ global.tutorial_active = true;
 global.paused = false;
 global.unpause_signal = false;
 
-global.lola_door_unlock_day = 10;
+global.lola_door_unlock_day = 8;
 global.extra_plot_unlock_day = 15;
 global.advanced_machine_unlock_day = 20;
 global.seedTier = 0;

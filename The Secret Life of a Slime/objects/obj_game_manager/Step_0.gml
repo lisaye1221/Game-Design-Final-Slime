@@ -19,7 +19,7 @@ if (global.time >= 60){
 	global.time = 0;
 }
 //night event trigger
-if (!night_events_triggered && global.time >= 40){
+if (!night_events_triggered && global.time >= 30){
 
 	night_events_triggered = true;
 	show_debug_message("triggering night events")
