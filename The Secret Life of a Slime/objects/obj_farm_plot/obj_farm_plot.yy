@@ -3,7 +3,7 @@
     "name": "spr_farm_plot",
     "path": "sprites/spr_farm_plot/spr_farm_plot.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,

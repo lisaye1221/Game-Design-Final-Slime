@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-if (!place_free(x,y)){
+if (place_meeting(x,y,obj_farm_plot)||place_meeting(x,y,obj_harvestable)){
 	instance_destroy()
 }
 else{
