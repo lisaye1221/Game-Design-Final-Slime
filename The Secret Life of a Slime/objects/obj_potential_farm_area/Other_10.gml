@@ -23,7 +23,6 @@ if (unlock_method == "day"){
 			}
 			ds_map_delete(obj_game_manager.objects_with_daily_events,id)			
 			instance_destroy()
-			show_debug_message("user event")
 		}
 	}
 } 
