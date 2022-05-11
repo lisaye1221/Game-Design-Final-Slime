@@ -1,6 +1,5 @@
 
 
-draw_set_halign(fa_right)
 if !b0 and global.tutorial_ended == false {
 	draw_set_color(c_black)
 	draw_set_alpha(0.50)
@@ -10,11 +9,13 @@ if !b0 and global.tutorial_ended == false {
 	draw_set_alpha(0.7)
 	draw_set_font(ft_tutorial)
 	draw_set_valign(fa_bottom)
+	draw_set_halign(fa_right);
 	draw_text(680,240,string(string_copy(sentence,0,100)))
 	
 }
 
 if global.tut_keys_on and curr_page == 0 {
+	draw_set_halign(fa_right)
 	draw_sprite(spr_tutorial_menu,0,145,50);
 	draw_set_alpha(0.9)
 	draw_set_font(ft_tutorial_header)
@@ -80,6 +81,7 @@ if global.tut_keys_on and curr_page == 0 {
 */
 
 if global.tut_keys_on and curr_page == 1 {
+	draw_set_halign(fa_right)
 	draw_sprite(spr_tutorial_menu,0,145,50);
 	
 	draw_set_font(ft_tutorial_header)
@@ -88,13 +90,13 @@ if global.tut_keys_on and curr_page == 1 {
 	draw_set_font(ft_tutorial)
 	draw_set_color(c_black)
 	
-	draw_text(315,310,"Use arrow keys")
-	draw_text(285,330,"to move")
+	draw_text(320,310,"Use arrow keys")
+	draw_text(290,330,"to move")
 	
-	draw_sprite(spr_tutorial_buttons_up,0,230,170);
-	draw_sprite(spr_tutorial_buttons_down,0,230,250);
-	draw_sprite(spr_tutorial_buttons_left,0,180,210);
-	draw_sprite(spr_tutorial_buttons_right,0,280,210);
+	draw_sprite(spr_tutorial_buttons_up,0,235,170);
+	draw_sprite(spr_tutorial_buttons_down,0,235,250);
+	draw_sprite(spr_tutorial_buttons_left,0,185,210);
+	draw_sprite(spr_tutorial_buttons_right,0,285,210);
 	
 	draw_text(690,200,"Use Z to interact with objects")
 	draw_text(690,220,"and to continue dialog.")
@@ -106,6 +108,7 @@ if global.tut_keys_on and curr_page == 1 {
 
 
 if global.tut_keys_on and curr_page == 2 {
+	draw_set_halign(fa_right)
 	draw_sprite(spr_tutorial_menu,0,145,50);
 	
 	draw_set_font(ft_tutorial_header)
@@ -120,6 +123,7 @@ if global.tut_keys_on and curr_page == 2 {
 }
 
 if global.tut_keys_on and curr_page == 3 {
+	draw_set_halign(fa_right)
 	draw_sprite(spr_tutorial_menu,0,145,50);
 	
 	draw_set_font(ft_tutorial_header)
@@ -148,6 +152,7 @@ if global.tut_keys_on and curr_page == 3 {
 }
 
 if global.tut_keys_on and curr_page == 4 {
+	draw_set_halign(fa_right)
 	draw_sprite(spr_tutorial_menu,0,145,50);
 	
 	draw_set_font(ft_tutorial_header)
@@ -176,3 +181,8 @@ if global.tut_keys_on and curr_page == 4 {
 
 
 draw_set_alpha(1)
+
+draw_set_valign(fa_top)
+draw_set_halign(fa_left);
+draw_set_color(c_white);
+draw_set_font(ft_dialog);

@@ -6,6 +6,8 @@ textbox_x = 0;
 textbox_y = (700 - textbox_height) - old_ui_offset;
 accept_key = keyboard_check_pressed(ord("Z"));
 
+
+
 // ** Setup ** //
 if(!setup){
 	setup = true;

@@ -5,6 +5,12 @@ if keyboard_check_pressed(ord("S")) {
 	global.allow_inv = true;
 }
 
+if !global.tutorial_ended_farm and b4 and (sentence_index == 0 or sentence_index == 1) {
+	obj_player.x = 143;
+	obj_player.y = 245;
+	
+}
+
 if global.tutorial_ended_farm{
 	global.tutorial_active = false;
 	global.tutorial_restrict = false;

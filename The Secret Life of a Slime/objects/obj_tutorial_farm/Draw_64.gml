@@ -26,11 +26,9 @@
 	else {
 		draw_set_color(c_white)
 	}
-	
+		
 	draw_set_alpha(0.7)
 	draw_set_font(ft_tutorial)
-
-	
 
 	if string_length(sentence) < 60 and string_length(sentence) >= 50  {
 		draw_text(490,y_val_pos,string(string_copy(sentence,0,100)))
@@ -52,6 +50,12 @@
 		draw_text(480,y_val_pos,string(string_copy(sentence,0,100)))
 	}
 
+
+draw_set_valign(fa_top)
+draw_set_halign(fa_left);
+draw_set_color(c_white);
+draw_set_font(ft_dialog);
+draw_set_alpha(1);
 
 
 
