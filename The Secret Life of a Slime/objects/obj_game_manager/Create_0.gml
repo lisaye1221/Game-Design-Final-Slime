@@ -54,7 +54,7 @@ global.unpause_signal = false;
 
 global.lola_door_unlock_day = 8;
 global.extra_plot_unlock_day = 15;
-global.advanced_machine_unlock_day = 20;
+global.advanced_machine_unlock_day = 18;
 global.seedTier = 0;
 global.addedSeeds1 = false;
 global.addedSeeds2 = false;
