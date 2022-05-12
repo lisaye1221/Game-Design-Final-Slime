@@ -73,9 +73,9 @@ achievement_list =
 		
 	GORDAN_RAMSLIME: new create_achievement(
 		"Gordan Ramslime",
-		"Cook and collect food 12 times",
+		"Cook and collect food 10 times",
 		0,
-		12,
+		10,
 		false
 		),
 	
@@ -117,25 +117,25 @@ achievement_list =
 	
 	MODEST_SPENDER: new create_achievement(
 		"Modest Spender",
-		"Spend 300G",
+		"Spend 250G",
 		0,
-		300,
+		250,
 		false
 	),
 	
 	BIG_SPENDER: new create_achievement(
 		"Big Spender",
-		"Spend 750G",
+		"Spend 500G",
 		0,
-		750,
+		500,
 		false
 	),
 	
 	THE_ECONOMY_IS_ON_MY_SHOULDER: new create_achievement(
 		"The Economy is on My Shoulder",
-		"Spend 1500G",
+		"Spend 1000G",
 		0,
-		1500,
+		1000,
 		false
 	),
 	

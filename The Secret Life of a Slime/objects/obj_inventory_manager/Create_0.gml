@@ -38,7 +38,7 @@ global.item_list =
 		0,
 		"My favorite food.",
 		0,
-		12
+		15
 	),
 	berries : new create_item(
 		"Berries",
