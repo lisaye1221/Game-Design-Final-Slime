@@ -253,9 +253,9 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 				increase_energy(30);
 				lose_one_item(item);
 				break;
-			case global.item_list.tulips.name:
+			case global.item_list.gummy_bear.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(6);
+				increase_energy(50);
 				lose_one_item(item);
 				break;
 			default:
