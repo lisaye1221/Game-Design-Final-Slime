@@ -13,7 +13,7 @@ if global.unlock_homedoor {
 	instance_destroy();
 }
 
-if keyboard_check_pressed(ord("S")) {
+if (keyboard_check_pressed(ord("S"))) {
 	global.tutorial_active = false;
 	global.tutorial_restrict = false;
 	global.tut_keys_on = false;
