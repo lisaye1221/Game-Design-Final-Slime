@@ -9,7 +9,7 @@ if(global.days >= UNLOCK_ENDING_DAY && !global.has_reached_ending){
 	// determine which ending
 	var achi_requirement_complete = true;
 	for(var i = 0; i < array_length(achi_requirement); i++){
-		if(!achi_requirement[i]){
+		if(!achi_requirement[i].completed){
 			achi_requirement_complete = false;
 			break;
 		}
