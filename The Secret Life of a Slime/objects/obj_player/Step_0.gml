@@ -250,7 +250,7 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 				break;
 			case global.item_list.stars.name:
 				audio_play_sound(sfx_eat_item, 0, false);
-				increase_energy(20);
+				increase_energy(30);
 				lose_one_item(item);
 				break;
 			case global.item_list.tulips.name:
@@ -271,7 +271,7 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 	
 	// hacky way of gaining more seeds
 	//commenting this out for final version
-	/*
+	
 	if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("W"))){
 		gain_one_item(global.item_list.wheat_seeds);		// gain wheat seeds
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("C"))){
@@ -290,7 +290,7 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 		gain_one_item(global.item_list.radish_seeds);		// gain radish seeds
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("R"))){
 		gain_one_item(global.item_list.rose_seeds);		// gain rose seeds
-	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("S"))){
+	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("A"))){
 		gain_one_item(global.item_list.star_seeds);		// gain star seeds
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("M"))){
 		gain_one_item(global.item_list.tomato_seeds);		// gain tomato seeds
@@ -301,7 +301,7 @@ if not (global.dead or global.paused or instance_exists(obj_room_transition)) {
 	} else if (keyboard_check(vk_shift) && keyboard_check_pressed(ord("H"))){
 		gain_one_item(global.item_list.parts);		// gain turnip seeds
 	}
-	*/
+	
 		
 
 	// death
