@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 
-global.gold += 10;
+//global.gold += 10;

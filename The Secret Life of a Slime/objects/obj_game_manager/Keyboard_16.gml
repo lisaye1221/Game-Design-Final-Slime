@@ -1,5 +1,5 @@
 /// cheats
-
+/*
 relationship_claude = keyboard_check_pressed(ord("1"));
 relationship_lavana = keyboard_check_pressed(ord("2"));
 relationship_nelu = keyboard_check_pressed(ord("3"));
@@ -17,6 +17,7 @@ if(relationship_nelu){
 if(relationship_lola){
 	increase_relationship(LOLA, 5);
 }
+*/
 
 if(keyboard_check_pressed(ord("0"))){
 	obj_game_ending_manager.ending = ENDING_NORMAL;	
@@ -31,6 +32,6 @@ if(keyboard_check_pressed(ord("7"))){
 	obj_game_ending_manager.ending = ENDING_SPECIAL;	
 }
 
-if(keyboard_check_pressed(ord("E"))){
+if(keyboard_check_pressed(ord("N"))){
 	global.days = 42;	
 }
