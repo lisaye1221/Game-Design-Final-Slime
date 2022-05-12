@@ -17,22 +17,25 @@ if(global.days >= UNLOCK_ENDING_DAY && !global.has_reached_ending){
 	
 	if(achi_requirement_complete){
 		ending = ENDING_BETRAYAL;	
+		
+		if(
+			get_relationship_tier(LAVANA) >= 3 &&
+			get_relationship_tier(CLAUDE) >= 3 &&
+			get_relationship_tier(NELU) >= 3
+		){
+			ending = ENDING_CHOICE;
+		}
+		if(
+			get_relationship_tier(LAVANA) >= 2 &&
+			get_relationship_tier(CLAUDE) >= 2 &&
+			get_relationship_tier(NELU) >= 2 &&
+			get_relationship_tier(LOLA) >= 3
+		){
+			ending = ENDING_SPECIAL;
+		}
+	
 	}
-	if(
-		get_relationship_tier(LAVANA) >= 3 &&
-		get_relationship_tier(CLAUDE) >= 3 &&
-		get_relationship_tier(NELU) >= 3
-	){
-		ending = ENDING_CHOICE;
-	}
-	if(
-		get_relationship_tier(LAVANA) >= 2 &&
-		get_relationship_tier(CLAUDE) >= 2 &&
-		get_relationship_tier(NELU) >= 2 &&
-		get_relationship_tier(LOLA) >= 3
-	){
-		ending = ENDING_SPECIAL;
-	}
+	
 	
 	has_met_Lola = has_met_npc(LOLA);
 	
