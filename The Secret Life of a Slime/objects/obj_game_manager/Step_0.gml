@@ -57,6 +57,7 @@ if global.tutorial_active and global.tutorial_ended and global.tutorial_ended_fa
 
 if global.dead {
 	if (keyboard_check_pressed(ord("R"))) {
+		audio_stop_all();
 		game_restart();
 	}
 }
