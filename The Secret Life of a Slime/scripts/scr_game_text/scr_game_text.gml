@@ -657,6 +657,7 @@ switch(_text_id){
 	case "Lavana-relationship-3":
 		scr_add_text("Oh yea by the way!");
 		scr_add_text("Thanks for the gifts and telling me about cooking")
+		scr_add_text("So glad to have you as my friend!")
 		scr_add_text("And thanks to you, I think my cooking is much better now!")
 		scr_add_text("So I'll be carrying some dishes in the shop soon.")
 		scr_add_text("Obviously won't be as good as what you make, but if you ever get lazy, you know where to come.")
@@ -676,6 +677,10 @@ switch(_text_id){
 		scr_add_text("It's like Christmas or something right?");
 		break;
 	case "Claude-relationship-3":
+		scr_add_text("Hey buddy!");
+		scr_add_text("Just want to thank you for always stopping by.");
+		scr_add_text("You're a great friend!");
+		scr_add_text("Let me know anytime if you need help, I'll come right away!");
 		break;
 	case "Nelu-relationship-1":
 		scr_add_text("Heyyyy, a bit random, but");
@@ -695,6 +700,7 @@ switch(_text_id){
 		scr_add_text("Another bag for you! Yep, this one is even bigger.");
 		scr_add_text("Here you go, you need it more than me right? You're always bringing stuff back and forth from your farm.");
 		scr_add_text("If things get too heavy you can ask me for help!");
+		scr_add_text("Oh and, thanks for being an awesome friend!!");
 		break;
 	case "Lola-relationship-1":
 		scr_add_text("Hey.");
@@ -711,6 +717,11 @@ switch(_text_id){
 		scr_add_text("Let me know how you like it!");
 		break;
 	case "Lola-relationship-3":
+		scr_add_text("Oh by the way.");
+		scr_add_text("Belive it or not, I don't mind you always stopping by.");
+		scr_add_text("In fact, I appreciate it. ");
+		scr_add_text("Haha, haven't been the nicest when we first met right?");
+		scr_add_text("Well I guess we're friends now aren't we?");
 		break;
 		
 	// -------------------- Text for Warnings/Hints --------------------- //
