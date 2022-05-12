@@ -409,7 +409,7 @@ global.item_list =
 		spr_cookies_menu,
 		1,
 		0,
-		"A warm plate of cookies that can bring people happiness, rumored to be a certain blue muppet's favorite.",
+		"A warm plate of cookies that can bring people happiness.",
 		0,
 		35,
 	),

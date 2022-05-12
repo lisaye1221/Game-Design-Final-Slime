@@ -49,7 +49,7 @@ recipes = {
 		"Sandwich",
 		global.item_list.sandwich,
 		[global.item_list.lettuce, global.item_list.tomatoes, global.item_list.cucumbers, global.item_list.bread],
-		[1, 1, 1, 2],
+		[1, 1, 1, 1],
 	),
 	pumpkin_pie_recipe : new create_recipe(
 		"Pumpkin Pie",
@@ -61,7 +61,7 @@ recipes = {
 		"Gummy Bear",
 		global.item_list.gummy_bear,
 		[global.item_list.stars, global.item_list.roses, global.item_list.berries],
-		[4,3,10],
+		[3,2,5],
 	),
 	cookies_recipe : new create_recipe(
 		"Cookies",
@@ -73,7 +73,7 @@ recipes = {
 		"Cake",
 		global.item_list.cake,
 		[global.item_list.wheat, global.item_list.egg, global.item_list.roses],
-		[4,4,1],
+		[4,3,1],
 	),
 	bread_recipe : new create_recipe(
 		"Bread",
