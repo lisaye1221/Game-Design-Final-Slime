@@ -5,7 +5,7 @@ if(!instance_exists(obj_textbox)){
 	show_debug_message("switch to scene 2");
 	room_goto(ending_special_scene2)
 	fadeout = false;
-	alarm[1] = 1;
+	alarm[1] = room_speed * 2;
 }
 else{
 	alarm[0] = 1;	
